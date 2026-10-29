@@ -2,6 +2,16 @@
 
 <h1 align="center">Control Evidence Corpus</h1>
 
+## Research summary
+
+Development infrastructure. Evidence-linked records, three synthetic demonstrations and reproducible development tools. The empirical pilot and an approved corpus release remain forthcoming.
+
+Inspect source provenance and missingness, prepare bounded control questions and test the representation of action, propagation and mitigation.
+
+[Findings, use, limits and next steps](docs/research-summary.md), reviewed 29 October 2026.
+
+
+
 <p align="center">What can the surviving evidence tell us about an AI control?</p>
 
 <p align="center">
