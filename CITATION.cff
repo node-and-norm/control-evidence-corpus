@@ -8,5 +8,6 @@ url: "https://github.com/node-and-norm/node-norm-control-evidence/releases/tag/v
 repository-code: "https://github.com/node-and-norm/node-norm-control-evidence"
 authors:
   - family-names: Banasihan
-    given-names: Mark
+    given-names: Mark Julius
 abstract: "Development infrastructure for provenance-aware reconstruction of event-control observations. No empirical corpus release or validity claim."
+
