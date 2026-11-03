@@ -101,6 +101,10 @@ The [instruction comparison](experiments/jev-cec/instruction-comparison-001/LIVE
 
 [Jev request preparation](experiments/jev-cec/README.md) projects the three synthetic demonstrations into bounded questions about action, propagation and mitigation. The inspectable requests preserve missingness categories and exclude existing ratings. The [first live synthetic run](experiments/jev-cec/execution-v1/LIVE-RESULTS.md) records agreement with an AI-authored reference, invalid responses and unresolved disagreements; it supplies no independent accuracy finding. See the [preparation decision](experiments/jev-cec/PLAN.md) for the proposed evaluation and its limits.
 
+The [AI-use policy and development disclosure](docs/policies/AI_USE_POLICY.md#development-disclosure) identifies Codex assistance with implementation, literature screening, synthetic examples, pilot instruments and source reconnaissance. Jev’s experiment outputs and AI-authored references remain separate from independent human assessment. The reconnaissance has no independent human review and creates no authoritative empirical labels. The policy also explains why exposure to an AI suggestion must be disclosed and cannot count as an unassisted independent rating.
+
+The [program AI-use statement](https://nodeandnorm.org/about/research-integrity/#ai-use) provides shared reporting principles; the versioned project records describe the assistance and review documented here.
+
 ## Run the demonstration
 
 Python 3.11 or later; one pinned dependency. No model credentials or external inference service required.
