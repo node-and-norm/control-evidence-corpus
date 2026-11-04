@@ -1,0 +1,20 @@
+{
+  "repository": "node-and-norm/.github",
+  "commit": "cae1260c05b686a30f51580ae96ec705428c8535",
+  "path": "assets/research/v1/projects/node-norm-control-evidence",
+  "copied_file_sha256": {
+    "banner-light.svg": "1229a3f058fd5249fc809539d0ca7e637c3806fe96df179f309bf35d54fd0997",
+    "config.json": "4a0e804794cba04d186bc00c41cd738c1e38c19e8e343052617dbbe1c9037773",
+    "banner-mobile-light.svg": "213826a2970f701c1addd32d7f0963b7fc4b6797ad5ec33c8927278f18f9c9c1",
+    "manifest.json": "ed3c59bffe0d9c39fabefa2ce6b202d05dd7d5d0e3523da250a3f4d7adf21ae1",
+    "banner-dark.svg": "97a103821383064ac4d9db9aab0d132f99f99b39a73be2bfa7a7488f9cf29a21",
+    "banner-mobile-dark.svg": "18805d3ce0e4f3958fd53d3667951a93c4c8211a9c36e1c5ab1fb8ac89b34a42",
+    "badges/version-dark.svg": "94471b9d2fc50220eb61d3a51308107648b8c3f5317c7a40a84199ea2d517aac",
+    "badges/status-light.svg": "20775f06e0c12e7a873f1d7b02ef8a81b27e3a9df628d2c256589222b1f9e3ff",
+    "badges/evidence-light.svg": "3c2898e05a713f91a80a8e29f5e4c1f9830f980c6e7c8477603df1928c761206",
+    "badges/evidence-dark.svg": "af229f0c4b66246160fbe80907234bcd9746ecdf3cd6566a920f2eafeef650ac",
+    "badges/status-dark.svg": "8f32415a6b6913739d8781070ddff8042d084ae911051c1e73efed1b59dc2925",
+    "badges/version-light.svg": "28b556ea16ba30fd71a793f504c0b903a49ad4d7ed56cac269c57da08a55195a"
+  },
+  "integration": "Dark banner and badges in both browser themes. Mobile title uses explicit line breaks."
+}

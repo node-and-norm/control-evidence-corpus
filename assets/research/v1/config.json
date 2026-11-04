@@ -1,0 +1,40 @@
+{
+  "title": "Control Evidence Corpus",
+  "purpose": "Reconstructing what a control actually did.",
+  "mobile_title_lines": [
+    "Control Evidence",
+    "Corpus"
+  ],
+  "mobile_purpose_lines": [
+    "Reconstructing what a",
+    "control actually did."
+  ],
+  "sources": {
+    "title": "README-2026-11-03.md",
+    "purpose": "research/README.md"
+  },
+  "badges": [
+    {
+      "label": "Status",
+      "value": "Development infrastructure",
+      "href": "docs/research-summary.md",
+      "source": "docs/research-summary.md",
+      "id": "status"
+    },
+    {
+      "label": "Version",
+      "value": "0.3.0-dev",
+      "href": "https://github.com/node-and-norm/node-norm-control-evidence/releases/tag/v0.3.0-dev",
+      "source": "CITATION.cff",
+      "id": "version"
+    },
+    {
+      "label": "Evidence",
+      "value": "Synthetic demonstrations",
+      "href": "examples/README.md",
+      "source": "docs/policies/DATA_STATEMENT.md",
+      "id": "evidence"
+    }
+  ],
+  "desktop_title_size": 44
+}
