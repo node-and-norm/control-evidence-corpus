@@ -1,0 +1,26 @@
+{
+  "asset_version": "1.0.0-draft",
+  "config": "projects/node-norm-control-evidence/config.json",
+  "input_hashes": {
+    "projects/node-norm-control-evidence/config.json": "4a0e804794cba04d186bc00c41cd738c1e38c19e8e343052617dbbe1c9037773",
+    "tokens.json": "ddb30f6bbffed2fd978b24cd8195365c737337aeea609c40e16dd0d87110fde0",
+    "generate.py": "ac709d59bb4ccdb0d47b413c994a6bb8cabce58fd43c7ec2ad2906398f126a8e",
+    "generate_catalog.py": "99f34b99a90148e5327656cf432b0685d999a8c1f681892ddbf9126f7278b66d"
+  },
+  "source_hashes": {
+    "assets/brand/current/logo.svg": "def26d7e6887ce1c1846ea3929816df9b9c6484f30679642d003724c3df85f55",
+    "assets/brand/current/banner.svg": "178e1018845b43ba22de409d389ee48860163b229ea8fbca2ad164c4d5d28df6"
+  },
+  "files": {
+    "banner-light.svg": "1229a3f058fd5249fc809539d0ca7e637c3806fe96df179f309bf35d54fd0997",
+    "banner-mobile-light.svg": "213826a2970f701c1addd32d7f0963b7fc4b6797ad5ec33c8927278f18f9c9c1",
+    "badges/status-light.svg": "20775f06e0c12e7a873f1d7b02ef8a81b27e3a9df628d2c256589222b1f9e3ff",
+    "badges/version-light.svg": "28b556ea16ba30fd71a793f504c0b903a49ad4d7ed56cac269c57da08a55195a",
+    "badges/evidence-light.svg": "3c2898e05a713f91a80a8e29f5e4c1f9830f980c6e7c8477603df1928c761206",
+    "banner-dark.svg": "97a103821383064ac4d9db9aab0d132f99f99b39a73be2bfa7a7488f9cf29a21",
+    "banner-mobile-dark.svg": "18805d3ce0e4f3958fd53d3667951a93c4c8211a9c36e1c5ab1fb8ac89b34a42",
+    "badges/status-dark.svg": "8f32415a6b6913739d8781070ddff8042d084ae911051c1e73efed1b59dc2925",
+    "badges/version-dark.svg": "94471b9d2fc50220eb61d3a51308107648b8c3f5317c7a40a84199ea2d517aac",
+    "badges/evidence-dark.svg": "af229f0c4b66246160fbe80907234bcd9746ecdf3cd6566a920f2eafeef650ac"
+  }
+}
