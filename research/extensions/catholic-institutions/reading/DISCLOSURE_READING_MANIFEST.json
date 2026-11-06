@@ -1,0 +1,35 @@
+{
+  "reader_update": "0.4.1-dev",
+  "underlying_study": "0.4.0-dev",
+  "protocol_methods": "0.3.0-unfrozen",
+  "disclosure_version": "0.1.0",
+  "date": "2026-11-06",
+  "scope": "Disclosure-only update; no new empirical observations or methodology results.",
+  "files": [
+    {
+      "path": "NodeNorm_Study_v0_4_1.html",
+      "sha256": "8351f33bb2bc839552e0a6cf07e7cd6d0cf262cb76a2b2c92e1ac91fd7367a62",
+      "bytes": 83810
+    },
+    {
+      "path": "NodeNorm_Protocol_v0_4_1.html",
+      "sha256": "45ebdc25d4b95f6d1ca9b1382998d2aace8646bb68a179da8c2fa4221ee631d4",
+      "bytes": 59201
+    },
+    {
+      "path": "NodeNorm_Protocol_v0_4_1.md",
+      "sha256": "92301a5ed0c8ce3ca27bc71a837532f484b876e5dce5d9079e25bbb4964e1462",
+      "bytes": 36505
+    },
+    {
+      "path": "NodeNorm_Notebook_v0_4_1.ipynb",
+      "sha256": "b2ff481ba61ba930d4f74d58ef71eafec93d875f66ded9d798128b10ba2b0b2b",
+      "bytes": 124137
+    },
+    {
+      "path": "NodeNorm_Study_v0_4_1.pdf",
+      "sha256": "03691c360d3de210acbb2731e3828514b4253df5c66e6daff03edece76461e57",
+      "bytes": 310645
+    }
+  ]
+}
