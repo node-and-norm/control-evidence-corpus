@@ -1,0 +1,37 @@
+{
+  "run_id": "SV-20261106-001",
+  "kind": "exploratory_source_verification",
+  "plan_version": "1.0",
+  "scope": "Two targeted search/fetch pairs, not a sampled reliability study or safeguard evaluation",
+  "plan_recorded_at": "2026-11-06T21:26:24.889733+00:00",
+  "prior_exposure": "Earlier AN and MH locator summaries were known. Targets are purposive rechecks; not blind or confirmatory.",
+  "queries": [
+    {
+      "target": "AN-44",
+      "query": "Antiqua et Nova paragraph 44 ultimate responsibility human decision-makers accountability each stage"
+    },
+    {
+      "target": "MH-105",
+      "query": "Magnifica Humanitas paragraph 105 artificial intelligence human responsibility accountability"
+    }
+  ],
+  "selection_rule": "Use the first result for the exact requested document and paragraph; if no exact locator exists, record target_not_returned and fetch no substitute.",
+  "max_calls": 4,
+  "retry_policy": "No retries or automatic repairs; all returned failures retained.",
+  "checks": [
+    "search document and paragraph",
+    "fetch found flag",
+    "search/fetch locator equality",
+    "fetch textual paragraph identity against official Vatican text"
+  ],
+  "classifications": [
+    "locator_match",
+    "locator_mismatch",
+    "fetch_not_found",
+    "target_not_returned",
+    "tool_error"
+  ],
+  "public_export": "Exact request and metadata fields, tool-returned text length and hash, short permitted excerpt at most 20 words per primary document; full text withheld pending rights review.",
+  "capture_boundary": "Application-level tool request/response visible to assistant; no provider transport logs or provider timestamp claims.",
+  "review": "No independent human or theological reviewer; no canonical CEC admission."
+}

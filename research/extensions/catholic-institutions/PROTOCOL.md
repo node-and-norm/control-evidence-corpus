@@ -1,10 +1,10 @@
 # Catholic Institutional AI Risk and Control Evidence Pilot
 
-**Research protocol 0.2.0 | Working design | 6 November 2026**  
+**Research protocol 0.3.0 | Main comparative design unfrozen | 6 November 2026**  
 **Research owner:** Node & Norm  
 **Host infrastructure:** Control Evidence Corpus (CEC), development research extension  
 **Study authority:** Independent Node & Norm research; no approval or endorsement from CDCF, Leonum, MIT, any diocese, or a Catholic institution is implied.  
-**Current state:** Unfrozen protocol. Eighteen source-located Catholic normative mapping candidates have been drafted and six Magisterium source-locator tool interactions recorded. None constitutes independently adjudicated Catholic risk/incident evidence, a safeguard test, or an ecclesial assessment. No Catholic risk records have been independently coded and no Catholic pilot evaluations have been completed.
+**Current state:** Source-verification pilot initiated with one bounded run. No Catholic safeguard test, independent normative review, or canonical empirical admission has been completed. The 18 mappings remain provisional. See Section 15 for the new run and capture limits.
 
 > **What this protocol is for.** It fixes the questions and boundaries we can specify before the risk and incident intake finishes. Sample selection, reviewer recruitment, quantitative thresholds, and confirmatory tests remain decisions to be made and logged before relevant data are coded or unblinded. Protocol amendments will be dated and explained.
 
@@ -87,7 +87,7 @@ The selected paragraphs support **18 researcher-authored, provisional source-to-
 
 **Acceptance test for a retrieved passage:** (1) record search query and exact result ID, title and URL; (2) fetch that exact ID; (3) inspect `found`, returned document title, author, reference, URL and opening passage; (4) compare search and fetch locators; (5) locate the same paragraph in the authoritative Vatican publication; (6) retain the matched status or record the discrepancy with no silent repair; (7) have a qualified reviewer assess the Catholic interpretation and institutional applicability independently of the machine retrieval. A source can be indexed for discovery while its retrieved paragraph remains excluded from a verified quotation or mapping.
 
-On 6 November 2026, an exploratory **six-interaction locator check** observed two consistent *Antiqua et Nova* search/fetch pairs, three *Magnifica Humanitas* search/fetch paragraph mismatches and one *Magnifica Humanitas* `fetch` result of `found=false` after a search result. These observations are retained in `data/magisterium-locator-audit.json` with exact IDs and URLs. They do not establish the frequency, mechanism or cause of an MCP problem. No provider defect claim or general reliability estimate follows. All mapped *Magnifica Humanitas* paragraphs rely on the Vatican original for their locators until a separate verified Magisterium fetch succeeds.
+On 6 November 2026, an exploratory **six-row selected locator comparison** observed two consistent *Antiqua et Nova* search/fetch pairs, three *Magnifica Humanitas* search/fetch paragraph mismatches and one *Magnifica Humanitas* `fetch` result of `found=false` after a search result. These observations are retained in `data/magisterium-locator-audit.json` with exact IDs and URLs. They do not establish the frequency, mechanism or cause of an MCP problem. No provider defect claim or general reliability estimate follows. All mapped *Magnifica Humanitas* paragraphs rely on the Vatican original for their locators until a separate verified Magisterium fetch succeeds.
 
 **Research boundary:** A Magisterium passage, a Vatican paragraph, an analyst's normative reading and a testable CEC control dimension occupy different evidentiary roles. *Antiqua et Nova* and *Magnifica Humanitas* establish a strong reason to investigate questions of dignity, oversight, responsibility, rights and remedy. They do not, by themselves, impose a specific software-control implementation or prove a technical safeguard effective. Canonical applicability, doctrinal interpretation and pastoral judgment require appropriately qualified independent review. Claims of compliance, sacramental validity, or diocesan authorization remain outside this pilot's remit.
 
@@ -163,3 +163,36 @@ CDCF C1–C8 can be used for a **clearly labeled internal readiness assessment**
 |---|---|---|---|
 | 0.2.0 | 2026-11-06 | Added 18 source-located provisional mappings for *Antiqua et Nova* and *Magnifica Humanitas*; specified Magisterium MCP source-fidelity and original-text verification protocol; retained six exploratory locator checks | Sources inspected; no independent normative review or Catholic control evaluation |
 | 0.1.0 | 2026-11-06 | Created an exploratory Catholic institutional extension to CEC with explicit comparison, normative review, risks and release gates | Planning only; no results |
+
+
+## 15. Development amendment: source-verification pilot and synchronized publication
+
+**Amendment date:** 6 November 2026. **Protocol edition:** 0.3.0, still unfrozen for the main comparative study. **Reading package:** 0.4.0-dev. This amendment preserves H1–H4, the two institutional settings, CEC's canonical schemas, and the existing independent-review gates.
+
+### Scope and prospective plan
+
+SV-20261106-001 is an exploratory source-verification run with two purposive targets: Antiqua et Nova paragraph 44 and Magnifica Humanitas paragraph 105. A local plan and SHA-256 were recorded before its new calls. This is not a registered confirmatory study. Prior locator anomalies were known. The plan allows two searches and one fetch per exact target, with no retries, identifier substitutions, or automatic repairs.
+
+The unit is a selected search/fetch pair, distinct from the number of search results, tool calls, documents, incidents, and controls. Classify each pair as locator_match, locator_mismatch, fetch_not_found, target_not_returned, or tool_error. A separate official-source check assesses numbered paragraph identity; it does not establish an independent theological judgment.
+
+### Capture and public evidence
+
+The run preserves exact application requests and displayed response fields. Search envelopes are normalized to returned_items; decorative display labels duplicate title and URL and are omitted. Timestamps record local serialization after tool return, not provider arrival or execution time. Provider request IDs and model snapshots remain unavailable. This is application-level evidence, not a raw transport recording.
+
+The full returned paragraph is excluded from public export pending redistribution review. The public projection retains document metadata, a SHA-256 of the returned text, text length, a short excerpt, and an omission explanation. An operator working copy is not an established long-term private archive; archival custody remains to be assigned. No secrets, private course transcript, sensitive pastoral data, or sealed holdout is published.
+
+### Recorded outcome and inference boundary
+
+The bounded run made four MCP calls: two searches and two fetches, without retries. One requested identifier returned found=false; the other fetch returned paragraph 90 instead of the search's paragraph 105. Neither selected pair supplied the requested verified passage through that pair. These are observed retrieval outcomes for two prior-informed targets, not a provider-wide reliability estimate, a causal diagnosis, or a Catholic institutional safeguard result.
+
+The six earlier locator rows remain a legacy selected summary, separate from this prospective capture. They must not be described as all historical API calls. Zero independent Catholic risk/incident records are admitted to CEC; zero Catholic safeguard evaluations or independent normative reviews are completed by this run.
+
+### Source-of-record and publication rule
+
+The active protocol is generated from archived protocol 0.2 and this amendment. The study manifest and five reading files are built from the same release inputs. The scoping chapter and source-run results are included in the HTML, notebook, and protocol reading versions. The PDF expands all sections; the notebook executes offline using embedded, labeled snapshots. No research APIs run when a reader opens it.
+
+Use a namespaced development tag for this extension, leaving the global CEC version unchanged. Keep the root README byte-identical; update the extension README and navigation only. Merge through a recorded pull request after repository and document checks. Preserve historical commits, make no force pushes, and remove only this workstream's branch after its changes are merged and recoverable. A development release is not an empirical release, ecclesial approval, or independent validation.
+
+### Next gates
+
+Resolve identifier/chunk semantics or conduct a separately planned replication. Obtain qualified review of a bounded subset of the 18 mappings. Reconcile an upstream source snapshot before selecting the first five institutional risk scenarios. Freeze the support rubric and comparison design before interpreting the main hypotheses. LangChain orchestration remains optional; one assistant using several tools is not a multi-agent study.

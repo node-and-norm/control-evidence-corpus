@@ -1,0 +1,18 @@
+{
+  "record_id": "02-fetch-an",
+  "run_id": "SV-20261106-001",
+  "tool": "Magisterium_AI.fetch",
+  "request": {
+    "id": "1"
+  },
+  "response": {
+    "found": false,
+    "id": "1"
+  },
+  "recorded_at": "2026-11-06T21:27:04.130721+00:00",
+  "timestamp_kind": "local_record_creation_after_tool_return",
+  "provider_timestamp": null,
+  "provider_request_id": null,
+  "tool_source_ref": null,
+  "capture_scope": "Exact request and displayed response fields; search envelope normalized to returned_items; not transport bytes. No source paragraph text returned."
+}

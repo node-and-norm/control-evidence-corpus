@@ -1,0 +1,23 @@
+{
+  "record_id": "01-search-an",
+  "run_id": "SV-20261106-001",
+  "tool": "Magisterium_AI.search",
+  "request": {
+    "query": "Antiqua et Nova paragraph 44 ultimate responsibility human decision-makers accountability each stage"
+  },
+  "response": {
+    "returned_items": [
+      {
+        "id": "1",
+        "url": "https://www.magisterium.com/docs/429efa31-df0f-455d-b7e1-c104ed929e3b/ref/44",
+        "title": "Antiqua et Nova (The Old and the New): Note on the Relationship Between Artificial Intelligence and Human Intelligence"
+      }
+    ]
+  },
+  "recorded_at": "2026-11-06T21:27:04.130432+00:00",
+  "timestamp_kind": "local_record_creation_after_tool_return",
+  "provider_timestamp": null,
+  "provider_request_id": null,
+  "tool_source_ref": "turn112file0",
+  "capture_scope": "Exact request and displayed response fields; search envelope normalized to returned_items; not transport bytes. No source paragraph text returned."
+}

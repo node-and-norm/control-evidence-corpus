@@ -1,8 +1,11 @@
 # Evidence workbench 0.3.0
 
+**Current reading edition:** [Catholic study 0.4.0-dev](../README.md). This workbench is a retained methodological companion. Its historical byte checks now use `archive/v0.2`.
+
+
 **Start with [Follow the evidence](EVIDENCE_REVIEW.md).** The [repository notebook](repository-review.ipynb) is an executable reading index with saved outputs. The generator produces an expanded, self-contained `evidence-review.ipynb` and an accessible `evidence-review.html` from the same review text and inventory. Generated reading editions are also supplied as conversation attachments; they are not hosted as a live website by this branch.
 
-This companion does not replace or freeze [pilot protocol 0.2.0](../PROTOCOL.md). The [original visual study](../study-report.html), 18 provisional Catholic mappings, canonical CEC design, and upstream ingestion remain unchanged.
+This companion does not replace or freeze [archived pilot protocol 0.2.0](../archive/v0.2/PROTOCOL.md). The [original visual study](../archive/v0.2/study-report.html), 18 provisional Catholic mappings, canonical CEC design, and upstream ingestion remain unchanged.
 
 ## Inspect the records
 

@@ -3,40 +3,35 @@
   "short_title": "A Catholic institutional AI risk study",
   "tagline": "From documented technical risks to evidence of institutional control.",
   "id": "CEC-CATHOLIC-PILOT-001",
-  "version": "0.2.0",
+  "version": "0.4.0-dev",
   "date": "2026-11-06",
-  "status": "Working research design · Catholic source crosswalk drafted",
+  "status": "Development release: source-verification pilot started; independent research gates remain open",
   "owner": "Node & Norm",
-  "snapshot_label": "Source-verification snapshot · 6 November 2026",
+  "snapshot_label": "Pilot initiation snapshot · 6 November 2026",
   "lead": "This study asks a specific question: when a Catholic institution uses AI, what evidence would justify confidence that a relevant safeguard actually worked?",
   "scope_statement": "Begin with pastoral and catechetical AI assistants and Catholic educational systems. Treat healthcare, charity operations, and diocesan administration as possible later extensions, subject to research review.",
-  "warning": "Planning document. Eighteen normative source-to-evidence candidates have been drafted but are unreviewed; zero Catholic empirical cases admitted; no Catholic safeguard evaluations completed. Magisterium citation checks are connector smoke tests, not findings about deployed AI controls.",
+  "warning": "One bounded source-verification run is recorded. Its two selected search/fetch pairs did not yield their requested verified passages. Eighteen normative mappings remain unreviewed; zero Catholic empirical cases are admitted and no Catholic safeguard evaluation is completed.",
   "north_star": "A documented risk is a reason to investigate. It is not proof that harm occurred. A written safeguard is a claim. Its effectiveness must be supported by evidence.",
   "current": [
     {
-      "value": "0.2.0",
-      "label": "Protocol version",
-      "note": "Draft, not frozen"
+      "value": "0.3.0",
+      "label": "Protocol edition",
+      "note": "Main comparative protocol remains unfrozen"
+    },
+    {
+      "value": "1",
+      "label": "Source-verification run",
+      "note": "Two targets; four MCP calls; no retries"
     },
     {
       "value": "0",
-      "label": "Catholic empirical cases admitted",
-      "note": "No independent coding completed"
-    },
-    {
-      "value": "0",
-      "label": "Catholic safeguard tests completed",
-      "note": "Experimental design pending"
-    },
-    {
-      "value": "2",
-      "label": "Initial institutional settings",
-      "note": "Pastoral AI and education"
+      "label": "Catholic safeguard studies completed",
+      "note": "Independent research gates remain open"
     },
     {
       "value": "18",
-      "label": "Source-to-CEC mappings",
-      "note": "Researcher draft; no independent Catholic review"
+      "label": "Source mapping candidates",
+      "note": "Qualified Catholic review pending"
     }
   ],
   "targets": [
@@ -199,10 +194,11 @@
       "state": "in_progress",
       "subtitle": "Define the question before data selection",
       "actions": [
-        "Protocol v0.1.0 drafted",
+        "Protocol 0.3.0 includes a bounded source-verification amendment; the main comparison remains unfrozen.",
         "Contribution and competing explanation explicitly stated",
         "Source, rights and reviewer decisions still open",
-        "Review a 2-document / 18-paragraph Catholic source-to-CEC crosswalk and record Magisterium locator discrepancies."
+        "Review a 2-document / 18-paragraph Catholic source-to-CEC crosswalk and record Magisterium locator discrepancies.",
+        "SV-20261106-001 completed with two unresolved target retrievals; source capture and limitations are retained."
       ],
       "deliverable": "Protocol, source register, 18 unreviewed mapping candidates, source-locator audit, open decisions",
       "gate": "G0 · An approved, frozen protocol with accountable reviewers and explicit amendment process",
@@ -220,7 +216,7 @@
       ],
       "deliverable": "Auditable candidate frame, source ledger and exclusions",
       "gate": "G1 · Source rights, eligibility rules and frame coverage documented",
-      "dependency": "Await existing website ingestion and reconciliation"
+      "dependency": "Requires a deliberately versioned upstream snapshot; no new ingestion is triggered by this release."
     },
     {
       "n": "02",
@@ -413,6 +409,11 @@
   "changes": [
     {
       "date": "2026-11-06",
+      "version": "0.4.0-dev",
+      "description": "Consolidated the scoping chapter, evidence workbench, course alignment and first prospectively planned source-verification run into the five reading files. Preserved failed retrievals and separate research gates."
+    },
+    {
+      "date": "2026-11-06",
       "version": "0.2.0",
       "description": "Added Antiqua et Nova and Magnifica Humanitas source-to-CEC mapping, source-fidelity test record, verified Vatican links, and a Magisterium evidence-admission safeguard. No empirical Catholic findings."
     },
@@ -426,7 +427,7 @@
     "crosswalk_path": "data/normative-crosswalk.json",
     "audit_path": "data/magisterium-locator-audit.json",
     "magisterium_purpose": "External source discovery with provenance; never sole doctrinal authority",
-    "verification_status": "18 development mappings to original Vatican paragraphs. Several Magisterium search/fetch locator discrepancies logged and unresolved.",
+    "verification_status": "Eighteen provisional mappings; legacy six-row locator summary retained separately from the new four-call run SV-20261106-001.",
     "qualified_review": "Pending. These mappings must not be used as official doctrinal interpretations.",
     "source_hierarchy": [
       "Official Vatican publication and exact paragraph",
@@ -435,5 +436,39 @@
       "Qualified reviewer assessment of applicability",
       "Separately validated technical control result (future)"
     ]
+  },
+  "release": {
+    "version": "0.4.0-dev",
+    "protocol_version": "0.3.0",
+    "tag": "catholic-pilot-v0.4.0-dev",
+    "date": "2026-11-06",
+    "baseline_commit": "0beecef8c4dfe5d85167f8948839044bfe8487c1",
+    "root_readme_blob_sha1": "27ce767242321634d9048eea87ffa31697e3877c",
+    "run": "SV-20261106-001",
+    "status": "Development release: source-verification pilot started; independent research gates remain open",
+    "main_hypotheses_changed": false,
+    "normative_review_status": "pending",
+    "cec_canonical_admissions": 0,
+    "safeguard_evaluations_completed": 0
+  },
+  "pilot_run": {
+    "id": "SV-20261106-001",
+    "kind": "source_verification",
+    "pairs": [
+      {
+        "target": "AN-44",
+        "search_locator": "44",
+        "fetched_locator": null,
+        "outcome": "fetch_not_found"
+      },
+      {
+        "target": "MH-105",
+        "search_locator": "para-105",
+        "fetched_locator": "para-90",
+        "outcome": "locator_mismatch"
+      }
+    ],
+    "mcp_calls": 4,
+    "independent_review": false
   }
 }

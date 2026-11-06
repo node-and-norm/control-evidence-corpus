@@ -26,3 +26,8 @@
 - Artifact publication status, approval responsibility, correction procedure and exact citation version.
 
 A later amendment must append a dated entry naming the affected sections, reason, decision owner, effect on comparability, and whether the change occurred before or after observing relevant data.
+
+
+## 0.4.0-dev integration decision | 6 November 2026
+
+The maintainer authorized repository integration, development release and branch cleanup. This operational authorization does not constitute independent methodological or ecclesial review. Preserve the main README and canonical study. Consolidate the current reading files through one builder, archive the v0.2 inputs, and record SV-20261106-001 without retry or silent repair. Source findings are separate from future safeguard findings. No other active branch or website ingestion is changed. The first run was performed by one assistant with tools; no multi-agent or independent human research panel is claimed.
