@@ -1,31 +1,32 @@
 # Catholic Institutional AI Risk and Control Evidence Pilot
 
-**Status: exploratory research design, not an approved empirical release.**
+**Reading package 0.4.0-dev | Protocol 0.3.0 | Source-verification pilot initiated**
 
-This directory is a bounded research extension of the [Node & Norm Control Evidence Corpus (CEC)](https://github.com/node-and-norm/control-evidence-corpus). CEC's general-purpose empirical study, existing schemas and release gates remain unchanged. This extension develops a Catholic institutional risk and control-evidence pilot, initially focused on pastoral AI assistants and Catholic education.
+This bounded CEC extension studies the evidence behind AI safeguards in pastoral assistance and Catholic education. The general CEC charter, schemas and independent empirical study remain unchanged. No institutional endorsement or independently validated safeguard finding is claimed.
 
-## Read the study
+## Read the current study
 
-1. [Visual HTML study report and roadmap](study-report.html) — the primary reading experience for institutional leaders, theologians and reviewers. Open locally in any browser or via GitHub's HTML download; GitHub's file viewer does not render HTML as a live page.
-2. [Jupyter study guide](study-guide.ipynb) — an annotated companion with code-independent figures and optional Python verification cells.
-3. [Research protocol v0.2.0](PROTOCOL.md) — governing working draft, hypothesis, sampling restrictions, comparison design and decision gates.
-4. [Study manifest](study.json) — versioned status, phases, questions and links used to regenerate presentation artifacts.
-5. [Pilot decision log](DECISIONS.md) — open choices and explicit amendments.
-6. [Catholic normative crosswalk](data/normative-crosswalk.json) — 18 paragraph-located candidate source concepts, mapped to CEC evidence questions; qualified review pending.
-7. [Magisterium connector locator audit](data/magisterium-locator-audit.json) — six exploratory search/fetch checks, including unresolved mismatches. Not a general reliability assessment.
+| Reader | Start here |
+| :--- | :--- |
+| Catholic leaders and general readers | [Visual study and roadmap](study-report.html), or the [PDF reading copy](reading/NodeNorm_Study_v0_4_0.pdf) |
+| Researchers and reviewers | [Self-contained Jupyter study](study-guide.ipynb), with offline results reconstruction |
+| Methodological scrutiny | [Protocol 0.3.0](PROTOCOL.md) and [browser-readable protocol](protocol.html) |
+| Source and theological scrutiny | [Scoping chapter](SCOPING.md), [18 provisional mappings](data/normative-crosswalk.json), and [captured source run](runs/SV-20261106-001/capture.json) |
 
-## Maintenance and generation
+GitHub displays HTML source rather than a live webpage. Save the HTML and open it in a browser, or use the PDF. The [development release](https://github.com/node-and-norm/control-evidence-corpus/releases/tag/catholic-pilot-v0.4.0-dev) supplies the five reading files and complete package. A release is a versioned development snapshot, not an empirical approval.
 
-Run `python scripts/build_study.py` from this directory to regenerate `study-report.html` and `study-guide.ipynb` from the versioned `study.json` and protocol. The builder uses Python's standard library only. Changes to methods require a reviewed update of `PROTOCOL.md`; regenerate the reader artifacts and record all substantive changes in `DECISIONS.md`.
+## Current evidence
 
-The builder also reads the two versioned `data/` files for the Catholic-source and citation-integrity section. The report is static. It does **not** pull data from the Node & Norm homepage, infer completion, synchronize with GitHub, or claim a reviewed result. A future source adapter must require deliberate source/version selection, rights review, and explicit status transitions. A manually entered roadmap status is always labeled as such.
+Run SV-20261106-001 recorded two searches and two fetches without retries. The Antiqua et Nova target did not resolve by its returned identifier; the Magnifica Humanitas target returned paragraph 90 instead of 105. These two prior-informed checks provide no population reliability estimate or provider-defect attribution. The capture includes public metadata and explicit source-text omissions.
 
-## Research boundary
+The 18 normative mappings remain subject to qualified independent review. Zero Catholic empirical cases have been admitted to CEC and no Catholic safeguard evaluation has been completed. The next gates are source clarification, qualified mapping review, and five scoped risk scenarios from a versioned upstream snapshot.
 
-The homepage map is discovery infrastructure. Risk records are possibilities; incident reports are documented accounts; controlled evaluations are laboratory evidence; CEC event-control annotations are separately gated empirical conclusions. Normative citations are subject to qualified Catholic review. These roles cannot be silently combined.
+## Evidence and maintenance
 
-**No empirical Catholic risk or incident records were admitted into CEC as part of this extension.**
+The [evidence workbench](evidence-workbench/README.md) and [course alignment](evidence-workbench/course-alignment/README.md) remain supporting material. [Release inputs](release.json), [method amendment](METHOD_AMENDMENT.md), [decision record](DECISIONS.md), [change history](CHANGELOG.md), and [release notes](RELEASE_NOTES.md) make the current state explicit. The unchanged [v0.2 package](archive/v0.2/README.md) preserves earlier bytes and supports historical checks.
 
-## Catholic source hierarchy
+From this directory, install `requirements-reading.txt` in an isolated environment, install Chromium for Playwright, then run `python scripts/build_release.py --execute --pdf --package`. This regenerates the five reading files without research API calls. `scripts/build_study.py` delegates to that same builder. Run `python scripts/test_release.py` for integrity checks. Generated outputs must accompany their source update; do not hand-edit them independently.
 
-Use the official Vatican publications of *Antiqua et Nova* (2025) and *Magnifica Humanitas* (2026) as the authoritative textual references. Use Magisterium AI as a discovery and source-triage tool only when retrieved identifiers and paragraph locators can be checked. Preserve failed or inconsistent retrievals. Normative interpretation and proposed CEC evidence questions remain provisional until qualified independent review.
+The PDF is a reading edition; the notebook embeds its versioned inputs and runs offline. Checksums establish byte correspondence, not truth or reviewer independence. The public export excludes credentials, sensitive institutional data, and full source text with unresolved redistribution rights. The operator working copy has no established long-term archive custodian.
+
+The root CEC README and Node & Norm website ingestion are preserved. Only this extension and its documentation navigation change. Independent research and ecclesial-review gates remain open.

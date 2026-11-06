@@ -1,0 +1,90 @@
+name: Catholic study reading release
+on:
+  push:
+    branches: [main, research/catholic-institutional-ai-pilot]
+    paths:
+      - 'research/extensions/catholic-institutions/**'
+      - '.github/workflows/catholic-study.yml'
+  pull_request:
+    paths:
+      - 'research/extensions/catholic-institutions/**'
+      - '.github/workflows/catholic-study.yml'
+permissions:
+  contents: read
+concurrency:
+  group: catholic-study-${{ github.ref }}
+  cancel-in-progress: false
+jobs:
+  verify-and-package:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    permissions:
+      contents: write
+    env:
+      EXT: research/extensions/catholic-institutions
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          ref: ${{ github.event_name == 'pull_request' && github.event.pull_request.head.sha || github.sha }}
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install pinned reading dependencies
+        run: |
+          python -m pip install -r requirements.txt -r "$EXT/requirements-reading.txt"
+          python -m playwright install --with-deps chromium
+      - name: Build, execute offline notebook and render the five reading files
+        run: |
+          python "$EXT/scripts/build_release.py" --execute --pdf --package
+          python "$EXT/scripts/finalize_navigation.py"
+          python "$EXT/scripts/test_release.py"
+          python "$EXT/evidence-workbench/scripts/check_evidence.py"
+      - name: Check the complete repository
+        run: |
+          python scripts/build_schemas.py
+          git diff --exit-code -- schemas
+          python scripts/build_examples.py
+          git diff --exit-code -- examples
+          python scripts/check_docs.py
+          python scripts/validate.py examples/synthetic.json
+          python -m unittest discover -s tests -v
+          python scripts/export.py examples/synthetic.json --output build/synthetic-export.json
+          (cd experiments/us-control-sandbox && python -B -m unittest discover -s tests -v && python -B verify_archive.py && python -B build_evidence_appendices.py --check --output evidence-appendices/v0.1)
+      - name: Verify stable generated text on reviewed commits
+        if: github.event_name == 'pull_request' || github.ref == 'refs/heads/main'
+        run: |
+          git diff --exit-code -- "$EXT/study.json" "$EXT/PROTOCOL.md" "$EXT/study-report.html" "$EXT/protocol.html" "$EXT/study-guide.ipynb" "$EXT/DECISIONS.md"
+      - name: Repackage after navigation and record the environment
+        run: |
+          python -m pip freeze > "$EXT/validation/environment.txt"
+          python -c "import runpy; runpy.run_path('$EXT/scripts/build_release.py')['package']()"
+      - name: Synchronize generated reading artifacts on the development branch
+        if: github.event_name == 'push' && github.ref == 'refs/heads/research/catholic-institutional-ai-pilot'
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add "$EXT/PROTOCOL.md" "$EXT/DECISIONS.md" "$EXT/study.json" "$EXT/study-report.html" "$EXT/protocol.html" "$EXT/study-guide.ipynb" "$EXT/assets/workflow.svg"
+          git add "$EXT/evidence-workbench/repository-review.ipynb" "$EXT/evidence-workbench/README.md" "$EXT/EVIDENCE_INDEX.md" docs/README.md
+          git add "$EXT/reading/"*.html "$EXT/reading/"*.md "$EXT/reading/"*.ipynb "$EXT/reading/"*.pdf "$EXT/reading/SHA256_MANIFEST.json"
+          git add "$EXT/runs/SV-20261106-001/"*.json "$EXT/validation/release-checks.json" "$EXT/validation/environment.txt"
+          if ! git diff --cached --quiet; then
+            git commit -m 'Research: synchronize tested Catholic study reading artifacts 0.4.0-dev'
+            git push origin HEAD:research/catholic-institutional-ai-pilot
+          fi
+      - uses: actions/upload-artifact@v4
+        with:
+          name: catholic-study-reading-0.4.0-dev
+          path: research/extensions/catholic-institutions/reading/*
+          if-no-files-found: error
+      - name: Publish namespaced development prerelease after verified main merge
+        if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          TAG=$(python -c "import json; print(json.load(open('$EXT/release.json'))['tag'])")
+          if gh release view "$TAG" --repo "$GITHUB_REPOSITORY" >/dev/null 2>&1; then
+            echo 'Release already exists. Preserve it; a new version is required for changed artifacts.'
+            exit 0
+          fi
+          gh release create "$TAG" "$EXT/reading/NodeNorm_Study_v0_4_0.pdf" "$EXT/reading/NodeNorm_Study_v0_4_0.html" "$EXT/reading/NodeNorm_Notebook_v0_4_0.ipynb" "$EXT/reading/NodeNorm_Protocol_v0_3_0.html" "$EXT/reading/NodeNorm_Protocol_v0_3_0.md" "$EXT/reading/NodeNorm_Catholic_Pilot_v0_4_0.zip" "$EXT/reading/SHA256_MANIFEST.json" --repo "$GITHUB_REPOSITORY" --target "$GITHUB_SHA" --prerelease --latest=false --title 'Catholic pilot 0.4.0-dev: source verification and synchronized reading files' --notes-file "$EXT/RELEASE_NOTES.md"

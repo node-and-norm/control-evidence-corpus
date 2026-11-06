@@ -1,0 +1,89 @@
+{
+  "format_version": "1.0",
+  "plan": {
+    "run_id": "SV-20261106-001",
+    "kind": "exploratory_source_verification",
+    "plan_version": "1.0",
+    "scope": "Two targeted search/fetch pairs, not a sampled reliability study or safeguard evaluation",
+    "plan_recorded_at": "2026-11-06T21:26:24.889733+00:00",
+    "prior_exposure": "Earlier AN and MH locator summaries were known. Targets are purposive rechecks; not blind or confirmatory.",
+    "queries": [
+      {"target": "AN-44", "query": "Antiqua et Nova paragraph 44 ultimate responsibility human decision-makers accountability each stage"},
+      {"target": "MH-105", "query": "Magnifica Humanitas paragraph 105 artificial intelligence human responsibility accountability"}
+    ],
+    "selection_rule": "Use the first result for the exact requested document and paragraph; if no exact locator exists, record target_not_returned and fetch no substitute.",
+    "max_calls": 4,
+    "retry_policy": "No retries or automatic repairs; all returned failures retained.",
+    "checks": ["search document and paragraph", "fetch found flag", "search/fetch locator equality", "fetch textual paragraph identity against official Vatican text"],
+    "classifications": ["locator_match", "locator_mismatch", "fetch_not_found", "target_not_returned", "tool_error"],
+    "public_export": "Exact request and metadata fields, tool-returned text length and hash, short permitted excerpt at most 20 words per primary document; full text withheld pending rights review.",
+    "capture_boundary": "Application-level tool request/response visible to assistant; no provider transport logs or provider timestamp claims.",
+    "review": "No independent human or theological reviewer; no canonical CEC admission."
+  },
+  "plan_sha256": "db401f5a3c6a036e7e0e0bb0595559921d8f70c8fb5ae00d958a746679c159bb",
+  "records": [
+    {
+      "record_id": "01-search-an", "run_id": "SV-20261106-001", "tool": "Magisterium_AI.search",
+      "request": {"query": "Antiqua et Nova paragraph 44 ultimate responsibility human decision-makers accountability each stage"},
+      "response": {"returned_items": [{"id": "1", "url": "https://www.magisterium.com/docs/429efa31-df0f-455d-b7e1-c104ed929e3b/ref/44", "title": "Antiqua et Nova (The Old and the New): Note on the Relationship Between Artificial Intelligence and Human Intelligence"}]},
+      "recorded_at": "2026-11-06T21:27:04.130432+00:00", "timestamp_kind": "local_record_creation_after_tool_return", "provider_timestamp": null, "provider_request_id": null, "tool_source_ref": "turn112file0",
+      "capture_scope": "Exact request and displayed response fields; search envelope normalized to returned_items; not transport bytes. No source paragraph text returned."
+    },
+    {
+      "record_id": "02-fetch-an", "run_id": "SV-20261106-001", "tool": "Magisterium_AI.fetch",
+      "request": {"id": "1"}, "response": {"found": false, "id": "1"},
+      "recorded_at": "2026-11-06T21:27:04.130721+00:00", "timestamp_kind": "local_record_creation_after_tool_return", "provider_timestamp": null, "provider_request_id": null, "tool_source_ref": null,
+      "capture_scope": "Exact request and displayed response fields; search envelope normalized to returned_items; not transport bytes. No source paragraph text returned."
+    },
+    {
+      "record_id": "03-search-mh", "run_id": "SV-20261106-001", "tool": "Magisterium_AI.search",
+      "request": {"query": "Magnifica Humanitas paragraph 105 artificial intelligence human responsibility accountability"},
+      "response": {"returned_items": [
+        {"id":"4b79b1d4-1b78-4a43-8db6-06a9f3bf2c31","url":"https://www.magisterium.com/docs/ed397808-82f3-43e6-bf35-8f3f09fbdccc/ref/para-105","title":"Magnifica Humanitas"},
+        {"id":"fdae90f0-06af-4fe0-83c2-98a3dad493e8","url":"https://www.magisterium.com/docs/ed397808-82f3-43e6-bf35-8f3f09fbdccc/ref/para-181","title":"Magnifica Humanitas"},
+        {"id":"80d1eb86-52b1-4bcf-a354-636797be87ad","url":"https://www.magisterium.com/docs/ed397808-82f3-43e6-bf35-8f3f09fbdccc/ref/para-233","title":"Magnifica Humanitas"},
+        {"id":"1984dfac-033f-4796-9d51-abcaa47a2226","url":"https://www.magisterium.com/docs/ed397808-82f3-43e6-bf35-8f3f09fbdccc/ref/para-209","title":"Magnifica Humanitas"},
+        {"id":"2698efc7-af6d-4235-bc43-588978453e1c","url":"https://www.magisterium.com/docs/429efa31-df0f-455d-b7e1-c104ed929e3b/ref/44","title":"Antiqua et Nova (The Old and the New): Note on the Relationship Between Artificial Intelligence and Human Intelligence"},
+        {"id":"712f5bf7-3606-4484-8e69-d767b088b21a","url":"https://www.magisterium.com/docs/e053b030-7998-4c4d-96cb-1fe261db5d6c/ref/page1","title":"Presentation and promulgation of the Encyclical Letter “Magnifica humanitas” (25 May 2026)"},
+        {"id":"153e923f-1775-4ab5-989d-79c4f68f7b92","url":"https://www.magisterium.com/docs/429efa31-df0f-455d-b7e1-c104ed929e3b/ref/108","title":"Antiqua et Nova (The Old and the New): Note on the Relationship Between Artificial Intelligence and Human Intelligence"},
+        {"id":"22267595-119d-46fd-a4ad-8fa31576a28a","url":"https://www.magisterium.com/docs/1c106e1e-582a-46b6-aba0-9fb92cc9d437/ref/page1","title":"To the Participants in the Meeting Promoted by the Pontifical Academy for Life (30 October 2026)"},
+        {"id":"85e16b37-2333-4f67-9f1c-5e0ac8dcda88","url":"https://www.magisterium.com/docs/429efa31-df0f-455d-b7e1-c104ed929e3b/ref/39","title":"Antiqua et Nova (The Old and the New): Note on the Relationship Between Artificial Intelligence and Human Intelligence"},
+        {"id":"2d78c232-188f-40ea-a918-468242f6eac0","url":"https://www.magisterium.com/docs/ed397808-82f3-43e6-bf35-8f3f09fbdccc/ref/para-15","title":"Magnifica Humanitas"}
+      ]},
+      "recorded_at": "2026-11-06T21:28:36.466812+00:00", "timestamp_kind": "local_record_creation_after_tool_return", "provider_timestamp": null, "provider_request_id": null, "tool_source_ref": "turn114file0 through turn114file9",
+      "capture_scope": "Exact request and displayed response fields; search envelope normalized; fetch text projected under rights limits; not transport bytes."
+    },
+    {
+      "record_id": "04-fetch-mh", "run_id": "SV-20261106-001", "tool": "Magisterium_AI.fetch",
+      "request": {"id":"4b79b1d4-1b78-4a43-8db6-06a9f3bf2c31"},
+      "response": {
+        "found":true,"id":"4b79b1d4-1b78-4a43-8db6-06a9f3bf2c31","url":"https://www.magisterium.com/docs/ed397808-82f3-43e6-bf35-8f3f09fbdccc/ref/para-90","title":"Magnifica Humanitas",
+        "metadata":{"author":"Pope Leo XIV","ref":"para-90"},
+        "text_sha256":"e94ffe7a7d408ec862ce9afc582f6c7dea5b06dd6016b3963a277703cdbe2e5b","text_character_count":1109,
+        "text_excerpt":"90. Having recalled the principles that shine a light on Social Doctrine, I would",
+        "text_omission_reason":"Full returned paragraph retained in operator working copy; public redistribution rights not established. Metadata, hash and short excerpt published."
+      },
+      "recorded_at":"2026-11-06T21:28:36.466931+00:00","timestamp_kind":"local_record_creation_after_tool_return","provider_timestamp":null,"provider_request_id":null,"tool_source_ref":"turn115file0",
+      "capture_scope":"Exact request and displayed response fields; search envelope normalized; fetch text projected under rights limits; not transport bytes."
+    }
+  ],
+  "official_checks": {
+    "run_id":"SV-20261106-001","checked_at":"2026-11-06T21:28:36.467017+00:00",
+    "method":"Assistant inspection of official web text and numbered paragraph boundaries; no full-document byte comparison or qualified normative review.",
+    "checks":[
+      {"document":"Antiqua et Nova","official_url":"https://www.vatican.va/roman_curia/congregations/cfaith/documents/rc_ddf_doc_20250128_antiqua-et-nova_en.html","paragraph":44,"observation":"Requested paragraph is present in the official document. No fetched body is available to compare.","source_reference":"turn471590view0","result":"target_exists_fetch_unresolved"},
+      {"document":"Magnifica Humanitas","official_url":"https://www.vatican.va/content/leo-xiv/en/encyclicals/documents/20260515-magnifica-humanitas.html","paragraphs":[90,105],"observation":"Returned passage opening corresponds to paragraph 90; requested paragraph 105 is a distinct numbered paragraph.","source_references":["turn471590view1","turn471590view2"],"result":"wrong_target_paragraph"}
+    ],
+    "web_acquisition_log":[{"action":"open","targets":["AN official English document","MH official English document"]},{"action":"find","patterns":["44. in AN","105. in MH","90. in MH"]}],
+    "web_log_scope":"Action descriptions and source references; provider transport and complete HTML not retained."
+  },
+  "reported_results": {
+    "run_id":"SV-20261106-001","status":"completed_with_unresolved_targets","kind":"exploratory_source_verification","plan_sha256":"db401f5a3c6a036e7e0e0bb0595559921d8f70c8fb5ae00d958a746679c159bb",
+    "queries":2,"mcp_calls":4,"search_results_returned":11,"selected_targets":2,"fetches":2,"retries":0,
+    "counts":{"locator_match":0,"locator_mismatch":1,"fetch_not_found":1},
+    "results":[{"target":"AN-44","selected_id":"1","search_locator":"44","fetched_locator":null,"outcome":"fetch_not_found","finding":"The exact returned identifier did not resolve in this fetch."},{"target":"MH-105","selected_id":"4b79b1d4-1b78-4a43-8db6-06a9f3bf2c31","search_locator":"para-105","fetched_locator":"para-90","outcome":"locator_mismatch","finding":"The fetch returned a different numbered paragraph."}],
+    "conclusion":"Neither selected target produced a verified requested passage through its search/fetch pair in this run. Both failures were retained.",
+    "limits":["Two purposive targets with prior exposure, one run and no independent reviewer.","No provider-defect attribution, population reliability estimate or doctrinal assessment.","Full returned text is withheld from public export pending rights review.","No Catholic institutional incident or safeguard experiment; no canonical CEC admission."],
+    "next_action":"Check identifier/chunk semantics with provider documentation or a separate approved replication; qualified source-mapping review remains pending."
+  }
+}
