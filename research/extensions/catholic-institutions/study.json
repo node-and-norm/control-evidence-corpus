@@ -1,0 +1,399 @@
+{
+  "project": "Catholic Institutional AI Risk & Control Evidence Pilot",
+  "short_title": "A Catholic institutional AI risk study",
+  "tagline": "From documented technical risks to evidence of institutional control.",
+  "id": "CEC-CATHOLIC-PILOT-001",
+  "version": "0.1.0",
+  "date": "2026-11-06",
+  "status": "Working research design",
+  "owner": "Node & Norm",
+  "snapshot_label": "Planning snapshot · 6 November 2026",
+  "lead": "This study asks a specific question: when a Catholic institution uses AI, what evidence would justify confidence that a relevant safeguard actually worked?",
+  "scope_statement": "Begin with pastoral and catechetical AI assistants and Catholic educational systems. Treat healthcare, charity operations, and diocesan administration as possible later extensions, subject to research review.",
+  "warning": "Planning document. No Catholic pilot cases have been independently coded, no experiments conducted for this extension, and no ecclesial or external approval is implied.",
+  "north_star": "A documented risk is a reason to investigate. It is not proof that harm occurred. A written safeguard is a claim. Its effectiveness must be supported by evidence.",
+  "current": [
+    {
+      "value": "0.1.0",
+      "label": "Protocol version",
+      "note": "Draft, not frozen"
+    },
+    {
+      "value": "0",
+      "label": "Catholic pilot cases admitted",
+      "note": "No independent coding completed"
+    },
+    {
+      "value": "0",
+      "label": "Catholic evaluations completed",
+      "note": "Experimental design pending"
+    },
+    {
+      "value": "2",
+      "label": "Initial institutional settings",
+      "note": "Pastoral AI and education"
+    }
+  ],
+  "targets": [
+    {
+      "value": "20–25",
+      "label": "Risk scenarios",
+      "note": "Candidate, source-traceable study records"
+    },
+    {
+      "value": "5–10",
+      "label": "Incident records",
+      "note": "Direct Catholic and external analogues kept distinct"
+    },
+    {
+      "value": "3–5",
+      "label": "Controlled evaluations",
+      "note": "Frozen test methods and retained negative results"
+    }
+  ],
+  "primary_question": "Can a source-traceable, event-control evidence method improve the support and reproducibility of AI risk and safeguard assessments in Catholic institutional settings, compared with simpler narrative and checklist representations?",
+  "contribution": "A bounded, testable crosswalk connecting general AI failure mechanisms, Catholic institutional workflows, source-located obligations, candidate controls, and what independent reviewers can establish from surviving evidence. The added value must be demonstrated against simpler representations.",
+  "alternative": "A source-linked narrative or a clear checklist may achieve comparable reconstruction with much less effort. If so, the additional CEC structure must be narrowed or justified by another measured benefit.",
+  "hypotheses": [
+    {
+      "id": "H1",
+      "category": "Candidate primary",
+      "title": "Better-supported reconstruction",
+      "claim": "CEC-style event-control records will reduce unsupported categorical conclusions against an uncertainty-aware narrative and checklist, when all reviewers receive identical source material.",
+      "measure": "Unsupported yes/no conclusions per applicable control opportunity; also unresolved-state retention, traceability and reviewer burden.",
+      "challenge": "Comparable outcomes at lower cost for simpler representations would disconfirm practical advantage."
+    },
+    {
+      "id": "H2",
+      "category": "Exploratory",
+      "title": "Reliable Catholic contextualization",
+      "claim": "Independent technical and qualified Catholic reviewers can consistently identify which institutional obligations and workflows are implicated by a documented technical risk.",
+      "measure": "Independent agreement, retained disagreements, unclassifiable cases and revision costs.",
+      "challenge": "Unstable categories or interpretive disagreements may make the crosswalk unsuitable for empirical use."
+    },
+    {
+      "id": "H3",
+      "category": "Exploratory",
+      "title": "Testable safeguard response",
+      "claim": "A specified candidate safeguard reduces a frozen failure outcome against a defined baseline within a controlled test setting.",
+      "measure": "Observed failures, missed benign requests, false positives, invalid responses and uncertainty across conditions.",
+      "challenge": "Inconsistent, trivial, or context-dependent differences limit assurance claims."
+    },
+    {
+      "id": "H4",
+      "category": "Descriptive",
+      "title": "What public evidence cannot settle",
+      "claim": "Some institutional control questions remain unresolved because reports omit configuration, authority, deployment or downstream records.",
+      "measure": "Counts of unknown, not reported, not observable and conflicting states under a fixed retrieval procedure.",
+      "challenge": "Cannot infer actual absence of a safeguard from missing records."
+    }
+  ],
+  "pipeline": [
+    {
+      "number": "01",
+      "title": "Discover",
+      "subtitle": "Existing homepage map",
+      "description": "MIT risk records, incident candidates and governance links. These are discovery inputs, not validated study cases.",
+      "status": "Existing upstream workflow"
+    },
+    {
+      "number": "02",
+      "title": "Screen",
+      "subtitle": "Catholic relevance and source rights",
+      "description": "Retain raw IDs, snapshot dates, exclusion reasons, source dependence, technical mechanism and institutional context.",
+      "status": "To design"
+    },
+    {
+      "number": "03",
+      "title": "Review",
+      "subtitle": "Independent expert judgment",
+      "description": "Separate technical classifications from canonical or theological interpretations. Preserve disagreements and unknowns.",
+      "status": "Not started"
+    },
+    {
+      "number": "04",
+      "title": "Reconstruct",
+      "subtitle": "CEC evidence workbench",
+      "description": "For eligible cases, record each event, control opportunity, supporting claim and unresolved state.",
+      "status": "Gate-controlled"
+    },
+    {
+      "number": "05",
+      "title": "Evaluate",
+      "subtitle": "Controlled experiments",
+      "description": "Compare baseline and safeguard conditions using frozen tests; retain raw results, invalid outputs and negative controls.",
+      "status": "Not started"
+    },
+    {
+      "number": "06",
+      "title": "Report",
+      "subtitle": "Versioned, bounded findings",
+      "description": "Update the study report with reviewed evidence, explicit limits, author sign-off and correction history.",
+      "status": "Future release"
+    }
+  ],
+  "audiences": [
+    {
+      "key": "leaders",
+      "title": "Catholic leaders",
+      "copy": "What decision would a bishop, school leader or ministry director face? What can be established? What must remain with a qualified person?"
+    },
+    {
+      "key": "theologians",
+      "title": "Theologians and canonists",
+      "copy": "Which document or canon is relevant, what exactly does it say, and which applied interpretation still needs expert review?"
+    },
+    {
+      "key": "researchers",
+      "title": "Researchers and evaluators",
+      "copy": "Can another team reproduce the screening, annotations, comparisons, tests and limits from versioned materials?"
+    }
+  ],
+  "objects": [
+    {
+      "name": "Risk scenario",
+      "question": "What could fail?",
+      "body": "A defined technical mechanism in a specific Catholic institutional workflow. Does not establish that harm occurred."
+    },
+    {
+      "name": "Incident record",
+      "question": "What was reported?",
+      "body": "An attributed event with preserved source, uncertainty, and direct or analogous relevance. Does not prove the proposed cause."
+    },
+    {
+      "name": "Normative mapping",
+      "question": "What duty is relevant?",
+      "body": "Source-located teaching, canon law or institutional guidance plus a separately identified interpretation."
+    },
+    {
+      "name": "Control observation",
+      "question": "Did a safeguard operate?",
+      "body": "CEC event × control objective × opportunity × period. Makes missing evidence and claimed effect visible."
+    },
+    {
+      "name": "Controlled evaluation",
+      "question": "What happened in a test?",
+      "body": "Predeclared conditions, baselines, perturbations, observed outputs, negative controls and limitations."
+    }
+  ],
+  "first_case": {
+    "title": "Illustrative case: a parish AI assistant",
+    "disclaimer": "Hypothetical scenario for explaining the method. No new real-world incident or evaluation result is claimed.",
+    "risk": "An assistant implies that it possesses priestly or sacramental authority.",
+    "setting": "A parish uses a chatbot for general faith questions and service information.",
+    "evidence": "Product behavior and system records would be required; public reporting alone may establish only a claim or analogous event.",
+    "norm": "A reviewer consults precise ecclesial sources and records the applicability judgment separately.",
+    "control": "Proposed disclosure and escalation rules, with restrictions on personification and sacramental claims.",
+    "test": "Frozen prompts probe authority claims, with benign controls and human review of outputs.",
+    "limit": "Passing a synthetic test cannot certify pastoral safety, doctrinal fidelity or deployment suitability."
+  },
+  "stages": [
+    {
+      "n": "00",
+      "name": "Research foundation",
+      "state": "in_progress",
+      "subtitle": "Define the question before data selection",
+      "actions": [
+        "Protocol v0.1.0 drafted",
+        "Contribution and competing explanation explicitly stated",
+        "Source, rights and reviewer decisions still open"
+      ],
+      "deliverable": "Versioned protocol, decision log, study manifest",
+      "gate": "G0 · An approved, frozen protocol with accountable reviewers and explicit amendment process",
+      "dependency": "No upstream ingestion dependency"
+    },
+    {
+      "n": "01",
+      "name": "Corpus intake and screening",
+      "state": "waiting",
+      "subtitle": "Use existing ingestion rather than repeat it",
+      "actions": [
+        "Freeze identifiable MIT/incident source snapshots",
+        "Screen source rows with documented inclusion and exclusion reasons",
+        "Audit licenses, duplicate source families, sensitive material"
+      ],
+      "deliverable": "Auditable candidate frame, source ledger and exclusions",
+      "gate": "G1 · Source rights, eligibility rules and frame coverage documented",
+      "dependency": "Await existing website ingestion and reconciliation"
+    },
+    {
+      "n": "02",
+      "name": "Catholic crosswalk feasibility",
+      "state": "planned",
+      "subtitle": "Test the first five scenarios",
+      "actions": [
+        "Map technical mechanisms to two institutional settings",
+        "Separate canonical sources from researcher interpretations",
+        "Obtain independent technical and qualified Catholic review"
+      ],
+      "deliverable": "Five reviewed pilot crosswalk records and disagreement report",
+      "gate": "G2 · Category definitions revised and frozen only after feasibility review",
+      "dependency": "Requires G1 and reviewer appointments"
+    },
+    {
+      "n": "03",
+      "name": "Comparative reconstruction",
+      "state": "planned",
+      "subtitle": "Test CEC against simpler views",
+      "actions": [
+        "Prepare identical evidence packets in three representations",
+        "Independently enumerate controls before scoring",
+        "Measure unsupported claims, uncertainty retention and burden"
+      ],
+      "deliverable": "Blinded comparative pilot design and annotated results",
+      "gate": "G3 · Methods and acceptance thresholds locked before primary comparison",
+      "dependency": "Requires source packets, rubric and independent assessors"
+    },
+    {
+      "n": "04",
+      "name": "Reproducible safeguard tests",
+      "state": "planned",
+      "subtitle": "Study 3–5 bounded failure mechanisms",
+      "actions": [
+        "Freeze baseline and intervention conditions",
+        "Specify benign controls, perturbations and failure criteria",
+        "Preserve responses, rejected outputs, adjudications and versions"
+      ],
+      "deliverable": "Experiment packages, results, uncertainty and failure register",
+      "gate": "G4 · Reproducibility and test validity review",
+      "dependency": "Requires prepared protocols and systems under test"
+    },
+    {
+      "n": "05",
+      "name": "Synthesis and research review",
+      "state": "planned",
+      "subtitle": "Separate findings from interpretation",
+      "actions": [
+        "Report the positive, negative and unresolved findings",
+        "Assess validity, source coverage, selection bias and limitations",
+        "Prepare reproducible companion and independent review dossier"
+      ],
+      "deliverable": "Study report, notebook, versioned data products and corrections",
+      "gate": "G5 · Research-integrity, rights and independent-release approval",
+      "dependency": "Requires completed, audited pilot evidence"
+    },
+    {
+      "n": "06",
+      "name": "External discussion",
+      "state": "deferred",
+      "subtitle": "Bring evidence, not an unsupported claim",
+      "actions": [
+        "Assess CDCF C1–C8 internally and label as self-assessment",
+        "Clarify ownership, IP and conflicts before submission",
+        "Invite critique from CDCF and Leonum without implying endorsement"
+      ],
+      "deliverable": "Bounded reviewer briefing and open-question register",
+      "gate": "G6 · Written scope of external review and institutional relationship",
+      "dependency": "Requires at least a defensible pilot report"
+    }
+  ],
+  "comparison": [
+    {
+      "name": "Source-linked narrative",
+      "role": "Baseline A",
+      "what": "Readable case narrative with citations and explicit uncertainty, using the same evidence."
+    },
+    {
+      "name": "Uncertainty-aware checklist",
+      "role": "Baseline B",
+      "what": "Control checklist retaining unknown, not reported, and non-applicable states."
+    },
+    {
+      "name": "CEC event-control record",
+      "role": "Candidate method",
+      "what": "Control opportunity, evidence item, source origin, action, propagation, and bounded inference."
+    }
+  ],
+  "boundaries": [
+    {
+      "title": "Risk ≠ incident",
+      "copy": "A risk record describes a possible failure. Incident evidence concerns a reported event."
+    },
+    {
+      "title": "Source count ≠ independence",
+      "copy": "Repeated reporting of one institutional assertion does not create new independent evidence."
+    },
+    {
+      "title": "Policy ≠ operation",
+      "copy": "A written safeguard alone does not establish that it affected a decision."
+    },
+    {
+      "title": "Catholic relevance ≠ doctrinal judgment",
+      "copy": "Normative applicability needs precise sources and appropriately qualified review."
+    },
+    {
+      "title": "Synthetic ≠ deployed",
+      "copy": "Laboratory test outcomes do not establish effectiveness in a parish, school or diocese."
+    },
+    {
+      "title": "Missing evidence ≠ failure",
+      "copy": "A report that says nothing about a control cannot prove the control was absent."
+    }
+  ],
+  "source_links": [
+    {
+      "label": "MIT AI Risk Repository",
+      "url": "https://airisk.mit.edu/risks",
+      "kind": "External research corpus"
+    },
+    {
+      "label": "MIT AI Risk Initiative / Incident Tracker",
+      "url": "https://airisk.mit.edu/about",
+      "kind": "External incident context"
+    },
+    {
+      "label": "Antiqua et Nova (Vatican, 2025)",
+      "url": "https://www.vatican.va/roman_curia/congregations/cfaith/documents/rc_ddf_doc_20250128_antiqua-et-nova_en.html",
+      "kind": "Official Catholic source"
+    },
+    {
+      "label": "CDCF C1–C8 criteria v0.2",
+      "url": "https://catholicdigitalcommons.org/governance/project-governance/project-vetting-criteria",
+      "kind": "Draft institutional vetting source"
+    },
+    {
+      "label": "CEC research charter",
+      "url": "https://github.com/node-and-norm/control-evidence-corpus/blob/main/RESEARCH_CHARTER.md",
+      "kind": "Governing research baseline"
+    },
+    {
+      "label": "CEC comparative pilot design",
+      "url": "https://github.com/node-and-norm/control-evidence-corpus/blob/main/research/COMPARATIVE_PILOT_DESIGN.md",
+      "kind": "Method reference"
+    },
+    {
+      "label": "Node & Norm homepage map",
+      "url": "https://nodeandnorm.org/",
+      "kind": "Editorial discovery layer"
+    }
+  ],
+  "glossary": [
+    {
+      "term": "Control opportunity",
+      "definition": "A point in an event when a defined safeguard could have acted."
+    },
+    {
+      "term": "Evidence packet",
+      "definition": "A versioned collection of sources and locators provided to a reviewer."
+    },
+    {
+      "term": "Provenance",
+      "definition": "Where a claim or artifact came from and how it was transformed."
+    },
+    {
+      "term": "Adjudication",
+      "definition": "A documented resolution process after initial independent assessments are retained."
+    },
+    {
+      "term": "Unresolved evidence",
+      "definition": "A specific uncertainty, such as not reported, not observable or conflicting sources, retained rather than guessed away."
+    }
+  ],
+  "changes": [
+    {
+      "date": "2026-11-06",
+      "version": "0.1.0",
+      "description": "Established a notebook-led Catholic institutional pilot protocol and visual roadmap. Design only; no Catholic empirical claims."
+    }
+  ]
+}
