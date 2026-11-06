@@ -1,0 +1,95 @@
+{
+  "version": "0.3.1",
+  "date": "2026-11-06",
+  "kind": "source_alignment_supplement",
+  "evidence_workbench_version": "0.3.0",
+  "pilot_protocol_version": "0.2.0",
+  "cec_baseline_commit": "8e3c6c151204ea32b10593a843c97f19927a690c",
+  "course_commit": "93f35e5d2a51590f9542207a9ff66a01901da5bc",
+  "pdf": {
+    "title": "Deep Research From Scratch",
+    "copies_received": 6,
+    "unique_byte_sequences": 1,
+    "pages": 14,
+    "bytes": 717788,
+    "sha256": "687b815dc1e738c6d39ce9d978b826909f8d10b4a200c67358ee91fc228ad1d3",
+    "source_url": "https://files.cdn.thinkific.com/file_uploads/967498/attachments/1e4/794/f99/Deep_Research_From_Scratch_Slides.pdf",
+    "acquisition": "user_upload",
+    "review": "supplied_text_and_diagrams; local renders pages 8-13",
+    "redistribution": "original PDF not included"
+  },
+  "modules": [
+    {
+      "id": "LC-01",
+      "course_notebook": "notebooks/1_scoping.ipynb",
+      "notebook_url": "https://github.com/langchain-ai/deep_research_from_scratch/blob/93f35e5d2a51590f9542207a9ff66a01901da5bc/notebooks/1_scoping.ipynb",
+      "notebook_review": "partial_setup_and_prompt_inspection",
+      "module": "src/deep_research_from_scratch/research_agent_scope.py",
+      "module_url": "https://github.com/langchain-ai/deep_research_from_scratch/blob/93f35e5d2a51590f9542207a9ff66a01901da5bc/src/deep_research_from_scratch/research_agent_scope.py",
+      "module_git_blob_sha1": "1e86bb8adc26df8936e5fef5beceda83b8d83501",
+      "module_review": "full_text_static_read",
+      "execution": "not_run",
+      "proposed_node_norm_chapter": "Scope and questions"
+    },
+    {
+      "id": "LC-02",
+      "course_notebook": "notebooks/2_research_agent.ipynb",
+      "notebook_url": "https://github.com/langchain-ai/deep_research_from_scratch/blob/93f35e5d2a51590f9542207a9ff66a01901da5bc/notebooks/2_research_agent.ipynb",
+      "notebook_review": "link_registered_not_fully_inspected",
+      "module": "src/deep_research_from_scratch/research_agent.py",
+      "module_url": "https://github.com/langchain-ai/deep_research_from_scratch/blob/93f35e5d2a51590f9542207a9ff66a01901da5bc/src/deep_research_from_scratch/research_agent.py",
+      "module_git_blob_sha1": "5c01b498495a0603e79f43fc63ee161eba49601c",
+      "module_review": "full_text_static_read",
+      "execution": "not_run",
+      "proposed_node_norm_chapter": "Sources and evidence"
+    },
+    {
+      "id": "LC-03",
+      "course_notebook": "notebooks/3_research_agent_mcp.ipynb",
+      "notebook_url": "https://github.com/langchain-ai/deep_research_from_scratch/blob/93f35e5d2a51590f9542207a9ff66a01901da5bc/notebooks/3_research_agent_mcp.ipynb",
+      "notebook_review": "link_registered_not_fully_inspected",
+      "module": "src/deep_research_from_scratch/research_agent_mcp.py",
+      "module_url": "https://github.com/langchain-ai/deep_research_from_scratch/blob/93f35e5d2a51590f9542207a9ff66a01901da5bc/src/deep_research_from_scratch/research_agent_mcp.py",
+      "module_git_blob_sha1": "e227e63e4717d93869cbee23593d5144f0df2d89",
+      "module_review": "full_text_static_read",
+      "execution": "not_run",
+      "proposed_node_norm_chapter": "Magisterium source checks"
+    },
+    {
+      "id": "LC-04",
+      "course_notebook": "notebooks/4_research_supervisor.ipynb",
+      "notebook_url": "https://github.com/langchain-ai/deep_research_from_scratch/blob/93f35e5d2a51590f9542207a9ff66a01901da5bc/notebooks/4_research_supervisor.ipynb",
+      "notebook_review": "link_registered_not_fully_inspected",
+      "module": "src/deep_research_from_scratch/multi_agent_supervisor.py",
+      "module_url": "https://github.com/langchain-ai/deep_research_from_scratch/blob/93f35e5d2a51590f9542207a9ff66a01901da5bc/src/deep_research_from_scratch/multi_agent_supervisor.py",
+      "module_git_blob_sha1": "ee6a5e70d8fbe18b0831d809929e18480d3fe566",
+      "module_review": "full_text_static_read",
+      "execution": "not_run",
+      "proposed_node_norm_chapter": "Analysis and review"
+    },
+    {
+      "id": "LC-05",
+      "course_notebook": "notebooks/5_full_agent.ipynb",
+      "notebook_url": "https://github.com/langchain-ai/deep_research_from_scratch/blob/93f35e5d2a51590f9542207a9ff66a01901da5bc/notebooks/5_full_agent.ipynb",
+      "notebook_review": "link_registered_not_fully_inspected",
+      "module": "src/deep_research_from_scratch/research_agent_full.py",
+      "module_url": "https://github.com/langchain-ai/deep_research_from_scratch/blob/93f35e5d2a51590f9542207a9ff66a01901da5bc/src/deep_research_from_scratch/research_agent_full.py",
+      "module_git_blob_sha1": "6e30ed3a511900911764a5861ee40147494a98ed",
+      "module_review": "full_text_static_read",
+      "execution": "not_run",
+      "proposed_node_norm_chapter": "Findings and limits"
+    }
+  ],
+  "auxiliary_resources": {
+    "videos": "registered by user; not viewed in this pass",
+    "foundation_courses": "registered by user; not reviewed in this pass"
+  },
+  "access_limits": [
+    "Public PDF web fetch unavailable; used supplied PDF.",
+    "Complete notebook-cell/output review not obtained. Five paired source modules read in full.",
+    "No course code, model/API calls, MCP runtime or installers executed.",
+    "No prior unknown prompts or traces reconstructed."
+  ],
+  "ai_disclosure": "One assistant prepared this static review and generated the reader artifacts. No independent human review or multi-agent experiment.",
+  "study_results_changed": false
+}

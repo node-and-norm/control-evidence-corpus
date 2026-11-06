@@ -15,3 +15,7 @@ This companion does not replace or freeze [pilot protocol 0.2.0](../PROTOCOL.md)
 From this directory, run `python scripts/check_evidence.py`. Install the review dependencies in a separate environment, then run `python scripts/build_review.py` to regenerate HTML and the expanded notebook. The builder uses `mistune`; the checks and notebook code use the standard library. Jupyter execution itself requires a Python kernel. Open the generated HTML in a browser. The compact repository notebook requires the checked-out companion files; the expanded generated notebook embeds its inventory and checker and runs offline without those files.
 
 No full raw historical tool archive is supplied. This absence is recorded rather than repaired with invented evidence. New raw capture, qualified review and empirical work remain evidence gates. The public branch contains no secrets, private course transcript, sensitive institutional data, or sealed holdout.
+
+## Course-alignment supplement
+
+The [0.3.1 course-alignment supplement](course-alignment/README.md) registers the supplied slide deck and five notebook/module pairs, distinguishes inspected source code from unexecuted course material, and proposes a five-chapter reading path. It adds a source-level design review without replacing this workbench or the pilot protocol.
