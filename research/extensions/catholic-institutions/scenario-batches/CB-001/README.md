@@ -1,42 +1,44 @@
 # Pilot batch CB-001: first five institutional scenarios
 
-**6 November 2026 | Five drafts prepared | Primary-source and qualified review pending**
+**6 November 2026 | CIR-001 identity-component comparison executed | Qualified review pending**
 
-This batch starts the institution-specific scenario work. It follows the source-verification run already retained in the study. The five records are candidate risks and proposed controls, not five observed Catholic incidents, completed experiments, or validated findings. The governing protocol remains 0.3.0 and unfrozen for the main comparison.
+This batch develops five candidate institutional risks and proposed controls. It does not represent five observed Catholic incidents or validated safeguards. The governing protocol remains 0.3.0 and unfrozen for the main comparison.
 
-## Start with one question
+## Current increment: one bounded engineering result
 
-**Can a catechetical assistant's citation be admitted as verified when its document or paragraph is wrong?**
+Start with [CIR-001 results and limits](CIR-001/RESULTS.md), the [guided notebook](CIR-001/study.ipynb), and the [selected primary-source packet](CIR-001/SOURCE_PACKET.md). The [status record](STATUS.json) distinguishes this increment from the preserved initial [scenario drafts](candidates.json).
 
-CIR-001 is the first test candidate because the study already contains concrete retrieval discrepancies. Those known discrepancies are development examples, not an unseen evaluation set. The first technical comparison must also contain valid matches so a procedure that rejects everything cannot appear successful.
+CITATION-GATE-001-R1 compared a simple checklist with a structured identity gate on identical inputs. Both retained eight constructed valid identities and held sixteen invalid or unresolved cases. **No admission advantage for the structured gate was observed.** Its possible diagnostic benefit to human reviewers remains unmeasured.
+
+The packet consists of 22 assistant-authored synthetic cases and two known historical metadata replays. Three procedures, including a narrow diagnostic ablation, produced 72 outputs. There were no new research-service calls, model inferences or participants. Meaning remains unreviewed in every output. The [freeze](CIR-001/FREEZE.md) preceded execution; [replay instructions](CIR-001/README.md) reproduce the fixed input bytes and compare output bytes with the first-run digest.
 
 ## The five scenarios
 
-| Record | Institutional question | Proposed evidence of control |
+| Record | Institutional question | Current evidence status |
 | :--- | :--- | :--- |
-| CIR-001 | Does an answer point to the intended source and preserve unresolved support? | Document and paragraph checks, original text location, rejection/abstention records and a separate support judgment |
-| CIR-002 | Does the assistant claim ecclesial identity or authority it lacks? | Versioned persona, actual replies, a qualified authority rubric and a functioning human referral |
-| CIR-003 | Can protected student or pastoral information cross an unauthorized boundary? | Synthetic records, requester permissions, retrieved content, outputs and logging behavior |
-| CIR-004 | Can the assigned human reviewer actually change a consequential action? | Evidence access, permissions, intervention, acknowledgement and downstream outcome |
-| CIR-005 | Can a school challenge an unsupported assessment and propagate the correction? | Fixed rubric, original assessment, review basis and corrected downstream records |
+| CIR-001 | Does an answer point to the intended source and preserve unresolved support? | Selected source sections inspected; identity-component comparison recorded; semantic and qualified review pending |
+| CIR-002 | Does the assistant claim ecclesial identity or authority it lacks? | Initial scenario and control hypothesis; source and qualified review pending |
+| CIR-003 | Can protected student or pastoral information cross an unauthorized boundary? | Initial scenario; any future test uses invented identities and records only |
+| CIR-004 | Can the assigned human reviewer actually change a consequential action? | Initial scenario; actual permissions, intervention and propagation evidence required |
+| CIR-005 | Can a school challenge an unsupported assessment and propagate the correction? | Initial scenario; assessment and correction evidence required |
 
-The [machine-readable batch](candidates.json) preserves the selected upstream record IDs, publisher-supplied hashes, original-source links, proposed mechanisms, evidence needs, and limits. The institutional applications are analyst proposals. The underlying papers have not yet been newly reviewed for this batch. The existing website selection is a discovery source, not an independently validated or representative Catholic corpus.
+The machine-readable initial batch preserves upstream IDs, reported hashes and source URLs. Those hashes are reported metadata, not new full-dataset attestations. CIR-001's source review now covers the specific NIST and Church-document locations listed in its packet; this does not complete the other scenarios' source review. The website's editorial selection is neither an independently validated nor representative Catholic corpus.
 
-## Execute in this order
+## Next evidence gates
 
-1. **Prepare CIR-001's bounded packet.** Inspect the original technical source, preserve permitted source bytes or exact access references, and record source and rights limits. Use authoritative Church publications directly where connector retrieval remains unresolved; preserve connector failure separately.
-2. **Freeze the first technical test.** Inspect the current implementation, select a fair comparator, define the exact input cases and reference labels, and record outcomes and stop rules before execution. Both procedures receive the same evidence. Document identity, paragraph identity and semantic support remain separate.
-3. **Run and retain the results.** Report incorrect admissions, valid-match retention, abstentions and missingness with denominators. Record review burden only when actually measured. Preserve failures and all retries. Report engineering behavior within the tested conditions rather than general doctrinal or institutional validity.
-4. **Develop the next two tests while qualified review is arranged.** Authority boundaries and synthetic-data confidentiality are the next candidates. Any interpretation or human-performance outcome requiring eligible reviewers remains pending until those reviewers actually participate.
+1. Independently prepare new cases or plan a live integration check; keep the known anomalies as development regressions. Do not recast them as an unseen holdout.
+2. Obtain qualified review of source interpretation and institutional applicability. A source identity match alone cannot establish support for an answer.
+3. Develop authority-boundary and synthetic-confidentiality packets while those reviews are arranged. Human-performance measures require actual eligible participants and separate procedures.
+4. Test whether the richer trace improves review or diagnosis against the simple checklist before claiming a benefit from additional structure.
 
-This small feasibility batch does not wait for every upstream risk and incident to be collected. Later larger-sample work still requires a defined, versioned sampling frame. Do not add healthcare, charitable-service allocation or real confidential records to accelerate completion; those would change the current scope.
+The small feasibility batch need not wait for complete website ingestion. Larger-sample work still requires a defined source population. Healthcare, charitable-service allocation and real confidential records remain outside this batch's scope.
 
 ## Completion means evidence, not file count
 
-A first-batch milestone requires five source-linked scenario packets with explicit unresolved judgments and one executed, reproducible technical comparison with stated limits. Independent theological review, independent human reliability and institutional effectiveness remain separate milestones. The present commit supplies the five initial drafts and a test-design candidate only. No new experiment has been executed.
+The first-batch milestone requires five source-linked scenario packets with explicit unresolved judgments and one reproducible technical comparison. Only CIR-001 currently has the latter and a targeted source packet. The batch remains incomplete. Independent theological review, human reliability, institutional effectiveness and canonical CEC admission remain separate gates.
 
 ## Disclosure and publication
 
-ChatGPT assisted source-metadata inspection, drafting and repository preparation. The selected metadata were inspected through the public website; no complete raw-byte snapshot of those large JSON files was acquired. The upstream hashes are reported metadata, not independently recomputed attestations. User authorization is recorded in the conversation; exact-text approval and independent review are not inferred. One assistant used tools; no multi-agent study is claimed. See the [study disclosure](../../AI_DISCLOSURE.md).
+One ChatGPT assistant inspected selected sources, drafted methods, authored the code and expected labels, executed the local comparison and prepared documentation. No independent AI team or human panel is claimed. The same-assistant reference labels are a validity limitation. User authorization does not establish personal source inspection or exact-text approval. See the [study disclosure](../../AI_DISCLOSURE.md) and [run contribution record](CIR-001/ai-use-and-publication.json).
 
-The main README, website ingestion, historical results, protocol hypotheses and v0.4.1 reader files remain unchanged. Update the existing report and notebook when this batch has actual results to publish; do not create another parallel report or overwrite the released snapshot.
+The main README, website ingestion, historical outcomes, H1–H4 and the published 0.4.1-dev reader release remain unchanged. Draft 0.4.2 reading files supplied with this continuation integrate the new result into the existing report and notebook. They are not a new tagged release or website deployment. PR37 remains a development record pending further review.
