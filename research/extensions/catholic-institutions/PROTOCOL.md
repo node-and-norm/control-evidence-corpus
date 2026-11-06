@@ -1,10 +1,10 @@
 # Catholic Institutional AI Risk and Control Evidence Pilot
 
-**Research protocol 0.1.0 | Working design | 6 November 2026**  
+**Research protocol 0.2.0 | Working design | 6 November 2026**  
 **Research owner:** Node & Norm  
 **Host infrastructure:** Control Evidence Corpus (CEC), development research extension  
 **Study authority:** Independent Node & Norm research; no approval or endorsement from CDCF, Leonum, MIT, any diocese, or a Catholic institution is implied.  
-**Current state:** Unfrozen protocol. No Catholic risk records have been independently coded, no Catholic incident cohort adjudicated, no Catholic pilot evaluations completed, and no empirical claim is made by this document.
+**Current state:** Unfrozen protocol. Eighteen source-located Catholic normative mapping candidates have been drafted and six Magisterium source-locator tool interactions recorded. None constitutes independently adjudicated Catholic risk/incident evidence, a safeguard test, or an ecclesial assessment. No Catholic risk records have been independently coded and no Catholic pilot evaluations have been completed.
 
 > **What this protocol is for.** It fixes the questions and boundaries we can specify before the risk and incident intake finishes. Sample selection, reviewer recruitment, quantitative thresholds, and confirmatory tests remain decisions to be made and logged before relevant data are coded or unblinded. Protocol amendments will be dated and explained.
 
@@ -72,7 +72,25 @@ Data rights must be determined at the source and field level. AIID source-text r
 
 The Catholic extension owns candidate `risk_scenario`, `institutional_workflow`, `normative_source`, `normative_mapping`, `risk_control_link`, `selection_decision`, and `review_status` records. It links via immutable source/version identifiers to the upstream homepage intake and via event/control IDs to a **CEC-approved release** when one exists. No new fields are appended silently to canonical CEC event/control schemas (which prohibit additional properties). A hypothetical `cec_event_id` is null until valid CEC intake occurs.
 
-Minimum trace for each scenario: study ID; source risk ID and exact snapshot; technical mechanism; affected workflow/population; direct versus analogous relevance; candidate control; applicable normative source with paragraph/canon locator; interpretive reviewer and status; supporting evidence IDs and source family; missingness; rights decision; version, timestamps and corrections. An original document's teaching and a researcher's interpretation are distinct evidence objects.
+Minimum trace for each scenario: study ID; source risk ID and exact snapshot; technical mechanism; affected workflow/population; direct versus analogous relevance; candidate control; applicable normative source with paragraph/canon locator; interpretive reviewer and status; supporting evidence IDs and source family; missingness; rights decision; version, timestamps and corrections. An original document's teaching and a researcher's interpretation are distinct evidence objects. A search index hit is a discovery result until its locator and authoritative text have been checked.
+
+### 7A. Primary Catholic source protocol and Magisterium MCP integration (development amendment)
+
+The normative source layer begins with two **distinct primary publications**:
+
+- **Dicastery for the Doctrine of the Faith and Dicastery for Culture and Education, *Antiqua et Nova* (28 January 2025).** Initial locations: §§34, 39, 42, 44–46, 93, 110.
+- **Pope Leo XIV, *Magnifica Humanitas* (signed 15 May 2026; officially presented 25 May 2026).** Initial locations: §§95, 99, 102, 104–106, 108–109, 145, 164.
+
+The selected paragraphs support **18 researcher-authored, provisional source-to-CEC mapping candidates**, held in `data/normative-crosswalk.json`. These are *source concepts and questions*, not 18 observed AI risks, 18 church-law requirements, approved mitigation controls, or empirical annotations. They neither satisfy the 20–25 risk-scenario target nor change the canonical CEC study population. Each candidate records the official source and paragraph, a bounded source paraphrase, a proposed evidence question, compatible CEC dimensions, and review status. Proposals may be rejected or amended by qualified reviewers.
+
+**Authority and reliability rule:** Treat the official Vatican publication as the textual authority. Magisterium AI's connected MCP `search` and `fetch` tools may be used for discovery, lookup and source triage, provided tool responses retain their returned IDs, URLs, metadata, retrieval date and any inconsistency. Magisterium is not assigned independent doctrinal authority. The Explore vector visualization is exploratory discovery infrastructure; vector proximity does not establish doctrine, agreement, or a technical requirement. The current tool contract has not established bulk export rights, stable full-corpus access, or full-vector index access.
+
+**Acceptance test for a retrieved passage:** (1) record search query and exact result ID, title and URL; (2) fetch that exact ID; (3) inspect `found`, returned document title, author, reference, URL and opening passage; (4) compare search and fetch locators; (5) locate the same paragraph in the authoritative Vatican publication; (6) retain the matched status or record the discrepancy with no silent repair; (7) have a qualified reviewer assess the Catholic interpretation and institutional applicability independently of the machine retrieval. A source can be indexed for discovery while its retrieved paragraph remains excluded from a verified quotation or mapping.
+
+On 6 November 2026, an exploratory **six-interaction locator check** observed two consistent *Antiqua et Nova* search/fetch pairs, three *Magnifica Humanitas* search/fetch paragraph mismatches and one *Magnifica Humanitas* `fetch` result of `found=false` after a search result. These observations are retained in `data/magisterium-locator-audit.json` with exact IDs and URLs. They do not establish the frequency, mechanism or cause of an MCP problem. No provider defect claim or general reliability estimate follows. All mapped *Magnifica Humanitas* paragraphs rely on the Vatican original for their locators until a separate verified Magisterium fetch succeeds.
+
+**Research boundary:** A Magisterium passage, a Vatican paragraph, an analyst's normative reading and a testable CEC control dimension occupy different evidentiary roles. *Antiqua et Nova* and *Magnifica Humanitas* establish a strong reason to investigate questions of dignity, oversight, responsibility, rights and remedy. They do not, by themselves, impose a specific software-control implementation or prove a technical safeguard effective. Canonical applicability, doctrinal interpretation and pastoral judgment require appropriately qualified independent review. Claims of compliance, sacramental validity, or diocesan authorization remain outside this pilot's remit.
+
 
 ## 8. Reproducible method
 
@@ -84,7 +102,7 @@ Minimum trace for each scenario: study ID; source risk ID and exact snapshot; te
 
 **Stage D, controlled evaluations.** For 3–5 selected mechanisms, predeclare system/version, prompt and policy configuration, baseline, safeguard, controlled perturbations, benign controls, failure/abstention rules, retries, and statistical summary. Keep synthetic evidence and model-authored reference answers separate from authoritative human judgments. Preserve invalid model outputs rather than silently repairing them.
 
-**Stage E, qualified normative review.** Technical annotation and Catholic interpretation are reviewed separately. Qualified theological or canonical reviewers confirm the accuracy and applicability of any proposed doctrinal or canonical mapping; disagreements and jurisdictional limits remain visible.
+**Stage E, qualified normative review.** Magisterium discovery is checked against Vatican originals before independent interpretation. Technical annotation and Catholic interpretation are reviewed separately. Qualified theological or canonical reviewers confirm the accuracy and applicability of any proposed doctrinal or canonical mapping; disagreements and jurisdictional limits remain visible.
 
 **Stage F, release review.** Report results with failure cases, source coverage, reviewer reliability, uncertainty, licensing, privacy, code/schema versions, and the exact evidence cutoff. No compliance badge or official Church endorsement is authorized.
 
@@ -100,9 +118,9 @@ AI may assist literature triage, source discovery, extraction proposals, dedupli
 
 | Gate | Required evidence | Current state |
 |---|---|---|
-| G0 Protocol readiness | Open methodological decisions, source plan, responsibility and amendment rule recorded | Drafted, unfrozen |
+| G0 Protocol readiness | Open methodological decisions, source plan, locator QA, responsibility and amendment rule recorded | v0.2 draft and 18 unreviewed source candidates; protocol unfrozen |
 | G1 Source/rights readiness | Candidate source frame and source-specific rights decisions reviewed | Pending upstream ingestion and review |
-| G2 Mapping feasibility | Five pilot risk records and independent category review | Not started |
+| G2 Mapping feasibility | Five pilot risk records, verified normative locators and independent category review | 18 source concepts drafted; zero reviewed risk records |
 | G3 Comparison readiness | Frozen comparator views, packet rules, support rubric, independent roles | Not started |
 | G4 Evaluation readiness | Frozen test definitions, negative controls, integrity checks | Not started |
 | G5 Research review | Independent assessment, uncertainty/negative results, reproducibility and rights audit | Not started |
@@ -124,12 +142,16 @@ CDCF C1–C8 can be used for a **clearly labeled internal readiness assessment**
 4. Define primary outcome, support rubric, reliability statistic, allocation, minimum useful effect, and precision target.
 5. Select pilot records without using outcome knowledge; freeze and version the chosen sample.
 6. Define public-data safety, corrections, exact report release status, and update approval rules.
+7. Independently review the source mapping and decide which Magisterium locator states are acceptable; retain and report the observed search/fetch mismatches without silently resolving them.
 
 ## 14. Selected source anchors (to be verified per record)
 
 - MIT AI Risk Repository: https://airisk.mit.edu/risks
 - MIT AI Incident Tracker overview: https://airisk.mit.edu/about
 - *Antiqua et Nova* (28 January 2025), official Vatican text: https://www.vatican.va/roman_curia/congregations/cfaith/documents/rc_ddf_doc_20250128_antiqua-et-nova_en.html
+- *Magnifica Humanitas* (signed 15 May 2026), official Vatican text: https://www.vatican.va/content/leo-xiv/en/encyclicals/documents/20260515-magnifica-humanitas.html
+- Magisterium Explore (discovery only): https://www.magisterium.com/explore
+- Versioned crosswalk: `data/normative-crosswalk.json`; Magisterium locator observations: `data/magisterium-locator-audit.json`
 - CDCF Project Vetting Criteria v0.2 draft: https://catholicdigitalcommons.org/governance/project-governance/project-vetting-criteria
 - CEC Research Charter: https://github.com/node-and-norm/control-evidence-corpus/blob/main/RESEARCH_CHARTER.md
 - CEC Comparative Pilot Design: https://github.com/node-and-norm/control-evidence-corpus/blob/main/research/COMPARATIVE_PILOT_DESIGN.md
@@ -139,4 +161,5 @@ CDCF C1–C8 can be used for a **clearly labeled internal readiness assessment**
 
 | Version | Date | Decision | Evidence status |
 |---|---|---|---|
+| 0.2.0 | 2026-11-06 | Added 18 source-located provisional mappings for *Antiqua et Nova* and *Magnifica Humanitas*; specified Magisterium MCP source-fidelity and original-text verification protocol; retained six exploratory locator checks | Sources inspected; no independent normative review or Catholic control evaluation |
 | 0.1.0 | 2026-11-06 | Created an exploratory Catholic institutional extension to CEC with explicit comparison, normative review, risks and release gates | Planning only; no results |
