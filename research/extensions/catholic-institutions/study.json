@@ -3,35 +3,40 @@
   "short_title": "A Catholic institutional AI risk study",
   "tagline": "From documented technical risks to evidence of institutional control.",
   "id": "CEC-CATHOLIC-PILOT-001",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "date": "2026-11-06",
-  "status": "Working research design",
+  "status": "Working research design · Catholic source crosswalk drafted",
   "owner": "Node & Norm",
-  "snapshot_label": "Planning snapshot · 6 November 2026",
+  "snapshot_label": "Source-verification snapshot · 6 November 2026",
   "lead": "This study asks a specific question: when a Catholic institution uses AI, what evidence would justify confidence that a relevant safeguard actually worked?",
   "scope_statement": "Begin with pastoral and catechetical AI assistants and Catholic educational systems. Treat healthcare, charity operations, and diocesan administration as possible later extensions, subject to research review.",
-  "warning": "Planning document. No Catholic pilot cases have been independently coded, no experiments conducted for this extension, and no ecclesial or external approval is implied.",
+  "warning": "Planning document. Eighteen normative source-to-evidence candidates have been drafted but are unreviewed; zero Catholic empirical cases admitted; no Catholic safeguard evaluations completed. Magisterium citation checks are connector smoke tests, not findings about deployed AI controls.",
   "north_star": "A documented risk is a reason to investigate. It is not proof that harm occurred. A written safeguard is a claim. Its effectiveness must be supported by evidence.",
   "current": [
     {
-      "value": "0.1.0",
+      "value": "0.2.0",
       "label": "Protocol version",
       "note": "Draft, not frozen"
     },
     {
       "value": "0",
-      "label": "Catholic pilot cases admitted",
+      "label": "Catholic empirical cases admitted",
       "note": "No independent coding completed"
     },
     {
       "value": "0",
-      "label": "Catholic evaluations completed",
+      "label": "Catholic safeguard tests completed",
       "note": "Experimental design pending"
     },
     {
       "value": "2",
       "label": "Initial institutional settings",
       "note": "Pastoral AI and education"
+    },
+    {
+      "value": "18",
+      "label": "Source-to-CEC mappings",
+      "note": "Researcher draft; no independent Catholic review"
     }
   ],
   "targets": [
@@ -107,7 +112,7 @@
       "number": "03",
       "title": "Review",
       "subtitle": "Independent expert judgment",
-      "description": "Separate technical classifications from canonical or theological interpretations. Preserve disagreements and unknowns.",
+      "description": "Review source-located paragraphs against the original Vatican text; separate retrieval metadata, technical classification, and Catholic normative interpretation. Preserve disagreement.",
       "status": "Not started"
     },
     {
@@ -196,9 +201,10 @@
       "actions": [
         "Protocol v0.1.0 drafted",
         "Contribution and competing explanation explicitly stated",
-        "Source, rights and reviewer decisions still open"
+        "Source, rights and reviewer decisions still open",
+        "Review a 2-document / 18-paragraph Catholic source-to-CEC crosswalk and record Magisterium locator discrepancies."
       ],
-      "deliverable": "Versioned protocol, decision log, study manifest",
+      "deliverable": "Protocol, source register, 18 unreviewed mapping candidates, source-locator audit, open decisions",
       "gate": "G0 · An approved, frozen protocol with accountable reviewers and explicit amendment process",
       "dependency": "No upstream ingestion dependency"
     },
@@ -224,7 +230,8 @@
       "actions": [
         "Map technical mechanisms to two institutional settings",
         "Separate canonical sources from researcher interpretations",
-        "Obtain independent technical and qualified Catholic review"
+        "Obtain independent technical and qualified Catholic review",
+        "Verify Magisterium-retrieved passage IDs and Vatican paragraph locators before source admission"
       ],
       "deliverable": "Five reviewed pilot crosswalk records and disagreement report",
       "gate": "G2 · Category definitions revised and frozen only after feasibility review",
@@ -328,6 +335,10 @@
     {
       "title": "Missing evidence ≠ failure",
       "copy": "A report that says nothing about a control cannot prove the control was absent."
+    },
+    {
+      "title": "AI citation ≠ verified original",
+      "copy": "A returned passage ID or search link is not accepted until the fetched locator and original Vatican paragraph agree."
     }
   ],
   "source_links": [
@@ -345,6 +356,16 @@
       "label": "Antiqua et Nova (Vatican, 2025)",
       "url": "https://www.vatican.va/roman_curia/congregations/cfaith/documents/rc_ddf_doc_20250128_antiqua-et-nova_en.html",
       "kind": "Official Catholic source"
+    },
+    {
+      "label": "Magnifica Humanitas (Leo XIV, signed 15 May 2026)",
+      "url": "https://www.vatican.va/content/leo-xiv/en/encyclicals/documents/20260515-magnifica-humanitas.html",
+      "kind": "Official Catholic encyclical source"
+    },
+    {
+      "label": "Magisterium AI Explore",
+      "url": "https://www.magisterium.com/explore",
+      "kind": "Discovery service only; exact locators must be verified"
     },
     {
       "label": "CDCF C1–C8 criteria v0.2",
@@ -392,8 +413,27 @@
   "changes": [
     {
       "date": "2026-11-06",
+      "version": "0.2.0",
+      "description": "Added Antiqua et Nova and Magnifica Humanitas source-to-CEC mapping, source-fidelity test record, verified Vatican links, and a Magisterium evidence-admission safeguard. No empirical Catholic findings."
+    },
+    {
+      "date": "2026-11-06",
       "version": "0.1.0",
       "description": "Established a notebook-led Catholic institutional pilot protocol and visual roadmap. Design only; no Catholic empirical claims."
     }
-  ]
+  ],
+  "source_integration": {
+    "crosswalk_path": "data/normative-crosswalk.json",
+    "audit_path": "data/magisterium-locator-audit.json",
+    "magisterium_purpose": "External source discovery with provenance; never sole doctrinal authority",
+    "verification_status": "18 development mappings to original Vatican paragraphs. Several Magisterium search/fetch locator discrepancies logged and unresolved.",
+    "qualified_review": "Pending. These mappings must not be used as official doctrinal interpretations.",
+    "source_hierarchy": [
+      "Official Vatican publication and exact paragraph",
+      "Magisterium search + fetch result (checked for identifier and locator consistency)",
+      "Researcher-authored paraphrase and proposed CEC question",
+      "Qualified reviewer assessment of applicability",
+      "Separately validated technical control result (future)"
+    ]
+  }
 }
