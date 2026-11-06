@@ -12,12 +12,17 @@
 | D-006 | 2026-11-06 | Use no LangGraph orchestration in the design phase | Proposed | Deterministic scripts and human review are sufficient until benefit is tested |
 | D-007 | 2026-11-06 | Defer Taylor / CDCF external presentation until reviewable pilot package exists | Proposed | Ownership, institutional alignment and qualified review need clear boundaries |
 
+| D-008 | 2026-11-06 | Add official *Antiqua et Nova* and *Magnifica Humanitas* texts to the normative source layer | Implemented as unreviewed development crosswalk | Documents support source-located questions; no automatic canonical or technical-control requirement |
+| D-009 | 2026-11-06 | Use Magisterium MCP for source discovery only until search/fetch locators and original texts agree | Implemented as acceptance rule; gaps open | Six exploratory tool interactions included two matches, three mismatches and one not-found; cause and prevalence unestablished |
+| D-010 | 2026-11-06 | Keep source crosswalk and connector audit separate from empirical CEC intake | Implemented in development branch | Preserves original CEC release gates, source provenance and interpretive independence |
+
 ## Decisions still required
 
 - Source snapshot dates, MIT/incident corpus eligibility and rights decisions.
 - Review roles, credentials, conflicts, training, adjudication and holdout custody.
 - Primary comparison outcome, minimum worthwhile difference, sample allocation and precision analysis.
-- Catholic-specific normative source hierarchy and interpretation protocol.
+- Qualified-review protocol, normative scope and source hierarchy; the source-fidelity procedure is drafted but not independently reviewed.
+- Source-locator discrepancies: clarify which expected ref/fetched ref pairs qualify for citation admission; never impute a match.
 - Artifact publication status, approval responsibility, correction procedure and exact citation version.
 
 A later amendment must append a dated entry naming the affected sections, reason, decision owner, effect on comparability, and whether the change occurred before or after observing relevant data.
