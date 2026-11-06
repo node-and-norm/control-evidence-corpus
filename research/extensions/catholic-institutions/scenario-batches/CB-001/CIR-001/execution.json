@@ -1,0 +1,14 @@
+{
+  "run_id": "CITATION-GATE-001-R1",
+  "freeze_commit": "ec08b3efd74187fff948e22ebffbb623ecaa7015",
+  "runner_sha256": "22ab3388200be2cf39400a12728bba7b1fde511af1870fbc9637ebd79f3a60f3",
+  "started_at": "2026-11-06T23:34:14.608575+00:00",
+  "python": "3.13.5",
+  "network_calls": 0,
+  "model_calls": 0,
+  "attempt": 1,
+  "status": "completed",
+  "finished_at": "2026-11-06T23:34:14.612489+00:00",
+  "raw_results_sha256": "086a9a5c40fafb979366fdca92730983bfddeca96e061bafb5a8899a162043c3",
+  "result_sha256": "aa00849237806fad7bcc83cf8369a93795338ceaf3b41e1d210ccf6a29ebae28"
+}
