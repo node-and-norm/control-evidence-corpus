@@ -1,0 +1,48 @@
+{
+  "disclosure_id": "CEC-CATHOLIC-AI-DISCLOSURE-001",
+  "version": "0.1.0",
+  "date": "2026-11-06",
+  "status": "documented_ai_assistance_author_review_pending",
+  "study": "Catholic Institutional AI Risk and Control Evidence Pilot",
+  "research_owner": "Node & Norm",
+  "accountable_author": "Mark Julius Banasihan",
+  "governing_program_policy": "https://nodeandnorm.org/about/research-integrity/",
+  "program_ai_use_link": "https://nodeandnorm.org/about/research-integrity/#ai-use",
+  "cec_policy": "../../../../docs/policies/AI_USE_POLICY.md",
+  "tae_reference": "https://github.com/node-and-norm/trust-autonomy-evidence/blob/a8bd6a13cf8f24a1abe15885df7195ca20465a25/paper/revisions/2026-11-01/main.tex#L1466-L1480",
+  "source_scope": "Adapt TAE's disclosure method; do not transfer its model identities, experiments, approvals, or review attestations to this study.",
+  "statement": [
+    "Generative AI contributed substantively to research preparation, source discovery and inspection, proposed methods and hypotheses, preliminary Catholic source mappings, code and synthetic software checks, tables and diagrams, manuscript drafting, and revision. This assistance extended beyond proofreading. The affected artifacts and evidence limits are recorded below.",
+    "This continuation uses ChatGPT (OpenAI). Earlier artifacts identify Codex where recorded. Magisterium AI search and fetch were used for Catholic source discovery and retrieval. Exact underlying model builds and a complete inventory of earlier assistant sessions are not established. Model details remain unknown when they were not exposed or preserved. The Jev model recorded in TAE's separate experiments is not attributed to this Catholic pilot.",
+    "Mark Julius Banasihan is the accountable research owner and prospective publication decision-maker. He authorized the study direction and implementation. That authorization does not establish that he personally reproduced every retrieval, inspected every generated line, verified each interpretation, or approved this exact disclosure text for submission. Specific personal checks require their own records. Independent technical and qualified theological review remain pending.",
+    "AI source interpretation, recorded retrieval outcomes, deterministic calculations, software tests, and human judgments are separate evidence categories. The retained source-verification run is not a Catholic safeguard experiment. AI tools are not authors, independent human raters, or ecclesial authorities. Multiple tools or model critiques do not establish an independent multi-agent or peer-review study.",
+    "The public record contains selected contribution records, source locators, versions, software checks, and bounded tool-visible capture with declared omissions. It is not a complete historical transcript or raw provider archive. Missing historical prompts, model versions, timing, and review records are not reconstructed. Credentials, private conversations, sensitive institutional information, and sealed holdouts are excluded from public disclosure.",
+    "No target journal or conference is selected. The historical publisher-guidance rows dated 27 October 2026 are retained separately from checks dated 6 November 2026. Publisher requirements and local venue instructions must be reconciled before submission. Documentation and disclosure do not themselves establish policy compliance, scientific validity, or ecclesial endorsement."
+  ],
+  "tools": [
+    {"id":"TOOL-CHATGPT","name":"ChatGPT","provider":"OpenAI","role":"research_and_artifact_assistance","model_snapshot":null,"unknown_reason":"Exact task-specific backend snapshot is not exposed in the retained execution metadata."},
+    {"id":"TOOL-CODEX","name":"Codex","provider":"OpenAI","role":"historical_assistance_where_explicitly_recorded","model_snapshot":null,"unknown_reason":"Earlier artifacts identify the interface; a complete per-task model inventory is unavailable."},
+    {"id":"TOOL-MAGISTERIUM","name":"Magisterium AI MCP search/fetch","provider":"Magisterium AI","role":"source_discovery_and_retrieval","model_snapshot":null,"unknown_reason":"Provider backend model and service snapshot were not exposed; tool-returned locators remain inspectable."},
+    {"id":"TOOL-LOCAL","name":"Python, notebook execution, HTML/PDF rendering and checksums","provider":"local_software","role":"deterministic_execution_not_an_ai_author","model_snapshot":null,"unknown_reason":"Not a model invocation; software environment belongs to the corresponding validation record."}
+  ],
+  "contributions": [
+    {"id":"AIU-001","task":"Research framing, hypotheses and method proposals","artifact_scope":["PROTOCOL.md","study.json","SCOPING.md"],"tools":["TOOL-CHATGPT","TOOL-CODEX"],"evidence_basis":"retained AI-assisted protocol and source artifacts; not a full prompt archive","output_status":"working_design","human_review_status":"authorization_recorded_specific_review_not_established","independent_review_status":"pending"},
+    {"id":"AIU-002","task":"Source discovery, inspection and preliminary normative mappings","artifact_scope":["data/normative-crosswalk.json","data/magisterium-locator-audit.json"],"tools":["TOOL-CHATGPT","TOOL-MAGISTERIUM"],"evidence_basis":"provisional crosswalk and six selected legacy locator-comparison rows","output_status":"mapping_proposals_unreviewed","human_review_status":"qualified_review_pending","independent_review_status":"pending"},
+    {"id":"AIU-003","task":"Bounded source-verification run and field comparison","artifact_scope":["runs/SV-20261106-001/","pilot/SVP-001/"],"tools":["TOOL-CHATGPT","TOOL-MAGISTERIUM","TOOL-LOCAL"],"evidence_basis":"delivered and repository layouts describe the same earlier four-call development run; do not count the two paths as two experiments","output_status":"source_retrieval_observations_only","human_review_status":"assistant_source_inspection_only","independent_review_status":"pending"},
+    {"id":"AIU-004","task":"Code, synthetic checks, notebook and reader generation","artifact_scope":["scripts/","study-guide.ipynb","notebooks/","study-report.html","protocol.html","reading/"],"tools":["TOOL-CHATGPT","TOOL-CODEX","TOOL-LOCAL"],"evidence_basis":"versioned code and separately recorded developer-run checks","output_status":"development_software_and_presentation","human_review_status":"personal_code_review_not_established","independent_review_status":"pending"},
+    {"id":"AIU-005","task":"Prose, tables, workflow diagrams and revision","artifact_scope":["README.md","PROTOCOL.md","study-report.html","protocol.html","evidence-workbench/"],"tools":["TOOL-CHATGPT","TOOL-CODEX"],"evidence_basis":"retained generated documents; no complete historical wording-by-wording provenance claimed","output_status":"ai_assisted_drafts_and_reading_editions","human_review_status":"author_review_of_specific_claims_not_established","independent_review_status":"pending"},
+    {"id":"AIU-006","task":"Disclosure policy comparison and this integration","artifact_scope":["AI_DISCLOSURE.md","disclosure/","scripts/apply_ai_disclosure.py"],"tools":["TOOL-CHATGPT","TOOL-LOCAL"],"evidence_basis":"live TAE/CEC reads, official-site policy checks, supplied historical register, local changes and tests dated 6 November 2026","output_status":"disclosure_documentation_update","human_review_status":"exact_text_acceptance_pending","independent_review_status":"pending"}
+  ],
+  "human_review": {
+    "authorization": "The user explicitly requested applying the integrity and disclosure approach to this repository, study and documentation.",
+    "authorization_is_source_verification": false,
+    "authorization_is_release_approval_for_all_claims": false,
+    "specific_personal_review_attestations": [],
+    "independent_review_attestations": [],
+    "qualified_theological_review_attestations": [],
+    "next_attestation_requirements": ["named reviewer and role","exact artifact version and claim scope","what was inspected and how","AI suggestions seen before review","conflicts and independence","accepted/rejected/unresolved disposition","limitations and date","separate release decision when applicable"]
+  },
+  "publication": {"target_venue":null,"venue_compliance":"pending_venue_selection_and_recheck","human_acceptance_of_this_text":"not_recorded","ai_authors":[],"ecclesial_endorsement":false},
+  "retention": {"complete_historical_transcript":false,"historical_prompt_reconstruction_permitted":false,"public_secrets_permitted":false,"public_sensitive_institutional_data_permitted":false,"private_internal_reasoning_claimed":false,"source_text_redistribution":"source_specific_rights_review","raw_capture_limit":"Tool-visible records and excerpts where available; not a complete raw transport archive."},
+  "coverage": {"current_primary_readers":["study-report.html","study-guide.ipynb","protocol.html","PROTOCOL.md"],"entrypoint":"README.md","other_current_material":"Covered through the contribution register and linked policy; add a record for new material uses.","historical_editions":"Preserve original bytes in archive/history. This dated disclosure qualifies inherited work without silently altering earlier editions."}
+}

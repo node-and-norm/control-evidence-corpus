@@ -34,11 +34,13 @@ jobs:
         run: |
           python -m pip install -r requirements.txt -r "$EXT/requirements-reading.txt"
           python -m playwright install --with-deps chromium
-      - name: Build, execute offline notebook and render the five reading files
+      - name: Build, execute and disclose the five reading files
         run: |
           python "$EXT/scripts/build_release.py" --execute --pdf --package
           python "$EXT/scripts/finalize_navigation.py"
+          python "$EXT/scripts/apply_ai_disclosure.py" --execute --pdf --package
           python "$EXT/scripts/test_release.py"
+          python "$EXT/scripts/test_ai_disclosure.py"
           python "$EXT/evidence-workbench/scripts/check_evidence.py"
       - name: Check the complete repository
         run: |
@@ -54,7 +56,7 @@ jobs:
       - name: Verify stable generated text on reviewed commits
         if: github.event_name == 'pull_request' || github.ref == 'refs/heads/main'
         run: |
-          git diff --exit-code -- "$EXT/study.json" "$EXT/PROTOCOL.md" "$EXT/study-report.html" "$EXT/protocol.html" "$EXT/study-guide.ipynb" "$EXT/DECISIONS.md"
+          git diff --exit-code -- "$EXT/study.json" "$EXT/PROTOCOL.md" "$EXT/study-report.html" "$EXT/protocol.html" "$EXT/study-guide.ipynb" "$EXT/DECISIONS.md" "$EXT/AI_DISCLOSURE.md" "$EXT/disclosure/coverage.json"
       - name: Repackage after navigation and record the environment
         run: |
           python -m pip freeze > "$EXT/validation/environment.txt"
@@ -65,16 +67,17 @@ jobs:
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
           git add "$EXT/PROTOCOL.md" "$EXT/DECISIONS.md" "$EXT/study.json" "$EXT/study-report.html" "$EXT/protocol.html" "$EXT/study-guide.ipynb" "$EXT/assets/workflow.svg"
+          git add "$EXT/AI_DISCLOSURE.md" "$EXT/disclosure/coverage.json"
           git add "$EXT/evidence-workbench/repository-review.ipynb" "$EXT/evidence-workbench/README.md" "$EXT/EVIDENCE_INDEX.md" docs/README.md
-          git add "$EXT/reading/"*.html "$EXT/reading/"*.md "$EXT/reading/"*.ipynb "$EXT/reading/"*.pdf "$EXT/reading/SHA256_MANIFEST.json"
+          git add "$EXT/reading/"*.html "$EXT/reading/"*.md "$EXT/reading/"*.ipynb "$EXT/reading/"*.pdf "$EXT/reading/SHA256_MANIFEST.json" "$EXT/reading/DISCLOSURE_READING_MANIFEST.json"
           git add "$EXT/runs/SV-20261106-001/"*.json "$EXT/validation/release-checks.json" "$EXT/validation/environment.txt"
           if ! git diff --cached --quiet; then
-            git commit -m 'Research: synchronize tested Catholic study reading artifacts 0.4.0-dev'
+            git commit -m 'Research: synchronize reading artifacts and AI disclosure 0.4.1-dev'
             git push origin HEAD:research/catholic-institutional-ai-pilot
           fi
       - uses: actions/upload-artifact@v4
         with:
-          name: catholic-study-reading-0.4.0-dev
+          name: catholic-study-reading-0.4.1-dev
           path: research/extensions/catholic-institutions/reading/*
           if-no-files-found: error
       - name: Publish namespaced development prerelease after verified main merge
@@ -82,9 +85,9 @@ jobs:
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
-          TAG=$(python -c "import json; print(json.load(open('$EXT/release.json'))['tag'])")
+          TAG=$(python -c "import json; r=json.load(open('$EXT/release.json')); print(r.get('reader_update_tag',r['tag']))")
           if gh release view "$TAG" --repo "$GITHUB_REPOSITORY" >/dev/null 2>&1; then
             echo 'Release already exists. Preserve it; a new version is required for changed artifacts.'
             exit 0
           fi
-          gh release create "$TAG" "$EXT/reading/NodeNorm_Study_v0_4_0.pdf" "$EXT/reading/NodeNorm_Study_v0_4_0.html" "$EXT/reading/NodeNorm_Notebook_v0_4_0.ipynb" "$EXT/reading/NodeNorm_Protocol_v0_3_0.html" "$EXT/reading/NodeNorm_Protocol_v0_3_0.md" "$EXT/reading/NodeNorm_Catholic_Pilot_v0_4_0.zip" "$EXT/reading/SHA256_MANIFEST.json" --repo "$GITHUB_REPOSITORY" --target "$GITHUB_SHA" --prerelease --latest=false --title 'Catholic pilot 0.4.0-dev: source verification and synchronized reading files' --notes-file "$EXT/RELEASE_NOTES.md"
+          gh release create "$TAG" "$EXT/reading/NodeNorm_Study_v0_4_1.pdf" "$EXT/reading/NodeNorm_Study_v0_4_1.html" "$EXT/reading/NodeNorm_Notebook_v0_4_1.ipynb" "$EXT/reading/NodeNorm_Protocol_v0_4_1.html" "$EXT/reading/NodeNorm_Protocol_v0_4_1.md" "$EXT/reading/NodeNorm_AI_Disclosure_Update_v0_4_1.zip" "$EXT/reading/DISCLOSURE_READING_MANIFEST.json" --repo "$GITHUB_REPOSITORY" --target "$GITHUB_SHA" --prerelease --latest=false --title 'Catholic pilot 0.4.1-dev: substantive AI disclosure and review boundaries' --notes-file "$EXT/DISCLOSURE_CHANGELOG.md"
