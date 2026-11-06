@@ -1,0 +1,47 @@
+{
+  "run_id": "SV-20261106-001",
+  "checked_at": "2026-11-06T21:28:36.467017+00:00",
+  "method": "Assistant inspection of official web text and numbered paragraph boundaries; no full-document byte comparison or qualified normative review.",
+  "checks": [
+    {
+      "document": "Antiqua et Nova",
+      "official_url": "https://www.vatican.va/roman_curia/congregations/cfaith/documents/rc_ddf_doc_20250128_antiqua-et-nova_en.html",
+      "paragraph": 44,
+      "observation": "Requested paragraph is present in the official document. No fetched body is available to compare.",
+      "source_reference": "turn471590view0",
+      "result": "target_exists_fetch_unresolved"
+    },
+    {
+      "document": "Magnifica Humanitas",
+      "official_url": "https://www.vatican.va/content/leo-xiv/en/encyclicals/documents/20260515-magnifica-humanitas.html",
+      "paragraphs": [
+        90,
+        105
+      ],
+      "observation": "Returned passage opening corresponds to paragraph 90; requested paragraph 105 is a distinct numbered paragraph.",
+      "source_references": [
+        "turn471590view1",
+        "turn471590view2"
+      ],
+      "result": "wrong_target_paragraph"
+    }
+  ],
+  "web_acquisition_log": [
+    {
+      "action": "open",
+      "targets": [
+        "AN official English document",
+        "MH official English document"
+      ]
+    },
+    {
+      "action": "find",
+      "patterns": [
+        "44. in AN",
+        "105. in MH",
+        "90. in MH"
+      ]
+    }
+  ],
+  "web_log_scope": "Action descriptions and source references; provider transport and complete HTML not retained."
+}

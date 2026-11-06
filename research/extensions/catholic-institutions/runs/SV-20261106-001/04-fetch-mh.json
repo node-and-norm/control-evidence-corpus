@@ -1,0 +1,28 @@
+{
+  "record_id": "04-fetch-mh",
+  "run_id": "SV-20261106-001",
+  "tool": "Magisterium_AI.fetch",
+  "request": {
+    "id": "4b79b1d4-1b78-4a43-8db6-06a9f3bf2c31"
+  },
+  "response": {
+    "found": true,
+    "id": "4b79b1d4-1b78-4a43-8db6-06a9f3bf2c31",
+    "url": "https://www.magisterium.com/docs/ed397808-82f3-43e6-bf35-8f3f09fbdccc/ref/para-90",
+    "title": "Magnifica Humanitas",
+    "metadata": {
+      "author": "Pope Leo XIV",
+      "ref": "para-90"
+    },
+    "text_sha256": "e94ffe7a7d408ec862ce9afc582f6c7dea5b06dd6016b3963a277703cdbe2e5b",
+    "text_character_count": 1109,
+    "text_excerpt": "90. Having recalled the principles that shine a light on Social Doctrine, I would",
+    "text_omission_reason": "Full returned paragraph retained in operator working copy; public redistribution rights not established. Metadata, hash and short excerpt published."
+  },
+  "recorded_at": "2026-11-06T21:28:36.466931+00:00",
+  "timestamp_kind": "local_record_creation_after_tool_return",
+  "provider_timestamp": null,
+  "provider_request_id": null,
+  "tool_source_ref": "turn115file0",
+  "capture_scope": "Exact request and displayed response fields; search envelope normalized; fetch text projected under rights limits; not transport bytes."
+}

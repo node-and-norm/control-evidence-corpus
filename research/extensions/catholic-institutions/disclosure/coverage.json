@@ -1,0 +1,25 @@
+{
+  "version": "0.1.0",
+  "method": "Rendered from disclosure/record.json and policy-checks.json",
+  "primary_artifacts": [
+    "AI_DISCLOSURE.md",
+    "PROTOCOL.md",
+    "study-report.html",
+    "protocol.html",
+    "study-guide.ipynb"
+  ],
+  "reading_files": [
+    "NodeNorm_Study_v0_4_1.html",
+    "NodeNorm_Protocol_v0_4_1.html",
+    "NodeNorm_Protocol_v0_4_1.md",
+    "NodeNorm_Notebook_v0_4_1.ipynb",
+    "NodeNorm_Study_v0_4_1.pdf"
+  ],
+  "notebook_code_cells": 6,
+  "notebook_executed": true,
+  "pdf_rendered": true,
+  "historical_archives_modified": false,
+  "root_readme_modified": false,
+  "independent_validation": false,
+  "venue_compliance": "pending"
+}

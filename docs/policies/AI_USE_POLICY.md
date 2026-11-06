@@ -17,3 +17,11 @@ This implementation, its literature screening, synthetic examples, dossier rende
 ## Reproducibility and access
 
 Archive material prompts and outputs under access and rights controls when they affect research reproducibility. Do not put credentials, unnecessary personal data, or sealed holdout packets in public logs.
+
+## Study-specific implementation and publication guidance
+
+The [Catholic institutional study disclosure](../../research/extensions/catholic-institutions/disclosure/README.md) implements this policy through an artifact-scoped contribution record, actual-review fields, a preserved historical guidance register, and separately dated policy checks. This is additive to the general CEC rules above; it does not change empirical admission or independent-review gates.
+
+Follow [Node & Norm research-integrity commitments](https://nodeandnorm.org/about/research-integrity/). Separate author authorization, personal inspection, specified-claim verification, independent assessment, and release approval. Do not infer one from another or import attestations from another study. Disclose substantive research, interpretation, code and presentation assistance, with unknown metadata explicit. AI tools cannot receive authorship or independent-human-review status.
+
+Publisher requirements are venue-specific and time-sensitive. Retain the date and access limits of every comparison, verify the chosen venue before submission, and leave compliance pending when no venue is selected. A passing software check verifies only its stated structural condition. Archived disclosures preserve their original history; current records identify corrections and additional qualifications.

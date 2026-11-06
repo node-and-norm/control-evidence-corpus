@@ -1,0 +1,43 @@
+{
+  "run_id": "SV-20261106-001",
+  "status": "completed_with_unresolved_targets",
+  "kind": "exploratory_source_verification",
+  "plan_sha256": "db401f5a3c6a036e7e0e0bb0595559921d8f70c8fb5ae00d958a746679c159bb",
+  "queries": 2,
+  "mcp_calls": 4,
+  "search_results_returned": 11,
+  "selected_targets": 2,
+  "fetches": 2,
+  "retries": 0,
+  "counts": {
+    "locator_match": 0,
+    "locator_mismatch": 1,
+    "fetch_not_found": 1
+  },
+  "results": [
+    {
+      "target": "AN-44",
+      "selected_id": "1",
+      "search_locator": "44",
+      "fetched_locator": null,
+      "outcome": "fetch_not_found",
+      "finding": "The exact returned identifier did not resolve in this fetch."
+    },
+    {
+      "target": "MH-105",
+      "selected_id": "4b79b1d4-1b78-4a43-8db6-06a9f3bf2c31",
+      "search_locator": "para-105",
+      "fetched_locator": "para-90",
+      "outcome": "locator_mismatch",
+      "finding": "The fetch returned a different numbered paragraph."
+    }
+  ],
+  "conclusion": "Neither selected target produced a verified requested passage through its search/fetch pair in this run. Both failures were retained.",
+  "limits": [
+    "Two purposive targets with prior exposure, one run and no independent reviewer.",
+    "No provider-defect attribution, population reliability estimate or doctrinal assessment.",
+    "Full returned text is withheld from public export pending rights review.",
+    "No Catholic institutional incident or safeguard experiment; no canonical CEC admission."
+  ],
+  "next_action": "Check identifier/chunk semantics with provider documentation or a separate approved replication; qualified source-mapping review remains pending."
+}

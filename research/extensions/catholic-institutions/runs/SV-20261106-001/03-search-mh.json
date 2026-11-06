@@ -1,0 +1,68 @@
+{
+  "record_id": "03-search-mh",
+  "run_id": "SV-20261106-001",
+  "tool": "Magisterium_AI.search",
+  "request": {
+    "query": "Magnifica Humanitas paragraph 105 artificial intelligence human responsibility accountability"
+  },
+  "response": {
+    "returned_items": [
+      {
+        "id": "4b79b1d4-1b78-4a43-8db6-06a9f3bf2c31",
+        "url": "https://www.magisterium.com/docs/ed397808-82f3-43e6-bf35-8f3f09fbdccc/ref/para-105",
+        "title": "Magnifica Humanitas"
+      },
+      {
+        "id": "fdae90f0-06af-4fe0-83c2-98a3dad493e8",
+        "url": "https://www.magisterium.com/docs/ed397808-82f3-43e6-bf35-8f3f09fbdccc/ref/para-181",
+        "title": "Magnifica Humanitas"
+      },
+      {
+        "id": "80d1eb86-52b1-4bcf-a354-636797be87ad",
+        "url": "https://www.magisterium.com/docs/ed397808-82f3-43e6-bf35-8f3f09fbdccc/ref/para-233",
+        "title": "Magnifica Humanitas"
+      },
+      {
+        "id": "1984dfac-033f-4796-9d51-abcaa47a2226",
+        "url": "https://www.magisterium.com/docs/ed397808-82f3-43e6-bf35-8f3f09fbdccc/ref/para-209",
+        "title": "Magnifica Humanitas"
+      },
+      {
+        "id": "2698efc7-af6d-4235-bc43-588978453e1c",
+        "url": "https://www.magisterium.com/docs/429efa31-df0f-455d-b7e1-c104ed929e3b/ref/44",
+        "title": "Antiqua et Nova (The Old and the New): Note on the Relationship Between Artificial Intelligence and Human Intelligence"
+      },
+      {
+        "id": "712f5bf7-3606-4484-8e69-d767b088b21a",
+        "url": "https://www.magisterium.com/docs/e053b030-7998-4c4d-96cb-1fe261db5d6c/ref/page1",
+        "title": "Presentation and promulgation of the Encyclical Letter “Magnifica humanitas” (25 May 2026)"
+      },
+      {
+        "id": "153e923f-1775-4ab5-989d-79c4f68f7b92",
+        "url": "https://www.magisterium.com/docs/429efa31-df0f-455d-b7e1-c104ed929e3b/ref/108",
+        "title": "Antiqua et Nova (The Old and the New): Note on the Relationship Between Artificial Intelligence and Human Intelligence"
+      },
+      {
+        "id": "22267595-119d-46fd-a4ad-8fa31576a28a",
+        "url": "https://www.magisterium.com/docs/1c106e1e-582a-46b6-aba0-9fb92cc9d437/ref/page1",
+        "title": "To the Participants in the Meeting Promoted by the Pontifical Academy for Life (30 October 2026)"
+      },
+      {
+        "id": "85e16b37-2333-4f67-9f1c-5e0ac8dcda88",
+        "url": "https://www.magisterium.com/docs/429efa31-df0f-455d-b7e1-c104ed929e3b/ref/39",
+        "title": "Antiqua et Nova (The Old and the New): Note on the Relationship Between Artificial Intelligence and Human Intelligence"
+      },
+      {
+        "id": "2d78c232-188f-40ea-a918-468242f6eac0",
+        "url": "https://www.magisterium.com/docs/ed397808-82f3-43e6-bf35-8f3f09fbdccc/ref/para-15",
+        "title": "Magnifica Humanitas"
+      }
+    ]
+  },
+  "recorded_at": "2026-11-06T21:28:36.466812+00:00",
+  "timestamp_kind": "local_record_creation_after_tool_return",
+  "provider_timestamp": null,
+  "provider_request_id": null,
+  "tool_source_ref": "turn114file0 through turn114file9",
+  "capture_scope": "Exact request and displayed response fields; search envelope normalized; fetch text projected under rights limits; not transport bytes."
+}

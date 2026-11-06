@@ -1,0 +1,16 @@
+{
+  "kind": "software_maintenance_validation",
+  "version": "0.3.0",
+  "date": "2026-11-06",
+  "python": "3.13.5",
+  "packages": {"nbformat":"5.10.4","nbclient":"0.10.4","mistune":"3.2.1"},
+  "expanded_notebook": {"cells":18,"code_cells_executed":4,"execution_context":"empty working directory, embedded inputs","network_calls":0},
+  "repository_notebook": {"cells":10,"code_cells_executed":4,"execution_context":"local workbench with legacy files","network_calls":0},
+  "boundary_tests": {"synthetic_cases":17,"failures":0,"errors":0,"scientific_validity_established":false},
+  "legacy_hash_mismatches": [],
+  "html_checks": {"desktop_width":1440,"mobile_width":390,"horizontal_overflow":false,"expand_collapse_anchor_controls":"passed","javascript_errors":[]},
+  "rendering_limitations": ["Default Playwright browser was absent; installed system Chromium was used.","Local file navigation was blocked by browser policy; authored HTML was rendered using set_content without disabling that policy.","Checks are developer-run maintenance tests, not independent accessibility or research validation."],
+  "empirical_tests_executed": 0,
+  "independent_human_reviews": 0,
+  "missing_historical_raw_logs_reconstructed": false
+}

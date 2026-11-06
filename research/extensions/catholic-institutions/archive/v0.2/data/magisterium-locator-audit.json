@@ -1,0 +1,90 @@
+{
+  "id": "MAGISTERIUM-SOURCE-LOCATOR-SMOKE-TEST",
+  "version": "0.2.0",
+  "date": "2026-11-06",
+  "scope": "Small manual tool-interaction check of search/fetch consistency, not a reliability study",
+  "status": "Exploratory: observed returned identifiers, URLs and paragraph locators; no cause attributed",
+  "tool_name": "Magisterium AI connected MCP search and fetch",
+  "original_authority": "https://www.vatican.va/",
+  "tests": [
+    {
+      "id": "LOC-01",
+      "document": "Antiqua et Nova",
+      "search_expected_ref": "44",
+      "search_id": "2698efc7-af6d-4235-bc43-588978453e1c",
+      "search_url": "https://www.magisterium.com/docs/429efa31-df0f-455d-b7e1-c104ed929e3b/ref/44",
+      "fetch_found": true,
+      "fetch_returned_ref": "44",
+      "fetch_returned_url": "https://www.magisterium.com/docs/429efa31-df0f-455d-b7e1-c104ed929e3b/ref/44",
+      "classification": "match",
+      "interpretation": "Search and fetch locators aligned; original Vatican text inspected."
+    },
+    {
+      "id": "LOC-02",
+      "document": "Antiqua et Nova",
+      "search_expected_ref": "46",
+      "search_id": "62dba664-6863-4c39-a290-ef5edf702bf6",
+      "search_url": "https://www.magisterium.com/docs/429efa31-df0f-455d-b7e1-c104ed929e3b/ref/46",
+      "fetch_found": true,
+      "fetch_returned_ref": "46",
+      "fetch_returned_url": "https://www.magisterium.com/docs/429efa31-df0f-455d-b7e1-c104ed929e3b/ref/46",
+      "classification": "match",
+      "interpretation": "Search and fetch locators aligned; original Vatican text inspected."
+    },
+    {
+      "id": "LOC-03",
+      "document": "Magnifica Humanitas",
+      "search_expected_ref": "105",
+      "search_id": "1",
+      "search_url": "https://www.magisterium.com/docs/ed397808-82f3-43e6-bf35-8f3f09fbdccc/ref/105",
+      "fetch_found": false,
+      "fetch_returned_ref": null,
+      "fetch_returned_url": null,
+      "classification": "fetch_not_found",
+      "interpretation": "Search advertised result ID 1 but fetch did not resolve it. Do not use this identifier as a verified citation."
+    },
+    {
+      "id": "LOC-04",
+      "document": "Magnifica Humanitas",
+      "search_expected_ref": "para-95",
+      "search_id": "4b79b1d4-1b78-4a43-8db6-06a9f3bf2c31",
+      "search_url": "https://www.magisterium.com/docs/ed397808-82f3-43e6-bf35-8f3f09fbdccc/ref/para-95",
+      "fetch_found": true,
+      "fetch_returned_ref": "para-90",
+      "fetch_returned_url": "https://www.magisterium.com/docs/ed397808-82f3-43e6-bf35-8f3f09fbdccc/ref/para-90",
+      "classification": "locator_mismatch",
+      "interpretation": "A search result for para-95 returned paragraph 90 on fetch. The same ID appeared in another search as para-99."
+    },
+    {
+      "id": "LOC-05",
+      "document": "Magnifica Humanitas",
+      "search_expected_ref": "para-145",
+      "search_id": "fdae90f0-06af-4fe0-83c2-98a3dad493e8",
+      "search_url": "https://www.magisterium.com/docs/ed397808-82f3-43e6-bf35-8f3f09fbdccc/ref/para-145",
+      "fetch_found": true,
+      "fetch_returned_ref": "para-131",
+      "fetch_returned_url": "https://www.magisterium.com/docs/ed397808-82f3-43e6-bf35-8f3f09fbdccc/ref/para-131",
+      "classification": "locator_mismatch",
+      "interpretation": "A search result for para-145 returned paragraph 131 on fetch."
+    },
+    {
+      "id": "LOC-06",
+      "document": "Magnifica Humanitas",
+      "search_expected_ref": "para-71",
+      "search_id": "c0959c25-af2d-4194-b122-238406318f2f",
+      "search_url": "https://www.magisterium.com/docs/ed397808-82f3-43e6-bf35-8f3f09fbdccc/ref/para-71",
+      "fetch_found": true,
+      "fetch_returned_ref": "para-46",
+      "fetch_returned_url": "https://www.magisterium.com/docs/ed397808-82f3-43e6-bf35-8f3f09fbdccc/ref/para-46",
+      "classification": "locator_mismatch",
+      "interpretation": "A search result for para-71 returned paragraph 46 on fetch."
+    }
+  ],
+  "rules": [
+    "Do not silently substitute the paragraph suggested by search for the fetched paragraph.",
+    "Compare search URL, fetched metadata reference, fetched passage opening, and official Vatican paragraph.",
+    "Retain match/mismatch/fetch-not-found states. Do not conclude a platform-level defect from this small sample.",
+    "Use the Vatican text as authoritative for normative quotations; use Magisterium as discovery until locator verification passes.",
+    "Do not treat this technical citation check as an empirical test of AI safeguard effectiveness."
+  ]
+}

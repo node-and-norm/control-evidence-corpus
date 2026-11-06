@@ -1,0 +1,32 @@
+name: Clean merged Catholic pilot branch
+on:
+  pull_request:
+    types: [closed]
+permissions:
+  contents: read
+jobs:
+  cleanup:
+    if: github.event.pull_request.merged == true && github.event.pull_request.head.ref == 'research/catholic-institutional-ai-pilot' && github.event.pull_request.head.repo.full_name == github.repository
+    runs-on: ubuntu-24.04
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+      - name: Verify all branch history is merged before deleting this branch
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          BRANCH='research/catholic-institutional-ai-pilot'
+          if ! HEAD_SHA=$(gh api "repos/$GITHUB_REPOSITORY/git/ref/heads/$BRANCH" --jq '.object.sha' 2>/dev/null); then
+            echo 'The branch is already absent; no action taken.'
+            exit 0
+          fi
+          git fetch origin main "$BRANCH"
+          git merge-base --is-ancestor "$HEAD_SHA" origin/main
+          CURRENT_SHA=$(gh api "repos/$GITHUB_REPOSITORY/git/ref/heads/$BRANCH" --jq '.object.sha')
+          test "$CURRENT_SHA" = "$HEAD_SHA"
+          gh api --method DELETE "repos/$GITHUB_REPOSITORY/git/refs/heads/$BRANCH"
+          echo "Deleted merged branch $BRANCH at $HEAD_SHA. All history remains in main."

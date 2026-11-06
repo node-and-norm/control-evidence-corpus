@@ -1,0 +1,29 @@
+{
+  "kind": "maintenance_checks",
+  "reading_version": "0.4.0-dev",
+  "protocol_version": "0.3.0",
+  "source_pairs": [
+    {
+      "target": "AN-44",
+      "search_locator": "44",
+      "fetched_locator": null,
+      "outcome": "fetch_not_found"
+    },
+    {
+      "target": "MH-105",
+      "search_locator": "para-105",
+      "fetched_locator": "para-90",
+      "outcome": "locator_mismatch"
+    }
+  ],
+  "scientific_validation": false,
+  "offline_code_cells_executed": 5,
+  "render_checks": {
+    "desktop_width": 1440,
+    "mobile_width": 390,
+    "no_horizontal_overflow": true,
+    "javascript_errors": [],
+    "roadmap_controls": "passed",
+    "all_pdf_sections_expanded": true
+  }
+}

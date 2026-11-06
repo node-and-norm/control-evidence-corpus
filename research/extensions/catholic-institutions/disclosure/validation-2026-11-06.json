@@ -1,0 +1,41 @@
+{
+  "record_id": "CEC-CATHOLIC-DISCLOSURE-VALIDATION-20261106",
+  "date": "2026-11-06",
+  "kind": "developer_run_software_and_artifact_verification",
+  "disclosure_source_commit": "a220557b89164bb459ca5539da2af27c2c1b1fd2",
+  "generated_readers_commit": "8c29e08641a6e01010280f037dbed32bdf1b70b7",
+  "reading_workflow": {
+    "run_id": 42306171151,
+    "job_id": 128195916213,
+    "conclusion": "success",
+    "steps_verified": [
+      "Build, execute and disclose the five reading files",
+      "Check the complete repository",
+      "Synchronize generated reading artifacts on the development branch",
+      "Upload reading artifact"
+    ]
+  },
+  "initial_link_check": {
+    "run_id": 42306170987,
+    "job_id": 128195915808,
+    "conclusion": "failure",
+    "observed_reason": "The new README links referenced AI_DISCLOSURE.md and NodeNorm_Study_v0_4_1.pdf before the reader-generation workflow had committed them.",
+    "resolution_scope": "The separate reader workflow generated the files, passed the complete repository checks, and committed the generated readers. This does not retroactively change the failed run's conclusion. The final branch head still requires its own check."
+  },
+  "downloaded_artifact": {
+    "artifact_id": 13546257039,
+    "sha256": "33ed61996874c3df9e8d5e92e9158fd5e1f4e93c2f09db46981f63253a1d6773",
+    "digest_matched": true,
+    "five_reader_manifest_hashes_matched": true,
+    "notebook_schema_validated": true,
+    "notebook_code_cells_with_saved_execution": 6,
+    "pdf_pages": 32,
+    "pdf_review_scope": "Rendered final disclosure pages inspected locally for text and table legibility; not an independent accessibility audit."
+  },
+  "review_limits": [
+    "Fifteen disclosure checks use software mutations, not research participants or independent raters.",
+    "Successful tests do not establish source truth, theological validity, safeguard effectiveness or venue compliance.",
+    "No new human review attestation, independent review or ecclesial endorsement is created by this record.",
+    "The underlying pilot outcomes and main hypotheses remain unchanged."
+  ]
+}
