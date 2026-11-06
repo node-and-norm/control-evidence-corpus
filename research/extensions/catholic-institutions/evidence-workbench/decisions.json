@@ -1,0 +1,51 @@
+{
+  "version": "0.3.0",
+  "accountable_human_acceptance": "Not recorded in this artifact",
+  "decisions": [
+    {
+      "id": "ED-001",
+      "date": "2026-11-06",
+      "choice": "Keep pilot protocol 0.2.0 and canonical CEC study unchanged; add a separate 0.3.0 evidence-review companion.",
+      "alternative": "Rewrite the study as a LangGraph application.",
+      "reason": "Research design and evidence custody are prior to orchestration; avoid scope drift.",
+      "status": "Implemented documentation choice; maintainer review pending",
+      "relevant_outcomes_seen": "Legacy source-comparison summaries seen; no new Catholic experimental outcomes."
+    },
+    {
+      "id": "ED-002",
+      "date": "2026-11-06",
+      "choice": "Describe six legacy rows as selected locator comparisons and preserve missing raw capture.",
+      "alternative": "Call them a complete six-interaction reliability study.",
+      "reason": "No complete query-to-response archive or sampling frame exists in the inspected package.",
+      "status": "Implemented evidence qualification; independent audit pending",
+      "relevant_outcomes_seen": "Legacy locator rows inspected."
+    },
+    {
+      "id": "ED-003",
+      "date": "2026-11-06",
+      "choice": "Record source, interpretation, technical observation, and qualified review separately.",
+      "alternative": "A single AI confidence or Catholic-compliance score.",
+      "reason": "Each supports a different proposition and requires different authority.",
+      "status": "Proposed research contract; not a frozen amendment",
+      "relevant_outcomes_seen": "No new empirical outcomes."
+    },
+    {
+      "id": "ED-004",
+      "date": "2026-11-06",
+      "choice": "Require named runs, observable traces, preserved failures and qualified review before multi-agent-study claims.",
+      "alternative": "Count multiple tools or AI personas as independent researchers.",
+      "reason": "Role labels and agreement cannot establish executed work or independence.",
+      "status": "Proposed prospective capture contract",
+      "relevant_outcomes_seen": "No multi-agent Catholic run executed."
+    },
+    {
+      "id": "ED-005",
+      "date": "2026-11-06",
+      "choice": "Run synthetic boundary checks and label them software maintenance only.",
+      "alternative": "Treat notebook execution as pilot safeguard validation.",
+      "reason": "Executable infrastructure is not empirical evidence of the target construct.",
+      "status": "Implemented; 17 synthetic software cases executed",
+      "relevant_outcomes_seen": "Software test outcomes observed; no study outcomes."
+    }
+  ]
+}

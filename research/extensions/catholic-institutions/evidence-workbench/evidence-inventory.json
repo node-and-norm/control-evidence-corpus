@@ -1,0 +1,68 @@
+{
+  "id": "CEC-CATHOLIC-EVIDENCE-REVIEW-20261106",
+  "version": "0.3.0",
+  "governing_protocol_version": "0.2.0",
+  "review_date": "2026-11-06",
+  "baseline_commit": "05db933132a41f9ec15c9b85e52758960b06ad6f",
+  "scope": "Maintenance audit and prospective evidence-contract preparation; no empirical study execution.",
+  "shared_chat_access": "Shared page failed to return transcript; six lesson transcripts and five-notebook overview were retrieved from supplied files.",
+  "legacy_capture_status": "Six selected locator-comparison rows; complete original request-response archives absent from inspected package.",
+  "model_team_status": "One assistant with retrieval/programming tools for this audit. No executed multi-agent Catholic study established.",
+  "files": [
+    {"path":"DECISIONS.md","bytes":3241,"sha256":"f693c8d37789d314d4b8b436f92a5195cba2f8136a37d0ae33c3f487901b0b1c","git_blob_sha1":"e62f5d6fdf426d7abc5a440e767354c4060e7dfb"},
+    {"path":"PROTOCOL.md","bytes":22658,"sha256":"8a7979967ba2468d12a136152d28a4ec0e199a6af77be7f6c438865d1a213a5d","git_blob_sha1":"f6ba7e763505793d7986ded1dd56997a85c624f7"},
+    {"path":"README.md","bytes":3446,"sha256":"31353c50de35446ba1186ae7361d6dd98d22d45604383cef72469c5c97a2d041","git_blob_sha1":"aef8af00ade41b63d9c84ad9e5ea467e4f17eb66"},
+    {"path":"assets/workflow.svg","bytes":4120,"sha256":"dcb27aed89e988ff7e610f50f063a1ef8ed99181b95a65df07b2154eeffec53a","git_blob_sha1":"d945fbad0076763e020b44e817416175dce53b17"},
+    {"path":"data/magisterium-locator-audit.json","bytes":4480,"sha256":"bc985836c8bdfa01cf26582e0ae53a775e1fbaab82cc929ba3cbeb0b5f7c34fa","git_blob_sha1":"642c4af957fec67cd147692ff5c0a9887a39bd34"},
+    {"path":"data/normative-crosswalk.json","bytes":24807,"sha256":"d9d76d58dc0186e1a5956b66028992845ef5f1b273d3ca1eccdb4f5fa24bf5d0","git_blob_sha1":"1dfcff0b6333703535d7945abe4002f01c69522d"},
+    {"path":"scripts/build_study.py","bytes":45173,"sha256":"a81da09d6e617bbcfd2139eb81998f96d0e5d8349dc0e5d7e54b7271e59cabb0","git_blob_sha1":"b8808ad3d87c0af08568c8596cb29d6f0767a842"},
+    {"path":"study-guide.ipynb","bytes":29435,"sha256":"abf75121bbf332de9afda6b5d4ffd340455f3ed46a72f554e4849ba93e2c494a","git_blob_sha1":"4b44b7cf8f8063ec6c48c35181c18c691c20fb97"},
+    {"path":"study-report.html","bytes":62230,"sha256":"743a456e3c575f35c1de65f022e036fef911d21c5f061663f7bf9290e01cefac","git_blob_sha1":"566acff14b9ae3e45106bce1cecf5017894c6899"},
+    {"path":"study.json","bytes":20278,"sha256":"5bf2e657a09292bd4680f60b8385f00b48927ad30b1210c15b691f84f9176cdf","git_blob_sha1":"2c67921f080c0cdf451de52a75017b17a9f5fa0a"}
+  ],
+  "mapping_candidates": [
+    {"id":"NORM-AN-034","document":"AN","paragraph":34,"status":"qualified_review_pending"},
+    {"id":"NORM-AN-039","document":"AN","paragraph":39,"status":"qualified_review_pending"},
+    {"id":"NORM-AN-042","document":"AN","paragraph":42,"status":"qualified_review_pending"},
+    {"id":"NORM-AN-044","document":"AN","paragraph":44,"status":"qualified_review_pending"},
+    {"id":"NORM-AN-045","document":"AN","paragraph":45,"status":"qualified_review_pending"},
+    {"id":"NORM-AN-046","document":"AN","paragraph":46,"status":"qualified_review_pending"},
+    {"id":"NORM-AN-093","document":"AN","paragraph":93,"status":"qualified_review_pending"},
+    {"id":"NORM-AN-110","document":"AN","paragraph":110,"status":"qualified_review_pending"},
+    {"id":"NORM-MH-095","document":"MH","paragraph":95,"status":"qualified_review_pending"},
+    {"id":"NORM-MH-099","document":"MH","paragraph":99,"status":"qualified_review_pending"},
+    {"id":"NORM-MH-102","document":"MH","paragraph":102,"status":"qualified_review_pending"},
+    {"id":"NORM-MH-104","document":"MH","paragraph":104,"status":"qualified_review_pending"},
+    {"id":"NORM-MH-105","document":"MH","paragraph":105,"status":"qualified_review_pending"},
+    {"id":"NORM-MH-106","document":"MH","paragraph":106,"status":"qualified_review_pending"},
+    {"id":"NORM-MH-108","document":"MH","paragraph":108,"status":"qualified_review_pending"},
+    {"id":"NORM-MH-109","document":"MH","paragraph":109,"status":"qualified_review_pending"},
+    {"id":"NORM-MH-145","document":"MH","paragraph":145,"status":"qualified_review_pending"},
+    {"id":"NORM-MH-164","document":"MH","paragraph":164,"status":"qualified_review_pending"}
+  ],
+  "locator_comparisons": [
+    {"id":"LOC-01","document":"Antiqua et Nova","search_expected_ref":"44","search_id":"2698efc7-af6d-4235-bc43-588978453e1c","search_url":"https://www.magisterium.com/docs/429efa31-df0f-455d-b7e1-c104ed929e3b/ref/44","fetch_found":true,"fetch_returned_ref":"44","fetch_returned_url":"https://www.magisterium.com/docs/429efa31-df0f-455d-b7e1-c104ed929e3b/ref/44","classification":"match","interpretation":"Search and fetch locators aligned; original Vatican text inspected."},
+    {"id":"LOC-02","document":"Antiqua et Nova","search_expected_ref":"46","search_id":"62dba664-6863-4c39-a290-ef5edf702bf6","search_url":"https://www.magisterium.com/docs/429efa31-df0f-455d-b7e1-c104ed929e3b/ref/46","fetch_found":true,"fetch_returned_ref":"46","fetch_returned_url":"https://www.magisterium.com/docs/429efa31-df0f-455d-b7e1-c104ed929e3b/ref/46","classification":"match","interpretation":"Search and fetch locators aligned; original Vatican text inspected."},
+    {"id":"LOC-03","document":"Magnifica Humanitas","search_expected_ref":"105","search_id":"1","search_url":"https://www.magisterium.com/docs/ed397808-82f3-43e6-bf35-8f3f09fbdccc/ref/105","fetch_found":false,"fetch_returned_ref":null,"fetch_returned_url":null,"classification":"fetch_not_found","interpretation":"Search advertised result ID 1 but fetch did not resolve it. Do not use this identifier as a verified citation."},
+    {"id":"LOC-04","document":"Magnifica Humanitas","search_expected_ref":"para-95","search_id":"4b79b1d4-1b78-4a43-8db6-06a9f3bf2c31","search_url":"https://www.magisterium.com/docs/ed397808-82f3-43e6-bf35-8f3f09fbdccc/ref/para-95","fetch_found":true,"fetch_returned_ref":"para-90","fetch_returned_url":"https://www.magisterium.com/docs/ed397808-82f3-43e6-bf35-8f3f09fbdccc/ref/para-90","classification":"locator_mismatch","interpretation":"A search result for para-95 returned paragraph 90 on fetch. The same ID appeared in another search as para-99."},
+    {"id":"LOC-05","document":"Magnifica Humanitas","search_expected_ref":"para-145","search_id":"fdae90f0-06af-4fe0-83c2-98a3dad493e8","search_url":"https://www.magisterium.com/docs/ed397808-82f3-43e6-bf35-8f3f09fbdccc/ref/para-145","fetch_found":true,"fetch_returned_ref":"para-131","fetch_returned_url":"https://www.magisterium.com/docs/ed397808-82f3-43e6-bf35-8f3f09fbdccc/ref/para-131","classification":"locator_mismatch","interpretation":"A search result for para-145 returned paragraph 131 on fetch."},
+    {"id":"LOC-06","document":"Magnifica Humanitas","search_expected_ref":"para-71","search_id":"c0959c25-af2d-4194-b122-238406318f2f","search_url":"https://www.magisterium.com/docs/ed397808-82f3-43e6-bf35-8f3f09fbdccc/ref/para-71","fetch_found":true,"fetch_returned_ref":"para-46","fetch_returned_url":"https://www.magisterium.com/docs/ed397808-82f3-43e6-bf35-8f3f09fbdccc/ref/para-46","classification":"locator_mismatch","interpretation":"A search result for para-71 returned paragraph 46 on fetch."}
+  ],
+  "counts_interpretation": "Inventory counts only. Locator comparisons are neither all API calls nor independent sampled events.",
+  "empirical_cases_admitted": 0,
+  "catholic_safeguard_experiments_completed": 0,
+  "independent_human_reviews_recorded": 0,
+  "source_review": [
+    {"id":"COURSE-TEXT","title":"User-supplied six lesson transcripts and five-notebook course outline","coverage":"Six lesson transcripts read; notebook overview read. Full shared-chat transcript unavailable.","raw_bytes_available":false,"redistribution":"Not included; private/source-rights boundary.","sha256":null,"missing_hash_reason":"Materialization of original bytes unavailable; a hash of reconstructed text would not identify the original file."},
+    {"id":"COURSE-AGENT","url":"https://github.com/langchain-ai/deep_research_from_scratch/blob/main/src/deep_research_from_scratch/research_agent.py","git_blob_sha1":"5c01b498495a0603e79f43fc63ee161eba49601c","coverage":"Full source inspected through connected GitHub; referenced, not copied."},
+    {"id":"COURSE-SUPERVISOR","url":"https://github.com/langchain-ai/deep_research_from_scratch/blob/main/src/deep_research_from_scratch/multi_agent_supervisor.py","git_blob_sha1":"ee6a5e70d8fbe18b0831d809929e18480d3fe566","coverage":"Full source inspected through connected GitHub; referenced, not copied."},
+    {"id":"CEC-AI-POLICY","url":"https://github.com/node-and-norm/control-evidence-corpus/blob/05db933132a41f9ec15c9b85e52758960b06ad6f/docs/policies/AI_USE_POLICY.md","git_blob_sha1":"41858a863406b02f9b04e8688fb6c543f7a17cbd","coverage":"Full policy read; independence rules preserved."},
+    {"id":"LC-EVAL","url":"https://docs.langchain.com/langsmith/evaluation-concepts","coverage":"Current official documentation inspected."},
+    {"id":"LG-PERSISTENCE","url":"https://docs.langchain.com/oss/python/langgraph/persistence","coverage":"Current official documentation inspected."}
+  ],
+  "limits": [
+    "Machine and assistant checks do not constitute independent scientific review.",
+    "Prior complete prompts, model snapshots, and tool responses are not recreated.",
+    "Theological validity and control effectiveness remain unestablished."
+  ]
+}
