@@ -2,7 +2,7 @@
 import copy,json,runpy,unittest
 from pathlib import Path
 ROOT=Path(__file__).resolve().parents[1]
-B=ROOT/'research/extensions/catholic-institutions/scenario-batches/CB-001'
+B=ROOT/'catholic-ai-pilot/_evidence/scenarios/CB-001'
 R=B/'PARISH-QA-001-R1'
 class ParishObservationTests(unittest.TestCase):
     @classmethod

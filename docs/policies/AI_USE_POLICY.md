@@ -20,7 +20,7 @@ Archive material prompts and outputs under access and rights controls when they 
 
 ## Study-specific implementation and publication guidance
 
-The [Catholic institutional study disclosure](../../research/extensions/catholic-institutions/disclosure/README.md) implements this policy through an artifact-scoped contribution record, actual-review fields, a preserved historical guidance register, and separately dated policy checks. This is additive to the general CEC rules above; it does not change empirical admission or independent-review gates.
+The [Catholic institutional study disclosure](../../catholic-ai-pilot/07_AI_Disclosure.ipynb) implements this policy through an artifact-scoped contribution record, actual-review fields, a preserved historical guidance register, and separately dated policy checks. This is additive to the general CEC rules above; it does not change empirical admission or independent-review gates.
 
 Follow [Node & Norm research-integrity commitments](https://nodeandnorm.org/about/research-integrity/). Separate author authorization, personal inspection, specified-claim verification, independent assessment, and release approval. Do not infer one from another or import attestations from another study. Disclose substantive research, interpretation, code and presentation assistance, with unknown metadata explicit. AI tools cannot receive authorship or independent-human-review status.
 

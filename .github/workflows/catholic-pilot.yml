@@ -1,0 +1,46 @@
+name: Catholic pilot notebooks
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'CATHOLIC_PILOT.ipynb'
+      - 'catholic-ai-pilot/**'
+      - 'scripts/check_catholic_pilot.py'
+      - 'tests/test_catholic*.py'
+      - '.github/workflows/catholic-pilot.yml'
+  pull_request:
+    paths:
+      - 'CATHOLIC_PILOT.ipynb'
+      - 'catholic-ai-pilot/**'
+      - 'research/extensions/catholic-institutions/**'
+      - 'scripts/check_catholic_pilot.py'
+      - 'tests/test_catholic*.py'
+      - '.github/workflows/**'
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install notebook and repository dependencies
+        run: python -m pip install -r requirements.txt -r catholic-ai-pilot/requirements.txt
+      - name: Check evidence, source custody and offline notebooks
+        run: python scripts/check_catholic_pilot.py --execute --output /tmp/catholic-pilot-validation.json
+      - name: Check repository links and all tests
+        run: |
+          python scripts/check_docs.py
+          python -m unittest discover -s tests -v
+      - name: Ensure replay left retained notebooks and evidence unchanged
+        run: git diff --exit-code -- CATHOLIC_PILOT.ipynb catholic-ai-pilot
+      - uses: actions/upload-artifact@v4
+        with:
+          name: catholic-pilot-validation
+          path: /tmp/catholic-pilot-validation.json
+          if-no-files-found: error
