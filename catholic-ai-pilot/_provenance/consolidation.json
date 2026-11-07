@@ -1,0 +1,1160 @@
+{
+  "kind": "working_tree_consolidation",
+  "baseline_commit": "2ceb343b627b4aa13e3e5df84c4f7e8b2389683f",
+  "research_status": "unchanged; exploratory; qualified review pending",
+  "new_research_results": false,
+  "new_model_or_service_calls": 0,
+  "history_rewritten": false,
+  "old_directory_removed": "research/extensions/catholic-institutions",
+  "root_complete_notebook": {
+    "path": "CATHOLIC_PILOT.ipynb",
+    "source_path": "research/extensions/catholic-institutions/reading/editions/0.4.4-draft/NodeNorm_Notebook_v0_4_4.ipynb",
+    "source_sha256": "f72af7390066e4ac96b496351806c30bcb8d6c6757876551fa6d9370a2f18454",
+    "original_cells": 40,
+    "original_cell_source_hashes": [
+      "ae6b9bd9a9c15933ba08f399cadb9f3151e65a6a112f9ef38c8baada3dae60cc",
+      "673c568c7b7e595472cd7674564b62d51e28eacf929bb6a4c343dfe53854e672",
+      "122fb1fb8c3d2962e3b7f0d8b678f34a9441d9ec2af5cdce15b01af03dffa38a",
+      "5589602b2bf302e634d7c51b459d48b1a31ca66e4029be286801ac889ffa2dcc",
+      "b9079f9680b6a64a4121d0bcaf8af9e270ef979f670c421be38e41c77c7613ef",
+      "8fa5bbe92e352a98f52523a7aff7efd34ea5b7c675ed3428b0548b1ad1e1edf9",
+      "0a2bb51b9dbbf575b47a4ebfe2f4bcfa205d210d159fe8a8772f480ed101e1d1",
+      "6949a835b0f22c6271a01ec1870f8e4b4687a2cc1e016c79e69969a3fe8c81a2",
+      "3a4edda5984f49ef73002d912aaa3bd28d2b01733bffa9d67963c8b344576b93",
+      "f6d2c37faccb59e6820a222c48f6be66a5e63c4034acc6346456fee77d16e700",
+      "1618b304101a6263554e439746ee2f7f617d7525a0abec42584940216d01c198",
+      "37d0bba5d110d8bfa89daba0527291ce985e1355b303adf5c968489016fa377c",
+      "e0e73df7951d3d83222e8e3bcf9f61026402737c15292520111e89698786602a",
+      "710d1e2a4756d6ad3a828dba0a92707c206096533e7d3a8aebe50e61675e1f75",
+      "6b5f0015dde923bc17e19d6b46b58c5e2f245016e22338a905fdf854508db6a5",
+      "63559fc92a6b1900983bc2c442edb9902fb468329a1c76c378dd14e9f4d935b4",
+      "ceebce75b2d7631b369b20bc0410c9b8f8472169ebc4dcae939445068161be7a",
+      "73026c1576ccdf122a67283b5a82932045bf6cfb61243d8e0ee668a937aacaa2",
+      "09da127cd57a3bcfa5bedef662c43226d5e41fc2cea0b52dce750b19ff5963dd",
+      "8bbaa9ceff1423ec1dee7708ae1f1adbbc1b40e9facc8dbcdf33167724be350b",
+      "18e2d97bb01e2834e1631f38e2d6756ed7029239c768a698d42bb425998e6451",
+      "46649007974530b7d944e51d3e82233a51cef60891dae9b1a78f73c300daf0d4",
+      "d2584ef3e38acda9eb10ca53fe70e18689e1de69ba1f2dda912667ca257a6367",
+      "828786a2c65dcaf160b532656c95acf05d993db5bb6ae20ba4891ada39c25283",
+      "0071a588b2d2c89c2d8c02ba3cc2489d5cc9f81dc5dabb739f1a47a5489b5fed",
+      "758e8a7602062a39d3b3be1473ab173720175fadaff18f7e281e3a2d375dfcd6",
+      "e2e313dbca2ff27d6f2981f3417de86bc1596f77d330718cf24389b180790fdf",
+      "200ecd999c1cdd11b84cb6b593c3f54bd78b016b5772f8501ae4855a24a5887b",
+      "f334db0317718def46bb0aa5481d8177c6d67a2df53828413acf7fa25860b457",
+      "3139d128cc50faa4a1ea1bcb236bb691d4b737ea437f1de8b16af826b306f3c6",
+      "61c365c3d7532cfe5984b28558b89f14cae68904784323f61c48ad9ad186ca15",
+      "52be7bb62b9cc798135dea7a4fe445e788abc6cf36f536611ee9287e29dd893e",
+      "18475d05575d289642df016b7b9a9e320a2d4a8aec27c74429173b37b8a4532e",
+      "003c68a258b0c9a83fcaec34283491657b29a0d075da0e3f8177476e698da27f",
+      "6022dd0f8514d665e2dd13a9a16d77de8faee69b5c21216538699488bee6626d",
+      "e7b314ca9a3488d8c6ddac4fa4bff06dd7e6029415115ded90606e5b15fc1141",
+      "da5bd67202bf41721e8dd0cc87982daed5f47aa0128a41a36855b0d6cb48ed79",
+      "4f12ff7336128d2b69dbf3d5973995333a69c80a1e719ab3e2b2b4d8d3b88bbe",
+      "4f3ed18436c9b42f7fb172e2e8a0531cb0df8da3f50d071b8fc0e718016b9e5e",
+      "320d06a9210d21606864b3cfdbec08c10c79e84e2d7003a774aab7fa5f3f30f8"
+    ],
+    "original_code_outputs": [
+      {
+        "cell_id": "67cc94a3",
+        "execution_count": 1,
+        "outputs_sha256": "00a6bf315779b5545dd654df9b187fcb649e92d8c424fb6bf34ce1ca6e008b53"
+      },
+      {
+        "cell_id": "1586a3df",
+        "execution_count": 2,
+        "outputs_sha256": "568561c10ebb8bcbe788d3a1680d3394b4d73f1d2bd141ea42a880cf7c98ff23"
+      },
+      {
+        "cell_id": "e7a5b2fb",
+        "execution_count": 3,
+        "outputs_sha256": "ce4276ef9ec576ebe57a4b661ad8de3ea2b6bdaa104d80e4c59bc90e857abc2f"
+      },
+      {
+        "cell_id": "786547a6",
+        "execution_count": 4,
+        "outputs_sha256": "66a59d40bd79a3883aea5b15e7fb26bfcd7dd949d2c7a3636ee10710ea15e06a"
+      },
+      {
+        "cell_id": "ai-use-checks",
+        "execution_count": 5,
+        "outputs_sha256": "dc6e6b873911252f7f0eb391389adb80586d6a31d1f673aef12c69c00609a902"
+      },
+      {
+        "cell_id": "c-73026c1576cc",
+        "execution_count": 6,
+        "outputs_sha256": "d91739a3a55cee4fabfdc8b2383c909f7a018b4328c5ab01921346983cbfe9f3"
+      },
+      {
+        "cell_id": "c-758e8a760206",
+        "execution_count": 7,
+        "outputs_sha256": "75c7a80f181cfa324e0874b0fc28c6074beb661a2cd2b7c63b9222785d58003d"
+      },
+      {
+        "cell_id": "c-61c365c3d753",
+        "execution_count": 8,
+        "outputs_sha256": "fbb579edf56e290efbe68819ee931ff4ff1ad8e80c91ebb59a3f189e3f70439f"
+      },
+      {
+        "cell_id": "c-da5bd67202bf",
+        "execution_count": 9,
+        "outputs_sha256": "cc64e65024a522917b62dde16caa5493e2c36599ce5d9343ae2f5e1ff1ccaaa2"
+      },
+      {
+        "cell_id": "c-320d06a9210d",
+        "execution_count": 10,
+        "outputs_sha256": "c02ea20a7c0a381ee772b85fa29c450610a564bef88ff787cd911bd4ccaaf7d2"
+      }
+    ]
+  },
+  "retained_evidence": [
+    {
+      "old_path": "research/extensions/catholic-institutions/study.json",
+      "path": "catholic-ai-pilot/_evidence/design/study.json",
+      "sha256": "c76b94c6d13479b06b027d538070d12bb08cd1b87100bba911eca2bf4409b68b",
+      "bytes": 22042,
+      "relocation": "byte_identical"
+    },
+    {
+      "old_path": "research/extensions/catholic-institutions/archive/v0.2/study.json",
+      "path": "catholic-ai-pilot/_evidence/design/original-study.json",
+      "sha256": "5bf2e657a09292bd4680f60b8385f00b48927ad30b1210c15b691f84f9176cdf",
+      "bytes": 20278,
+      "relocation": "byte_identical"
+    },
+    {
+      "old_path": "research/extensions/catholic-institutions/data/magisterium-locator-audit.json",
+      "path": "catholic-ai-pilot/_evidence/sources/magisterium-locator-audit.json",
+      "sha256": "bc985836c8bdfa01cf26582e0ae53a775e1fbaab82cc929ba3cbeb0b5f7c34fa",
+      "bytes": 4480,
+      "relocation": "byte_identical"
+    },
+    {
+      "old_path": "research/extensions/catholic-institutions/data/normative-crosswalk.json",
+      "path": "catholic-ai-pilot/_evidence/sources/normative-crosswalk.json",
+      "sha256": "d9d76d58dc0186e1a5956b66028992845ef5f1b273d3ca1eccdb4f5fa24bf5d0",
+      "bytes": 24807,
+      "relocation": "byte_identical"
+    },
+    {
+      "old_path": "research/extensions/catholic-institutions/disclosure/coverage.json",
+      "path": "catholic-ai-pilot/_evidence/disclosure/coverage.json",
+      "sha256": "5cd2bed8b341c2ce25ced4f862179c6b5515e49596d5258ef1277c482caece41",
+      "bytes": 668,
+      "relocation": "byte_identical"
+    },
+    {
+      "old_path": "research/extensions/catholic-institutions/disclosure/historical-guidance-2026-10-27.json",
+      "path": "catholic-ai-pilot/_evidence/disclosure/historical-guidance-2026-10-27.json",
+      "sha256": "552bc93cf17280aef349a0cb62d6e90cd72d56369cc05836f633084354c29074",
+      "bytes": 4384,
+      "relocation": "byte_identical"
+    },
+    {
+      "old_path": "research/extensions/catholic-institutions/disclosure/policy-checks.json",
+      "path": "catholic-ai-pilot/_evidence/disclosure/policy-checks.json",
+      "sha256": "093680f64542256fe10695c9966df70af72f6008abeb35a643846963aa211ba2",
+      "bytes": 4227,
+      "relocation": "byte_identical"
+    },
+    {
+      "old_path": "research/extensions/catholic-institutions/disclosure/record.json",
+      "path": "catholic-ai-pilot/_evidence/disclosure/record.json",
+      "sha256": "5001f5fbd92a7cc34add4e7c4884046bba706e3402a8e1a34f665070612faa38",
+      "bytes": 9202,
+      "relocation": "byte_identical"
+    },
+    {
+      "old_path": "research/extensions/catholic-institutions/disclosure/validation-2026-11-06.json",
+      "path": "catholic-ai-pilot/_evidence/disclosure/validation-2026-11-06.json",
+      "sha256": "95ba0eaf0667ce58b37e85fe3652eb8e8e2ffe3835968cf0c52885ae82fa122d",
+      "bytes": 2114,
+      "relocation": "byte_identical"
+    },
+    {
+      "old_path": "research/extensions/catholic-institutions/evidence-workbench/course-alignment/source-register.json",
+      "path": "catholic-ai-pilot/_evidence/methods/course-alignment/source-register.json",
+      "sha256": "e8af9caa75a6ade616427ab088ca91589fbbd4129cd9853994a87665190ab4bc",
+      "bytes": 5452,
+      "relocation": "byte_identical"
+    },
+    {
+      "old_path": "research/extensions/catholic-institutions/evidence-workbench/decisions.json",
+      "path": "catholic-ai-pilot/_evidence/methods/decisions.json",
+      "sha256": "bcc9a44cd53005a51b277f645984257107186a7e4f02e0c235be84583859f3a7",
+      "bytes": 2634,
+      "relocation": "byte_identical"
+    },
+    {
+      "old_path": "research/extensions/catholic-institutions/evidence-workbench/evidence-inventory.json",
+      "path": "catholic-ai-pilot/_evidence/methods/evidence-inventory.json",
+      "sha256": "240ce04dd6fd1141fd1ced9581c1dbb14dc822ee356c4083a0e4895a37e7d304",
+      "bytes": 9502,
+      "relocation": "byte_identical"
+    },
+    {
+      "old_path": "research/extensions/catholic-institutions/evidence-workbench/templates/evidence-records.json",
+      "path": "catholic-ai-pilot/_evidence/methods/templates/evidence-records.json",
+      "sha256": "2bf112c63f69ace0fd668e139c8780c6816483de93d57be1718f1b8e4ff91575",
+      "bytes": 4899,
+      "relocation": "byte_identical"
+    },
+    {
+      "old_path": "research/extensions/catholic-institutions/evidence-workbench/validation/local-checks.json",
+      "path": "catholic-ai-pilot/_evidence/methods/validation/local-checks.json",
+      "sha256": "d756cd4fd2a33be87fb081610d352ecacc087175649acb68fcffe5ce3115593e",
+      "bytes": 1223,
+      "relocation": "byte_identical"
+    },
+    {
+      "old_path": "research/extensions/catholic-institutions/reading/archive-support/cir001/replay-inputs/case-results.csv",
+      "path": "catholic-ai-pilot/_evidence/scenarios/CB-001/CIR-001/replay-inputs/case-results.csv",
+      "sha256": "416e53de4daab3b1dcd7b8cd74432177cb551ed34c2e181ca721975a42888b94",
+      "bytes": 1680,
+      "relocation": "byte_identical"
+    },
+    {
+      "old_path": "research/extensions/catholic-institutions/reading/archive-support/cir001/replay-inputs/cases.json",
+      "path": "catholic-ai-pilot/_evidence/scenarios/CB-001/CIR-001/replay-inputs/cases.json",
+      "sha256": "e6d249868c9f2c9d409e554bd7cf6f32a376e4e5f77cc382ed99ebdc539b7337",
+      "bytes": 35318,
+      "relocation": "byte_identical"
+    },
+    {
+      "old_path": "research/extensions/catholic-institutions/reading/archive-support/cir001/replay-inputs/raw-results.replay.json",
+      "path": "catholic-ai-pilot/_evidence/scenarios/CB-001/CIR-001/replay-inputs/raw-results.replay.json",
+      "sha256": "086a9a5c40fafb979366fdca92730983bfddeca96e061bafb5a8899a162043c3",
+      "bytes": 31202,
+      "relocation": "byte_identical"
+    },
+    {
+      "old_path": "research/extensions/catholic-institutions/reading/archive-support/cir001/replay-inputs/registry.json",
+      "path": "catholic-ai-pilot/_evidence/scenarios/CB-001/CIR-001/replay-inputs/registry.json",
+      "sha256": "8f57ce5d891bc639e4918f0e4a48c2b5086975b9c795a8b7970cf3b9f10bd22e",
+      "bytes": 1499,
+      "relocation": "byte_identical"
+    },
+    {
+      "old_path": "research/extensions/catholic-institutions/reading/archive-support/cir001/replay-inputs/replay-receipt.json",
+      "path": "catholic-ai-pilot/_evidence/scenarios/CB-001/CIR-001/replay-inputs/replay-receipt.json",
+      "sha256": "31a535974103643b2f3c041f19df1b7ddf30732357f6b7df315e47777119cc83",
+      "bytes": 282,
+      "relocation": "byte_identical"
+    },
+    {
+      "old_path": "research/extensions/catholic-institutions/reading/archive-support/cir001/results.json",
+      "path": "catholic-ai-pilot/_evidence/scenarios/CB-001/CIR-001/results.json",
+      "sha256": "55a0e942b8f54489d045d896a4f8b683d600db90f00ffc98535278abda20a829",
+      "bytes": 3510,
+      "relocation": "byte_identical"
+    },
+    {
+      "old_path": "research/extensions/catholic-institutions/reading/archive-support/cir001/source-packet.json",
+      "path": "catholic-ai-pilot/_evidence/scenarios/CB-001/CIR-001/source-packet.json",
+      "sha256": "2f6950e3d7eea5a66c1ed81a446ce562580083e9db7a341a6c9c75593e999302",
+      "bytes": 4966,
+      "relocation": "byte_identical"
+    },
+    {
+      "old_path": "research/extensions/catholic-institutions/runs/SV-20261106-001/01-search-an.json",
+      "path": "catholic-ai-pilot/_evidence/runs/SV-20261106-001/01-search-an.json",
+      "sha256": "1f54c0ac9d1670929e8a57332dedc5dea191d40bb44b7b5166baaab85de06033",
+      "bytes": 938,
+      "relocation": "byte_identical"
+    },
+    {
+      "old_path": "research/extensions/catholic-institutions/runs/SV-20261106-001/02-fetch-an.json",
+      "path": "catholic-ai-pilot/_evidence/runs/SV-20261106-001/02-fetch-an.json",
+      "sha256": "5bd4a8df62f5600c4f9dfcab9f24b7bc0d15b9bdf4660f0d9eb5cb7c38bf05ea",
+      "bytes": 560,
+      "relocation": "byte_identical"
+    },
+    {
+      "old_path": "research/extensions/catholic-institutions/runs/SV-20261106-001/03-search-mh.json",
+      "path": "catholic-ai-pilot/_evidence/runs/SV-20261106-001/03-search-mh.json",
+      "sha256": "254dd471dac5d215afa3a162f4875f81b0075a7804c8dcccf8b60eb11ddf0b7b",
+      "bytes": 3207,
+      "relocation": "byte_identical"
+    },
+    {
+      "old_path": "research/extensions/catholic-institutions/runs/SV-20261106-001/04-fetch-mh.json",
+      "path": "catholic-ai-pilot/_evidence/runs/SV-20261106-001/04-fetch-mh.json",
+      "sha256": "f5258c9acbf35bf404e017b9dd68184afb0b8b341cafe0bdf9788b6e79fd2dd6",
+      "bytes": 1246,
+      "relocation": "byte_identical"
+    },
+    {
+      "old_path": "research/extensions/catholic-institutions/runs/SV-20261106-001/05-original-checks.json",
+      "path": "catholic-ai-pilot/_evidence/runs/SV-20261106-001/05-original-checks.json",
+      "sha256": "c25f5518cffef51dd8a035df7a2d0f5029bd6b8a43a21af3bb5126473f83ecc9",
+      "bytes": 1602,
+      "relocation": "byte_identical"
+    },
+    {
+      "old_path": "research/extensions/catholic-institutions/runs/SV-20261106-001/capture.json",
+      "path": "catholic-ai-pilot/_evidence/runs/SV-20261106-001/capture.json",
+      "sha256": "89726ea1c7978412dd8e75202dfbc34163506411f42642c484ddfed7a36dc9f3",
+      "bytes": 10246,
+      "relocation": "byte_identical"
+    },
+    {
+      "old_path": "research/extensions/catholic-institutions/runs/SV-20261106-001/plan.json",
+      "path": "catholic-ai-pilot/_evidence/runs/SV-20261106-001/plan.json",
+      "sha256": "db401f5a3c6a036e7e0e0bb0595559921d8f70c8fb5ae00d958a746679c159bb",
+      "bytes": 1753,
+      "relocation": "byte_identical"
+    },
+    {
+      "old_path": "research/extensions/catholic-institutions/runs/SV-20261106-001/results.json",
+      "path": "catholic-ai-pilot/_evidence/runs/SV-20261106-001/results.json",
+      "sha256": "8e35681ff615f1e0b3e07a512bde0e8c3a8601977a092eea4786e27f97809912",
+      "bytes": 1666,
+      "relocation": "byte_identical"
+    },
+    {
+      "old_path": "research/extensions/catholic-institutions/scenario-batches/CB-001/CIR-001/ai-use-and-publication.json",
+      "path": "catholic-ai-pilot/_evidence/scenarios/CB-001/CIR-001/ai-use-and-publication.json",
+      "sha256": "2ae3b3f9e95d57f0aeb5eb29a76fed5b467eca16afaf22d9991018b1dbc3bc8d",
+      "bytes": 1790,
+      "relocation": "byte_identical"
+    },
+    {
+      "old_path": "research/extensions/catholic-institutions/scenario-batches/CB-001/CIR-001/execution.json",
+      "path": "catholic-ai-pilot/_evidence/scenarios/CB-001/CIR-001/execution.json",
+      "sha256": "ae78065a7576858315ce11b6591c8a2f7d43d411bd46f124e034f37113ffb8e6",
+      "bytes": 578,
+      "relocation": "byte_identical"
+    },
+    {
+      "old_path": "research/extensions/catholic-institutions/scenario-batches/CB-001/CIR-001/plan.json",
+      "path": "catholic-ai-pilot/_evidence/scenarios/CB-001/CIR-001/plan.json",
+      "sha256": "202a69cb2d1fa7e6c944f6e4fd5a189d5ae90162e64296edf578360fdbb2bd37",
+      "bytes": 4230,
+      "relocation": "byte_identical"
+    },
+    {
+      "old_path": "research/extensions/catholic-institutions/scenario-batches/CB-001/PARISH-QA-001-R1/evidence.json",
+      "path": "catholic-ai-pilot/_evidence/scenarios/CB-001/PARISH-QA-001-R1/evidence.json",
+      "sha256": "56da15fd91419e391888e7c024102ec8a21cc844999fdee477b3ee5e4c2e0440",
+      "bytes": 20739,
+      "relocation": "byte_identical"
+    },
+    {
+      "old_path": "research/extensions/catholic-institutions/scenario-batches/CB-001/PARISH-QA-001-R1/validation.json",
+      "path": "catholic-ai-pilot/_evidence/scenarios/CB-001/PARISH-QA-001-R1/validation.json",
+      "sha256": "07605c16014ef86e75be91108d1b43d6a1638eb8518bd086986907b01816b4fb",
+      "bytes": 927,
+      "relocation": "byte_identical"
+    },
+    {
+      "old_path": "research/extensions/catholic-institutions/scenario-batches/CB-001/STATUS.json",
+      "path": "catholic-ai-pilot/_evidence/scenarios/CB-001/STATUS.json",
+      "sha256": "6c526bf3e33e5d4a9b869fddab483344bc6c30490d23fe581f23238c7d66089d",
+      "bytes": 1908,
+      "relocation": "byte_identical"
+    },
+    {
+      "old_path": "research/extensions/catholic-institutions/scenario-batches/CB-001/candidates.json",
+      "path": "catholic-ai-pilot/_evidence/scenarios/CB-001/candidates.json",
+      "sha256": "2a83edcce1ec43f7206bb332502fde36451a8da5bf6c95025aa8fac36431b74b",
+      "bytes": 17578,
+      "relocation": "byte_identical"
+    },
+    {
+      "old_path": "research/extensions/catholic-institutions/scenario-batches/CB-001/obligations/decision-record.json",
+      "path": "catholic-ai-pilot/_evidence/scenarios/CB-001/obligations/decision-record.json",
+      "sha256": "14cfd79b53d8b02d5bac92d4951a66923f06d3fac06e2d70fd03dc1db987ffdb",
+      "bytes": 1728,
+      "relocation": "byte_identical"
+    },
+    {
+      "old_path": "research/extensions/catholic-institutions/scenario-batches/CB-001/obligations/mappings.json",
+      "path": "catholic-ai-pilot/_evidence/scenarios/CB-001/obligations/mappings.json",
+      "sha256": "3db59633c5610ff847890a9ac62e0f68aaa179def24606a3be4bfbb61489c27c",
+      "bytes": 8312,
+      "relocation": "byte_identical"
+    },
+    {
+      "old_path": "research/extensions/catholic-institutions/scenario-batches/CB-001/obligations/parish-test-plan.json",
+      "path": "catholic-ai-pilot/_evidence/scenarios/CB-001/obligations/parish-test-plan.json",
+      "sha256": "433aac440c603139d014c0a92b686a35ba29f9f57f155f39d31148351ac8b1ae",
+      "bytes": 5037,
+      "relocation": "byte_identical"
+    },
+    {
+      "old_path": "research/extensions/catholic-institutions/scenario-batches/CB-001/obligations/sources.json",
+      "path": "catholic-ai-pilot/_evidence/scenarios/CB-001/obligations/sources.json",
+      "sha256": "a6ae9fafcb5075402ee14041374b87228f9a9e1ecdda7d4231bb5149d14b24fd",
+      "bytes": 7678,
+      "relocation": "byte_identical"
+    },
+    {
+      "old_path": "research/extensions/catholic-institutions/scenario-batches/CB-001/obligations/validation.json",
+      "path": "catholic-ai-pilot/_evidence/scenarios/CB-001/obligations/validation.json",
+      "sha256": "d5b5a2c085aea55646d9d7cc88d4069564fee0891e50ec340b1b3966b53c9476",
+      "bytes": 648,
+      "relocation": "byte_identical"
+    },
+    {
+      "old_path": "research/extensions/catholic-institutions/scenario-batches/CB-001/CIR-001/engine.py",
+      "path": "catholic-ai-pilot/_evidence/scenarios/CB-001/CIR-001/engine.py",
+      "sha256": "489e076b9aa54c0019d0b48c6be319baab9dbb0b23ce4aacdefa5dc87277e26b",
+      "bytes": 5790,
+      "relocation": "byte_identical"
+    },
+    {
+      "old_path": "research/extensions/catholic-institutions/scenario-batches/CB-001/CIR-001/prepare_inputs.py",
+      "path": "catholic-ai-pilot/_evidence/scenarios/CB-001/CIR-001/prepare_inputs.py",
+      "sha256": "7c7e728e71ffd724bbe52d8c67ca90f3ceb2f2afab781dbf843e7c15fd23c5c2",
+      "bytes": 7328,
+      "relocation": "byte_identical"
+    },
+    {
+      "old_path": "research/extensions/catholic-institutions/scenario-batches/CB-001/CIR-001/reproduce.py",
+      "path": "catholic-ai-pilot/_evidence/scenarios/CB-001/CIR-001/reproduce.py",
+      "sha256": "e582f7f381b3e2ae8a1dcb1f516ad43386a0fadf374946c07cbc30f662edde1c",
+      "bytes": 2899,
+      "relocation": "byte_identical"
+    },
+    {
+      "old_path": "research/extensions/catholic-institutions/scenario-batches/CB-001/obligations/validate.py",
+      "path": "catholic-ai-pilot/_evidence/scenarios/CB-001/obligations/validate.py",
+      "sha256": "ac3c637fa2391162233f6af7de4225703c7eede684e85ffd613dfd8521d769a0",
+      "bytes": 3013,
+      "relocation": "byte_identical"
+    },
+    {
+      "old_path": "research/extensions/catholic-institutions/scenario-batches/CB-001/PARISH-QA-001-R1/reproduce.py",
+      "path": "catholic-ai-pilot/_evidence/scenarios/CB-001/PARISH-QA-001-R1/reproduce.py",
+      "sha256": "9988fca640efa056a32da2a6a14f9af1315d1e7e44d96de7ae737bf295f7317d",
+      "bytes": 2170,
+      "relocation": "byte_identical"
+    }
+  ],
+  "identical_aliases": [],
+  "retired_files": [
+    {
+      "old_path": "research/extensions/catholic-institutions/RELEASE_NOTES.md",
+      "sha256": "00814170eccacee9e41e315c22f3073b44f85f19b850fc29ad7fab15b81cfa0f",
+      "bytes": 1372,
+      "preserved_at_commit": "2ceb343b627b4aa13e3e5df84c4f7e8b2389683f",
+      "reason": "superseded reader, historical edition or retired presentation builder; retained in Git history"
+    },
+    {
+      "old_path": "research/extensions/catholic-institutions/AI_DISCLOSURE.md",
+      "sha256": "8ba66a5ea56ee9f5b5b2adf4689ab284ed35501d1fe1c995a7216b2797709768",
+      "bytes": 9584,
+      "preserved_at_commit": "2ceb343b627b4aa13e3e5df84c4f7e8b2389683f",
+      "reason": "superseded reader, historical edition or retired presentation builder; retained in Git history"
+    },
+    {
+      "old_path": "research/extensions/catholic-institutions/release.json",
+      "sha256": "c408e9583d9569efadd1202e0a6c46d4b92276e65ade3c7249de6e27c449face",
+      "bytes": 782,
+      "preserved_at_commit": "2ceb343b627b4aa13e3e5df84c4f7e8b2389683f",
+      "reason": "superseded reader, historical edition or retired presentation builder; retained in Git history"
+    },
+    {
+      "old_path": "research/extensions/catholic-institutions/CHANGELOG.md",
+      "sha256": "e6932f1ba2edf4aeb1c37e665d7e1096b58ad8d6f502bad908c7b58460cbf4e5",
+      "bytes": 1106,
+      "preserved_at_commit": "2ceb343b627b4aa13e3e5df84c4f7e8b2389683f",
+      "reason": "superseded reader, historical edition or retired presentation builder; retained in Git history"
+    },
+    {
+      "old_path": "research/extensions/catholic-institutions/PROTOCOL.md",
+      "sha256": "92301a5ed0c8ce3ca27bc71a837532f484b876e5dce5d9079e25bbb4964e1462",
+      "bytes": 36505,
+      "preserved_at_commit": "2ceb343b627b4aa13e3e5df84c4f7e8b2389683f",
+      "reason": "superseded reader, historical edition or retired presentation builder; retained in Git history"
+    },
+    {
+      "old_path": "research/extensions/catholic-institutions/README.md",
+      "sha256": "53402d7a53fa8add9b1cf940828f304dbc644369c597160a0a210292f4c1163a",
+      "bytes": 7097,
+      "preserved_at_commit": "2ceb343b627b4aa13e3e5df84c4f7e8b2389683f",
+      "reason": "superseded reader, historical edition or retired presentation builder; retained in Git history"
+    },
+    {
+      "old_path": "research/extensions/catholic-institutions/study-guide.ipynb",
+      "sha256": "b2ff481ba61ba930d4f74d58ef71eafec93d875f66ded9d798128b10ba2b0b2b",
+      "bytes": 124137,
+      "preserved_at_commit": "2ceb343b627b4aa13e3e5df84c4f7e8b2389683f",
+      "reason": "superseded reader, historical edition or retired presentation builder; retained in Git history"
+    },
+    {
+      "old_path": "research/extensions/catholic-institutions/DECISIONS.md",
+      "sha256": "261a0b1d7bc102b286e97852c3d49095201bdcf378c516ef222da52e78bcca28",
+      "bytes": 3911,
+      "preserved_at_commit": "2ceb343b627b4aa13e3e5df84c4f7e8b2389683f",
+      "reason": "superseded reader, historical edition or retired presentation builder; retained in Git history"
+    },
+    {
+      "old_path": "research/extensions/catholic-institutions/METHOD_AMENDMENT.md",
+      "sha256": "dc9e9e91f38651885b076a3d94fd65f17ff3b05ffc36dffa8b6439f24e9e35e7",
+      "bytes": 4330,
+      "preserved_at_commit": "2ceb343b627b4aa13e3e5df84c4f7e8b2389683f",
+      "reason": "superseded reader, historical edition or retired presentation builder; retained in Git history"
+    },
+    {
+      "old_path": "research/extensions/catholic-institutions/EVIDENCE_INDEX.md",
+      "sha256": "f1c6862d9dac42209850a1a50c836d5bfb48f6c6c253b136a7197dbff90fe5fd",
+      "bytes": 723,
+      "preserved_at_commit": "2ceb343b627b4aa13e3e5df84c4f7e8b2389683f",
+      "reason": "superseded reader, historical edition or retired presentation builder; retained in Git history"
+    },
+    {
+      "old_path": "research/extensions/catholic-institutions/DISCLOSURE_CHANGELOG.md",
+      "sha256": "e6accd1c7b72e653a25752c4ae0d580713182bbba15041f4ed37318708546164",
+      "bytes": 2787,
+      "preserved_at_commit": "2ceb343b627b4aa13e3e5df84c4f7e8b2389683f",
+      "reason": "superseded reader, historical edition or retired presentation builder; retained in Git history"
+    },
+    {
+      "old_path": "research/extensions/catholic-institutions/study-report.html",
+      "sha256": "8351f33bb2bc839552e0a6cf07e7cd6d0cf262cb76a2b2c92e1ac91fd7367a62",
+      "bytes": 83810,
+      "preserved_at_commit": "2ceb343b627b4aa13e3e5df84c4f7e8b2389683f",
+      "reason": "superseded reader, historical edition or retired presentation builder; retained in Git history"
+    },
+    {
+      "old_path": "research/extensions/catholic-institutions/requirements-reading.txt",
+      "sha256": "796d46691fc480b94426cb264530893ad845bc73df93bb5a8365d0bcc50a7523",
+      "bytes": 85,
+      "preserved_at_commit": "2ceb343b627b4aa13e3e5df84c4f7e8b2389683f",
+      "reason": "superseded reader, historical edition or retired presentation builder; retained in Git history"
+    },
+    {
+      "old_path": "research/extensions/catholic-institutions/SCOPING.md",
+      "sha256": "09da127cd57a3bcfa5bedef662c43226d5e41fc2cea0b52dce750b19ff5963dd",
+      "bytes": 3434,
+      "preserved_at_commit": "2ceb343b627b4aa13e3e5df84c4f7e8b2389683f",
+      "reason": "superseded reader, historical edition or retired presentation builder; retained in Git history"
+    },
+    {
+      "old_path": "research/extensions/catholic-institutions/protocol.html",
+      "sha256": "45ebdc25d4b95f6d1ca9b1382998d2aace8646bb68a179da8c2fa4221ee631d4",
+      "bytes": 59201,
+      "preserved_at_commit": "2ceb343b627b4aa13e3e5df84c4f7e8b2389683f",
+      "reason": "superseded reader, historical edition or retired presentation builder; retained in Git history"
+    },
+    {
+      "old_path": "research/extensions/catholic-institutions/assets/workflow.svg",
+      "sha256": "dcb27aed89e988ff7e610f50f063a1ef8ed99181b95a65df07b2154eeffec53a",
+      "bytes": 4120,
+      "preserved_at_commit": "2ceb343b627b4aa13e3e5df84c4f7e8b2389683f",
+      "reason": "superseded reader, historical edition or retired presentation builder; retained in Git history"
+    },
+    {
+      "old_path": "research/extensions/catholic-institutions/archive/v0.2/PROTOCOL.md",
+      "sha256": "8a7979967ba2468d12a136152d28a4ec0e199a6af77be7f6c438865d1a213a5d",
+      "bytes": 22658,
+      "preserved_at_commit": "2ceb343b627b4aa13e3e5df84c4f7e8b2389683f",
+      "reason": "superseded reader, historical edition or retired presentation builder; retained in Git history"
+    },
+    {
+      "old_path": "research/extensions/catholic-institutions/archive/v0.2/README.md",
+      "sha256": "31353c50de35446ba1186ae7361d6dd98d22d45604383cef72469c5c97a2d041",
+      "bytes": 3446,
+      "preserved_at_commit": "2ceb343b627b4aa13e3e5df84c4f7e8b2389683f",
+      "reason": "superseded reader, historical edition or retired presentation builder; retained in Git history"
+    },
+    {
+      "old_path": "research/extensions/catholic-institutions/archive/v0.2/study-guide.ipynb",
+      "sha256": "abf75121bbf332de9afda6b5d4ffd340455f3ed46a72f554e4849ba93e2c494a",
+      "bytes": 29435,
+      "preserved_at_commit": "2ceb343b627b4aa13e3e5df84c4f7e8b2389683f",
+      "reason": "superseded reader, historical edition or retired presentation builder; retained in Git history"
+    },
+    {
+      "old_path": "research/extensions/catholic-institutions/archive/v0.2/DECISIONS.md",
+      "sha256": "f693c8d37789d314d4b8b436f92a5195cba2f8136a37d0ae33c3f487901b0b1c",
+      "bytes": 3241,
+      "preserved_at_commit": "2ceb343b627b4aa13e3e5df84c4f7e8b2389683f",
+      "reason": "superseded reader, historical edition or retired presentation builder; retained in Git history"
+    },
+    {
+      "old_path": "research/extensions/catholic-institutions/archive/v0.2/study-report.html",
+      "sha256": "743a456e3c575f35c1de65f022e036fef911d21c5f061663f7bf9290e01cefac",
+      "bytes": 62230,
+      "preserved_at_commit": "2ceb343b627b4aa13e3e5df84c4f7e8b2389683f",
+      "reason": "superseded reader, historical edition or retired presentation builder; retained in Git history"
+    },
+    {
+      "old_path": "research/extensions/catholic-institutions/archive/v0.2/assets/workflow.svg",
+      "sha256": "dcb27aed89e988ff7e610f50f063a1ef8ed99181b95a65df07b2154eeffec53a",
+      "bytes": 4120,
+      "preserved_at_commit": "2ceb343b627b4aa13e3e5df84c4f7e8b2389683f",
+      "reason": "superseded reader, historical edition or retired presentation builder; retained in Git history"
+    },
+    {
+      "old_path": "research/extensions/catholic-institutions/archive/v0.2/data/normative-crosswalk.json",
+      "sha256": "d9d76d58dc0186e1a5956b66028992845ef5f1b273d3ca1eccdb4f5fa24bf5d0",
+      "bytes": 24807,
+      "preserved_at_commit": "2ceb343b627b4aa13e3e5df84c4f7e8b2389683f",
+      "reason": "superseded reader, historical edition or retired presentation builder; retained in Git history"
+    },
+    {
+      "old_path": "research/extensions/catholic-institutions/archive/v0.2/data/magisterium-locator-audit.json",
+      "sha256": "bc985836c8bdfa01cf26582e0ae53a775e1fbaab82cc929ba3cbeb0b5f7c34fa",
+      "bytes": 4480,
+      "preserved_at_commit": "2ceb343b627b4aa13e3e5df84c4f7e8b2389683f",
+      "reason": "superseded reader, historical edition or retired presentation builder; retained in Git history"
+    },
+    {
+      "old_path": "research/extensions/catholic-institutions/archive/v0.2/scripts/build_study.py",
+      "sha256": "a81da09d6e617bbcfd2139eb81998f96d0e5d8349dc0e5d7e54b7271e59cabb0",
+      "bytes": 45173,
+      "preserved_at_commit": "2ceb343b627b4aa13e3e5df84c4f7e8b2389683f",
+      "reason": "superseded reader, historical edition or retired presentation builder; retained in Git history"
+    },
+    {
+      "old_path": "research/extensions/catholic-institutions/reading/NodeNorm_Protocol_v0_3_0.html",
+      "sha256": "a64e5fdfc7d8c4c6358507878cfe37b5f7ebe204364e39bc742738be15ee7898",
+      "bytes": 46461,
+      "preserved_at_commit": "2ceb343b627b4aa13e3e5df84c4f7e8b2389683f",
+      "reason": "superseded reader, historical edition or retired presentation builder; retained in Git history"
+    },
+    {
+      "old_path": "research/extensions/catholic-institutions/reading/NodeNorm_Protocol_v0_3_0.md",
+      "sha256": "00dd137a4a8272e5e08b5187ae3275f7c15593b735ef5154446349647ce8613a",
+      "bytes": 26876,
+      "preserved_at_commit": "2ceb343b627b4aa13e3e5df84c4f7e8b2389683f",
+      "reason": "superseded reader, historical edition or retired presentation builder; retained in Git history"
+    },
+    {
+      "old_path": "research/extensions/catholic-institutions/reading/NodeNorm_Notebook_v0_4_1.ipynb",
+      "sha256": "b2ff481ba61ba930d4f74d58ef71eafec93d875f66ded9d798128b10ba2b0b2b",
+      "bytes": 124137,
+      "preserved_at_commit": "2ceb343b627b4aa13e3e5df84c4f7e8b2389683f",
+      "reason": "superseded reader, historical edition or retired presentation builder; retained in Git history"
+    },
+    {
+      "old_path": "research/extensions/catholic-institutions/reading/NodeNorm_Study_v0_4_0.html",
+      "sha256": "5d874ce4d9673d1e104a421b2ddfcfd78f2c91cc1fcf3fe50518f9dc442fe362",
+      "bytes": 71070,
+      "preserved_at_commit": "2ceb343b627b4aa13e3e5df84c4f7e8b2389683f",
+      "reason": "superseded reader, historical edition or retired presentation builder; retained in Git history"
+    },
+    {
+      "old_path": "research/extensions/catholic-institutions/reading/ARCHIVE_POLICY.md",
+      "sha256": "11c26365b02cbe238f155469c4f66e7d3da46a95d03252fa913929aaf626993a",
+      "bytes": 5676,
+      "preserved_at_commit": "2ceb343b627b4aa13e3e5df84c4f7e8b2389683f",
+      "reason": "superseded reader, historical edition or retired presentation builder; retained in Git history"
+    },
+    {
+      "old_path": "research/extensions/catholic-institutions/reading/SHA256_MANIFEST.json",
+      "sha256": "1ccf90ab1194ca5d8f6d8918a7aee432c2c331133d8e01bd759c04d856a542a4",
+      "bytes": 8439,
+      "preserved_at_commit": "2ceb343b627b4aa13e3e5df84c4f7e8b2389683f",
+      "reason": "superseded reader, historical edition or retired presentation builder; retained in Git history"
+    },
+    {
+      "old_path": "research/extensions/catholic-institutions/reading/DISCLOSURE_READING_MANIFEST.json",
+      "sha256": "ea8b87277500805a69daf51a97240d1dee3557000dc48d9939f387e8c9ee611d",
+      "bytes": 1095,
+      "preserved_at_commit": "2ceb343b627b4aa13e3e5df84c4f7e8b2389683f",
+      "reason": "superseded reader, historical edition or retired presentation builder; retained in Git history"
+    },
+    {
+      "old_path": "research/extensions/catholic-institutions/reading/README.md",
+      "sha256": "7c75c3b02d57943179ef6d612a4f5fce02471263af058b19311d7bccb20f844b",
+      "bytes": 9075,
+      "preserved_at_commit": "2ceb343b627b4aa13e3e5df84c4f7e8b2389683f",
+      "reason": "superseded reader, historical edition or retired presentation builder; retained in Git history"
+    },
+    {
+      "old_path": "research/extensions/catholic-institutions/reading/NodeNorm_Notebook_v0_4_0.ipynb",
+      "sha256": "c5fb548d60c29896d1f693c006c415263a432db776aec590571435b49b8c6bd4",
+      "bytes": 102510,
+      "preserved_at_commit": "2ceb343b627b4aa13e3e5df84c4f7e8b2389683f",
+      "reason": "superseded reader, historical edition or retired presentation builder; retained in Git history"
+    },
+    {
+      "old_path": "research/extensions/catholic-institutions/reading/NodeNorm_Study_v0_4_0.pdf",
+      "sha256": "0914cdac5998cced219d247706756c584ec43773227212ba8d5eb2d9335f573b",
+      "bytes": 303414,
+      "preserved_at_commit": "2ceb343b627b4aa13e3e5df84c4f7e8b2389683f",
+      "reason": "superseded reader, historical edition or retired presentation builder; retained in Git history"
+    },
+    {
+      "old_path": "research/extensions/catholic-institutions/reading/ARTIFACT_INDEX.json",
+      "sha256": "cae1e0b00cc923cae2e4b39b49d81de17bf6d193fdca2c91cb7df89520a2dc16",
+      "bytes": 5832,
+      "preserved_at_commit": "2ceb343b627b4aa13e3e5df84c4f7e8b2389683f",
+      "reason": "superseded reader, historical edition or retired presentation builder; retained in Git history"
+    },
+    {
+      "old_path": "research/extensions/catholic-institutions/reading/NodeNorm_Protocol_v0_4_1.md",
+      "sha256": "92301a5ed0c8ce3ca27bc71a837532f484b876e5dce5d9079e25bbb4964e1462",
+      "bytes": 36505,
+      "preserved_at_commit": "2ceb343b627b4aa13e3e5df84c4f7e8b2389683f",
+      "reason": "superseded reader, historical edition or retired presentation builder; retained in Git history"
+    },
+    {
+      "old_path": "research/extensions/catholic-institutions/reading/NodeNorm_Study_v0_4_1.html",
+      "sha256": "8351f33bb2bc839552e0a6cf07e7cd6d0cf262cb76a2b2c92e1ac91fd7367a62",
+      "bytes": 83810,
+      "preserved_at_commit": "2ceb343b627b4aa13e3e5df84c4f7e8b2389683f",
+      "reason": "superseded reader, historical edition or retired presentation builder; retained in Git history"
+    },
+    {
+      "old_path": "research/extensions/catholic-institutions/reading/NodeNorm_Protocol_v0_4_1.html",
+      "sha256": "45ebdc25d4b95f6d1ca9b1382998d2aace8646bb68a179da8c2fa4221ee631d4",
+      "bytes": 59201,
+      "preserved_at_commit": "2ceb343b627b4aa13e3e5df84c4f7e8b2389683f",
+      "reason": "superseded reader, historical edition or retired presentation builder; retained in Git history"
+    },
+    {
+      "old_path": "research/extensions/catholic-institutions/reading/NodeNorm_Study_v0_4_1.pdf",
+      "sha256": "632e66b6370d19329fd6b00eaab9597ab51e44ca34614da8c63c6dac801d8ed5",
+      "bytes": 310645,
+      "preserved_at_commit": "2ceb343b627b4aa13e3e5df84c4f7e8b2389683f",
+      "reason": "superseded reader, historical edition or retired presentation builder; retained in Git history"
+    },
+    {
+      "old_path": "research/extensions/catholic-institutions/reading/archive-support/retained-notebook-metadata.zlib.b64",
+      "sha256": "d4a40490d79d81f69677efcf3182eb2a11194928f25c8b748725a43c3ad71b03",
+      "bytes": 5973,
+      "preserved_at_commit": "2ceb343b627b4aa13e3e5df84c4f7e8b2389683f",
+      "reason": "superseded reader, historical edition or retired presentation builder; retained in Git history"
+    },
+    {
+      "old_path": "research/extensions/catholic-institutions/reading/archive-support/retained-notebook-metadata.json",
+      "sha256": "ce13fafd57e54f0e8fdbf9d1210aaa34e327c2d259f997efba1960b3ca929548",
+      "bytes": 23100,
+      "preserved_at_commit": "2ceb343b627b4aa13e3e5df84c4f7e8b2389683f",
+      "reason": "superseded reader, historical edition or retired presentation builder; retained in Git history"
+    },
+    {
+      "old_path": "research/extensions/catholic-institutions/reading/archive-support/cir001/build_readers.py",
+      "sha256": "6c1377f74cfe3e9e840c2b8b7389a7aa9b719edf7be6af15841e30ff39c22133",
+      "bytes": 11387,
+      "preserved_at_commit": "2ceb343b627b4aa13e3e5df84c4f7e8b2389683f",
+      "reason": "superseded reader, historical edition or retired presentation builder; retained in Git history"
+    },
+    {
+      "old_path": "research/extensions/catholic-institutions/reading/notebooks/NodeNorm_Protocol_v0_4_4.ipynb",
+      "sha256": "c4706894ae64a8f3b9e24deea4eb39da88ff9608eac0637e19b831e4074e2de9",
+      "bytes": 91200,
+      "preserved_at_commit": "2ceb343b627b4aa13e3e5df84c4f7e8b2389683f",
+      "reason": "superseded reader, historical edition or retired presentation builder; retained in Git history"
+    },
+    {
+      "old_path": "research/extensions/catholic-institutions/reading/notebooks/protocol-notebook.json",
+      "sha256": "cf5508213d4cb3434d04a8b2d2975256831c0938b03a857352d4e23f8f5f04f5",
+      "bytes": 722,
+      "preserved_at_commit": "2ceb343b627b4aa13e3e5df84c4f7e8b2389683f",
+      "reason": "superseded reader, historical edition or retired presentation builder; retained in Git history"
+    },
+    {
+      "old_path": "research/extensions/catholic-institutions/reading/editions/0.4.4-draft/NodeNorm_Protocol_v0_4_4.md",
+      "sha256": "ee9ef5f8a7ea6e1e0eca53e2279f1268f7dad9f1829012031848ae51182baca7",
+      "bytes": 63786,
+      "preserved_at_commit": "2ceb343b627b4aa13e3e5df84c4f7e8b2389683f",
+      "reason": "superseded reader, historical edition or retired presentation builder; retained in Git history"
+    },
+    {
+      "old_path": "research/extensions/catholic-institutions/reading/editions/0.4.4-draft/NodeNorm_Protocol_v0_4_4.html",
+      "sha256": "88625e3802b79abfa7e26df2a2c9ee39a31e93d3af7e70ff4b9d871c59e926c1",
+      "bytes": 90227,
+      "preserved_at_commit": "2ceb343b627b4aa13e3e5df84c4f7e8b2389683f",
+      "reason": "superseded reader, historical edition or retired presentation builder; retained in Git history"
+    },
+    {
+      "old_path": "research/extensions/catholic-institutions/reading/editions/0.4.4-draft/NodeNorm_Study_v0_4_4.pdf",
+      "sha256": "0c2c7a9a2af26a34fef0361d3c6c9c43e588f774924b6920377aad53a1169d95",
+      "bytes": 391649,
+      "preserved_at_commit": "2ceb343b627b4aa13e3e5df84c4f7e8b2389683f",
+      "reason": "superseded reader, historical edition or retired presentation builder; retained in Git history"
+    },
+    {
+      "old_path": "research/extensions/catholic-institutions/reading/editions/0.4.4-draft/NodeNorm_Study_v0_4_4.html",
+      "sha256": "8c9a2165acc67f296ac5c092ee9466b799201b0835927c142c8b41880a292e86",
+      "bytes": 138323,
+      "preserved_at_commit": "2ceb343b627b4aa13e3e5df84c4f7e8b2389683f",
+      "reason": "superseded reader, historical edition or retired presentation builder; retained in Git history"
+    },
+    {
+      "old_path": "research/extensions/catholic-institutions/reading/editions/0.4.4-draft/NodeNorm_Notebook_v0_4_4.ipynb",
+      "sha256": "f72af7390066e4ac96b496351806c30bcb8d6c6757876551fa6d9370a2f18454",
+      "bytes": 318283,
+      "preserved_at_commit": "2ceb343b627b4aa13e3e5df84c4f7e8b2389683f",
+      "reason": "superseded reader, historical edition or retired presentation builder; retained in Git history"
+    },
+    {
+      "old_path": "research/extensions/catholic-institutions/reading/editions/0.4.3-draft/NodeNorm_Notebook_v0_4_3.ipynb",
+      "sha256": "ca78e4e6ded545ec3266c042cd0e2501e8f2e4b1a3c2d63c97c6c4f1a9c9e75c",
+      "bytes": 261458,
+      "preserved_at_commit": "2ceb343b627b4aa13e3e5df84c4f7e8b2389683f",
+      "reason": "superseded reader, historical edition or retired presentation builder; retained in Git history"
+    },
+    {
+      "old_path": "research/extensions/catholic-institutions/reading/editions/0.4.3-draft/NodeNorm_Protocol_v0_4_3.html",
+      "sha256": "a6ed547f8beee334ffc2f6eb54d5aa7a45b30bffec33be03494648650b132e99",
+      "bytes": 81271,
+      "preserved_at_commit": "2ceb343b627b4aa13e3e5df84c4f7e8b2389683f",
+      "reason": "superseded reader, historical edition or retired presentation builder; retained in Git history"
+    },
+    {
+      "old_path": "research/extensions/catholic-institutions/reading/editions/0.4.3-draft/NodeNorm_Study_v0_4_3.pdf",
+      "sha256": "8e29d1126c411a546848100617f9b218dc68983ff27d72770c54f4adc936621a",
+      "bytes": 364524,
+      "preserved_at_commit": "2ceb343b627b4aa13e3e5df84c4f7e8b2389683f",
+      "reason": "superseded reader, historical edition or retired presentation builder; retained in Git history"
+    },
+    {
+      "old_path": "research/extensions/catholic-institutions/reading/editions/0.4.3-draft/NodeNorm_Protocol_v0_4_3.md",
+      "sha256": "4a4f7af9296c3edd4a369a0285eb93dad99e07f3471b9ed35e1031ce145c22af",
+      "bytes": 56498,
+      "preserved_at_commit": "2ceb343b627b4aa13e3e5df84c4f7e8b2389683f",
+      "reason": "superseded reader, historical edition or retired presentation builder; retained in Git history"
+    },
+    {
+      "old_path": "research/extensions/catholic-institutions/reading/editions/0.4.3-draft/NodeNorm_Study_v0_4_3.html",
+      "sha256": "cf87c86ee367421b2e1fa98cfde7c218921cb3903698e0e8e4067bd2b14ddf4e",
+      "bytes": 110294,
+      "preserved_at_commit": "2ceb343b627b4aa13e3e5df84c4f7e8b2389683f",
+      "reason": "superseded reader, historical edition or retired presentation builder; retained in Git history"
+    },
+    {
+      "old_path": "research/extensions/catholic-institutions/reading/editions/0.4.2-draft/NodeNorm_Study_v0_4_2.pdf",
+      "sha256": "f525b79fe5c462367cb44db33f7fa96c7281ddc68a3f4d909882c362a958b84f",
+      "bytes": 327968,
+      "preserved_at_commit": "2ceb343b627b4aa13e3e5df84c4f7e8b2389683f",
+      "reason": "superseded reader, historical edition or retired presentation builder; retained in Git history"
+    },
+    {
+      "old_path": "research/extensions/catholic-institutions/reading/editions/0.4.2-draft/NodeNorm_Notebook_v0_4_2.ipynb",
+      "sha256": "654d86da9f284c940d5e01eb23014151d4689695dddd6f86940237d4a6a877af",
+      "bytes": 218541,
+      "preserved_at_commit": "2ceb343b627b4aa13e3e5df84c4f7e8b2389683f",
+      "reason": "superseded reader, historical edition or retired presentation builder; retained in Git history"
+    },
+    {
+      "old_path": "research/extensions/catholic-institutions/reading/editions/0.4.2-draft/NodeNorm_Study_v0_4_2.html",
+      "sha256": "0fef043627e879f6ede155dea8cc2999d7a687c7eb982b91ae0534ce8fba5328",
+      "bytes": 94802,
+      "preserved_at_commit": "2ceb343b627b4aa13e3e5df84c4f7e8b2389683f",
+      "reason": "superseded reader, historical edition or retired presentation builder; retained in Git history"
+    },
+    {
+      "old_path": "research/extensions/catholic-institutions/reading/editions/0.4.2-draft/NodeNorm_Protocol_v0_4_2.html",
+      "sha256": "6cd3c54e83f813fb2e2f72ab27be824fad275ea545c82d0c9daa384ec4f8920b",
+      "bytes": 66024,
+      "preserved_at_commit": "2ceb343b627b4aa13e3e5df84c4f7e8b2389683f",
+      "reason": "superseded reader, historical edition or retired presentation builder; retained in Git history"
+    },
+    {
+      "old_path": "research/extensions/catholic-institutions/reading/editions/0.4.2-draft/NodeNorm_Protocol_v0_4_2.md",
+      "sha256": "68e23a9cfa33a971590daf7a778bd7a8e088f0428e9413a6f783c1e4306813dc",
+      "bytes": 44123,
+      "preserved_at_commit": "2ceb343b627b4aa13e3e5df84c4f7e8b2389683f",
+      "reason": "superseded reader, historical edition or retired presentation builder; retained in Git history"
+    },
+    {
+      "old_path": "research/extensions/catholic-institutions/validation/release-checks.json",
+      "sha256": "26a3e3440a51ebf4f31bc296df8fcd0014ce8c9e60992690ddc576e966694bb9",
+      "bytes": 690,
+      "preserved_at_commit": "2ceb343b627b4aa13e3e5df84c4f7e8b2389683f",
+      "reason": "superseded reader, historical edition or retired presentation builder; retained in Git history"
+    },
+    {
+      "old_path": "research/extensions/catholic-institutions/validation/environment.txt",
+      "sha256": "a94def6721f15c45a6880b37d3f5e3e5fc723e3da26e4f77adc94f05266bcfae",
+      "bytes": 750,
+      "preserved_at_commit": "2ceb343b627b4aa13e3e5df84c4f7e8b2389683f",
+      "reason": "superseded reader, historical edition or retired presentation builder; retained in Git history"
+    },
+    {
+      "old_path": "research/extensions/catholic-institutions/scenario-batches/CB-001/README.md",
+      "sha256": "c10509319ea0dadad7dfc58e33738b06d949eef104b2864994095fc03afff44a",
+      "bytes": 6063,
+      "preserved_at_commit": "2ceb343b627b4aa13e3e5df84c4f7e8b2389683f",
+      "reason": "superseded reader, historical edition or retired presentation builder; retained in Git history"
+    },
+    {
+      "old_path": "research/extensions/catholic-institutions/scenario-batches/CB-001/CIR-001/FREEZE.md",
+      "sha256": "5071c62df7059e9b0b04f9ab4ab6e3d85cd15a9bc1d7c0f1919240ab048cc056",
+      "bytes": 5812,
+      "preserved_at_commit": "2ceb343b627b4aa13e3e5df84c4f7e8b2389683f",
+      "reason": "superseded reader, historical edition or retired presentation builder; retained in Git history"
+    },
+    {
+      "old_path": "research/extensions/catholic-institutions/scenario-batches/CB-001/CIR-001/RESULTS.md",
+      "sha256": "260045102ee103ad7f1a911efcd4556646b79de74d924f97876b81cea455e4dd",
+      "bytes": 5460,
+      "preserved_at_commit": "2ceb343b627b4aa13e3e5df84c4f7e8b2389683f",
+      "reason": "superseded reader, historical edition or retired presentation builder; retained in Git history"
+    },
+    {
+      "old_path": "research/extensions/catholic-institutions/scenario-batches/CB-001/CIR-001/README.md",
+      "sha256": "ac5d4471c4c029ff868206ce3b6ad057ccdc91da783b08c9d64c16d24eaff364",
+      "bytes": 1979,
+      "preserved_at_commit": "2ceb343b627b4aa13e3e5df84c4f7e8b2389683f",
+      "reason": "superseded reader, historical edition or retired presentation builder; retained in Git history"
+    },
+    {
+      "old_path": "research/extensions/catholic-institutions/scenario-batches/CB-001/CIR-001/study.ipynb",
+      "sha256": "841e422546c6567d00c05752be0f9598187c576da9fc2bbd4c5f3307b41d0a0b",
+      "bytes": 5324,
+      "preserved_at_commit": "2ceb343b627b4aa13e3e5df84c4f7e8b2389683f",
+      "reason": "superseded reader, historical edition or retired presentation builder; retained in Git history"
+    },
+    {
+      "old_path": "research/extensions/catholic-institutions/scenario-batches/CB-001/CIR-001/SOURCE_PACKET.md",
+      "sha256": "c6a5df4f2f97a019989523f47a33377c99d6d4d971c7f81b8678d1c7cf5cce7b",
+      "bytes": 3952,
+      "preserved_at_commit": "2ceb343b627b4aa13e3e5df84c4f7e8b2389683f",
+      "reason": "superseded reader, historical edition or retired presentation builder; retained in Git history"
+    },
+    {
+      "old_path": "research/extensions/catholic-institutions/scenario-batches/CB-001/PARISH-QA-001-R1/REVIEW.md",
+      "sha256": "971345216f17b2938da7fa96a60eb16835e1a9f6559751fb7d2789b47aa9d648",
+      "bytes": 1305,
+      "preserved_at_commit": "2ceb343b627b4aa13e3e5df84c4f7e8b2389683f",
+      "reason": "superseded reader, historical edition or retired presentation builder; retained in Git history"
+    },
+    {
+      "old_path": "research/extensions/catholic-institutions/scenario-batches/CB-001/PARISH-QA-001-R1/FREEZE.md",
+      "sha256": "77f98daea240bf50081ecf7aea17153b6f1df560374e364bc9699bb8a1266555",
+      "bytes": 4550,
+      "preserved_at_commit": "2ceb343b627b4aa13e3e5df84c4f7e8b2389683f",
+      "reason": "superseded reader, historical edition or retired presentation builder; retained in Git history"
+    },
+    {
+      "old_path": "research/extensions/catholic-institutions/scenario-batches/CB-001/PARISH-QA-001-R1/README.md",
+      "sha256": "dc02b8081426f7444356cac40d107d83cceb5a31783753950d98049c68f986af",
+      "bytes": 7034,
+      "preserved_at_commit": "2ceb343b627b4aa13e3e5df84c4f7e8b2389683f",
+      "reason": "superseded reader, historical edition or retired presentation builder; retained in Git history"
+    },
+    {
+      "old_path": "research/extensions/catholic-institutions/scenario-batches/CB-001/PARISH-QA-001-R1/READERS.md",
+      "sha256": "be4128ac8229b9cc0bbce7b588e5067d0555e507c75e4305f9999f6810032e0c",
+      "bytes": 2656,
+      "preserved_at_commit": "2ceb343b627b4aa13e3e5df84c4f7e8b2389683f",
+      "reason": "superseded reader, historical edition or retired presentation builder; retained in Git history"
+    },
+    {
+      "old_path": "research/extensions/catholic-institutions/scenario-batches/CB-001/PARISH-QA-001-R1/study.ipynb",
+      "sha256": "3d0cda3b6b3e01976f1231eb370c103f50b6362ceab80decc2a7ff1eb63ffd65",
+      "bytes": 2630,
+      "preserved_at_commit": "2ceb343b627b4aa13e3e5df84c4f7e8b2389683f",
+      "reason": "superseded reader, historical edition or retired presentation builder; retained in Git history"
+    },
+    {
+      "old_path": "research/extensions/catholic-institutions/scenario-batches/CB-001/PARISH-QA-001-R1/build_readers.py",
+      "sha256": "3d880757315ab0e16953811f0dfc74e2e100e8a09d529fb664cbbc4e09537bcb",
+      "bytes": 8036,
+      "preserved_at_commit": "2ceb343b627b4aa13e3e5df84c4f7e8b2389683f",
+      "reason": "superseded reader, historical edition or retired presentation builder; retained in Git history"
+    },
+    {
+      "old_path": "research/extensions/catholic-institutions/scenario-batches/CB-001/obligations/README.md",
+      "sha256": "f6d2c37faccb59e6820a222c48f6be66a5e63c4034acc6346456fee77d16e700",
+      "bytes": 12185,
+      "preserved_at_commit": "2ceb343b627b4aa13e3e5df84c4f7e8b2389683f",
+      "reason": "superseded reader, historical edition or retired presentation builder; retained in Git history"
+    },
+    {
+      "old_path": "research/extensions/catholic-institutions/scenario-batches/CB-001/obligations/study.ipynb",
+      "sha256": "8adf956e93e6ae954b42962b113930695b995b694de8fa9b1103eed6a81c8a89",
+      "bytes": 4227,
+      "preserved_at_commit": "2ceb343b627b4aa13e3e5df84c4f7e8b2389683f",
+      "reason": "superseded reader, historical edition or retired presentation builder; retained in Git history"
+    },
+    {
+      "old_path": "research/extensions/catholic-institutions/scenario-batches/CB-001/obligations/build_readers.py",
+      "sha256": "092dc243f0b571bc83a2c732fc5b52f0796632f448ead92337548485c8fc66b1",
+      "bytes": 7867,
+      "preserved_at_commit": "2ceb343b627b4aa13e3e5df84c4f7e8b2389683f",
+      "reason": "superseded reader, historical edition or retired presentation builder; retained in Git history"
+    },
+    {
+      "old_path": "research/extensions/catholic-institutions/evidence-workbench/repository-review.ipynb",
+      "sha256": "06905aae45786fa715ca6bca67ec90f084e1031c5692c1ecb68301a7f207f3a3",
+      "bytes": 10959,
+      "preserved_at_commit": "2ceb343b627b4aa13e3e5df84c4f7e8b2389683f",
+      "reason": "superseded reader, historical edition or retired presentation builder; retained in Git history"
+    },
+    {
+      "old_path": "research/extensions/catholic-institutions/evidence-workbench/README.md",
+      "sha256": "a4f89c5f84cc03b829fb4185721803fb272ee15f60f12a3c5f5ff25bf2027f86",
+      "bytes": 2732,
+      "preserved_at_commit": "2ceb343b627b4aa13e3e5df84c4f7e8b2389683f",
+      "reason": "superseded reader, historical edition or retired presentation builder; retained in Git history"
+    },
+    {
+      "old_path": "research/extensions/catholic-institutions/evidence-workbench/requirements-review.txt",
+      "sha256": "8217da9c5a874a6a76c3f3f3fddb3d3214c66220e7d45ae0ab8c54726443fad1",
+      "bytes": 49,
+      "preserved_at_commit": "2ceb343b627b4aa13e3e5df84c4f7e8b2389683f",
+      "reason": "superseded reader, historical edition or retired presentation builder; retained in Git history"
+    },
+    {
+      "old_path": "research/extensions/catholic-institutions/evidence-workbench/AI_USE_DISCLOSURE.md",
+      "sha256": "f86e91b506de51961581b8d0e6d1d62f09f046c881b9e5e76ec39580a738501c",
+      "bytes": 1467,
+      "preserved_at_commit": "2ceb343b627b4aa13e3e5df84c4f7e8b2389683f",
+      "reason": "superseded reader, historical edition or retired presentation builder; retained in Git history"
+    },
+    {
+      "old_path": "research/extensions/catholic-institutions/evidence-workbench/EVIDENCE_REVIEW.md",
+      "sha256": "99916d77f767057a0ac8fb78ba586c7c2d096a4eb64d9a685c3c1ecb813f6a32",
+      "bytes": 27060,
+      "preserved_at_commit": "2ceb343b627b4aa13e3e5df84c4f7e8b2389683f",
+      "reason": "superseded reader, historical edition or retired presentation builder; retained in Git history"
+    },
+    {
+      "old_path": "research/extensions/catholic-institutions/evidence-workbench/course-alignment/README.md",
+      "sha256": "16ba8093d0582935f9192c83e479009b02a899abee544eedb01079cd91318c43",
+      "bytes": 970,
+      "preserved_at_commit": "2ceb343b627b4aa13e3e5df84c4f7e8b2389683f",
+      "reason": "superseded reader, historical edition or retired presentation builder; retained in Git history"
+    },
+    {
+      "old_path": "research/extensions/catholic-institutions/evidence-workbench/course-alignment/COURSE_ALIGNMENT.md",
+      "sha256": "3b225351aee8d3ffc22efd5f9bddf50b559ad0423fff3a751d873383f2c09a2f",
+      "bytes": 12245,
+      "preserved_at_commit": "2ceb343b627b4aa13e3e5df84c4f7e8b2389683f",
+      "reason": "superseded reader, historical edition or retired presentation builder; retained in Git history"
+    },
+    {
+      "old_path": "research/extensions/catholic-institutions/evidence-workbench/course-alignment/course-plan.ipynb",
+      "sha256": "4f3c6cf76c3e9fe3d02cf584c48107af99a38379ae13de91ac75cf5296a99aa9",
+      "bytes": 3174,
+      "preserved_at_commit": "2ceb343b627b4aa13e3e5df84c4f7e8b2389683f",
+      "reason": "superseded reader, historical edition or retired presentation builder; retained in Git history"
+    },
+    {
+      "old_path": "research/extensions/catholic-institutions/evidence-workbench/scripts/check_evidence.py",
+      "sha256": "3f4d7fdbbbc9734bdee9d2659276c5ff84b6db5375aef85f7a63ba2fbe7cfc85",
+      "bytes": 8915,
+      "preserved_at_commit": "2ceb343b627b4aa13e3e5df84c4f7e8b2389683f",
+      "reason": "superseded reader, historical edition or retired presentation builder; retained in Git history"
+    },
+    {
+      "old_path": "research/extensions/catholic-institutions/evidence-workbench/scripts/build_review.py",
+      "sha256": "a20569ab92928f281256b5daf4f0ef96b3457da4b9a076c99c61bdbcf9d7c99b",
+      "bytes": 16881,
+      "preserved_at_commit": "2ceb343b627b4aa13e3e5df84c4f7e8b2389683f",
+      "reason": "superseded reader, historical edition or retired presentation builder; retained in Git history"
+    },
+    {
+      "old_path": "research/extensions/catholic-institutions/scripts/apply_ai_disclosure.py",
+      "sha256": "2b2e9d3ad3374244cf4fa808a7333d5c7a42bd4268be9715416e54066078dd74",
+      "bytes": 14835,
+      "preserved_at_commit": "2ceb343b627b4aa13e3e5df84c4f7e8b2389683f",
+      "reason": "superseded reader, historical edition or retired presentation builder; retained in Git history"
+    },
+    {
+      "old_path": "research/extensions/catholic-institutions/scripts/test_release.py",
+      "sha256": "ad2934e2b360e96cf58bfe57d6bc58ec5cb4e0a9455fdff57474654024633bd5",
+      "bytes": 2743,
+      "preserved_at_commit": "2ceb343b627b4aa13e3e5df84c4f7e8b2389683f",
+      "reason": "superseded reader, historical edition or retired presentation builder; retained in Git history"
+    },
+    {
+      "old_path": "research/extensions/catholic-institutions/scripts/test_ai_disclosure.py",
+      "sha256": "e728dd323d06a869d3483392a6590764458cae38cf6174d7564deeabbe0a97ec",
+      "bytes": 3825,
+      "preserved_at_commit": "2ceb343b627b4aa13e3e5df84c4f7e8b2389683f",
+      "reason": "superseded reader, historical edition or retired presentation builder; retained in Git history"
+    },
+    {
+      "old_path": "research/extensions/catholic-institutions/scripts/finalize_navigation.py",
+      "sha256": "feb2508987a33ffa6ce4c0520ac67448056423d9cbf7638fa132889efb9f7a83",
+      "bytes": 1613,
+      "preserved_at_commit": "2ceb343b627b4aa13e3e5df84c4f7e8b2389683f",
+      "reason": "superseded reader, historical edition or retired presentation builder; retained in Git history"
+    },
+    {
+      "old_path": "research/extensions/catholic-institutions/scripts/build_study.py",
+      "sha256": "7801d7de613c728b4e4f804c789f7e92e70c07c68c58ee546fb2eea369e21462",
+      "bytes": 216,
+      "preserved_at_commit": "2ceb343b627b4aa13e3e5df84c4f7e8b2389683f",
+      "reason": "superseded reader, historical edition or retired presentation builder; retained in Git history"
+    },
+    {
+      "old_path": "research/extensions/catholic-institutions/scripts/build_protocol_notebook.py",
+      "sha256": "77a30641c77a47637acc63bd86992d9738777d2c726a23630e5b985180671b11",
+      "bytes": 8563,
+      "preserved_at_commit": "2ceb343b627b4aa13e3e5df84c4f7e8b2389683f",
+      "reason": "superseded reader, historical edition or retired presentation builder; retained in Git history"
+    },
+    {
+      "old_path": "research/extensions/catholic-institutions/scripts/archive_readers.py",
+      "sha256": "51b5319e60ec3dcadc57d1cc87fdb1e8fb364d49766a71a375d54baed37db2f4",
+      "bytes": 10251,
+      "preserved_at_commit": "2ceb343b627b4aa13e3e5df84c4f7e8b2389683f",
+      "reason": "superseded reader, historical edition or retired presentation builder; retained in Git history"
+    },
+    {
+      "old_path": "research/extensions/catholic-institutions/scripts/_legacy_layout.py",
+      "sha256": "a81da09d6e617bbcfd2139eb81998f96d0e5d8349dc0e5d7e54b7271e59cabb0",
+      "bytes": 45173,
+      "preserved_at_commit": "2ceb343b627b4aa13e3e5df84c4f7e8b2389683f",
+      "reason": "superseded reader, historical edition or retired presentation builder; retained in Git history"
+    },
+    {
+      "old_path": "research/extensions/catholic-institutions/scripts/build_release.py",
+      "sha256": "a461273241cf92ae550033b2f69947db30e8fd89dce484ab7b74cf5be43b14cd",
+      "bytes": 22537,
+      "preserved_at_commit": "2ceb343b627b4aa13e3e5df84c4f7e8b2389683f",
+      "reason": "superseded reader, historical edition or retired presentation builder; retained in Git history"
+    },
+    {
+      "old_path": "research/extensions/catholic-institutions/disclosure/README.md",
+      "sha256": "2b442896cfd1f692bc478637d9310cca6ec9bc2adfa9a7515f98b779bab57976",
+      "bytes": 2681,
+      "preserved_at_commit": "2ceb343b627b4aa13e3e5df84c4f7e8b2389683f",
+      "reason": "superseded reader, historical edition or retired presentation builder; retained in Git history"
+    }
+  ],
+  "retired_navigation_sources": [
+    "research/extensions/catholic-institutions/EVIDENCE_INDEX.md",
+    "research/extensions/catholic-institutions/README.md",
+    "research/extensions/catholic-institutions/RELEASE_NOTES.md",
+    "research/extensions/catholic-institutions/evidence-workbench/README.md",
+    "research/extensions/catholic-institutions/evidence-workbench/course-alignment/README.md",
+    "research/extensions/catholic-institutions/reading/ARCHIVE_POLICY.md",
+    "research/extensions/catholic-institutions/reading/NodeNorm_Protocol_v0_3_0.md",
+    "research/extensions/catholic-institutions/reading/NodeNorm_Protocol_v0_4_1.md",
+    "research/extensions/catholic-institutions/reading/README.md",
+    "research/extensions/catholic-institutions/scenario-batches/CB-001/PARISH-QA-001-R1/READERS.md"
+  ],
+  "retired_workflows": [
+    "catholic-study.yml",
+    "catholic-reader-archive.yml",
+    "catholic-protocol-notebook.yml",
+    "catholic-notebook-book.yml"
+  ],
+  "replacement_tests": "frozen run checks, disclosure/capture mutation checks, source reassembly, checksums, navigation and notebook execution",
+  "ai_assistance": {
+    "system": "ChatGPT",
+    "exact_provider_snapshot": null,
+    "contributions": [
+      "dependency audit",
+      "file relocation",
+      "notebook navigation and visual restoration",
+      "test migration",
+      "software validation"
+    ],
+    "human_authorization": "explicit maintainer request",
+    "personal_source_verification": "not_recorded",
+    "independent_review": "not_performed",
+    "qualified_canonical_review": "pending"
+  },
+  "root_readme_sha256": "d2fa9b7566573607e52fb8fff0f273820c780cd97ee64845bac1dddf436807df",
+  "maintenance_attempts": [
+    {
+      "stage": "local output-hash validation",
+      "outcome": "first attempt failed because nbformat normalized multiline output fields before hashing; fixed by deriving output hashes from the original JSON serialization; original cell objects remained identical"
+    },
+    {
+      "stage": "local complete repository tests",
+      "outcome": "Python 3.13 source-ZIP environment: 64 Catholic tests passed; unrelated general tests lacked Git metadata and two numeric comparisons differed. Full Python 3.11 Git checkout CI is required before merge."
+    }
+  ]
+}

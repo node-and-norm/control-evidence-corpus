@@ -7,7 +7,7 @@ import tempfile
 import unittest
 
 ROOT = Path(__file__).resolve().parents[1]
-RUN = ROOT / 'research/extensions/catholic-institutions/scenario-batches/CB-001/CIR-001'
+RUN = ROOT / 'catholic-ai-pilot/_evidence/scenarios/CB-001/CIR-001'
 
 class CatholicCitationGateReplay(unittest.TestCase):
     def test_frozen_inputs_and_retained_outputs(self):

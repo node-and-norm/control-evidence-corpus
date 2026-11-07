@@ -1,0 +1,44 @@
+{
+  "kind": "software_and_custody_validation",
+  "notebooks": 13,
+  "original_master_cells_preserved": 40,
+  "retained_source_documents": 20,
+  "byte_identical_evidence_files": 46,
+  "local_reader_links": 132,
+  "stored_code_cells": 13,
+  "exact_service_responses": 6,
+  "duplicate_archive_directories": 0,
+  "legacy_workspace_removed": true,
+  "new_research_calls": 0,
+  "independent_research_validation": false,
+  "executions": [
+    {
+      "path": "CATHOLIC_PILOT.ipynb",
+      "code_cells": 10,
+      "temporary_copy": true,
+      "archive_outputs_unchanged": true,
+      "new_research_calls": 0
+    },
+    {
+      "path": "catholic-ai-pilot/03_Citation_Test_Results.ipynb",
+      "code_cells": 1,
+      "temporary_copy": true,
+      "archive_outputs_unchanged": true,
+      "new_research_calls": 0
+    },
+    {
+      "path": "catholic-ai-pilot/04_Canon_Law_and_Authority.ipynb",
+      "code_cells": 1,
+      "temporary_copy": true,
+      "archive_outputs_unchanged": true,
+      "new_research_calls": 0
+    },
+    {
+      "path": "catholic-ai-pilot/05_Live_Parish_Responses.ipynb",
+      "code_cells": 1,
+      "temporary_copy": true,
+      "archive_outputs_unchanged": true,
+      "new_research_calls": 0
+    }
+  ]
+}

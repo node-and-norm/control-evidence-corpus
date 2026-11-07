@@ -6,7 +6,7 @@
 
 | Entry point | What you will get |
 | :--- | :--- |
-| [Catholic institutional pilot](../research/extensions/catholic-institutions/README.md) | Guided study, scoping, captured source verification and independent-review limits |
+| [Catholic institutional pilot](../CATHOLIC_PILOT.ipynb) | Guided study, scoping, captured source verification and independent-review limits |
 | [Research brief](../research/README.md) | Candidate gap, first study, failure conditions, decision gates |
 | [TAE/HIT development sandbox](../experiments/us-control-sandbox/README.md) | Scripted intervention/recovery tests, source mapping and run records |
 | [Example gallery](../examples/README.md) | Three synthetic cases with readable dossiers and source-only packet views |
