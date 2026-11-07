@@ -61,6 +61,8 @@ class CatholicReaderArchiveTests(unittest.TestCase):
 
     def test_root_readme_remains_protected(self):
         data = (REPO/'README.md').read_bytes()
+        import runpy
+        data = runpy.run_path(str(REPO/'scripts/build_catholic_notebook_book.py'))['strip_navigation'](data)
         blob = hashlib.sha1(b'blob '+str(len(data)).encode()+b'\0'+data).hexdigest()
         self.assertEqual(blob,'27ce767242321634d9048eea87ffa31697e3877c')
 

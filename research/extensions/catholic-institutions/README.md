@@ -1,3 +1,5 @@
+> **Notebook reading home:** [Open the Catholic pilot book](../../../CATHOLIC_PILOT.ipynb). The files below remain the historical source and evidence workspace.
+
 # Catholic Institutional AI Risk and Control Evidence Pilot
 
 **Latest complete draft: 0.4.4-draft | Published reading release: 0.4.1-dev | Core protocol: 0.3.0, unfrozen**

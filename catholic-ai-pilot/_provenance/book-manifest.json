@@ -1,0 +1,535 @@
+{
+  "book_version": "1.0.0-navigation",
+  "source_commit": "c1628ae86186e2202ef82e1394f0b8bb8f7568ab",
+  "source_mode": "git_commit",
+  "root_entry": "CATHOLIC_PILOT.ipynb",
+  "chapters": [
+    {
+      "path": "catholic-ai-pilot/00_START_HERE.ipynb",
+      "title": "Start here"
+    },
+    {
+      "path": "catholic-ai-pilot/01_Study_and_Roadmap.ipynb",
+      "title": "Study and roadmap"
+    },
+    {
+      "path": "catholic-ai-pilot/02_Research_Protocol.ipynb",
+      "title": "Research protocol"
+    },
+    {
+      "path": "catholic-ai-pilot/03_Citation_Test_Results.ipynb",
+      "title": "Citation-test results"
+    },
+    {
+      "path": "catholic-ai-pilot/04_Canon_Law_and_Authority.ipynb",
+      "title": "Canon law and authority"
+    },
+    {
+      "path": "catholic-ai-pilot/05_Live_Parish_Responses.ipynb",
+      "title": "Live parish-assistant responses"
+    },
+    {
+      "path": "catholic-ai-pilot/06_Risk_Scenarios_and_Sources.ipynb",
+      "title": "Risk scenarios and sources"
+    },
+    {
+      "path": "catholic-ai-pilot/07_AI_Disclosure.ipynb",
+      "title": "AI assistance and responsibility"
+    },
+    {
+      "path": "catholic-ai-pilot/08_Decisions_and_Review.ipynb",
+      "title": "Decisions and review"
+    },
+    {
+      "path": "catholic-ai-pilot/09_Reproduce_and_Inspect.ipynb",
+      "title": "Reproduce and inspect"
+    },
+    {
+      "path": "catholic-ai-pilot/10_Evidence_Methods.ipynb",
+      "title": "Evidence methods"
+    },
+    {
+      "path": "catholic-ai-pilot/11_Course_and_Method_Alignment.ipynb",
+      "title": "Course and method alignment"
+    }
+  ],
+  "source_documents": [
+    {
+      "source": "research/extensions/catholic-institutions/SCOPING.md",
+      "chapter": "01_Study_and_Roadmap.ipynb",
+      "sha256": "09da127cd57a3bcfa5bedef662c43226d5e41fc2cea0b52dce750b19ff5963dd",
+      "source_cells": 8,
+      "complete_text_preserved": true
+    },
+    {
+      "source": "research/extensions/catholic-institutions/PROTOCOL.md",
+      "chapter": "02_Research_Protocol.ipynb",
+      "sha256": "92301a5ed0c8ce3ca27bc71a837532f484b876e5dce5d9079e25bbb4964e1462",
+      "source_cells": 18,
+      "complete_text_preserved": true
+    },
+    {
+      "source": "research/extensions/catholic-institutions/METHOD_AMENDMENT.md",
+      "chapter": "02_Research_Protocol.ipynb",
+      "sha256": "dc9e9e91f38651885b076a3d94fd65f17ff3b05ffc36dffa8b6439f24e9e35e7",
+      "source_cells": 1,
+      "complete_text_preserved": true
+    },
+    {
+      "source": "research/extensions/catholic-institutions/scenario-batches/CB-001/CIR-001/RESULTS.md",
+      "chapter": "03_Citation_Test_Results.ipynb",
+      "sha256": "260045102ee103ad7f1a911efcd4556646b79de74d924f97876b81cea455e4dd",
+      "source_cells": 7,
+      "complete_text_preserved": true
+    },
+    {
+      "source": "research/extensions/catholic-institutions/scenario-batches/CB-001/CIR-001/README.md",
+      "chapter": "03_Citation_Test_Results.ipynb",
+      "sha256": "ac5d4471c4c029ff868206ce3b6ad057ccdc91da783b08c9d64c16d24eaff364",
+      "source_cells": 2,
+      "complete_text_preserved": true
+    },
+    {
+      "source": "research/extensions/catholic-institutions/scenario-batches/CB-001/CIR-001/FREEZE.md",
+      "chapter": "03_Citation_Test_Results.ipynb",
+      "sha256": "5071c62df7059e9b0b04f9ab4ab6e3d85cd15a9bc1d7c0f1919240ab048cc056",
+      "source_cells": 7,
+      "complete_text_preserved": true
+    },
+    {
+      "source": "research/extensions/catholic-institutions/scenario-batches/CB-001/CIR-001/SOURCE_PACKET.md",
+      "chapter": "03_Citation_Test_Results.ipynb",
+      "sha256": "c6a5df4f2f97a019989523f47a33377c99d6d4d971c7f81b8678d1c7cf5cce7b",
+      "source_cells": 5,
+      "complete_text_preserved": true
+    },
+    {
+      "source": "research/extensions/catholic-institutions/scenario-batches/CB-001/obligations/README.md",
+      "chapter": "04_Canon_Law_and_Authority.ipynb",
+      "sha256": "f6d2c37faccb59e6820a222c48f6be66a5e63c4034acc6346456fee77d16e700",
+      "source_cells": 9,
+      "complete_text_preserved": true
+    },
+    {
+      "source": "research/extensions/catholic-institutions/scenario-batches/CB-001/PARISH-QA-001-R1/README.md",
+      "chapter": "05_Live_Parish_Responses.ipynb",
+      "sha256": "dc02b8081426f7444356cac40d107d83cceb5a31783753950d98049c68f986af",
+      "source_cells": 7,
+      "complete_text_preserved": true
+    },
+    {
+      "source": "research/extensions/catholic-institutions/scenario-batches/CB-001/PARISH-QA-001-R1/FREEZE.md",
+      "chapter": "05_Live_Parish_Responses.ipynb",
+      "sha256": "77f98daea240bf50081ecf7aea17153b6f1df560374e364bc9699bb8a1266555",
+      "source_cells": 6,
+      "complete_text_preserved": true
+    },
+    {
+      "source": "research/extensions/catholic-institutions/scenario-batches/CB-001/PARISH-QA-001-R1/READERS.md",
+      "chapter": "05_Live_Parish_Responses.ipynb",
+      "sha256": "be4128ac8229b9cc0bbce7b588e5067d0555e507c75e4305f9999f6810032e0c",
+      "source_cells": 4,
+      "complete_text_preserved": true
+    },
+    {
+      "source": "research/extensions/catholic-institutions/scenario-batches/CB-001/README.md",
+      "chapter": "06_Risk_Scenarios_and_Sources.ipynb",
+      "sha256": "c10509319ea0dadad7dfc58e33738b06d949eef104b2864994095fc03afff44a",
+      "source_cells": 6,
+      "complete_text_preserved": true
+    },
+    {
+      "source": "research/extensions/catholic-institutions/disclosure/README.md",
+      "chapter": "07_AI_Disclosure.ipynb",
+      "sha256": "2b442896cfd1f692bc478637d9310cca6ec9bc2adfa9a7515f98b779bab57976",
+      "source_cells": 3,
+      "complete_text_preserved": true
+    },
+    {
+      "source": "research/extensions/catholic-institutions/AI_DISCLOSURE.md",
+      "chapter": "07_AI_Disclosure.ipynb",
+      "sha256": "8ba66a5ea56ee9f5b5b2adf4689ab284ed35501d1fe1c995a7216b2797709768",
+      "source_cells": 2,
+      "complete_text_preserved": true
+    },
+    {
+      "source": "research/extensions/catholic-institutions/evidence-workbench/AI_USE_DISCLOSURE.md",
+      "chapter": "07_AI_Disclosure.ipynb",
+      "sha256": "f86e91b506de51961581b8d0e6d1d62f09f046c881b9e5e76ec39580a738501c",
+      "source_cells": 1,
+      "complete_text_preserved": true
+    },
+    {
+      "source": "research/extensions/catholic-institutions/CHANGELOG.md",
+      "chapter": "08_Decisions_and_Review.ipynb",
+      "sha256": "e6932f1ba2edf4aeb1c37e665d7e1096b58ad8d6f502bad908c7b58460cbf4e5",
+      "source_cells": 3,
+      "complete_text_preserved": true
+    },
+    {
+      "source": "research/extensions/catholic-institutions/DECISIONS.md",
+      "chapter": "08_Decisions_and_Review.ipynb",
+      "sha256": "261a0b1d7bc102b286e97852c3d49095201bdcf378c516ef222da52e78bcca28",
+      "source_cells": 3,
+      "complete_text_preserved": true
+    },
+    {
+      "source": "research/extensions/catholic-institutions/DISCLOSURE_CHANGELOG.md",
+      "chapter": "08_Decisions_and_Review.ipynb",
+      "sha256": "e6accd1c7b72e653a25752c4ae0d580713182bbba15041f4ed37318708546164",
+      "source_cells": 4,
+      "complete_text_preserved": true
+    },
+    {
+      "source": "research/extensions/catholic-institutions/scenario-batches/CB-001/PARISH-QA-001-R1/REVIEW.md",
+      "chapter": "08_Decisions_and_Review.ipynb",
+      "sha256": "971345216f17b2938da7fa96a60eb16835e1a9f6559751fb7d2789b47aa9d648",
+      "source_cells": 1,
+      "complete_text_preserved": true
+    },
+    {
+      "source": "research/extensions/catholic-institutions/README.md",
+      "chapter": "09_Reproduce_and_Inspect.ipynb",
+      "sha256": "7a3c7fe00b6bc5a1611b1c4aa58e12f4eddae102161a4a4af9cf7cd3720cf404",
+      "source_cells": 6,
+      "complete_text_preserved": true
+    },
+    {
+      "source": "research/extensions/catholic-institutions/reading/README.md",
+      "chapter": "09_Reproduce_and_Inspect.ipynb",
+      "sha256": "7c75c3b02d57943179ef6d612a4f5fce02471263af058b19311d7bccb20f844b",
+      "source_cells": 6,
+      "complete_text_preserved": true
+    },
+    {
+      "source": "research/extensions/catholic-institutions/EVIDENCE_INDEX.md",
+      "chapter": "09_Reproduce_and_Inspect.ipynb",
+      "sha256": "f1c6862d9dac42209850a1a50c836d5bfb48f6c6c253b136a7197dbff90fe5fd",
+      "source_cells": 1,
+      "complete_text_preserved": true
+    },
+    {
+      "source": "research/extensions/catholic-institutions/RELEASE_NOTES.md",
+      "chapter": "09_Reproduce_and_Inspect.ipynb",
+      "sha256": "00814170eccacee9e41e315c22f3073b44f85f19b850fc29ad7fab15b81cfa0f",
+      "source_cells": 1,
+      "complete_text_preserved": true
+    },
+    {
+      "source": "research/extensions/catholic-institutions/reading/ARCHIVE_POLICY.md",
+      "chapter": "09_Reproduce_and_Inspect.ipynb",
+      "sha256": "11c26365b02cbe238f155469c4f66e7d3da46a95d03252fa913929aaf626993a",
+      "source_cells": 6,
+      "complete_text_preserved": true
+    },
+    {
+      "source": "research/extensions/catholic-institutions/reading/NodeNorm_Protocol_v0_3_0.md",
+      "chapter": "09_Reproduce_and_Inspect.ipynb",
+      "sha256": "00dd137a4a8272e5e08b5187ae3275f7c15593b735ef5154446349647ce8613a",
+      "source_cells": 17,
+      "complete_text_preserved": true
+    },
+    {
+      "source": "research/extensions/catholic-institutions/reading/NodeNorm_Protocol_v0_4_1.md",
+      "chapter": "09_Reproduce_and_Inspect.ipynb",
+      "sha256": "92301a5ed0c8ce3ca27bc71a837532f484b876e5dce5d9079e25bbb4964e1462",
+      "source_cells": 18,
+      "complete_text_preserved": true
+    },
+    {
+      "source": "research/extensions/catholic-institutions/evidence-workbench/README.md",
+      "chapter": "10_Evidence_Methods.ipynb",
+      "sha256": "a4f89c5f84cc03b829fb4185721803fb272ee15f60f12a3c5f5ff25bf2027f86",
+      "source_cells": 3,
+      "complete_text_preserved": true
+    },
+    {
+      "source": "research/extensions/catholic-institutions/evidence-workbench/EVIDENCE_REVIEW.md",
+      "chapter": "10_Evidence_Methods.ipynb",
+      "sha256": "99916d77f767057a0ac8fb78ba586c7c2d096a4eb64d9a685c3c1ecb813f6a32",
+      "source_cells": 14,
+      "complete_text_preserved": true
+    },
+    {
+      "source": "research/extensions/catholic-institutions/evidence-workbench/course-alignment/README.md",
+      "chapter": "11_Course_and_Method_Alignment.ipynb",
+      "sha256": "16ba8093d0582935f9192c83e479009b02a899abee544eedb01079cd91318c43",
+      "source_cells": 1,
+      "complete_text_preserved": true
+    },
+    {
+      "source": "research/extensions/catholic-institutions/evidence-workbench/course-alignment/COURSE_ALIGNMENT.md",
+      "chapter": "11_Course_and_Method_Alignment.ipynb",
+      "sha256": "3b225351aee8d3ffc22efd5f9bddf50b559ad0423fff3a751d873383f2c09a2f",
+      "source_cells": 8,
+      "complete_text_preserved": true
+    }
+  ],
+  "inputs": [
+    {
+      "path": "research/extensions/catholic-institutions/study.json",
+      "sha256": "c76b94c6d13479b06b027d538070d12bb08cd1b87100bba911eca2bf4409b68b",
+      "bytes": 22042,
+      "source_commit": "c1628ae86186e2202ef82e1394f0b8bb8f7568ab"
+    },
+    {
+      "path": "research/extensions/catholic-institutions/SCOPING.md",
+      "sha256": "09da127cd57a3bcfa5bedef662c43226d5e41fc2cea0b52dce750b19ff5963dd",
+      "bytes": 3434,
+      "source_commit": "c1628ae86186e2202ef82e1394f0b8bb8f7568ab"
+    },
+    {
+      "path": "research/extensions/catholic-institutions/PROTOCOL.md",
+      "sha256": "92301a5ed0c8ce3ca27bc71a837532f484b876e5dce5d9079e25bbb4964e1462",
+      "bytes": 36505,
+      "source_commit": "c1628ae86186e2202ef82e1394f0b8bb8f7568ab"
+    },
+    {
+      "path": "research/extensions/catholic-institutions/METHOD_AMENDMENT.md",
+      "sha256": "dc9e9e91f38651885b076a3d94fd65f17ff3b05ffc36dffa8b6439f24e9e35e7",
+      "bytes": 4330,
+      "source_commit": "c1628ae86186e2202ef82e1394f0b8bb8f7568ab"
+    },
+    {
+      "path": "research/extensions/catholic-institutions/scenario-batches/CB-001/CIR-001/RESULTS.md",
+      "sha256": "260045102ee103ad7f1a911efcd4556646b79de74d924f97876b81cea455e4dd",
+      "bytes": 5460,
+      "source_commit": "c1628ae86186e2202ef82e1394f0b8bb8f7568ab"
+    },
+    {
+      "path": "research/extensions/catholic-institutions/scenario-batches/CB-001/CIR-001/README.md",
+      "sha256": "ac5d4471c4c029ff868206ce3b6ad057ccdc91da783b08c9d64c16d24eaff364",
+      "bytes": 1979,
+      "source_commit": "c1628ae86186e2202ef82e1394f0b8bb8f7568ab"
+    },
+    {
+      "path": "research/extensions/catholic-institutions/scenario-batches/CB-001/CIR-001/FREEZE.md",
+      "sha256": "5071c62df7059e9b0b04f9ab4ab6e3d85cd15a9bc1d7c0f1919240ab048cc056",
+      "bytes": 5812,
+      "source_commit": "c1628ae86186e2202ef82e1394f0b8bb8f7568ab"
+    },
+    {
+      "path": "research/extensions/catholic-institutions/scenario-batches/CB-001/CIR-001/SOURCE_PACKET.md",
+      "sha256": "c6a5df4f2f97a019989523f47a33377c99d6d4d971c7f81b8678d1c7cf5cce7b",
+      "bytes": 3952,
+      "source_commit": "c1628ae86186e2202ef82e1394f0b8bb8f7568ab"
+    },
+    {
+      "path": "research/extensions/catholic-institutions/scenario-batches/CB-001/obligations/README.md",
+      "sha256": "f6d2c37faccb59e6820a222c48f6be66a5e63c4034acc6346456fee77d16e700",
+      "bytes": 12185,
+      "source_commit": "c1628ae86186e2202ef82e1394f0b8bb8f7568ab"
+    },
+    {
+      "path": "research/extensions/catholic-institutions/scenario-batches/CB-001/PARISH-QA-001-R1/README.md",
+      "sha256": "dc02b8081426f7444356cac40d107d83cceb5a31783753950d98049c68f986af",
+      "bytes": 7034,
+      "source_commit": "c1628ae86186e2202ef82e1394f0b8bb8f7568ab"
+    },
+    {
+      "path": "research/extensions/catholic-institutions/scenario-batches/CB-001/PARISH-QA-001-R1/FREEZE.md",
+      "sha256": "77f98daea240bf50081ecf7aea17153b6f1df560374e364bc9699bb8a1266555",
+      "bytes": 4550,
+      "source_commit": "c1628ae86186e2202ef82e1394f0b8bb8f7568ab"
+    },
+    {
+      "path": "research/extensions/catholic-institutions/scenario-batches/CB-001/PARISH-QA-001-R1/READERS.md",
+      "sha256": "be4128ac8229b9cc0bbce7b588e5067d0555e507c75e4305f9999f6810032e0c",
+      "bytes": 2656,
+      "source_commit": "c1628ae86186e2202ef82e1394f0b8bb8f7568ab"
+    },
+    {
+      "path": "research/extensions/catholic-institutions/scenario-batches/CB-001/README.md",
+      "sha256": "c10509319ea0dadad7dfc58e33738b06d949eef104b2864994095fc03afff44a",
+      "bytes": 6063,
+      "source_commit": "c1628ae86186e2202ef82e1394f0b8bb8f7568ab"
+    },
+    {
+      "path": "research/extensions/catholic-institutions/disclosure/README.md",
+      "sha256": "2b442896cfd1f692bc478637d9310cca6ec9bc2adfa9a7515f98b779bab57976",
+      "bytes": 2681,
+      "source_commit": "c1628ae86186e2202ef82e1394f0b8bb8f7568ab"
+    },
+    {
+      "path": "research/extensions/catholic-institutions/AI_DISCLOSURE.md",
+      "sha256": "8ba66a5ea56ee9f5b5b2adf4689ab284ed35501d1fe1c995a7216b2797709768",
+      "bytes": 9584,
+      "source_commit": "c1628ae86186e2202ef82e1394f0b8bb8f7568ab"
+    },
+    {
+      "path": "research/extensions/catholic-institutions/evidence-workbench/AI_USE_DISCLOSURE.md",
+      "sha256": "f86e91b506de51961581b8d0e6d1d62f09f046c881b9e5e76ec39580a738501c",
+      "bytes": 1467,
+      "source_commit": "c1628ae86186e2202ef82e1394f0b8bb8f7568ab"
+    },
+    {
+      "path": "research/extensions/catholic-institutions/CHANGELOG.md",
+      "sha256": "e6932f1ba2edf4aeb1c37e665d7e1096b58ad8d6f502bad908c7b58460cbf4e5",
+      "bytes": 1106,
+      "source_commit": "c1628ae86186e2202ef82e1394f0b8bb8f7568ab"
+    },
+    {
+      "path": "research/extensions/catholic-institutions/DECISIONS.md",
+      "sha256": "261a0b1d7bc102b286e97852c3d49095201bdcf378c516ef222da52e78bcca28",
+      "bytes": 3911,
+      "source_commit": "c1628ae86186e2202ef82e1394f0b8bb8f7568ab"
+    },
+    {
+      "path": "research/extensions/catholic-institutions/DISCLOSURE_CHANGELOG.md",
+      "sha256": "e6accd1c7b72e653a25752c4ae0d580713182bbba15041f4ed37318708546164",
+      "bytes": 2787,
+      "source_commit": "c1628ae86186e2202ef82e1394f0b8bb8f7568ab"
+    },
+    {
+      "path": "research/extensions/catholic-institutions/scenario-batches/CB-001/PARISH-QA-001-R1/REVIEW.md",
+      "sha256": "971345216f17b2938da7fa96a60eb16835e1a9f6559751fb7d2789b47aa9d648",
+      "bytes": 1305,
+      "source_commit": "c1628ae86186e2202ef82e1394f0b8bb8f7568ab"
+    },
+    {
+      "path": "research/extensions/catholic-institutions/README.md",
+      "sha256": "7a3c7fe00b6bc5a1611b1c4aa58e12f4eddae102161a4a4af9cf7cd3720cf404",
+      "bytes": 6935,
+      "source_commit": "c1628ae86186e2202ef82e1394f0b8bb8f7568ab"
+    },
+    {
+      "path": "research/extensions/catholic-institutions/reading/README.md",
+      "sha256": "7c75c3b02d57943179ef6d612a4f5fce02471263af058b19311d7bccb20f844b",
+      "bytes": 9075,
+      "source_commit": "c1628ae86186e2202ef82e1394f0b8bb8f7568ab"
+    },
+    {
+      "path": "research/extensions/catholic-institutions/EVIDENCE_INDEX.md",
+      "sha256": "f1c6862d9dac42209850a1a50c836d5bfb48f6c6c253b136a7197dbff90fe5fd",
+      "bytes": 723,
+      "source_commit": "c1628ae86186e2202ef82e1394f0b8bb8f7568ab"
+    },
+    {
+      "path": "research/extensions/catholic-institutions/RELEASE_NOTES.md",
+      "sha256": "00814170eccacee9e41e315c22f3073b44f85f19b850fc29ad7fab15b81cfa0f",
+      "bytes": 1372,
+      "source_commit": "c1628ae86186e2202ef82e1394f0b8bb8f7568ab"
+    },
+    {
+      "path": "research/extensions/catholic-institutions/reading/ARCHIVE_POLICY.md",
+      "sha256": "11c26365b02cbe238f155469c4f66e7d3da46a95d03252fa913929aaf626993a",
+      "bytes": 5676,
+      "source_commit": "c1628ae86186e2202ef82e1394f0b8bb8f7568ab"
+    },
+    {
+      "path": "research/extensions/catholic-institutions/reading/NodeNorm_Protocol_v0_3_0.md",
+      "sha256": "00dd137a4a8272e5e08b5187ae3275f7c15593b735ef5154446349647ce8613a",
+      "bytes": 26876,
+      "source_commit": "c1628ae86186e2202ef82e1394f0b8bb8f7568ab"
+    },
+    {
+      "path": "research/extensions/catholic-institutions/reading/NodeNorm_Protocol_v0_4_1.md",
+      "sha256": "92301a5ed0c8ce3ca27bc71a837532f484b876e5dce5d9079e25bbb4964e1462",
+      "bytes": 36505,
+      "source_commit": "c1628ae86186e2202ef82e1394f0b8bb8f7568ab"
+    },
+    {
+      "path": "research/extensions/catholic-institutions/evidence-workbench/README.md",
+      "sha256": "a4f89c5f84cc03b829fb4185721803fb272ee15f60f12a3c5f5ff25bf2027f86",
+      "bytes": 2732,
+      "source_commit": "c1628ae86186e2202ef82e1394f0b8bb8f7568ab"
+    },
+    {
+      "path": "research/extensions/catholic-institutions/evidence-workbench/EVIDENCE_REVIEW.md",
+      "sha256": "99916d77f767057a0ac8fb78ba586c7c2d096a4eb64d9a685c3c1ecb813f6a32",
+      "bytes": 27060,
+      "source_commit": "c1628ae86186e2202ef82e1394f0b8bb8f7568ab"
+    },
+    {
+      "path": "research/extensions/catholic-institutions/evidence-workbench/course-alignment/README.md",
+      "sha256": "16ba8093d0582935f9192c83e479009b02a899abee544eedb01079cd91318c43",
+      "bytes": 970,
+      "source_commit": "c1628ae86186e2202ef82e1394f0b8bb8f7568ab"
+    },
+    {
+      "path": "research/extensions/catholic-institutions/evidence-workbench/course-alignment/COURSE_ALIGNMENT.md",
+      "sha256": "3b225351aee8d3ffc22efd5f9bddf50b559ad0423fff3a751d873383f2c09a2f",
+      "bytes": 12245,
+      "source_commit": "c1628ae86186e2202ef82e1394f0b8bb8f7568ab"
+    },
+    {
+      "path": "research/extensions/catholic-institutions/scenario-batches/CB-001/obligations/sources.json",
+      "sha256": "a6ae9fafcb5075402ee14041374b87228f9a9e1ecdda7d4231bb5149d14b24fd",
+      "bytes": 7678,
+      "source_commit": "c1628ae86186e2202ef82e1394f0b8bb8f7568ab"
+    },
+    {
+      "path": "research/extensions/catholic-institutions/scenario-batches/CB-001/obligations/mappings.json",
+      "sha256": "3db59633c5610ff847890a9ac62e0f68aaa179def24606a3be4bfbb61489c27c",
+      "bytes": 8312,
+      "source_commit": "c1628ae86186e2202ef82e1394f0b8bb8f7568ab"
+    },
+    {
+      "path": "research/extensions/catholic-institutions/data/normative-crosswalk.json",
+      "sha256": "d9d76d58dc0186e1a5956b66028992845ef5f1b273d3ca1eccdb4f5fa24bf5d0",
+      "bytes": 24807,
+      "source_commit": "c1628ae86186e2202ef82e1394f0b8bb8f7568ab"
+    },
+    {
+      "path": "research/extensions/catholic-institutions/scenario-batches/CB-001/candidates.json",
+      "sha256": "2a83edcce1ec43f7206bb332502fde36451a8da5bf6c95025aa8fac36431b74b",
+      "bytes": 17578,
+      "source_commit": "c1628ae86186e2202ef82e1394f0b8bb8f7568ab"
+    },
+    {
+      "path": "research/extensions/catholic-institutions/disclosure/record.json",
+      "sha256": "5001f5fbd92a7cc34add4e7c4884046bba706e3402a8e1a34f665070612faa38",
+      "bytes": 9202,
+      "source_commit": "c1628ae86186e2202ef82e1394f0b8bb8f7568ab"
+    },
+    {
+      "path": "research/extensions/catholic-institutions/disclosure/historical-guidance-2026-10-27.json",
+      "sha256": "552bc93cf17280aef349a0cb62d6e90cd72d56369cc05836f633084354c29074",
+      "bytes": 4384,
+      "source_commit": "c1628ae86186e2202ef82e1394f0b8bb8f7568ab"
+    },
+    {
+      "path": "research/extensions/catholic-institutions/disclosure/policy-checks.json",
+      "sha256": "093680f64542256fe10695c9966df70af72f6008abeb35a643846963aa211ba2",
+      "bytes": 4227,
+      "source_commit": "c1628ae86186e2202ef82e1394f0b8bb8f7568ab"
+    },
+    {
+      "path": "research/extensions/catholic-institutions/scenario-batches/CB-001/obligations/decision-record.json",
+      "sha256": "14cfd79b53d8b02d5bac92d4951a66923f06d3fac06e2d70fd03dc1db987ffdb",
+      "bytes": 1728,
+      "source_commit": "c1628ae86186e2202ef82e1394f0b8bb8f7568ab"
+    },
+    {
+      "path": "research/extensions/catholic-institutions/evidence-workbench/decisions.json",
+      "sha256": "bcc9a44cd53005a51b277f645984257107186a7e4f02e0c235be84583859f3a7",
+      "bytes": 2634,
+      "source_commit": "c1628ae86186e2202ef82e1394f0b8bb8f7568ab"
+    },
+    {
+      "path": "research/extensions/catholic-institutions/scenario-batches/CB-001/PARISH-QA-001-R1/evidence.json",
+      "sha256": "56da15fd91419e391888e7c024102ec8a21cc844999fdee477b3ee5e4c2e0440",
+      "bytes": 20739,
+      "source_commit": "c1628ae86186e2202ef82e1394f0b8bb8f7568ab"
+    },
+    {
+      "path": "research/extensions/catholic-institutions/reading/archive-support/cir001/replay-inputs/cases.json",
+      "sha256": "e6d249868c9f2c9d409e554bd7cf6f32a376e4e5f77cc382ed99ebdc539b7337",
+      "bytes": 35318,
+      "source_commit": "c1628ae86186e2202ef82e1394f0b8bb8f7568ab"
+    },
+    {
+      "path": "research/extensions/catholic-institutions/reading/archive-support/cir001/replay-inputs/raw-results.replay.json",
+      "sha256": "086a9a5c40fafb979366fdca92730983bfddeca96e061bafb5a8899a162043c3",
+      "bytes": 31202,
+      "source_commit": "c1628ae86186e2202ef82e1394f0b8bb8f7568ab"
+    }
+  ],
+  "new_research_results": false,
+  "qualified_review": "pending",
+  "protocol": "0.3.0; unfrozen",
+  "original_archive_modified": false,
+  "new_standalone_markdown_or_html_readers": 0,
+  "transformation": "Full source text retained in provenance; notebook link retargeting only. JSON values displayed without inferred judgments.",
+  "root_readme_exception": "One exact navigation block only; original remainder must match the baseline blob."
+}
