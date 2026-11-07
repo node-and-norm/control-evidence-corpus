@@ -1,10 +1,16 @@
 # Pilot batch CB-001: first five institutional scenarios
 
-**6 November 2026 | CIR-001 identity-component comparison executed | Qualified review pending**
+**6 November 2026 | CIR-001 identity comparison recorded; obligations mapping added | Qualified review pending**
 
 This batch develops five candidate institutional risks and proposed controls. It does not represent five observed Catholic incidents or validated safeguards. The governing protocol remains 0.3.0 and unfrozen for the main comparison.
 
-## Current increment: one bounded engineering result
+## Institutional obligations and responsible authority
+
+The [OA-001 guided chapter](obligations/README.md), [source register](obligations/sources.json), [five applicability mappings](obligations/mappings.json) and [repository notebook](obligations/study.ipynb) now connect the technical scenarios to candidate canonical provisions and Church teaching. Canonical law, amending legislation, magisterial teaching, local policy and civil-law applicability remain separate. The initial mapping concerns the Latin Church; no target institution, diocese or civil jurisdiction is presumed.
+
+The [next parish-assistant packet](obligations/parish-test-plan.json) contains six paired draft prompts. It is prepared, not frozen or executed. [Recorded decisions and AI disclosure](obligations/decision-record.json) preserve this status. The official c.775 §2 amendment is recorded separately from c.827 §1. No compliance determination or ecclesial approval follows from this source inspection.
+
+## Current engineering evidence
 
 Start with [CIR-001 results and limits](CIR-001/RESULTS.md), the [guided notebook](CIR-001/study.ipynb), and the [selected primary-source packet](CIR-001/SOURCE_PACKET.md). The [status record](STATUS.json) distinguishes this increment from the preserved initial [scenario drafts](candidates.json).
 
@@ -16,29 +22,25 @@ The packet consists of 22 assistant-authored synthetic cases and two known histo
 
 | Record | Institutional question | Current evidence status |
 | :--- | :--- | :--- |
-| CIR-001 | Does an answer point to the intended source and preserve unresolved support? | Selected source sections inspected; identity-component comparison recorded; semantic and qualified review pending |
-| CIR-002 | Does the assistant claim ecclesial identity or authority it lacks? | Initial scenario and control hypothesis; source and qualified review pending |
-| CIR-003 | Can protected student or pastoral information cross an unauthorized boundary? | Initial scenario; any future test uses invented identities and records only |
-| CIR-004 | Can the assigned human reviewer actually change a consequential action? | Initial scenario; actual permissions, intervention and propagation evidence required |
-| CIR-005 | Can a school challenge an unsupported assessment and propagate the correction? | Initial scenario; assessment and correction evidence required |
+| CIR-001 | Does an answer point to the intended source and preserve unresolved support? | Identity-component comparison recorded; publication and catechetical responsibility mapping added; qualified review pending |
+| CIR-002 | Does the assistant claim ecclesial identity or authority it lacks? | Sacramental-role source locations and proposed role tests recorded; qualified review pending |
+| CIR-003 | Can protected student or pastoral information cross an unauthorized boundary? | Privacy mapping added; future tests use invented records only |
+| CIR-004 | Can the assigned human reviewer actually change a consequential action? | Teaching and workflow-specific authority questions mapped; operation evidence still required |
+| CIR-005 | Can a school challenge an unsupported assessment and propagate the correction? | Educational responsibility mapping added; assessment/correction evidence still required |
 
-The machine-readable initial batch preserves upstream IDs, reported hashes and source URLs. Those hashes are reported metadata, not new full-dataset attestations. CIR-001's source review now covers the specific NIST and Church-document locations listed in its packet; this does not complete the other scenarios' source review. The website's editorial selection is neither an independently validated nor representative Catholic corpus.
+The initial batch preserves upstream IDs and reported hashes, not newly recomputed full-dataset attestations. The website's editorial selection is neither independently validated nor representative of Catholic institutions. OA-001 supplies candidate normative context, not additional empirical cases.
 
 ## Next evidence gates
 
-1. Independently prepare new cases or plan a live integration check; keep the known anomalies as development regressions. Do not recast them as an unseen holdout.
-2. Obtain qualified review of source interpretation and institutional applicability. A source identity match alone cannot establish support for an answer.
-3. Develop authority-boundary and synthetic-confidentiality packets while those reviews are arranged. Human-performance measures require actual eligible participants and separate procedures.
-4. Test whether the richer trace improves review or diagnosis against the simple checklist before claiming a benefit from additional structure.
+1. Fix the actual test system, source-delivery condition, budget, errors and rubric before executing the new question packet. Known examples remain development cases, not unseen holdouts.
+2. Obtain qualified review of meaning and institutional applicability before scored canonical or semantic findings. An explicitly unadjudicated exploratory run must retain that limitation.
+3. Develop authority-boundary and synthetic-confidentiality packets without real personal records. Actual human-performance measures require eligible participants and separate procedures.
+4. Test any claimed benefit of richer traces against the simple checklist rather than assume one.
 
-The small feasibility batch need not wait for complete website ingestion. Larger-sample work still requires a defined source population. Healthcare, charitable-service allocation and real confidential records remain outside this batch's scope.
+The first-batch milestone requires five source-linked scenario packets and one reproducible technical comparison, with unresolved judgments visible. Independent theological review, human reliability, institutional effectiveness and canonical CEC admission remain separate gates. Healthcare and charitable-service allocation remain outside this batch's scope.
 
-## Completion means evidence, not file count
+## Disclosure, readers and publication
 
-The first-batch milestone requires five source-linked scenario packets with explicit unresolved judgments and one reproducible technical comparison. Only CIR-001 currently has the latter and a targeted source packet. The batch remains incomplete. Independent theological review, human reliability, institutional effectiveness and canonical CEC admission remain separate gates.
+One ChatGPT assistant inspected selected official sources, proposed mappings and test questions, wrote code and prepared documentation. No independent AI team or human panel is claimed. User authorization does not establish personal source inspection or exact-text approval. See the [study disclosure](../../AI_DISCLOSURE.md), [R1 contribution record](CIR-001/ai-use-and-publication.json) and [OA-001 decisions](obligations/decision-record.json).
 
-## Disclosure and publication
-
-One ChatGPT assistant inspected selected sources, drafted methods, authored the code and expected labels, executed the local comparison and prepared documentation. No independent AI team or human panel is claimed. The same-assistant reference labels are a validity limitation. User authorization does not establish personal source inspection or exact-text approval. See the [study disclosure](../../AI_DISCLOSURE.md) and [run contribution record](CIR-001/ai-use-and-publication.json).
-
-The main README, website ingestion, historical outcomes, H1–H4 and the published 0.4.1-dev reader release remain unchanged. Draft 0.4.2 reading files supplied with this continuation integrate the new result into the existing report and notebook. They are not a new tagged release or website deployment. PR37 remains a development record pending further review.
+The main README, website ingestion, historical outcomes, H1–H4 and published 0.4.1-dev release remain unchanged. The five 0.4.3-draft reader editions supplied with this continuation retain the 0.4.2 engineering result and add OA-001. They are draft exports, not a tagged release or website deployment. The [offline builder](obligations/build_readers.py) takes the four preserved 0.4.2 HTML/notebook/Markdown inputs via `--base`, writes to `--out`, and optionally executes notebook cells or renders PDF. Those base inputs are included in the portable package; they are not silently substituted with older repository readers. PR37 remains a draft development record.
