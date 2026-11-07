@@ -1,0 +1,28 @@
+name: Catholic pilot consolidation
+on:
+  push:
+    branches: [maintenance/catholic-pilot-consolidation]
+    paths:
+      - '.github/workflows/catholic-consolidation.yml'
+      - 'scripts/consolidate_catholic_pilot.py'
+permissions:
+  contents: read
+jobs:
+  prepare:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Export the checked public baseline without credentials or working files
+        run: |
+          mkdir -p /tmp/catholic-consolidation
+          git archive --format=zip --output=/tmp/catholic-consolidation/baseline.zip 2ceb343b627b4aa13e3e5df84c4f7e8b2389683f
+          sha256sum /tmp/catholic-consolidation/baseline.zip > /tmp/catholic-consolidation/SHA256SUMS
+      - uses: actions/upload-artifact@v4
+        with:
+          name: catholic-consolidation-baseline
+          path: /tmp/catholic-consolidation/*
+          retention-days: 7
+          if-no-files-found: error
