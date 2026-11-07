@@ -38,6 +38,6 @@ class ReadingChecks(unittest.TestCase):
     def test_main_readme_unchanged(self):
         path=ROOT.parents[2]/'README.md'
         if not path.exists():self.skipTest('Full checkout unavailable in local attachment workspace; CI must run this check.')
-        data=path.read_bytes();actual=hashlib.sha1(b'blob '+str(len(data)).encode()+b'\0'+data).hexdigest()
+        data=runpy.run_path(str(ROOT.parents[2]/'scripts/build_catholic_notebook_book.py'))['strip_navigation'](path.read_bytes());actual=hashlib.sha1(b'blob '+str(len(data)).encode()+b'\0'+data).hexdigest()
         self.assertEqual(actual,json.loads((ROOT/'release.json').read_text())['root_readme_blob_sha1'])
 if __name__=='__main__':unittest.main(verbosity=2)

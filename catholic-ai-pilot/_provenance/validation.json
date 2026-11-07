@@ -1,0 +1,115 @@
+{
+  "kind": "presentation_and_source_integrity_checks",
+  "source_commit": "c1628ae86186e2202ef82e1394f0b8bb8f7568ab",
+  "source_mode": "git_commit",
+  "notebooks": [
+    {
+      "path": "CATHOLIC_PILOT.ipynb",
+      "cells": 8,
+      "code_cells": 0
+    },
+    {
+      "path": "catholic-ai-pilot/00_START_HERE.ipynb",
+      "cells": 8,
+      "code_cells": 0
+    },
+    {
+      "path": "catholic-ai-pilot/01_Study_and_Roadmap.ipynb",
+      "cells": 18,
+      "code_cells": 0
+    },
+    {
+      "path": "catholic-ai-pilot/02_Research_Protocol.ipynb",
+      "cells": 24,
+      "code_cells": 0
+    },
+    {
+      "path": "catholic-ai-pilot/03_Citation_Test_Results.ipynb",
+      "cells": 30,
+      "code_cells": 1
+    },
+    {
+      "path": "catholic-ai-pilot/04_Canon_Law_and_Authority.ipynb",
+      "cells": 54,
+      "code_cells": 1
+    },
+    {
+      "path": "catholic-ai-pilot/05_Live_Parish_Responses.ipynb",
+      "cells": 32,
+      "code_cells": 1
+    },
+    {
+      "path": "catholic-ai-pilot/06_Risk_Scenarios_and_Sources.ipynb",
+      "cells": 17,
+      "code_cells": 0
+    },
+    {
+      "path": "catholic-ai-pilot/07_AI_Disclosure.ipynb",
+      "cells": 18,
+      "code_cells": 0
+    },
+    {
+      "path": "catholic-ai-pilot/08_Decisions_and_Review.ipynb",
+      "cells": 23,
+      "code_cells": 0
+    },
+    {
+      "path": "catholic-ai-pilot/09_Reproduce_and_Inspect.ipynb",
+      "cells": 67,
+      "code_cells": 0
+    },
+    {
+      "path": "catholic-ai-pilot/10_Evidence_Methods.ipynb",
+      "cells": 22,
+      "code_cells": 0
+    },
+    {
+      "path": "catholic-ai-pilot/11_Course_and_Method_Alignment.ipynb",
+      "cells": 14,
+      "code_cells": 0
+    }
+  ],
+  "complete_source_documents": 30,
+  "local_reader_links_checked": 211,
+  "source_reassembly_identical": true,
+  "all_six_responses_preserved": true,
+  "notebook_only_reader_path": true,
+  "executions": [
+    {
+      "notebook": "catholic-ai-pilot/03_Citation_Test_Results.ipynb",
+      "code_cells": 1,
+      "kind": "offline_inventory_check",
+      "new_model_calls": 0
+    },
+    {
+      "notebook": "catholic-ai-pilot/04_Canon_Law_and_Authority.ipynb",
+      "code_cells": 1,
+      "kind": "offline_inventory_check",
+      "new_model_calls": 0
+    },
+    {
+      "notebook": "catholic-ai-pilot/05_Live_Parish_Responses.ipynb",
+      "code_cells": 1,
+      "kind": "offline_inventory_check",
+      "new_model_calls": 0
+    }
+  ],
+  "new_research_results": false,
+  "independent_validation": false,
+  "note": "Source fidelity and code execution do not establish correctness of inherited claims or qualified review.",
+  "output_hashes": {
+    "CATHOLIC_PILOT.ipynb": "58d57edfcb29acb9c12c65cae7ec467c796728c4dc66e8cf2f125e5bd8871c93",
+    "catholic-ai-pilot/00_START_HERE.ipynb": "c295d92d7cb34ea66e0170cda8741f976ff7b308ca21004d4308eaa10c39eb41",
+    "catholic-ai-pilot/01_Study_and_Roadmap.ipynb": "cc39979d3fbcb9bb9c39188a4cac277a894fa4fe2c6214155aa444dec5dcbc0f",
+    "catholic-ai-pilot/02_Research_Protocol.ipynb": "8067f5816848c1f1af9a7d6a7a527c460e13fc9bdb48911dbe612df5b4dd217a",
+    "catholic-ai-pilot/03_Citation_Test_Results.ipynb": "46d7e9003701d7412a86ec43bbea4ac4180a373eb62d83b90aba00b49a171edf",
+    "catholic-ai-pilot/04_Canon_Law_and_Authority.ipynb": "93747a1bf1c5e116cc2e7ab1c203dc4ffb5119d6a1f96d36c18b366af62d7133",
+    "catholic-ai-pilot/05_Live_Parish_Responses.ipynb": "d3b94394f96b730327bfa313196d5796f8d238e2b4165bb3be03d2bc58a93945",
+    "catholic-ai-pilot/06_Risk_Scenarios_and_Sources.ipynb": "57abf224834504407912d800aa239f67b408cc228ccd57b5d95d85a54cf7ea9e",
+    "catholic-ai-pilot/07_AI_Disclosure.ipynb": "9070e88bd91cebe739b96645af7055d98bcdfda9cd4584c7d868a48a92c02001",
+    "catholic-ai-pilot/08_Decisions_and_Review.ipynb": "6136a6a9d4a293f84f221483217fa4316345b714c90c3255926535c88d9d0f8a",
+    "catholic-ai-pilot/09_Reproduce_and_Inspect.ipynb": "c53a5359b2845b868d0285474472817e5701defa708d6a536a5e34775e32215b",
+    "catholic-ai-pilot/10_Evidence_Methods.ipynb": "70cd6cca5b5c02f3a010adf2916c93511d9f13f05a43a3caeec3e931b4908ed7",
+    "catholic-ai-pilot/11_Course_and_Method_Alignment.ipynb": "f07e6f13c27d4a705c42123843c14fa4eca6b8099fb3b759e6652e132b99f264"
+  }
+}

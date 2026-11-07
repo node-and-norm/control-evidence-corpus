@@ -1,0 +1,61 @@
+{
+  "version": 1,
+  "project": {
+    "title": "Catholic Institutional AI Risk and Control Evidence Pilot",
+    "description": "Notebook-only exploratory research book. Qualified review remains pending.",
+    "github": "https://github.com/node-and-norm/control-evidence-corpus",
+    "toc": [
+      {
+        "file": "00_START_HERE.ipynb",
+        "title": "Start here"
+      },
+      {
+        "file": "01_Study_and_Roadmap.ipynb",
+        "title": "Study and roadmap"
+      },
+      {
+        "file": "02_Research_Protocol.ipynb",
+        "title": "Research protocol"
+      },
+      {
+        "file": "03_Citation_Test_Results.ipynb",
+        "title": "Citation-test results"
+      },
+      {
+        "file": "04_Canon_Law_and_Authority.ipynb",
+        "title": "Canon law and authority"
+      },
+      {
+        "file": "05_Live_Parish_Responses.ipynb",
+        "title": "Live parish-assistant responses"
+      },
+      {
+        "file": "06_Risk_Scenarios_and_Sources.ipynb",
+        "title": "Risk scenarios and sources"
+      },
+      {
+        "file": "07_AI_Disclosure.ipynb",
+        "title": "AI assistance and responsibility"
+      },
+      {
+        "file": "08_Decisions_and_Review.ipynb",
+        "title": "Decisions and review"
+      },
+      {
+        "file": "09_Reproduce_and_Inspect.ipynb",
+        "title": "Reproduce and inspect"
+      },
+      {
+        "file": "10_Evidence_Methods.ipynb",
+        "title": "Evidence methods"
+      },
+      {
+        "file": "11_Course_and_Method_Alignment.ipynb",
+        "title": "Course and method alignment"
+      }
+    ]
+  },
+  "site": {
+    "template": "book-theme"
+  }
+}

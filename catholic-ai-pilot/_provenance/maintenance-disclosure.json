@@ -1,0 +1,16 @@
+{
+  "kind": "AI_assisted_presentation_migration",
+  "assistant": "ChatGPT (OpenAI)",
+  "provider_snapshot": "not_preserved_in_repository_record",
+  "activities": [
+    "repository-source inspection",
+    "navigation design",
+    "source-preserving notebook conversion",
+    "software tests"
+  ],
+  "new_model_under_test_calls": 0,
+  "new_qualified_review": false,
+  "human_authorization": "User requested front-page notebook organization; no personal verification inferred.",
+  "old_evidence_unchanged": true,
+  "hosting": "No hosted site deployment requested by this migration."
+}

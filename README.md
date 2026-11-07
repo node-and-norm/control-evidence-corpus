@@ -7,6 +7,10 @@
 
 [![Status: Development infrastructure](assets/research/v1/badges/status-dark.svg)](docs/research-summary.md) [![Version: 0.3.0-dev](assets/research/v1/badges/version-dark.svg)](https://github.com/node-and-norm/node-norm-control-evidence/releases/tag/v0.3.0-dev) [![Evidence: Synthetic demonstrations](assets/research/v1/badges/evidence-dark.svg)](examples/README.md)
 
+<!-- catholic-notebook-book:start -->
+**Catholic institutional AI pilot:** [Open the guided notebook book](CATHOLIC_PILOT.ipynb) · [Browse its chapters](catholic-ai-pilot/00_START_HERE.ipynb).
+<!-- catholic-notebook-book:end -->
+
 What can surviving records establish about whether an AI control operated? The Control Evidence Corpus (CEC) connects a control question to its sources, recorded actions and unresolved evidence. [Research question and contribution](docs/research-summary.md).
 
 [Policy reader: understand in 90 seconds](#research-in-90-seconds) · [Reviewer: inspect the evidence](docs/current-review.md) · [Engineer: run the checks](docs/reference-verification.md)
