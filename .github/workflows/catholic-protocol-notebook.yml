@@ -1,0 +1,43 @@
+name: Build Catholic protocol notebook reader
+on:
+  push:
+    branches: [research/catholic-first-five-scenarios]
+    paths:
+      - 'research/extensions/catholic-institutions/scripts/build_protocol_notebook.py'
+      - 'tests/test_catholic_protocol_notebook.py'
+      - '.github/workflows/catholic-protocol-notebook.yml'
+permissions:
+  contents: read
+concurrency:
+  group: catholic-protocol-notebook-${{ github.ref }}
+  cancel-in-progress: false
+jobs:
+  notebook:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    permissions:
+      contents: write
+    env:
+      EXT: research/extensions/catholic-institutions
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.sha }}
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Build narrative notebook and verify exact source preservation
+        run: |
+          python "$EXT/scripts/build_protocol_notebook.py"
+          python "$EXT/scripts/build_protocol_notebook.py" --check
+          python -m unittest discover -s tests -p test_catholic_protocol_notebook.py -v
+          git diff --exit-code -- README.md "$EXT/reading/editions" "$EXT/data" "$EXT/runs" "$EXT/scenario-batches"
+      - name: Commit only the new notebook presentation and manifest
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add "$EXT/reading/notebooks/NodeNorm_Protocol_v0_4_4.ipynb" "$EXT/reading/notebooks/protocol-notebook.json"
+          if ! git diff --cached --quiet; then
+            git commit -m 'Readers: add complete protocol as a source-faithful Jupyter notebook'
+            git push origin HEAD:research/catholic-first-five-scenarios
+          fi
