@@ -1,0 +1,61 @@
+{
+  "id": "CITATION-GATE-001",
+  "run_id": "CITATION-GATE-001-R1",
+  "scenario": "CIR-001",
+  "protocol_version": "0.3.0",
+  "design_status": "frozen_for_this_engineering_run_only",
+  "recorded_at": "2026-11-06T23:33:07.767230+00:00",
+  "question": "Can the identity-admission component reject inconsistent citation packets while retaining valid identity matches and leaving semantic support unreviewed?",
+  "scope_change": "The broad scenario includes semantic support. This first run tests only document/paragraph/edition/payload consistency and uncertainty preservation. It is an engineering feasibility comparison, not the H1 reviewer study or theological evaluation.",
+  "cases": 24,
+  "authored_synthetic": 22,
+  "archived_prior_informed_metadata_replays": 2,
+  "identity_positive_reference_cases": 8,
+  "identity_negative_or_unresolved_reference_cases": 16,
+  "sampling": "Purposive finite category-coverage design; no random sampling, hidden holdout, power or general reliability estimate.",
+  "independence": "One AI assistant authored code and fixture expectations. No independent human or theological labels. Expectations arise from seeded mutations and explicit positive construction, not model evaluation.",
+  "arms": {
+    "simple_checklist": "Short-circuit function of the same identity prerequisites; primary comparator.",
+    "structured_gate": "Per-dimension match/mismatch/unknown states; same information and criteria.",
+    "locator_diagnostic": "Adaptation of legacy derive() literal reference comparison. Diagnostic ablation only, not a source-admission policy or existing institutional deployment."
+  },
+  "prerequisites": [
+    "request binding",
+    "fetch and response binding",
+    "document and paragraph in both pointers",
+    "metadata identity",
+    "registered locator receipt",
+    "edition and language",
+    "no conflicting ID binding in retained search",
+    "normalized synthetic payload correspondence"
+  ],
+  "normalization": "UTF-8, Unicode NFC and collapsed whitespace for synthetic body; paragraph accepts digits or para- digits. URL parser allows HTTPS www.magisterium.com, no credentials, no non-443 port. No fuzzy document or paragraph matching.",
+  "support_rule": "All arms return semantic_support=unreviewed and answer_verified=false. Identity admissibility is never theological truth or permission to publish an answer.",
+  "metrics": [
+    "incorrect identity admissions / 16 nonadmissible cases",
+    "retained identity matches / 8 admissible cases",
+    "total holds / 24 cases",
+    "checklist-gate disagreements / 24 cases",
+    "unreviewed semantic dispositions / 24 per arm",
+    "locator positives on inadmissible cases labelled misleading signals, not actual admissions"
+  ],
+  "execution": "One complete local pass per procedure on identical case membership/order; no network/model calls, retries, tuning, post-run exclusions or claims of measured human time/cost.",
+  "stop_rules": [
+    "Any exception, failed input hash or malformed required record stops the run and is preserved.",
+    "Do not relabel or remove failed cases. Amend or fix under a distinct run only.",
+    "Any difference between checklist and gate is reported and investigated, not auto-corrected."
+  ],
+  "limits": [
+    "A successful finite test is not independent validation, a provider defect finding, user benefit, field performance, doctrinal approval or CEC superiority.",
+    "Synthetic reference payloads are invented; original Vatican bytes are not claimed to be tested.",
+    "The archived replays have no public full passage bytes and are not new live observations."
+  ],
+  "input_sha256": {
+    "engine.py": "489e076b9aa54c0019d0b48c6be319baab9dbb0b23ce4aacdefa5dc87277e26b",
+    "cases.json": "e6d249868c9f2c9d409e554bd7cf6f32a376e4e5f77cc382ed99ebdc539b7337",
+    "registry.json": "8f57ce5d891bc639e4918f0e4a48c2b5086975b9c795a8b7970cf3b9f10bd22e",
+    "legacy-capture.json": "23067e41b01c184f29ab6fcdff2a86d46fa797609e4e8331455b6d443f01ec82"
+  },
+  "expected_reference_origin": "Assistant-authored development oracle; not an independent gold standard.",
+  "code_revision_before_execution": "GitHub plan commit to be recorded in the run receipt; inputs identified above by hashes."
+}

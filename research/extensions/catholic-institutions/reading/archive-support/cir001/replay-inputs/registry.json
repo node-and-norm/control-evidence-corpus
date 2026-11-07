@@ -1,0 +1,26 @@
+{
+  "429efa31-df0f-455d-b7e1-c104ed929e3b:44:english-fixed:en": {
+    "locator_observed": true,
+    "normalized_sha256": "c8deda8bc97a676a56bba7190b5bc41f9c2fb269dee6aaf8abab894933a201b2",
+    "origin": "synthetic_reference_payload",
+    "body": "SYNTHETIC TEST CONTENT 429efa31-df0f-455d-b7e1-c104ed929e3b paragraph 44. Invented payload; no Church teaching is quoted."
+  },
+  "429efa31-df0f-455d-b7e1-c104ed929e3b:46:english-fixed:en": {
+    "locator_observed": true,
+    "normalized_sha256": "39952e114b24e4898aad4d7e6183e7f91d005adca632f538b67aac42439e62dd",
+    "origin": "synthetic_reference_payload",
+    "body": "SYNTHETIC TEST CONTENT 429efa31-df0f-455d-b7e1-c104ed929e3b paragraph 46. Invented payload; no Church teaching is quoted."
+  },
+  "ed397808-82f3-43e6-bf35-8f3f09fbdccc:105:english-fixed:en": {
+    "locator_observed": true,
+    "normalized_sha256": "b6b4c14110d353f91ccb799f8a144d4f463139f3079ae80b54cb22c9b29f1ca8",
+    "origin": "synthetic_reference_payload",
+    "body": "SYNTHETIC TEST CONTENT ed397808-82f3-43e6-bf35-8f3f09fbdccc paragraph 105. Invented payload; no Church teaching is quoted."
+  },
+  "ed397808-82f3-43e6-bf35-8f3f09fbdccc:106:english-fixed:en": {
+    "locator_observed": true,
+    "normalized_sha256": "64a14a97de0b988b07851e608f485df5cb29392a19888c4ac101b460f22ea18f",
+    "origin": "synthetic_reference_payload",
+    "body": "SYNTHETIC TEST CONTENT ed397808-82f3-43e6-bf35-8f3f09fbdccc paragraph 106. Invented payload; no Church teaching is quoted."
+  }
+}

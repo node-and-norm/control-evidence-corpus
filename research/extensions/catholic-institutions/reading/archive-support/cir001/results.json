@@ -1,0 +1,32 @@
+{
+  "run_id": "CITATION-GATE-001-R1",
+  "kind": "controlled_engineering_feasibility",
+  "counts": {"cases":24,"procedure_outputs":72,"synthetic_cases":22,"historical_replay_cases":2,"new_live_retrieval_cases":0},
+  "metrics": {
+    "locator_diagnostic": {
+      "all": {"cases":24,"identity_positive_reference":8,"identity_negative_or_unresolved_reference":16,"retained_positive":7,"positive_on_nonadmissible":11,"hold_or_nonmatch":6,"semantic_unreviewed":24,"answers_marked_verified":0},
+      "authored_synthetic": {"cases":22,"identity_positive_reference":8,"identity_negative_or_unresolved_reference":14,"retained_positive":7,"positive_on_nonadmissible":11,"hold_or_nonmatch":4,"semantic_unreviewed":22,"answers_marked_verified":0},
+      "historical_metadata_replay": {"cases":2,"identity_positive_reference":0,"identity_negative_or_unresolved_reference":2,"retained_positive":0,"positive_on_nonadmissible":0,"hold_or_nonmatch":2,"semantic_unreviewed":2,"answers_marked_verified":0}
+    },
+    "simple_checklist": {
+      "all": {"cases":24,"identity_positive_reference":8,"identity_negative_or_unresolved_reference":16,"retained_positive":8,"positive_on_nonadmissible":0,"hold_or_nonmatch":16,"semantic_unreviewed":24,"answers_marked_verified":0},
+      "authored_synthetic": {"cases":22,"identity_positive_reference":8,"identity_negative_or_unresolved_reference":14,"retained_positive":8,"positive_on_nonadmissible":0,"hold_or_nonmatch":14,"semantic_unreviewed":22,"answers_marked_verified":0},
+      "historical_metadata_replay": {"cases":2,"identity_positive_reference":0,"identity_negative_or_unresolved_reference":2,"retained_positive":0,"positive_on_nonadmissible":0,"hold_or_nonmatch":2,"semantic_unreviewed":2,"answers_marked_verified":0}
+    },
+    "structured_gate": {
+      "all": {"cases":24,"identity_positive_reference":8,"identity_negative_or_unresolved_reference":16,"retained_positive":8,"positive_on_nonadmissible":0,"hold_or_nonmatch":16,"semantic_unreviewed":24,"answers_marked_verified":0},
+      "authored_synthetic": {"cases":22,"identity_positive_reference":8,"identity_negative_or_unresolved_reference":14,"retained_positive":8,"positive_on_nonadmissible":0,"hold_or_nonmatch":14,"semantic_unreviewed":22,"answers_marked_verified":0},
+      "historical_metadata_replay": {"cases":2,"identity_positive_reference":0,"identity_negative_or_unresolved_reference":2,"retained_positive":0,"positive_on_nonadmissible":0,"hold_or_nonmatch":2,"semantic_unreviewed":2,"answers_marked_verified":0}
+    }
+  },
+  "checklist_gate_disagreements": [],
+  "input_sha256": {
+    "engine.py":"489e076b9aa54c0019d0b48c6be319baab9dbb0b23ce4aacdefa5dc87277e26b",
+    "cases.json":"e6d249868c9f2c9d409e554bd7cf6f32a376e4e5f77cc382ed99ebdc539b7337",
+    "registry.json":"8f57ce5d891bc639e4918f0e4a48c2b5086975b9c795a8b7970cf3b9f10bd22e",
+    "legacy-capture.json":"23067e41b01c184f29ab6fcdff2a86d46fa797609e4e8331455b6d443f01ec82"
+  },
+  "plan_sha256":"202a69cb2d1fa7e6c944f6e4fd5a189d5ae90162e64296edf578360fdbb2bd37",
+  "raw_results_sha256":"086a9a5c40fafb979366fdca92730983bfddeca96e061bafb5a8899a162043c3",
+  "limits":["Synthetic labels are assistant-authored development expectations.","Legacy positive locator signals are diagnostic labels, not actual admission decisions.","No evidence of CEC superiority over the checklist is presumed.","Identity correspondence is distinct from meaning, source truth or ecclesial approval.","No human timing, LLM performance or population accuracy estimated."]
+}

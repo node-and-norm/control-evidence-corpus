@@ -1,0 +1,24 @@
+{
+  "record_id": "AIU-CIR001-R1",
+  "date": "2026-11-06",
+  "assistant": "ChatGPT (OpenAI)",
+  "provider_build": null,
+  "unknown_reason": "No task-specific provider model snapshot is exposed or preserved in this run record.",
+  "roles": ["selected-source inspection", "scope and reference-case design", "code and fixture authoring", "local execution", "result interpretation", "reader and repository preparation"],
+  "actual_model_inference_calls_in_engineering_run": 0,
+  "multi_agent_study": false,
+  "human_authorization": "Maintainer agreed to proceed with CIR-001 packet, freeze and bounded comparison.",
+  "specific_human_source_review": "not_recorded",
+  "qualified_theological_review": "pending",
+  "independent_test_oracle": false,
+  "same_assistant_wrote_engine_and_reference_cases": true,
+  "original_run": "One completed local pass; no tuning or retries. See execution.json.",
+  "publication_transport": {
+    "rejected_unattached_blob_attempts": 2,
+    "scope": "Two compressed-data upload attempts failed expected Git-blob identity checks. Neither was linked to the branch tree or used as research evidence.",
+    "resolution": "Publish transparent input construction and frozen hashes; produce explicitly labelled replay copies matching the retained original output hash. Original flat data and captured output are included in the portable delivery package.",
+    "is_experimental_retry": false
+  },
+  "remaining_gates": ["independently prepared cases", "source-text and semantic-support review", "live integration under a separate plan", "human review burden evaluation"],
+  "claims_forbidden": ["provider reliability estimate", "Catholic doctrinal approval", "independent peer review", "CEC superiority over a simple checklist", "institutional safeguard effectiveness"]
+}

@@ -1,0 +1,17 @@
+{
+ "kind": "protocol_notebook_presentation",
+ "source_commit": "adbaf96070c0d26d87091aef58c5b1f9d47cfb44",
+ "source_path": "research/extensions/catholic-institutions/reading/editions/0.4.4-draft/NodeNorm_Protocol_v0_4_4.md",
+ "source_sha256": "ee9ef5f8a7ea6e1e0eca53e2279f1268f7dad9f1829012031848ae51182baca7",
+ "source_bytes": 63786,
+ "notebook_path": "reading/notebooks/NodeNorm_Protocol_v0_4_4.ipynb",
+ "notebook_sha256": "c4706894ae64a8f3b9e24deea4eb39da88ff9608eac0637e19b831e4074e2de9",
+ "notebook_bytes": 91200,
+ "source_cells": 55,
+ "presentation_cells": 2,
+ "code_cells": 0,
+ "source_reassembly_identical": true,
+ "new_research_results": false,
+ "archived_files_modified": false,
+ "qualified_review": "pending"
+}

@@ -1,0 +1,76 @@
+{
+  "record_id": "CIR001-SOURCE-PACKET-001",
+  "date": "2026-11-06",
+  "status": "assistant_inspected_selected_sections_qualified_review_pending",
+  "scenario": "CIR-001",
+  "sources": [
+    {
+      "id": "TECH-NIST6001",
+      "title": "Artificial Intelligence Risk Management Framework: Generative Artificial Intelligence Profile",
+      "issuer": "National Institute of Standards and Technology",
+      "date": "2024-07",
+      "url": "https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.600-1.pdf",
+      "locations": [
+        {"section": "2.2 Confabulation", "printed_page": 6, "pdf_page": 10},
+        {"action": "MS-2.5-001 and MS-2.5-003", "printed_page": 31, "pdf_page": 35}
+      ],
+      "inspection": "Parsed text and rendered pages viewed; only named sections reviewed.",
+      "paraphrase": "The profile identifies misleading generated citations as a confabulation concern, recommends checking sources and citations, and cautions against generalizing from narrow assessments.",
+      "mapping_limit": "A locator mismatch by itself does not diagnose confabulation or establish harm.",
+      "upstream_reference": {
+        "selection_id": "mit-batch-006-13",
+        "source_id": "48.02.00",
+        "record_id": "mit-risk:48.02.00:5361824635d76674",
+        "primary_status_before": "pending",
+        "primary_status_now": "selected_original_sections_inspected_by_assistant"
+      },
+      "rights": "Metadata, locators and original paraphrase only. No third-party PDF reproduced.",
+      "original_bytes_sha256": null,
+      "missing_reason": "Direct original-byte download failed; no hash of original PDF claimed."
+    },
+    {
+      "id": "NORM-AN",
+      "title": "Antiqua et Nova: Note on the Relationship Between Artificial Intelligence and Human Intelligence",
+      "issuer": "Dicastery for the Doctrine of the Faith and Dicastery for Culture and Education",
+      "date": "2025-01-28",
+      "url": "https://www.vatican.va/roman_curia/congregations/cfaith/documents/rc_ddf_doc_20250128_antiqua-et-nova_en.html",
+      "locations": ["44", "45", "46"],
+      "inspection": "Official English web text inspected at the paragraph locations.",
+      "paraphrase": "These paragraphs address human responsibility, maintaining control, and responsibilities of developers and users.",
+      "mapping_limit": "Using these passages as institutional motivation is a researcher proposal. They do not establish a mandatory citation-gate implementation or validate any inference.",
+      "rights": "No full source text in the new public packet. Source links and brief original paraphrase only.",
+      "original_bytes_sha256": null,
+      "missing_reason": "Tool-rendered text inspected; original HTML bytes were not archived.",
+      "qualified_review": "pending"
+    },
+    {
+      "id": "NORM-MH",
+      "title": "Magnifica Humanitas",
+      "issuer": "Pope Leo XIV",
+      "date": "2026-05-15",
+      "url": "https://www.vatican.va/content/leo-xiv/en/encyclicals/documents/20260515-magnifica-humanitas.html",
+      "locations": ["105", "106"],
+      "inspection": "Official English web text inspected at paragraphs105–106 and surrounding context.",
+      "paraphrase": "These paragraphs address responsibility across AI development and use, accountability and correction, and the need for rigorous evaluation and oversight.",
+      "mapping_limit": "Normative interpretation and institutional applicability remain pending qualified review; technical identity matching supplies neither.",
+      "rights": "No full source text in the new public packet. Source links and brief original paraphrase only.",
+      "original_bytes_sha256": null,
+      "missing_reason": "Tool-rendered text inspected; original HTML bytes were not archived.",
+      "qualified_review": "pending"
+    }
+  ],
+  "inspected_implementation": {
+    "path": "scripts/build_release.py derive()",
+    "repository": "node-and-norm/control-evidence-corpus",
+    "ref": "6e0c04eb9229bbf00963c6a073a459160cd0517d",
+    "blob_sha1": "af555d51c9a930143f8e249b2911ec355b507967",
+    "observation": "The historical function labels a found fetch by literal reference equality after verifying request membership. It is a diagnostic for an archived run, not an institutional admission procedure.",
+    "adaptation": "The new diagnostic isolates reference equality on validly prepared records. This is an ablation and must never be advertised as the current site's production safeguard."
+  },
+  "omissions": [
+    "Original web/PDF byte captures unavailable; no complete independent source archive claimed.",
+    "Original source interpretation and contextual verification are assistant-only; no author or theologian attestation inferred.",
+    "Runtime clone failed due DNS; the working extension was obtained from the previously verified main-build attachment, and live branch scope was separately read through GitHub.",
+    "New packet does not republish the full NIST or Vatican source texts."
+  ]
+}
