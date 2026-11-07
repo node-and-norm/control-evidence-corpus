@@ -1,0 +1,9 @@
+{
+  "kind": "content_equivalent_replay",
+  "source_run": "CITATION-GATE-001-R1",
+  "outputs": 72,
+  "raw_sha256": "086a9a5c40fafb979366fdca92730983bfddeca96e061bafb5a8899a162043c3",
+  "original_outputs_match": true,
+  "new_live_observations": 0,
+  "independent_validation": false
+}

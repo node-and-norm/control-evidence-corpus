@@ -1,0 +1,981 @@
+[
+  {
+    "case_id": "CG-01",
+    "label": "Exact synthetic identity match",
+    "origin": "authored_synthetic",
+    "reference_identity_admission": true,
+    "reference_semantic_support": "unreviewed",
+    "reference_reason": "All identity conditions satisfied for invented payload; no semantic approval.",
+    "target": {
+      "document": "429efa31-df0f-455d-b7e1-c104ed929e3b",
+      "paragraph": 44,
+      "edition": "english-fixed",
+      "language": "en"
+    },
+    "selected": {
+      "id": "fixture-429e-44",
+      "url": "https://www.magisterium.com/docs/429efa31-df0f-455d-b7e1-c104ed929e3b/ref/44"
+    },
+    "search_results": [
+      {
+        "id": "fixture-429e-44",
+        "url": "https://www.magisterium.com/docs/429efa31-df0f-455d-b7e1-c104ed929e3b/ref/44"
+      }
+    ],
+    "fetched": {
+      "requested_id": "fixture-429e-44",
+      "returned_id": "fixture-429e-44",
+      "found": true,
+      "url": "https://www.magisterium.com/docs/429efa31-df0f-455d-b7e1-c104ed929e3b/ref/44",
+      "document": "429efa31-df0f-455d-b7e1-c104ed929e3b",
+      "ref": "44",
+      "edition": "english-fixed",
+      "language": "en",
+      "body": "SYNTHETIC TEST CONTENT 429efa31-df0f-455d-b7e1-c104ed929e3b paragraph 44. Invented payload; no Church teaching is quoted."
+    },
+    "claim": {
+      "proposition": "Illustrative claim awaiting qualified source interpretation.",
+      "proposed_support": "unreviewed"
+    }
+  },
+  {
+    "case_id": "CG-02",
+    "label": "Exact synthetic identity match",
+    "origin": "authored_synthetic",
+    "reference_identity_admission": true,
+    "reference_semantic_support": "unreviewed",
+    "reference_reason": "All identity conditions satisfied for invented payload; no semantic approval.",
+    "target": {
+      "document": "429efa31-df0f-455d-b7e1-c104ed929e3b",
+      "paragraph": 46,
+      "edition": "english-fixed",
+      "language": "en"
+    },
+    "selected": {
+      "id": "fixture-429e-46",
+      "url": "https://www.magisterium.com/docs/429efa31-df0f-455d-b7e1-c104ed929e3b/ref/46"
+    },
+    "search_results": [
+      {
+        "id": "fixture-429e-46",
+        "url": "https://www.magisterium.com/docs/429efa31-df0f-455d-b7e1-c104ed929e3b/ref/46"
+      }
+    ],
+    "fetched": {
+      "requested_id": "fixture-429e-46",
+      "returned_id": "fixture-429e-46",
+      "found": true,
+      "url": "https://www.magisterium.com/docs/429efa31-df0f-455d-b7e1-c104ed929e3b/ref/46",
+      "document": "429efa31-df0f-455d-b7e1-c104ed929e3b",
+      "ref": "46",
+      "edition": "english-fixed",
+      "language": "en",
+      "body": "SYNTHETIC TEST CONTENT 429efa31-df0f-455d-b7e1-c104ed929e3b paragraph 46. Invented payload; no Church teaching is quoted."
+    },
+    "claim": {
+      "proposition": "Illustrative claim awaiting qualified source interpretation.",
+      "proposed_support": "unreviewed"
+    }
+  },
+  {
+    "case_id": "CG-03",
+    "label": "Exact synthetic identity match",
+    "origin": "authored_synthetic",
+    "reference_identity_admission": true,
+    "reference_semantic_support": "unreviewed",
+    "reference_reason": "All identity conditions satisfied for invented payload; no semantic approval.",
+    "target": {
+      "document": "ed397808-82f3-43e6-bf35-8f3f09fbdccc",
+      "paragraph": 105,
+      "edition": "english-fixed",
+      "language": "en"
+    },
+    "selected": {
+      "id": "fixture-ed39-105",
+      "url": "https://www.magisterium.com/docs/ed397808-82f3-43e6-bf35-8f3f09fbdccc/ref/105"
+    },
+    "search_results": [
+      {
+        "id": "fixture-ed39-105",
+        "url": "https://www.magisterium.com/docs/ed397808-82f3-43e6-bf35-8f3f09fbdccc/ref/105"
+      }
+    ],
+    "fetched": {
+      "requested_id": "fixture-ed39-105",
+      "returned_id": "fixture-ed39-105",
+      "found": true,
+      "url": "https://www.magisterium.com/docs/ed397808-82f3-43e6-bf35-8f3f09fbdccc/ref/105",
+      "document": "ed397808-82f3-43e6-bf35-8f3f09fbdccc",
+      "ref": "105",
+      "edition": "english-fixed",
+      "language": "en",
+      "body": "SYNTHETIC TEST CONTENT ed397808-82f3-43e6-bf35-8f3f09fbdccc paragraph 105. Invented payload; no Church teaching is quoted."
+    },
+    "claim": {
+      "proposition": "Illustrative claim awaiting qualified source interpretation.",
+      "proposed_support": "unreviewed"
+    }
+  },
+  {
+    "case_id": "CG-04",
+    "label": "Exact synthetic identity match",
+    "origin": "authored_synthetic",
+    "reference_identity_admission": true,
+    "reference_semantic_support": "unreviewed",
+    "reference_reason": "All identity conditions satisfied for invented payload; no semantic approval.",
+    "target": {
+      "document": "ed397808-82f3-43e6-bf35-8f3f09fbdccc",
+      "paragraph": 106,
+      "edition": "english-fixed",
+      "language": "en"
+    },
+    "selected": {
+      "id": "fixture-ed39-106",
+      "url": "https://www.magisterium.com/docs/ed397808-82f3-43e6-bf35-8f3f09fbdccc/ref/106"
+    },
+    "search_results": [
+      {
+        "id": "fixture-ed39-106",
+        "url": "https://www.magisterium.com/docs/ed397808-82f3-43e6-bf35-8f3f09fbdccc/ref/106"
+      }
+    ],
+    "fetched": {
+      "requested_id": "fixture-ed39-106",
+      "returned_id": "fixture-ed39-106",
+      "found": true,
+      "url": "https://www.magisterium.com/docs/ed397808-82f3-43e6-bf35-8f3f09fbdccc/ref/106",
+      "document": "ed397808-82f3-43e6-bf35-8f3f09fbdccc",
+      "ref": "106",
+      "edition": "english-fixed",
+      "language": "en",
+      "body": "SYNTHETIC TEST CONTENT ed397808-82f3-43e6-bf35-8f3f09fbdccc paragraph 106. Invented payload; no Church teaching is quoted."
+    },
+    "claim": {
+      "proposition": "Illustrative claim awaiting qualified source interpretation.",
+      "proposed_support": "unreviewed"
+    }
+  },
+  {
+    "case_id": "CG-05",
+    "label": "Benign paragraph prefix",
+    "origin": "authored_synthetic",
+    "reference_identity_admission": true,
+    "reference_semantic_support": "unreviewed",
+    "reference_reason": "Declared normalization allows para-44 and 44.",
+    "target": {
+      "document": "429efa31-df0f-455d-b7e1-c104ed929e3b",
+      "paragraph": 44,
+      "edition": "english-fixed",
+      "language": "en"
+    },
+    "selected": {
+      "id": "fixture-429e-44",
+      "url": "https://www.magisterium.com/docs/429efa31-df0f-455d-b7e1-c104ed929e3b/ref/44"
+    },
+    "search_results": [
+      {
+        "id": "fixture-429e-44",
+        "url": "https://www.magisterium.com/docs/429efa31-df0f-455d-b7e1-c104ed929e3b/ref/44"
+      }
+    ],
+    "fetched": {
+      "requested_id": "fixture-429e-44",
+      "returned_id": "fixture-429e-44",
+      "found": true,
+      "url": "https://www.magisterium.com/docs/429efa31-df0f-455d-b7e1-c104ed929e3b/ref/44",
+      "document": "429efa31-df0f-455d-b7e1-c104ed929e3b",
+      "ref": "para-44",
+      "edition": "english-fixed",
+      "language": "en",
+      "body": "SYNTHETIC TEST CONTENT 429efa31-df0f-455d-b7e1-c104ed929e3b paragraph 44. Invented payload; no Church teaching is quoted."
+    },
+    "claim": {
+      "proposition": "Illustrative claim awaiting qualified source interpretation.",
+      "proposed_support": "unreviewed"
+    }
+  },
+  {
+    "case_id": "CG-06",
+    "label": "Benign whitespace",
+    "origin": "authored_synthetic",
+    "reference_identity_admission": true,
+    "reference_semantic_support": "unreviewed",
+    "reference_reason": "Declared whitespace normalization preserves the invented payload.",
+    "target": {
+      "document": "429efa31-df0f-455d-b7e1-c104ed929e3b",
+      "paragraph": 44,
+      "edition": "english-fixed",
+      "language": "en"
+    },
+    "selected": {
+      "id": "fixture-429e-44",
+      "url": "https://www.magisterium.com/docs/429efa31-df0f-455d-b7e1-c104ed929e3b/ref/44"
+    },
+    "search_results": [
+      {
+        "id": "fixture-429e-44",
+        "url": "https://www.magisterium.com/docs/429efa31-df0f-455d-b7e1-c104ed929e3b/ref/44"
+      }
+    ],
+    "fetched": {
+      "requested_id": "fixture-429e-44",
+      "returned_id": "fixture-429e-44",
+      "found": true,
+      "url": "https://www.magisterium.com/docs/429efa31-df0f-455d-b7e1-c104ed929e3b/ref/44",
+      "document": "429efa31-df0f-455d-b7e1-c104ed929e3b",
+      "ref": "44",
+      "edition": "english-fixed",
+      "language": "en",
+      "body": "\n  SYNTHETIC  TEST  CONTENT  429efa31-df0f-455d-b7e1-c104ed929e3b  paragraph  44.  Invented  payload;  no  Church  teaching  is  quoted.\n"
+    },
+    "claim": {
+      "proposition": "Illustrative claim awaiting qualified source interpretation.",
+      "proposed_support": "unreviewed"
+    }
+  },
+  {
+    "case_id": "CG-07",
+    "label": "Model claims support",
+    "origin": "authored_synthetic",
+    "reference_identity_admission": true,
+    "reference_semantic_support": "unreviewed",
+    "reference_reason": "Identity can match while model approval provides no qualified review.",
+    "target": {
+      "document": "ed397808-82f3-43e6-bf35-8f3f09fbdccc",
+      "paragraph": 105,
+      "edition": "english-fixed",
+      "language": "en"
+    },
+    "selected": {
+      "id": "fixture-ed39-105",
+      "url": "https://www.magisterium.com/docs/ed397808-82f3-43e6-bf35-8f3f09fbdccc/ref/105"
+    },
+    "search_results": [
+      {
+        "id": "fixture-ed39-105",
+        "url": "https://www.magisterium.com/docs/ed397808-82f3-43e6-bf35-8f3f09fbdccc/ref/105"
+      }
+    ],
+    "fetched": {
+      "requested_id": "fixture-ed39-105",
+      "returned_id": "fixture-ed39-105",
+      "found": true,
+      "url": "https://www.magisterium.com/docs/ed397808-82f3-43e6-bf35-8f3f09fbdccc/ref/105",
+      "document": "ed397808-82f3-43e6-bf35-8f3f09fbdccc",
+      "ref": "105",
+      "edition": "english-fixed",
+      "language": "en",
+      "body": "SYNTHETIC TEST CONTENT ed397808-82f3-43e6-bf35-8f3f09fbdccc paragraph 105. Invented payload; no Church teaching is quoted."
+    },
+    "claim": {
+      "proposition": "Illustrative claim awaiting qualified source interpretation.",
+      "proposed_support": "AI says fully supported"
+    }
+  },
+  {
+    "case_id": "CG-08",
+    "label": "Normative inference unresolved",
+    "origin": "authored_synthetic",
+    "reference_identity_admission": true,
+    "reference_semantic_support": "unreviewed",
+    "reference_reason": "Matching source cannot decide the proposed normative inference.",
+    "target": {
+      "document": "ed397808-82f3-43e6-bf35-8f3f09fbdccc",
+      "paragraph": 106,
+      "edition": "english-fixed",
+      "language": "en"
+    },
+    "selected": {
+      "id": "fixture-ed39-106",
+      "url": "https://www.magisterium.com/docs/ed397808-82f3-43e6-bf35-8f3f09fbdccc/ref/106"
+    },
+    "search_results": [
+      {
+        "id": "fixture-ed39-106",
+        "url": "https://www.magisterium.com/docs/ed397808-82f3-43e6-bf35-8f3f09fbdccc/ref/106"
+      }
+    ],
+    "fetched": {
+      "requested_id": "fixture-ed39-106",
+      "returned_id": "fixture-ed39-106",
+      "found": true,
+      "url": "https://www.magisterium.com/docs/ed397808-82f3-43e6-bf35-8f3f09fbdccc/ref/106",
+      "document": "ed397808-82f3-43e6-bf35-8f3f09fbdccc",
+      "ref": "106",
+      "edition": "english-fixed",
+      "language": "en",
+      "body": "SYNTHETIC TEST CONTENT ed397808-82f3-43e6-bf35-8f3f09fbdccc paragraph 106. Invented payload; no Church teaching is quoted."
+    },
+    "claim": {
+      "proposition": "Does this source require our exact software control?",
+      "proposed_support": "unreviewed"
+    }
+  },
+  {
+    "case_id": "CG-09",
+    "label": "Wrong fetched paragraph",
+    "origin": "authored_synthetic",
+    "reference_identity_admission": false,
+    "reference_semantic_support": "unreviewed",
+    "reference_reason": "Fetched paragraph differs from target.",
+    "target": {
+      "document": "429efa31-df0f-455d-b7e1-c104ed929e3b",
+      "paragraph": 44,
+      "edition": "english-fixed",
+      "language": "en"
+    },
+    "selected": {
+      "id": "fixture-429e-44",
+      "url": "https://www.magisterium.com/docs/429efa31-df0f-455d-b7e1-c104ed929e3b/ref/44"
+    },
+    "search_results": [
+      {
+        "id": "fixture-429e-44",
+        "url": "https://www.magisterium.com/docs/429efa31-df0f-455d-b7e1-c104ed929e3b/ref/44"
+      }
+    ],
+    "fetched": {
+      "requested_id": "fixture-429e-44",
+      "returned_id": "fixture-429e-44",
+      "found": true,
+      "url": "https://www.magisterium.com/docs/429efa31-df0f-455d-b7e1-c104ed929e3b/ref/45",
+      "document": "429efa31-df0f-455d-b7e1-c104ed929e3b",
+      "ref": "45",
+      "edition": "english-fixed",
+      "language": "en",
+      "body": "SYNTHETIC TEST CONTENT 429efa31-df0f-455d-b7e1-c104ed929e3b paragraph 44. Invented payload; no Church teaching is quoted."
+    },
+    "claim": {
+      "proposition": "Illustrative claim awaiting qualified source interpretation.",
+      "proposed_support": "unreviewed"
+    }
+  },
+  {
+    "case_id": "CG-10",
+    "label": "Wrong document, same paragraph number",
+    "origin": "authored_synthetic",
+    "reference_identity_admission": false,
+    "reference_semantic_support": "unreviewed",
+    "reference_reason": "Paragraph-number equality conceals a different document.",
+    "target": {
+      "document": "429efa31-df0f-455d-b7e1-c104ed929e3b",
+      "paragraph": 44,
+      "edition": "english-fixed",
+      "language": "en"
+    },
+    "selected": {
+      "id": "fixture-429e-44",
+      "url": "https://www.magisterium.com/docs/429efa31-df0f-455d-b7e1-c104ed929e3b/ref/44"
+    },
+    "search_results": [
+      {
+        "id": "fixture-429e-44",
+        "url": "https://www.magisterium.com/docs/429efa31-df0f-455d-b7e1-c104ed929e3b/ref/44"
+      }
+    ],
+    "fetched": {
+      "requested_id": "fixture-429e-44",
+      "returned_id": "fixture-429e-44",
+      "found": true,
+      "url": "https://www.magisterium.com/docs/ed397808-82f3-43e6-bf35-8f3f09fbdccc/ref/44",
+      "document": "ed397808-82f3-43e6-bf35-8f3f09fbdccc",
+      "ref": "44",
+      "edition": "english-fixed",
+      "language": "en",
+      "body": "SYNTHETIC TEST CONTENT 429efa31-df0f-455d-b7e1-c104ed929e3b paragraph 44. Invented payload; no Church teaching is quoted."
+    },
+    "claim": {
+      "proposition": "Illustrative claim awaiting qualified source interpretation.",
+      "proposed_support": "unreviewed"
+    }
+  },
+  {
+    "case_id": "CG-11",
+    "label": "Unavailable fetch",
+    "origin": "authored_synthetic",
+    "reference_identity_admission": false,
+    "reference_semantic_support": "unreviewed",
+    "reference_reason": "No passage can be admitted.",
+    "target": {
+      "document": "429efa31-df0f-455d-b7e1-c104ed929e3b",
+      "paragraph": 44,
+      "edition": "english-fixed",
+      "language": "en"
+    },
+    "selected": {
+      "id": "fixture-429e-44",
+      "url": "https://www.magisterium.com/docs/429efa31-df0f-455d-b7e1-c104ed929e3b/ref/44"
+    },
+    "search_results": [
+      {
+        "id": "fixture-429e-44",
+        "url": "https://www.magisterium.com/docs/429efa31-df0f-455d-b7e1-c104ed929e3b/ref/44"
+      }
+    ],
+    "fetched": {
+      "requested_id": "fixture-429e-44",
+      "returned_id": "fixture-429e-44",
+      "found": false
+    },
+    "claim": {
+      "proposition": "Illustrative claim awaiting qualified source interpretation.",
+      "proposed_support": "unreviewed"
+    }
+  },
+  {
+    "case_id": "CG-12",
+    "label": "Identifier bound to two paragraphs",
+    "origin": "authored_synthetic",
+    "reference_identity_admission": false,
+    "reference_semantic_support": "unreviewed",
+    "reference_reason": "The chosen ID has conflicting bindings in the same retained response.",
+    "target": {
+      "document": "429efa31-df0f-455d-b7e1-c104ed929e3b",
+      "paragraph": 44,
+      "edition": "english-fixed",
+      "language": "en"
+    },
+    "selected": {
+      "id": "fixture-429e-44",
+      "url": "https://www.magisterium.com/docs/429efa31-df0f-455d-b7e1-c104ed929e3b/ref/44"
+    },
+    "search_results": [
+      {
+        "id": "fixture-429e-44",
+        "url": "https://www.magisterium.com/docs/429efa31-df0f-455d-b7e1-c104ed929e3b/ref/44"
+      },
+      {
+        "id": "fixture-429e-44",
+        "url": "https://www.magisterium.com/docs/429efa31-df0f-455d-b7e1-c104ed929e3b/ref/46"
+      }
+    ],
+    "fetched": {
+      "requested_id": "fixture-429e-44",
+      "returned_id": "fixture-429e-44",
+      "found": true,
+      "url": "https://www.magisterium.com/docs/429efa31-df0f-455d-b7e1-c104ed929e3b/ref/44",
+      "document": "429efa31-df0f-455d-b7e1-c104ed929e3b",
+      "ref": "44",
+      "edition": "english-fixed",
+      "language": "en",
+      "body": "SYNTHETIC TEST CONTENT 429efa31-df0f-455d-b7e1-c104ed929e3b paragraph 44. Invented payload; no Church teaching is quoted."
+    },
+    "claim": {
+      "proposition": "Illustrative claim awaiting qualified source interpretation.",
+      "proposed_support": "unreviewed"
+    }
+  },
+  {
+    "case_id": "CG-13",
+    "label": "Document metadata conflicts with URL",
+    "origin": "authored_synthetic",
+    "reference_identity_admission": false,
+    "reference_semantic_support": "unreviewed",
+    "reference_reason": "Contradictory document evidence is retained.",
+    "target": {
+      "document": "429efa31-df0f-455d-b7e1-c104ed929e3b",
+      "paragraph": 44,
+      "edition": "english-fixed",
+      "language": "en"
+    },
+    "selected": {
+      "id": "fixture-429e-44",
+      "url": "https://www.magisterium.com/docs/429efa31-df0f-455d-b7e1-c104ed929e3b/ref/44"
+    },
+    "search_results": [
+      {
+        "id": "fixture-429e-44",
+        "url": "https://www.magisterium.com/docs/429efa31-df0f-455d-b7e1-c104ed929e3b/ref/44"
+      }
+    ],
+    "fetched": {
+      "requested_id": "fixture-429e-44",
+      "returned_id": "fixture-429e-44",
+      "found": true,
+      "url": "https://www.magisterium.com/docs/429efa31-df0f-455d-b7e1-c104ed929e3b/ref/44",
+      "document": "ed397808-82f3-43e6-bf35-8f3f09fbdccc",
+      "ref": "44",
+      "edition": "english-fixed",
+      "language": "en",
+      "body": "SYNTHETIC TEST CONTENT 429efa31-df0f-455d-b7e1-c104ed929e3b paragraph 44. Invented payload; no Church teaching is quoted."
+    },
+    "claim": {
+      "proposition": "Illustrative claim awaiting qualified source interpretation.",
+      "proposed_support": "unreviewed"
+    }
+  },
+  {
+    "case_id": "CG-14",
+    "label": "URL conflicts with reference field",
+    "origin": "authored_synthetic",
+    "reference_identity_admission": false,
+    "reference_semantic_support": "unreviewed",
+    "reference_reason": "A correct ref field cannot repair a different URL paragraph.",
+    "target": {
+      "document": "429efa31-df0f-455d-b7e1-c104ed929e3b",
+      "paragraph": 44,
+      "edition": "english-fixed",
+      "language": "en"
+    },
+    "selected": {
+      "id": "fixture-429e-44",
+      "url": "https://www.magisterium.com/docs/429efa31-df0f-455d-b7e1-c104ed929e3b/ref/44"
+    },
+    "search_results": [
+      {
+        "id": "fixture-429e-44",
+        "url": "https://www.magisterium.com/docs/429efa31-df0f-455d-b7e1-c104ed929e3b/ref/44"
+      }
+    ],
+    "fetched": {
+      "requested_id": "fixture-429e-44",
+      "returned_id": "fixture-429e-44",
+      "found": true,
+      "url": "https://www.magisterium.com/docs/429efa31-df0f-455d-b7e1-c104ed929e3b/ref/46",
+      "document": "429efa31-df0f-455d-b7e1-c104ed929e3b",
+      "ref": "44",
+      "edition": "english-fixed",
+      "language": "en",
+      "body": "SYNTHETIC TEST CONTENT 429efa31-df0f-455d-b7e1-c104ed929e3b paragraph 44. Invented payload; no Church teaching is quoted."
+    },
+    "claim": {
+      "proposition": "Illustrative claim awaiting qualified source interpretation.",
+      "proposed_support": "unreviewed"
+    }
+  },
+  {
+    "case_id": "CG-15",
+    "label": "Paragraph metadata absent",
+    "origin": "authored_synthetic",
+    "reference_identity_admission": false,
+    "reference_semantic_support": "unreviewed",
+    "reference_reason": "A missing check remains unresolved.",
+    "target": {
+      "document": "429efa31-df0f-455d-b7e1-c104ed929e3b",
+      "paragraph": 44,
+      "edition": "english-fixed",
+      "language": "en"
+    },
+    "selected": {
+      "id": "fixture-429e-44",
+      "url": "https://www.magisterium.com/docs/429efa31-df0f-455d-b7e1-c104ed929e3b/ref/44"
+    },
+    "search_results": [
+      {
+        "id": "fixture-429e-44",
+        "url": "https://www.magisterium.com/docs/429efa31-df0f-455d-b7e1-c104ed929e3b/ref/44"
+      }
+    ],
+    "fetched": {
+      "requested_id": "fixture-429e-44",
+      "returned_id": "fixture-429e-44",
+      "found": true,
+      "url": "https://www.magisterium.com/docs/429efa31-df0f-455d-b7e1-c104ed929e3b/ref/44",
+      "document": "429efa31-df0f-455d-b7e1-c104ed929e3b",
+      "edition": "english-fixed",
+      "language": "en",
+      "body": "SYNTHETIC TEST CONTENT 429efa31-df0f-455d-b7e1-c104ed929e3b paragraph 44. Invented payload; no Church teaching is quoted."
+    },
+    "claim": {
+      "proposition": "Illustrative claim awaiting qualified source interpretation.",
+      "proposed_support": "unreviewed"
+    }
+  },
+  {
+    "case_id": "CG-16",
+    "label": "No reference locator receipt",
+    "origin": "authored_synthetic",
+    "reference_identity_admission": false,
+    "reference_semantic_support": "unreviewed",
+    "reference_reason": "Matching unregistered metadata lacks an inspected reference.",
+    "target": {
+      "document": "429efa31-df0f-455d-b7e1-c104ed929e3b",
+      "paragraph": 44,
+      "edition": "unregistered-edition",
+      "language": "en"
+    },
+    "selected": {
+      "id": "fixture-429e-44",
+      "url": "https://www.magisterium.com/docs/429efa31-df0f-455d-b7e1-c104ed929e3b/ref/44"
+    },
+    "search_results": [
+      {
+        "id": "fixture-429e-44",
+        "url": "https://www.magisterium.com/docs/429efa31-df0f-455d-b7e1-c104ed929e3b/ref/44"
+      }
+    ],
+    "fetched": {
+      "requested_id": "fixture-429e-44",
+      "returned_id": "fixture-429e-44",
+      "found": true,
+      "url": "https://www.magisterium.com/docs/429efa31-df0f-455d-b7e1-c104ed929e3b/ref/44",
+      "document": "429efa31-df0f-455d-b7e1-c104ed929e3b",
+      "ref": "44",
+      "edition": "unregistered-edition",
+      "language": "en",
+      "body": "SYNTHETIC TEST CONTENT 429efa31-df0f-455d-b7e1-c104ed929e3b paragraph 44. Invented payload; no Church teaching is quoted."
+    },
+    "claim": {
+      "proposition": "Illustrative claim awaiting qualified source interpretation.",
+      "proposed_support": "unreviewed"
+    }
+  },
+  {
+    "case_id": "CG-17",
+    "label": "Payload omitted",
+    "origin": "authored_synthetic",
+    "reference_identity_admission": false,
+    "reference_semantic_support": "unreviewed",
+    "reference_reason": "No comparison can establish payload correspondence.",
+    "target": {
+      "document": "429efa31-df0f-455d-b7e1-c104ed929e3b",
+      "paragraph": 44,
+      "edition": "english-fixed",
+      "language": "en"
+    },
+    "selected": {
+      "id": "fixture-429e-44",
+      "url": "https://www.magisterium.com/docs/429efa31-df0f-455d-b7e1-c104ed929e3b/ref/44"
+    },
+    "search_results": [
+      {
+        "id": "fixture-429e-44",
+        "url": "https://www.magisterium.com/docs/429efa31-df0f-455d-b7e1-c104ed929e3b/ref/44"
+      }
+    ],
+    "fetched": {
+      "requested_id": "fixture-429e-44",
+      "returned_id": "fixture-429e-44",
+      "found": true,
+      "url": "https://www.magisterium.com/docs/429efa31-df0f-455d-b7e1-c104ed929e3b/ref/44",
+      "document": "429efa31-df0f-455d-b7e1-c104ed929e3b",
+      "ref": "44",
+      "edition": "english-fixed",
+      "language": "en",
+      "body": null
+    },
+    "claim": {
+      "proposition": "Illustrative claim awaiting qualified source interpretation.",
+      "proposed_support": "unreviewed"
+    }
+  },
+  {
+    "case_id": "CG-18",
+    "label": "Wrong payload, copied metadata",
+    "origin": "authored_synthetic",
+    "reference_identity_admission": false,
+    "reference_semantic_support": "unreviewed",
+    "reference_reason": "Correct identity labels accompany a different invented payload.",
+    "target": {
+      "document": "429efa31-df0f-455d-b7e1-c104ed929e3b",
+      "paragraph": 44,
+      "edition": "english-fixed",
+      "language": "en"
+    },
+    "selected": {
+      "id": "fixture-429e-44",
+      "url": "https://www.magisterium.com/docs/429efa31-df0f-455d-b7e1-c104ed929e3b/ref/44"
+    },
+    "search_results": [
+      {
+        "id": "fixture-429e-44",
+        "url": "https://www.magisterium.com/docs/429efa31-df0f-455d-b7e1-c104ed929e3b/ref/44"
+      }
+    ],
+    "fetched": {
+      "requested_id": "fixture-429e-44",
+      "returned_id": "fixture-429e-44",
+      "found": true,
+      "url": "https://www.magisterium.com/docs/429efa31-df0f-455d-b7e1-c104ed929e3b/ref/44",
+      "document": "429efa31-df0f-455d-b7e1-c104ed929e3b",
+      "ref": "44",
+      "edition": "english-fixed",
+      "language": "en",
+      "body": "SYNTHETIC altered body with copied citation fields."
+    },
+    "claim": {
+      "proposition": "Illustrative claim awaiting qualified source interpretation.",
+      "proposed_support": "unreviewed"
+    }
+  },
+  {
+    "case_id": "CG-19",
+    "label": "Wrong edition",
+    "origin": "authored_synthetic",
+    "reference_identity_admission": false,
+    "reference_semantic_support": "unreviewed",
+    "reference_reason": "Edition differs from the frozen target.",
+    "target": {
+      "document": "429efa31-df0f-455d-b7e1-c104ed929e3b",
+      "paragraph": 44,
+      "edition": "english-fixed",
+      "language": "en"
+    },
+    "selected": {
+      "id": "fixture-429e-44",
+      "url": "https://www.magisterium.com/docs/429efa31-df0f-455d-b7e1-c104ed929e3b/ref/44"
+    },
+    "search_results": [
+      {
+        "id": "fixture-429e-44",
+        "url": "https://www.magisterium.com/docs/429efa31-df0f-455d-b7e1-c104ed929e3b/ref/44"
+      }
+    ],
+    "fetched": {
+      "requested_id": "fixture-429e-44",
+      "returned_id": "fixture-429e-44",
+      "found": true,
+      "url": "https://www.magisterium.com/docs/429efa31-df0f-455d-b7e1-c104ed929e3b/ref/44",
+      "document": "429efa31-df0f-455d-b7e1-c104ed929e3b",
+      "ref": "44",
+      "edition": "different-edition",
+      "language": "en",
+      "body": "SYNTHETIC TEST CONTENT 429efa31-df0f-455d-b7e1-c104ed929e3b paragraph 44. Invented payload; no Church teaching is quoted."
+    },
+    "claim": {
+      "proposition": "Illustrative claim awaiting qualified source interpretation.",
+      "proposed_support": "unreviewed"
+    }
+  },
+  {
+    "case_id": "CG-20",
+    "label": "Wrong language",
+    "origin": "authored_synthetic",
+    "reference_identity_admission": false,
+    "reference_semantic_support": "unreviewed",
+    "reference_reason": "Language differs from the frozen target.",
+    "target": {
+      "document": "429efa31-df0f-455d-b7e1-c104ed929e3b",
+      "paragraph": 44,
+      "edition": "english-fixed",
+      "language": "en"
+    },
+    "selected": {
+      "id": "fixture-429e-44",
+      "url": "https://www.magisterium.com/docs/429efa31-df0f-455d-b7e1-c104ed929e3b/ref/44"
+    },
+    "search_results": [
+      {
+        "id": "fixture-429e-44",
+        "url": "https://www.magisterium.com/docs/429efa31-df0f-455d-b7e1-c104ed929e3b/ref/44"
+      }
+    ],
+    "fetched": {
+      "requested_id": "fixture-429e-44",
+      "returned_id": "fixture-429e-44",
+      "found": true,
+      "url": "https://www.magisterium.com/docs/429efa31-df0f-455d-b7e1-c104ed929e3b/ref/44",
+      "document": "429efa31-df0f-455d-b7e1-c104ed929e3b",
+      "ref": "44",
+      "edition": "english-fixed",
+      "language": "it",
+      "body": "SYNTHETIC TEST CONTENT 429efa31-df0f-455d-b7e1-c104ed929e3b paragraph 44. Invented payload; no Church teaching is quoted."
+    },
+    "claim": {
+      "proposition": "Illustrative claim awaiting qualified source interpretation.",
+      "proposed_support": "unreviewed"
+    }
+  },
+  {
+    "case_id": "CG-21",
+    "label": "Lookalike source host",
+    "origin": "authored_synthetic",
+    "reference_identity_admission": false,
+    "reference_semantic_support": "unreviewed",
+    "reference_reason": "A different hostname is outside the allowed pointer contract.",
+    "target": {
+      "document": "429efa31-df0f-455d-b7e1-c104ed929e3b",
+      "paragraph": 44,
+      "edition": "english-fixed",
+      "language": "en"
+    },
+    "selected": {
+      "id": "fixture-429e-44",
+      "url": "https://www.magisterium.com/docs/429efa31-df0f-455d-b7e1-c104ed929e3b/ref/44"
+    },
+    "search_results": [
+      {
+        "id": "fixture-429e-44",
+        "url": "https://www.magisterium.com/docs/429efa31-df0f-455d-b7e1-c104ed929e3b/ref/44"
+      }
+    ],
+    "fetched": {
+      "requested_id": "fixture-429e-44",
+      "returned_id": "fixture-429e-44",
+      "found": true,
+      "url": "https://www.magisterium.com.example.invalid/docs/429efa31-df0f-455d-b7e1-c104ed929e3b/ref/44",
+      "document": "429efa31-df0f-455d-b7e1-c104ed929e3b",
+      "ref": "44",
+      "edition": "english-fixed",
+      "language": "en",
+      "body": "SYNTHETIC TEST CONTENT 429efa31-df0f-455d-b7e1-c104ed929e3b paragraph 44. Invented payload; no Church teaching is quoted."
+    },
+    "claim": {
+      "proposition": "Illustrative claim awaiting qualified source interpretation.",
+      "proposed_support": "unreviewed"
+    }
+  },
+  {
+    "case_id": "CG-22",
+    "label": "Request-response mismatch",
+    "origin": "authored_synthetic",
+    "reference_identity_admission": false,
+    "reference_semantic_support": "unreviewed",
+    "reference_reason": "The fetched response is not bound to the selected request.",
+    "target": {
+      "document": "429efa31-df0f-455d-b7e1-c104ed929e3b",
+      "paragraph": 44,
+      "edition": "english-fixed",
+      "language": "en"
+    },
+    "selected": {
+      "id": "fixture-429e-44",
+      "url": "https://www.magisterium.com/docs/429efa31-df0f-455d-b7e1-c104ed929e3b/ref/44"
+    },
+    "search_results": [
+      {
+        "id": "fixture-429e-44",
+        "url": "https://www.magisterium.com/docs/429efa31-df0f-455d-b7e1-c104ed929e3b/ref/44"
+      }
+    ],
+    "fetched": {
+      "requested_id": "different-request",
+      "returned_id": "fixture-429e-44",
+      "found": true,
+      "url": "https://www.magisterium.com/docs/429efa31-df0f-455d-b7e1-c104ed929e3b/ref/44",
+      "document": "429efa31-df0f-455d-b7e1-c104ed929e3b",
+      "ref": "44",
+      "edition": "english-fixed",
+      "language": "en",
+      "body": "SYNTHETIC TEST CONTENT 429efa31-df0f-455d-b7e1-c104ed929e3b paragraph 44. Invented payload; no Church teaching is quoted."
+    },
+    "claim": {
+      "proposition": "Illustrative claim awaiting qualified source interpretation.",
+      "proposed_support": "unreviewed"
+    }
+  },
+  {
+    "case_id": "CG-23",
+    "label": "Archived source-run replay: AN-44",
+    "origin": "historical_metadata_replay",
+    "reference_identity_admission": false,
+    "reference_semantic_support": "unreviewed",
+    "reference_reason": "Known failure, deliberately retained as regression; no unseen sampling.",
+    "target": {
+      "document": "429efa31-df0f-455d-b7e1-c104ed929e3b",
+      "paragraph": 44,
+      "edition": "english-fixed",
+      "language": "en"
+    },
+    "selected": {
+      "id": "1",
+      "url": "https://www.magisterium.com/docs/429efa31-df0f-455d-b7e1-c104ed929e3b/ref/44"
+    },
+    "search_results": [
+      {
+        "id": "1",
+        "url": "https://www.magisterium.com/docs/429efa31-df0f-455d-b7e1-c104ed929e3b/ref/44"
+      }
+    ],
+    "fetched": {
+      "requested_id": "1",
+      "returned_id": "1",
+      "found": false,
+      "url": null,
+      "ref": null,
+      "document": null,
+      "edition": null,
+      "language": null,
+      "body": null
+    },
+    "claim": {
+      "proposition": "No doctrinal proposition is evaluated by this replay.",
+      "proposed_support": "unreviewed"
+    },
+    "projection_limits": [
+      "Document field is derived from retained URL identity; edition, language and public body remain absent.",
+      "No new tool query or original provider byte capture occurred."
+    ],
+    "legacy_capture_sha256": "89726ea1c7978412dd8e75202dfbc34163506411f42642c484ddfed7a36dc9f3"
+  },
+  {
+    "case_id": "CG-24",
+    "label": "Archived source-run replay: MH-105",
+    "origin": "historical_metadata_replay",
+    "reference_identity_admission": false,
+    "reference_semantic_support": "unreviewed",
+    "reference_reason": "Known failure, deliberately retained as regression; no unseen sampling.",
+    "target": {
+      "document": "ed397808-82f3-43e6-bf35-8f3f09fbdccc",
+      "paragraph": 105,
+      "edition": "english-fixed",
+      "language": "en"
+    },
+    "selected": {
+      "id": "4b79b1d4-1b78-4a43-8db6-06a9f3bf2c31",
+      "url": "https://www.magisterium.com/docs/ed397808-82f3-43e6-bf35-8f3f09fbdccc/ref/para-105"
+    },
+    "search_results": [
+      {
+        "id": "4b79b1d4-1b78-4a43-8db6-06a9f3bf2c31",
+        "url": "https://www.magisterium.com/docs/ed397808-82f3-43e6-bf35-8f3f09fbdccc/ref/para-105"
+      },
+      {
+        "id": "fdae90f0-06af-4fe0-83c2-98a3dad493e8",
+        "url": "https://www.magisterium.com/docs/ed397808-82f3-43e6-bf35-8f3f09fbdccc/ref/para-181"
+      },
+      {
+        "id": "80d1eb86-52b1-4bcf-a354-636797be87ad",
+        "url": "https://www.magisterium.com/docs/ed397808-82f3-43e6-bf35-8f3f09fbdccc/ref/para-233"
+      },
+      {
+        "id": "1984dfac-033f-4796-9d51-abcaa47a2226",
+        "url": "https://www.magisterium.com/docs/ed397808-82f3-43e6-bf35-8f3f09fbdccc/ref/para-209"
+      },
+      {
+        "id": "2698efc7-af6d-4235-bc43-588978453e1c",
+        "url": "https://www.magisterium.com/docs/429efa31-df0f-455d-b7e1-c104ed929e3b/ref/44"
+      },
+      {
+        "id": "712f5bf7-3606-4484-8e69-d767b088b21a",
+        "url": "https://www.magisterium.com/docs/e053b030-7998-4c4d-96cb-1fe261db5d6c/ref/page1"
+      },
+      {
+        "id": "153e923f-1775-4ab5-989d-79c4f68f7b92",
+        "url": "https://www.magisterium.com/docs/429efa31-df0f-455d-b7e1-c104ed929e3b/ref/108"
+      },
+      {
+        "id": "22267595-119d-46fd-a4ad-8fa31576a28a",
+        "url": "https://www.magisterium.com/docs/1c106e1e-582a-46b6-aba0-9fb92cc9d437/ref/page1"
+      },
+      {
+        "id": "85e16b37-2333-4f67-9f1c-5e0ac8dcda88",
+        "url": "https://www.magisterium.com/docs/429efa31-df0f-455d-b7e1-c104ed929e3b/ref/39"
+      },
+      {
+        "id": "2d78c232-188f-40ea-a918-468242f6eac0",
+        "url": "https://www.magisterium.com/docs/ed397808-82f3-43e6-bf35-8f3f09fbdccc/ref/para-15"
+      }
+    ],
+    "fetched": {
+      "requested_id": "4b79b1d4-1b78-4a43-8db6-06a9f3bf2c31",
+      "returned_id": "4b79b1d4-1b78-4a43-8db6-06a9f3bf2c31",
+      "found": true,
+      "url": "https://www.magisterium.com/docs/ed397808-82f3-43e6-bf35-8f3f09fbdccc/ref/para-90",
+      "ref": "para-90",
+      "document": "ed397808-82f3-43e6-bf35-8f3f09fbdccc",
+      "edition": null,
+      "language": null,
+      "body": null
+    },
+    "claim": {
+      "proposition": "No doctrinal proposition is evaluated by this replay.",
+      "proposed_support": "unreviewed"
+    },
+    "projection_limits": [
+      "Document field is derived from retained URL identity; edition, language and public body remain absent.",
+      "No new tool query or original provider byte capture occurred."
+    ],
+    "legacy_capture_sha256": "89726ea1c7978412dd8e75202dfbc34163506411f42642c484ddfed7a36dc9f3"
+  }
+]

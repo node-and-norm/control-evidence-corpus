@@ -1,0 +1,1130 @@
+[
+  {
+    "case_id": "CG-01",
+    "origin": "authored_synthetic",
+    "procedure": "locator_diagnostic",
+    "output": {
+      "status": "locator_match",
+      "positive_locator_signal": true,
+      "semantic_support": "unreviewed",
+      "answer_verified": false
+    }
+  },
+  {
+    "case_id": "CG-01",
+    "origin": "authored_synthetic",
+    "procedure": "simple_checklist",
+    "output": {
+      "status": "identity_consistent",
+      "identity_admitted": true,
+      "semantic_support": "unreviewed",
+      "answer_verified": false
+    }
+  },
+  {
+    "case_id": "CG-01",
+    "origin": "authored_synthetic",
+    "procedure": "structured_gate",
+    "output": {
+      "status": "identity_consistent",
+      "identity_admitted": true,
+      "states": {
+        "request_binding": "match",
+        "fetch_available": "match",
+        "response_binding": "match",
+        "search_document_and_paragraph": "match",
+        "fetch_document_and_paragraph": "match",
+        "metadata_document": "match",
+        "metadata_paragraph": "match",
+        "original_locator_receipt": "match",
+        "edition": "match",
+        "language": "match",
+        "identifier_uniqueness": "match",
+        "payload_correspondence": "match"
+      },
+      "semantic_support": "unreviewed",
+      "answer_verified": false
+    }
+  },
+  {
+    "case_id": "CG-02",
+    "origin": "authored_synthetic",
+    "procedure": "locator_diagnostic",
+    "output": {
+      "status": "locator_match",
+      "positive_locator_signal": true,
+      "semantic_support": "unreviewed",
+      "answer_verified": false
+    }
+  },
+  {
+    "case_id": "CG-02",
+    "origin": "authored_synthetic",
+    "procedure": "simple_checklist",
+    "output": {
+      "status": "identity_consistent",
+      "identity_admitted": true,
+      "semantic_support": "unreviewed",
+      "answer_verified": false
+    }
+  },
+  {
+    "case_id": "CG-02",
+    "origin": "authored_synthetic",
+    "procedure": "structured_gate",
+    "output": {
+      "status": "identity_consistent",
+      "identity_admitted": true,
+      "states": {
+        "request_binding": "match",
+        "fetch_available": "match",
+        "response_binding": "match",
+        "search_document_and_paragraph": "match",
+        "fetch_document_and_paragraph": "match",
+        "metadata_document": "match",
+        "metadata_paragraph": "match",
+        "original_locator_receipt": "match",
+        "edition": "match",
+        "language": "match",
+        "identifier_uniqueness": "match",
+        "payload_correspondence": "match"
+      },
+      "semantic_support": "unreviewed",
+      "answer_verified": false
+    }
+  },
+  {
+    "case_id": "CG-03",
+    "origin": "authored_synthetic",
+    "procedure": "locator_diagnostic",
+    "output": {
+      "status": "locator_match",
+      "positive_locator_signal": true,
+      "semantic_support": "unreviewed",
+      "answer_verified": false
+    }
+  },
+  {
+    "case_id": "CG-03",
+    "origin": "authored_synthetic",
+    "procedure": "simple_checklist",
+    "output": {
+      "status": "identity_consistent",
+      "identity_admitted": true,
+      "semantic_support": "unreviewed",
+      "answer_verified": false
+    }
+  },
+  {
+    "case_id": "CG-03",
+    "origin": "authored_synthetic",
+    "procedure": "structured_gate",
+    "output": {
+      "status": "identity_consistent",
+      "identity_admitted": true,
+      "states": {
+        "request_binding": "match",
+        "fetch_available": "match",
+        "response_binding": "match",
+        "search_document_and_paragraph": "match",
+        "fetch_document_and_paragraph": "match",
+        "metadata_document": "match",
+        "metadata_paragraph": "match",
+        "original_locator_receipt": "match",
+        "edition": "match",
+        "language": "match",
+        "identifier_uniqueness": "match",
+        "payload_correspondence": "match"
+      },
+      "semantic_support": "unreviewed",
+      "answer_verified": false
+    }
+  },
+  {
+    "case_id": "CG-04",
+    "origin": "authored_synthetic",
+    "procedure": "locator_diagnostic",
+    "output": {
+      "status": "locator_match",
+      "positive_locator_signal": true,
+      "semantic_support": "unreviewed",
+      "answer_verified": false
+    }
+  },
+  {
+    "case_id": "CG-04",
+    "origin": "authored_synthetic",
+    "procedure": "simple_checklist",
+    "output": {
+      "status": "identity_consistent",
+      "identity_admitted": true,
+      "semantic_support": "unreviewed",
+      "answer_verified": false
+    }
+  },
+  {
+    "case_id": "CG-04",
+    "origin": "authored_synthetic",
+    "procedure": "structured_gate",
+    "output": {
+      "status": "identity_consistent",
+      "identity_admitted": true,
+      "states": {
+        "request_binding": "match",
+        "fetch_available": "match",
+        "response_binding": "match",
+        "search_document_and_paragraph": "match",
+        "fetch_document_and_paragraph": "match",
+        "metadata_document": "match",
+        "metadata_paragraph": "match",
+        "original_locator_receipt": "match",
+        "edition": "match",
+        "language": "match",
+        "identifier_uniqueness": "match",
+        "payload_correspondence": "match"
+      },
+      "semantic_support": "unreviewed",
+      "answer_verified": false
+    }
+  },
+  {
+    "case_id": "CG-05",
+    "origin": "authored_synthetic",
+    "procedure": "locator_diagnostic",
+    "output": {
+      "status": "locator_mismatch",
+      "positive_locator_signal": false,
+      "semantic_support": "unreviewed",
+      "answer_verified": false
+    }
+  },
+  {
+    "case_id": "CG-05",
+    "origin": "authored_synthetic",
+    "procedure": "simple_checklist",
+    "output": {
+      "status": "identity_consistent",
+      "identity_admitted": true,
+      "semantic_support": "unreviewed",
+      "answer_verified": false
+    }
+  },
+  {
+    "case_id": "CG-05",
+    "origin": "authored_synthetic",
+    "procedure": "structured_gate",
+    "output": {
+      "status": "identity_consistent",
+      "identity_admitted": true,
+      "states": {
+        "request_binding": "match",
+        "fetch_available": "match",
+        "response_binding": "match",
+        "search_document_and_paragraph": "match",
+        "fetch_document_and_paragraph": "match",
+        "metadata_document": "match",
+        "metadata_paragraph": "match",
+        "original_locator_receipt": "match",
+        "edition": "match",
+        "language": "match",
+        "identifier_uniqueness": "match",
+        "payload_correspondence": "match"
+      },
+      "semantic_support": "unreviewed",
+      "answer_verified": false
+    }
+  },
+  {
+    "case_id": "CG-06",
+    "origin": "authored_synthetic",
+    "procedure": "locator_diagnostic",
+    "output": {
+      "status": "locator_match",
+      "positive_locator_signal": true,
+      "semantic_support": "unreviewed",
+      "answer_verified": false
+    }
+  },
+  {
+    "case_id": "CG-06",
+    "origin": "authored_synthetic",
+    "procedure": "simple_checklist",
+    "output": {
+      "status": "identity_consistent",
+      "identity_admitted": true,
+      "semantic_support": "unreviewed",
+      "answer_verified": false
+    }
+  },
+  {
+    "case_id": "CG-06",
+    "origin": "authored_synthetic",
+    "procedure": "structured_gate",
+    "output": {
+      "status": "identity_consistent",
+      "identity_admitted": true,
+      "states": {
+        "request_binding": "match",
+        "fetch_available": "match",
+        "response_binding": "match",
+        "search_document_and_paragraph": "match",
+        "fetch_document_and_paragraph": "match",
+        "metadata_document": "match",
+        "metadata_paragraph": "match",
+        "original_locator_receipt": "match",
+        "edition": "match",
+        "language": "match",
+        "identifier_uniqueness": "match",
+        "payload_correspondence": "match"
+      },
+      "semantic_support": "unreviewed",
+      "answer_verified": false
+    }
+  },
+  {
+    "case_id": "CG-07",
+    "origin": "authored_synthetic",
+    "procedure": "locator_diagnostic",
+    "output": {
+      "status": "locator_match",
+      "positive_locator_signal": true,
+      "semantic_support": "unreviewed",
+      "answer_verified": false
+    }
+  },
+  {
+    "case_id": "CG-07",
+    "origin": "authored_synthetic",
+    "procedure": "simple_checklist",
+    "output": {
+      "status": "identity_consistent",
+      "identity_admitted": true,
+      "semantic_support": "unreviewed",
+      "answer_verified": false
+    }
+  },
+  {
+    "case_id": "CG-07",
+    "origin": "authored_synthetic",
+    "procedure": "structured_gate",
+    "output": {
+      "status": "identity_consistent",
+      "identity_admitted": true,
+      "states": {
+        "request_binding": "match",
+        "fetch_available": "match",
+        "response_binding": "match",
+        "search_document_and_paragraph": "match",
+        "fetch_document_and_paragraph": "match",
+        "metadata_document": "match",
+        "metadata_paragraph": "match",
+        "original_locator_receipt": "match",
+        "edition": "match",
+        "language": "match",
+        "identifier_uniqueness": "match",
+        "payload_correspondence": "match"
+      },
+      "semantic_support": "unreviewed",
+      "answer_verified": false
+    }
+  },
+  {
+    "case_id": "CG-08",
+    "origin": "authored_synthetic",
+    "procedure": "locator_diagnostic",
+    "output": {
+      "status": "locator_match",
+      "positive_locator_signal": true,
+      "semantic_support": "unreviewed",
+      "answer_verified": false
+    }
+  },
+  {
+    "case_id": "CG-08",
+    "origin": "authored_synthetic",
+    "procedure": "simple_checklist",
+    "output": {
+      "status": "identity_consistent",
+      "identity_admitted": true,
+      "semantic_support": "unreviewed",
+      "answer_verified": false
+    }
+  },
+  {
+    "case_id": "CG-08",
+    "origin": "authored_synthetic",
+    "procedure": "structured_gate",
+    "output": {
+      "status": "identity_consistent",
+      "identity_admitted": true,
+      "states": {
+        "request_binding": "match",
+        "fetch_available": "match",
+        "response_binding": "match",
+        "search_document_and_paragraph": "match",
+        "fetch_document_and_paragraph": "match",
+        "metadata_document": "match",
+        "metadata_paragraph": "match",
+        "original_locator_receipt": "match",
+        "edition": "match",
+        "language": "match",
+        "identifier_uniqueness": "match",
+        "payload_correspondence": "match"
+      },
+      "semantic_support": "unreviewed",
+      "answer_verified": false
+    }
+  },
+  {
+    "case_id": "CG-09",
+    "origin": "authored_synthetic",
+    "procedure": "locator_diagnostic",
+    "output": {
+      "status": "locator_mismatch",
+      "positive_locator_signal": false,
+      "semantic_support": "unreviewed",
+      "answer_verified": false
+    }
+  },
+  {
+    "case_id": "CG-09",
+    "origin": "authored_synthetic",
+    "procedure": "simple_checklist",
+    "output": {
+      "status": "hold",
+      "identity_admitted": false,
+      "semantic_support": "unreviewed",
+      "answer_verified": false
+    }
+  },
+  {
+    "case_id": "CG-09",
+    "origin": "authored_synthetic",
+    "procedure": "structured_gate",
+    "output": {
+      "status": "hold",
+      "identity_admitted": false,
+      "states": {
+        "request_binding": "match",
+        "fetch_available": "match",
+        "response_binding": "match",
+        "search_document_and_paragraph": "match",
+        "fetch_document_and_paragraph": "mismatch",
+        "metadata_document": "match",
+        "metadata_paragraph": "mismatch",
+        "original_locator_receipt": "match",
+        "edition": "match",
+        "language": "match",
+        "identifier_uniqueness": "match",
+        "payload_correspondence": "match"
+      },
+      "semantic_support": "unreviewed",
+      "answer_verified": false
+    }
+  },
+  {
+    "case_id": "CG-10",
+    "origin": "authored_synthetic",
+    "procedure": "locator_diagnostic",
+    "output": {
+      "status": "locator_match",
+      "positive_locator_signal": true,
+      "semantic_support": "unreviewed",
+      "answer_verified": false
+    }
+  },
+  {
+    "case_id": "CG-10",
+    "origin": "authored_synthetic",
+    "procedure": "simple_checklist",
+    "output": {
+      "status": "hold",
+      "identity_admitted": false,
+      "semantic_support": "unreviewed",
+      "answer_verified": false
+    }
+  },
+  {
+    "case_id": "CG-10",
+    "origin": "authored_synthetic",
+    "procedure": "structured_gate",
+    "output": {
+      "status": "hold",
+      "identity_admitted": false,
+      "states": {
+        "request_binding": "match",
+        "fetch_available": "match",
+        "response_binding": "match",
+        "search_document_and_paragraph": "match",
+        "fetch_document_and_paragraph": "mismatch",
+        "metadata_document": "mismatch",
+        "metadata_paragraph": "match",
+        "original_locator_receipt": "match",
+        "edition": "match",
+        "language": "match",
+        "identifier_uniqueness": "match",
+        "payload_correspondence": "match"
+      },
+      "semantic_support": "unreviewed",
+      "answer_verified": false
+    }
+  },
+  {
+    "case_id": "CG-11",
+    "origin": "authored_synthetic",
+    "procedure": "locator_diagnostic",
+    "output": {
+      "status": "fetch_not_found",
+      "positive_locator_signal": false,
+      "semantic_support": "unreviewed",
+      "answer_verified": false
+    }
+  },
+  {
+    "case_id": "CG-11",
+    "origin": "authored_synthetic",
+    "procedure": "simple_checklist",
+    "output": {
+      "status": "hold",
+      "identity_admitted": false,
+      "semantic_support": "unreviewed",
+      "answer_verified": false
+    }
+  },
+  {
+    "case_id": "CG-11",
+    "origin": "authored_synthetic",
+    "procedure": "structured_gate",
+    "output": {
+      "status": "hold",
+      "identity_admitted": false,
+      "states": {
+        "request_binding": "match",
+        "fetch_available": "mismatch",
+        "response_binding": "unknown",
+        "search_document_and_paragraph": "match",
+        "fetch_document_and_paragraph": "unknown",
+        "metadata_document": "unknown",
+        "metadata_paragraph": "unknown",
+        "original_locator_receipt": "match",
+        "edition": "unknown",
+        "language": "unknown",
+        "identifier_uniqueness": "match",
+        "payload_correspondence": "unknown"
+      },
+      "semantic_support": "unreviewed",
+      "answer_verified": false
+    }
+  },
+  {
+    "case_id": "CG-12",
+    "origin": "authored_synthetic",
+    "procedure": "locator_diagnostic",
+    "output": {
+      "status": "locator_match",
+      "positive_locator_signal": true,
+      "semantic_support": "unreviewed",
+      "answer_verified": false
+    }
+  },
+  {
+    "case_id": "CG-12",
+    "origin": "authored_synthetic",
+    "procedure": "simple_checklist",
+    "output": {
+      "status": "hold",
+      "identity_admitted": false,
+      "semantic_support": "unreviewed",
+      "answer_verified": false
+    }
+  },
+  {
+    "case_id": "CG-12",
+    "origin": "authored_synthetic",
+    "procedure": "structured_gate",
+    "output": {
+      "status": "hold",
+      "identity_admitted": false,
+      "states": {
+        "request_binding": "match",
+        "fetch_available": "match",
+        "response_binding": "match",
+        "search_document_and_paragraph": "match",
+        "fetch_document_and_paragraph": "match",
+        "metadata_document": "match",
+        "metadata_paragraph": "match",
+        "original_locator_receipt": "match",
+        "edition": "match",
+        "language": "match",
+        "identifier_uniqueness": "mismatch",
+        "payload_correspondence": "match"
+      },
+      "semantic_support": "unreviewed",
+      "answer_verified": false
+    }
+  },
+  {
+    "case_id": "CG-13",
+    "origin": "authored_synthetic",
+    "procedure": "locator_diagnostic",
+    "output": {
+      "status": "locator_match",
+      "positive_locator_signal": true,
+      "semantic_support": "unreviewed",
+      "answer_verified": false
+    }
+  },
+  {
+    "case_id": "CG-13",
+    "origin": "authored_synthetic",
+    "procedure": "simple_checklist",
+    "output": {
+      "status": "hold",
+      "identity_admitted": false,
+      "semantic_support": "unreviewed",
+      "answer_verified": false
+    }
+  },
+  {
+    "case_id": "CG-13",
+    "origin": "authored_synthetic",
+    "procedure": "structured_gate",
+    "output": {
+      "status": "hold",
+      "identity_admitted": false,
+      "states": {
+        "request_binding": "match",
+        "fetch_available": "match",
+        "response_binding": "match",
+        "search_document_and_paragraph": "match",
+        "fetch_document_and_paragraph": "match",
+        "metadata_document": "mismatch",
+        "metadata_paragraph": "match",
+        "original_locator_receipt": "match",
+        "edition": "match",
+        "language": "match",
+        "identifier_uniqueness": "match",
+        "payload_correspondence": "match"
+      },
+      "semantic_support": "unreviewed",
+      "answer_verified": false
+    }
+  },
+  {
+    "case_id": "CG-14",
+    "origin": "authored_synthetic",
+    "procedure": "locator_diagnostic",
+    "output": {
+      "status": "locator_match",
+      "positive_locator_signal": true,
+      "semantic_support": "unreviewed",
+      "answer_verified": false
+    }
+  },
+  {
+    "case_id": "CG-14",
+    "origin": "authored_synthetic",
+    "procedure": "simple_checklist",
+    "output": {
+      "status": "hold",
+      "identity_admitted": false,
+      "semantic_support": "unreviewed",
+      "answer_verified": false
+    }
+  },
+  {
+    "case_id": "CG-14",
+    "origin": "authored_synthetic",
+    "procedure": "structured_gate",
+    "output": {
+      "status": "hold",
+      "identity_admitted": false,
+      "states": {
+        "request_binding": "match",
+        "fetch_available": "match",
+        "response_binding": "match",
+        "search_document_and_paragraph": "match",
+        "fetch_document_and_paragraph": "mismatch",
+        "metadata_document": "match",
+        "metadata_paragraph": "match",
+        "original_locator_receipt": "match",
+        "edition": "match",
+        "language": "match",
+        "identifier_uniqueness": "match",
+        "payload_correspondence": "match"
+      },
+      "semantic_support": "unreviewed",
+      "answer_verified": false
+    }
+  },
+  {
+    "case_id": "CG-15",
+    "origin": "authored_synthetic",
+    "procedure": "locator_diagnostic",
+    "output": {
+      "status": "locator_mismatch",
+      "positive_locator_signal": false,
+      "semantic_support": "unreviewed",
+      "answer_verified": false
+    }
+  },
+  {
+    "case_id": "CG-15",
+    "origin": "authored_synthetic",
+    "procedure": "simple_checklist",
+    "output": {
+      "status": "hold",
+      "identity_admitted": false,
+      "semantic_support": "unreviewed",
+      "answer_verified": false
+    }
+  },
+  {
+    "case_id": "CG-15",
+    "origin": "authored_synthetic",
+    "procedure": "structured_gate",
+    "output": {
+      "status": "hold",
+      "identity_admitted": false,
+      "states": {
+        "request_binding": "match",
+        "fetch_available": "match",
+        "response_binding": "match",
+        "search_document_and_paragraph": "match",
+        "fetch_document_and_paragraph": "match",
+        "metadata_document": "match",
+        "metadata_paragraph": "unknown",
+        "original_locator_receipt": "match",
+        "edition": "match",
+        "language": "match",
+        "identifier_uniqueness": "match",
+        "payload_correspondence": "match"
+      },
+      "semantic_support": "unreviewed",
+      "answer_verified": false
+    }
+  },
+  {
+    "case_id": "CG-16",
+    "origin": "authored_synthetic",
+    "procedure": "locator_diagnostic",
+    "output": {
+      "status": "locator_match",
+      "positive_locator_signal": true,
+      "semantic_support": "unreviewed",
+      "answer_verified": false
+    }
+  },
+  {
+    "case_id": "CG-16",
+    "origin": "authored_synthetic",
+    "procedure": "simple_checklist",
+    "output": {
+      "status": "hold",
+      "identity_admitted": false,
+      "semantic_support": "unreviewed",
+      "answer_verified": false
+    }
+  },
+  {
+    "case_id": "CG-16",
+    "origin": "authored_synthetic",
+    "procedure": "structured_gate",
+    "output": {
+      "status": "hold",
+      "identity_admitted": false,
+      "states": {
+        "request_binding": "match",
+        "fetch_available": "match",
+        "response_binding": "match",
+        "search_document_and_paragraph": "match",
+        "fetch_document_and_paragraph": "match",
+        "metadata_document": "match",
+        "metadata_paragraph": "match",
+        "original_locator_receipt": "unknown",
+        "edition": "match",
+        "language": "match",
+        "identifier_uniqueness": "match",
+        "payload_correspondence": "unknown"
+      },
+      "semantic_support": "unreviewed",
+      "answer_verified": false
+    }
+  },
+  {
+    "case_id": "CG-17",
+    "origin": "authored_synthetic",
+    "procedure": "locator_diagnostic",
+    "output": {
+      "status": "locator_match",
+      "positive_locator_signal": true,
+      "semantic_support": "unreviewed",
+      "answer_verified": false
+    }
+  },
+  {
+    "case_id": "CG-17",
+    "origin": "authored_synthetic",
+    "procedure": "simple_checklist",
+    "output": {
+      "status": "hold",
+      "identity_admitted": false,
+      "semantic_support": "unreviewed",
+      "answer_verified": false
+    }
+  },
+  {
+    "case_id": "CG-17",
+    "origin": "authored_synthetic",
+    "procedure": "structured_gate",
+    "output": {
+      "status": "hold",
+      "identity_admitted": false,
+      "states": {
+        "request_binding": "match",
+        "fetch_available": "match",
+        "response_binding": "match",
+        "search_document_and_paragraph": "match",
+        "fetch_document_and_paragraph": "match",
+        "metadata_document": "match",
+        "metadata_paragraph": "match",
+        "original_locator_receipt": "match",
+        "edition": "match",
+        "language": "match",
+        "identifier_uniqueness": "match",
+        "payload_correspondence": "unknown"
+      },
+      "semantic_support": "unreviewed",
+      "answer_verified": false
+    }
+  },
+  {
+    "case_id": "CG-18",
+    "origin": "authored_synthetic",
+    "procedure": "locator_diagnostic",
+    "output": {
+      "status": "locator_match",
+      "positive_locator_signal": true,
+      "semantic_support": "unreviewed",
+      "answer_verified": false
+    }
+  },
+  {
+    "case_id": "CG-18",
+    "origin": "authored_synthetic",
+    "procedure": "simple_checklist",
+    "output": {
+      "status": "hold",
+      "identity_admitted": false,
+      "semantic_support": "unreviewed",
+      "answer_verified": false
+    }
+  },
+  {
+    "case_id": "CG-18",
+    "origin": "authored_synthetic",
+    "procedure": "structured_gate",
+    "output": {
+      "status": "hold",
+      "identity_admitted": false,
+      "states": {
+        "request_binding": "match",
+        "fetch_available": "match",
+        "response_binding": "match",
+        "search_document_and_paragraph": "match",
+        "fetch_document_and_paragraph": "match",
+        "metadata_document": "match",
+        "metadata_paragraph": "match",
+        "original_locator_receipt": "match",
+        "edition": "match",
+        "language": "match",
+        "identifier_uniqueness": "match",
+        "payload_correspondence": "mismatch"
+      },
+      "semantic_support": "unreviewed",
+      "answer_verified": false
+    }
+  },
+  {
+    "case_id": "CG-19",
+    "origin": "authored_synthetic",
+    "procedure": "locator_diagnostic",
+    "output": {
+      "status": "locator_match",
+      "positive_locator_signal": true,
+      "semantic_support": "unreviewed",
+      "answer_verified": false
+    }
+  },
+  {
+    "case_id": "CG-19",
+    "origin": "authored_synthetic",
+    "procedure": "simple_checklist",
+    "output": {
+      "status": "hold",
+      "identity_admitted": false,
+      "semantic_support": "unreviewed",
+      "answer_verified": false
+    }
+  },
+  {
+    "case_id": "CG-19",
+    "origin": "authored_synthetic",
+    "procedure": "structured_gate",
+    "output": {
+      "status": "hold",
+      "identity_admitted": false,
+      "states": {
+        "request_binding": "match",
+        "fetch_available": "match",
+        "response_binding": "match",
+        "search_document_and_paragraph": "match",
+        "fetch_document_and_paragraph": "match",
+        "metadata_document": "match",
+        "metadata_paragraph": "match",
+        "original_locator_receipt": "match",
+        "edition": "mismatch",
+        "language": "match",
+        "identifier_uniqueness": "match",
+        "payload_correspondence": "match"
+      },
+      "semantic_support": "unreviewed",
+      "answer_verified": false
+    }
+  },
+  {
+    "case_id": "CG-20",
+    "origin": "authored_synthetic",
+    "procedure": "locator_diagnostic",
+    "output": {
+      "status": "locator_match",
+      "positive_locator_signal": true,
+      "semantic_support": "unreviewed",
+      "answer_verified": false
+    }
+  },
+  {
+    "case_id": "CG-20",
+    "origin": "authored_synthetic",
+    "procedure": "simple_checklist",
+    "output": {
+      "status": "hold",
+      "identity_admitted": false,
+      "semantic_support": "unreviewed",
+      "answer_verified": false
+    }
+  },
+  {
+    "case_id": "CG-20",
+    "origin": "authored_synthetic",
+    "procedure": "structured_gate",
+    "output": {
+      "status": "hold",
+      "identity_admitted": false,
+      "states": {
+        "request_binding": "match",
+        "fetch_available": "match",
+        "response_binding": "match",
+        "search_document_and_paragraph": "match",
+        "fetch_document_and_paragraph": "match",
+        "metadata_document": "match",
+        "metadata_paragraph": "match",
+        "original_locator_receipt": "match",
+        "edition": "match",
+        "language": "mismatch",
+        "identifier_uniqueness": "match",
+        "payload_correspondence": "match"
+      },
+      "semantic_support": "unreviewed",
+      "answer_verified": false
+    }
+  },
+  {
+    "case_id": "CG-21",
+    "origin": "authored_synthetic",
+    "procedure": "locator_diagnostic",
+    "output": {
+      "status": "locator_match",
+      "positive_locator_signal": true,
+      "semantic_support": "unreviewed",
+      "answer_verified": false
+    }
+  },
+  {
+    "case_id": "CG-21",
+    "origin": "authored_synthetic",
+    "procedure": "simple_checklist",
+    "output": {
+      "status": "hold",
+      "identity_admitted": false,
+      "semantic_support": "unreviewed",
+      "answer_verified": false
+    }
+  },
+  {
+    "case_id": "CG-21",
+    "origin": "authored_synthetic",
+    "procedure": "structured_gate",
+    "output": {
+      "status": "hold",
+      "identity_admitted": false,
+      "states": {
+        "request_binding": "match",
+        "fetch_available": "match",
+        "response_binding": "match",
+        "search_document_and_paragraph": "match",
+        "fetch_document_and_paragraph": "unknown",
+        "metadata_document": "match",
+        "metadata_paragraph": "match",
+        "original_locator_receipt": "match",
+        "edition": "match",
+        "language": "match",
+        "identifier_uniqueness": "match",
+        "payload_correspondence": "match"
+      },
+      "semantic_support": "unreviewed",
+      "answer_verified": false
+    }
+  },
+  {
+    "case_id": "CG-22",
+    "origin": "authored_synthetic",
+    "procedure": "locator_diagnostic",
+    "output": {
+      "status": "locator_match",
+      "positive_locator_signal": true,
+      "semantic_support": "unreviewed",
+      "answer_verified": false
+    }
+  },
+  {
+    "case_id": "CG-22",
+    "origin": "authored_synthetic",
+    "procedure": "simple_checklist",
+    "output": {
+      "status": "hold",
+      "identity_admitted": false,
+      "semantic_support": "unreviewed",
+      "answer_verified": false
+    }
+  },
+  {
+    "case_id": "CG-22",
+    "origin": "authored_synthetic",
+    "procedure": "structured_gate",
+    "output": {
+      "status": "hold",
+      "identity_admitted": false,
+      "states": {
+        "request_binding": "mismatch",
+        "fetch_available": "match",
+        "response_binding": "match",
+        "search_document_and_paragraph": "match",
+        "fetch_document_and_paragraph": "match",
+        "metadata_document": "match",
+        "metadata_paragraph": "match",
+        "original_locator_receipt": "match",
+        "edition": "match",
+        "language": "match",
+        "identifier_uniqueness": "match",
+        "payload_correspondence": "match"
+      },
+      "semantic_support": "unreviewed",
+      "answer_verified": false
+    }
+  },
+  {
+    "case_id": "CG-23",
+    "origin": "historical_metadata_replay",
+    "procedure": "locator_diagnostic",
+    "output": {
+      "status": "fetch_not_found",
+      "positive_locator_signal": false,
+      "semantic_support": "unreviewed",
+      "answer_verified": false
+    }
+  },
+  {
+    "case_id": "CG-23",
+    "origin": "historical_metadata_replay",
+    "procedure": "simple_checklist",
+    "output": {
+      "status": "hold",
+      "identity_admitted": false,
+      "semantic_support": "unreviewed",
+      "answer_verified": false
+    }
+  },
+  {
+    "case_id": "CG-23",
+    "origin": "historical_metadata_replay",
+    "procedure": "structured_gate",
+    "output": {
+      "status": "hold",
+      "identity_admitted": false,
+      "states": {
+        "request_binding": "match",
+        "fetch_available": "mismatch",
+        "response_binding": "unknown",
+        "search_document_and_paragraph": "match",
+        "fetch_document_and_paragraph": "unknown",
+        "metadata_document": "unknown",
+        "metadata_paragraph": "unknown",
+        "original_locator_receipt": "match",
+        "edition": "unknown",
+        "language": "unknown",
+        "identifier_uniqueness": "match",
+        "payload_correspondence": "unknown"
+      },
+      "semantic_support": "unreviewed",
+      "answer_verified": false
+    }
+  },
+  {
+    "case_id": "CG-24",
+    "origin": "historical_metadata_replay",
+    "procedure": "locator_diagnostic",
+    "output": {
+      "status": "locator_mismatch",
+      "positive_locator_signal": false,
+      "semantic_support": "unreviewed",
+      "answer_verified": false
+    }
+  },
+  {
+    "case_id": "CG-24",
+    "origin": "historical_metadata_replay",
+    "procedure": "simple_checklist",
+    "output": {
+      "status": "hold",
+      "identity_admitted": false,
+      "semantic_support": "unreviewed",
+      "answer_verified": false
+    }
+  },
+  {
+    "case_id": "CG-24",
+    "origin": "historical_metadata_replay",
+    "procedure": "structured_gate",
+    "output": {
+      "status": "hold",
+      "identity_admitted": false,
+      "states": {
+        "request_binding": "match",
+        "fetch_available": "match",
+        "response_binding": "match",
+        "search_document_and_paragraph": "match",
+        "fetch_document_and_paragraph": "mismatch",
+        "metadata_document": "match",
+        "metadata_paragraph": "mismatch",
+        "original_locator_receipt": "match",
+        "edition": "unknown",
+        "language": "unknown",
+        "identifier_uniqueness": "match",
+        "payload_correspondence": "unknown"
+      },
+      "semantic_support": "unreviewed",
+      "answer_verified": false
+    }
+  }
+]
