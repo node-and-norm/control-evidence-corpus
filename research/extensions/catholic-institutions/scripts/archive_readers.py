@@ -52,6 +52,9 @@ def restore_notebook(directory: Path, version: str, entry: dict) -> None:
         if digest(cell.source.encode()) != item['source_sha256']:
             raise ValueError(f'Changed notebook source: {version}, cell {item["cell"]}')
         cell.update(item['set'])
+    # JSON-loaded retained outputs must be recursively converted to NotebookNode.
+    # The initial CI attempt stopped before writing any archival commit here.
+    notebook = nbformat.from_dict(notebook)
     nbformat.validate(notebook)
     nbformat.write(notebook, path)
     for filename, expected in entry['files'].items():
@@ -81,7 +84,6 @@ def render_pdf(source: Path, target: Path) -> dict:
             if chromium: opts['executable_path'] = chromium
             browser = pw.chromium.launch(**opts)
             page = browser.new_page(viewport={'width':1440, 'height':1000})
-            # No remote source retrieval is necessary to render these self-contained files.
             page.route('**/*', lambda route: route.abort())
             page.set_content(source.read_text(), wait_until='load')
             page.evaluate('document.querySelectorAll("details").forEach(x=>x.open=true)')
@@ -99,6 +101,14 @@ def build(execute: bool, pdf: bool) -> None:
     baseline_readme = subprocess.check_output(['git','show',f'{BASELINE}:README.md'],cwd=REPO)
     if (REPO/'README.md').read_bytes()!=baseline_readme:
         raise ValueError('Root README protection check failed')
+    previous_index=ROOT/'reading/ARTIFACT_INDEX.json'
+    if previous_index.exists():
+        previous=json.loads(previous_index.read_text())
+        for edition in previous['editions'].values():
+            for item in edition['files'] + ([edition['pdf']] if 'pdf' in edition else []):
+                path=(ROOT/item['path']).resolve()
+                if not path.is_relative_to(ROOT.resolve()) or not path.is_file() or digest(path.read_bytes())!=item['sha256']:
+                    raise ValueError('Previously archived file changed: '+item['path'])
     index={'kind':'reader_artifact_archive','latest_draft':'0.4.4-draft',
            'published_release_preserved':'catholic-pilot-v0.4.1-dev',
            'baseline_commit':BASELINE,'core_protocol':'0.3.0; unfrozen',
@@ -108,8 +118,6 @@ def build(execute: bool, pdf: bool) -> None:
         for filename in ('study-report.html','study-guide.ipynb','protocol.html','PROTOCOL.md'):
             (baseline/filename).write_bytes(git_bytes(filename))
         cir=temp/'evidence'; cir.mkdir()
-        # Use the repository's frozen recipe and digest-checked replay. This does
-        # not create new observations or silently relabel a replay as a first run.
         cir_source=ROOT/'scenario-batches/CB-001/CIR-001'
         replay=temp/'replay'
         run(cir_source/'reproduce.py','--output',replay)
@@ -128,8 +136,6 @@ def build(execute: bool, pdf: bool) -> None:
         run(cir/'build_readers.py')
         dirs={'0.4.2':temp/'rebuilt-readers'}
         restore_notebook(dirs['0.4.2'],'0.4.2',retained['0.4.2'])
-        # Restore source files at the inspected commit, so historical readers
-        # are reproducible even after subsequent narrative amendments.
         for name in ('obligations','PARISH-QA-001-R1'):
             dest=temp/name;dest.mkdir()
             names = ('README.md','build_readers.py','sources.json','mappings.json','parish-test-plan.json','decision-record.json') if name=='obligations' else ('README.md','build_readers.py','evidence.json','reproduce.py')
@@ -154,7 +160,6 @@ def build(execute: bool, pdf: bool) -> None:
             if pdf:
                 entry['pdf']=render_pdf(dest/f'NodeNorm_Study_v{version.replace(".","_")}.html',dest/f'NodeNorm_Study_v{version.replace(".","_")}.pdf')
             index['editions'][version+'-draft']=entry
-        # The dependency archive is explicit about replay rather than rewriting the initial experiment.
         dependency=ROOT/'reading/archive-support/cir001/replay-inputs';dependency.mkdir(exist_ok=True)
         for filename in ('cases.json','registry.json','raw-results.replay.json','replay-receipt.json','case-results.csv'):
             write_once(dependency/filename,(replay/filename).read_bytes())
