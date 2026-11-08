@@ -387,7 +387,7 @@
       "source_kind": "secondary_locator",
       "url": "https://theofons.net/en/ds/1500",
       "source_checked_date": "2026-11-07",
-      "verified_for_this_packet": "primary_locator_and_relevant_text_inspected",
+      "verified_for_this_packet": "secondary_locator_only; authoritative original edition not established",
       "note": "Secondary edition reference; authoritative textual/edition review remains pending."
     },
     {
@@ -397,7 +397,7 @@
       "source_kind": "secondary_locator",
       "url": "https://www.ldysinger.com/ThS_574_Pen-Anoi/03_history/10_abbo_halligan_conf.htm",
       "source_checked_date": "2026-11-07",
-      "verified_for_this_packet": "primary_locator_and_relevant_text_inspected",
+      "verified_for_this_packet": "secondary_locator_only; authoritative original edition not established",
       "note": "Secondary edition reference; authoritative textual/edition review remains pending."
     }
   ],
