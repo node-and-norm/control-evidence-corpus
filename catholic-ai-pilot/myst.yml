@@ -54,6 +54,10 @@
         "title": "Course and method alignment"
       },
       {
+        "file": "14_Reference_Inventory.ipynb",
+        "title": "Complete returned-reference inventory"
+      },
+      {
         "file": "12_Source_Verification_Review.ipynb",
         "title": "Provisional source-to-claim review"
       },
