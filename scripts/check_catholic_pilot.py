@@ -23,7 +23,7 @@ def check(root:Path=ROOT)->dict:
   p=(root/r['path']).resolve();assert p.is_relative_to(root.resolve())
   data=p.read_bytes();assert len(data)==r['bytes'] and sha(data)==r['sha256'],r['path']
  pages=[root/'CATHOLIC_PILOT.ipynb']+[root/r['path'] for r in manifest['chapters']]
- assert len(pages)==17 and len(set(pages))==17
+ assert len(pages)==18 and len(set(pages))==18
  links=0;source=defaultdict(list);code_count=0
  for p in pages:
   n=load(p);assert n['nbformat']==4
@@ -67,7 +67,24 @@ def check(root:Path=ROOT)->dict:
  assert 'assets/workflow.svg' in '\n'.join(text(c) for c in load(b/'01_Study_and_Roadmap.ipynb')['cells'])
  for fn in ['catholic-study.yml','catholic-reader-archive.yml','catholic-protocol-notebook.yml','catholic-notebook-book.yml']:
   assert not (root/'.github/workflows'/fn).exists(),fn
+ # Future confirmatory runs entering the public corpus must have the
+ # approved manifest, completed trace and closed/valid attempts. This
+ # does not retroactively relabel older evidence.
+ policy=load(b/'_evidence/trace-policy/next-run-gate.json')
+ assert policy['version']=='node-norm-visible-trace-1'
+ assert policy['policy_status']=='MANDATORY_FUTURE_GATE_NOT_YET_APPROVED'
+ assert all(not x['approved'] for x in policy['pending_run_manifest']['approvals'].values())
+ trace_root=b/'_evidence/trace-runs'
+ trace_reports=[]
+ if trace_root.exists():
+  promotion=runpy.run_path(str(b/'_tools/prompt_trace.py'))['promotion_gate']
+  for run_dir in sorted(trace_root.iterdir()):
+   assert run_dir.is_dir(),f'Unexpected trace root file: {run_dir.name}'
+   verified=promotion(run_dir)
+   assert verified['incomplete_captures']==0 and verified['open_requests']==0
+   trace_reports.append(verified)
  return {'kind':'software_and_custody_validation','notebooks':len(pages),'original_master_cells_preserved':40,
+         'future_capture_gate_enabled':True,'future_trace_runs_verified':len(trace_reports),
          'retained_source_documents':len(source),'byte_identical_evidence_files':len(ledger['retained_evidence']),
          'local_reader_links':links,'stored_code_cells':code_count,'exact_service_responses':6,
          'duplicate_archive_directories':0,'legacy_workspace_removed':True,

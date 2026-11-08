@@ -67,6 +67,10 @@
     {
       "path": "catholic-ai-pilot/15_Prior_Work_and_Next_Evaluation.ipynb",
       "title": "Prior research and prospective evaluation"
+    },
+    {
+      "path": "catholic-ai-pilot/16_Prompt_Output_Capture_Protocol.ipynb",
+      "title": "Prompt/output trace and pre-execution gate"
     }
   ],
   "source_documents": [

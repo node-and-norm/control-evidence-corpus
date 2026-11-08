@@ -1,0 +1,125 @@
+{
+  "record_id": "TRACE-GATE-CATHOLIC-20261108-R1",
+  "version": "node-norm-visible-trace-1",
+  "date_recorded": "2026-11-08",
+  "program": "Node & Norm Catholic Institutional AI Risk and Control Evidence Pilot",
+  "policy_status": "MANDATORY_FUTURE_GATE_NOT_YET_APPROVED",
+  "applies_to": "All NEW confirmatory model/tool/agent invocations and iterative calls made through the prospective pilot runner; original run files retain their historical capture scopes.",
+  "exclusion": "Historical PQA, CIR-001, source-review, bibliography and literature-screening records are neither overwritten nor retroactively certified.",
+  "owner_gate": "https://github.com/node-and-norm/control-evidence-corpus/issues/41",
+  "next_run_preflight_decisions": [
+    "research_owner_decision",
+    "protocol_and_cases_frozen",
+    "source_rights",
+    "privacy_and_ethics",
+    "reviewer_independence_plan",
+    "outcomes_budget_and_stopping"
+  ],
+  "required_visible_capture": [
+    "Original caller-supplied prompt as a verbatim UTF-8 string, if a model/agent is invoked",
+    "Full caller-visible tool arguments (JSON), prior to the invocation",
+    "Full visible response object and verbatim text, where returned and accessible",
+    "A separate start and success/error/incomplete event for EACH attempt, including failures and retries",
+    "UTC client-side before-call and after-call event timestamps; never substitute them for provider latency",
+    "Run ID, case ID, unique call ID, attempt count, tool identity, provider identity and declared data status",
+    "Exact model snapshot and generation parameters when caller-visible; otherwise null and an explicit reason",
+    "Recorded missing transport bytes, hidden model instructions, hidden retrieval or provider internals; never reconstruct these",
+    "SHA-256 of exact prompt, visible JSON payload and returned text; a cross-event hash chain",
+    "Plan file hash, frozen Git commit, owner/reviewer/rights/ethics gates, execution budget and source provenance",
+    "AI-use and human decision disclosures, including missing attestations and post-outcome exposure"
+  ],
+  "states": {
+    "start": "Logged and fsynced before external invoke; no response assumed.",
+    "success": "Returned visible payload and exact response text recorded, not a correctness judgment.",
+    "error": "The attempted invocation raised an error. Error type retained; raw exception message may be withheld for safety with explicit omission.",
+    "incomplete_capture": "Visible returned data lacks a verbatim model answer, is not JSON-serializable, or cannot be safely published; blocks promotion.",
+    "open_request": "Call began but no visible terminal record exists; blocks promotion.",
+    "not_exposed": "Provider data absent from the caller's interface; never inferred."
+  },
+  "protection": {
+    "classification": "Only public/rights-cleared or synthetic records are allowed in this public repository.",
+    "known_secret_key_guard": "A basic key-name scan rejects common credential fields; this is NOT a general private-data detector.",
+    "unexpected_sensitive_result": "Public trace is marked incomplete and only a withheld marker is published. Any verbatim sensitive original requires separate, approved private custody.",
+    "publication": "Git commits supply immutable snapshot identifiers; SHA chains detect edits relative to prior checkpoints but do not authenticate a maliciously regenerated chain.",
+    "consent": "Qualified reviewer consent and applicable institutional research ethics must be assessed before involving identifiable people."
+  },
+  "pending_run_manifest": {
+    "schema": "node-norm-visible-trace-1",
+    "run_id": "NEXT-RUN-UNASSIGNED",
+    "run_kind": "confirmatory",
+    "capture_scope": "exact_caller_visible_payloads",
+    "source_data_classification": "synthetic_or_public_rights_cleared",
+    "frozen_plan": {
+      "relative_path": "plan.json",
+      "sha256": null,
+      "freeze_commit": null
+    },
+    "allowed_tools": [],
+    "max_attempts": null,
+    "approvals": {
+      "research_owner_decision": {
+        "approved": false,
+        "approver": null,
+        "decision_url": null,
+        "decision_timestamp": null
+      },
+      "protocol_and_cases_frozen": {
+        "approved": false,
+        "approver": null,
+        "decision_url": null,
+        "decision_timestamp": null
+      },
+      "source_rights": {
+        "approved": false,
+        "approver": null,
+        "decision_url": null,
+        "decision_timestamp": null
+      },
+      "privacy_and_ethics": {
+        "approved": false,
+        "approver": null,
+        "decision_url": null,
+        "decision_timestamp": null
+      },
+      "reviewer_independence_plan": {
+        "approved": false,
+        "approver": null,
+        "decision_url": null,
+        "decision_timestamp": null
+      },
+      "outcomes_budget_and_stopping": {
+        "approved": false,
+        "approver": null,
+        "decision_url": null,
+        "decision_timestamp": null
+      }
+    },
+    "immutable_status": "PROPOSAL ONLY — values intentionally unapproved, preflight must fail"
+  },
+  "existing_custody": [
+    {
+      "id": "PARISH-QA-001-R1",
+      "scope": "Six exact submitted visible prompts, complete visible answer+reference objects and client-side call timestamps preserved; assistant-serialized, not HTTP raw bytes.",
+      "new_capture_claim": false
+    },
+    {
+      "id": "CIR-001",
+      "scope": "Authored cases, original deterministic engine, first execution receipts and replay outputs are preserved; no live model calls.",
+      "new_capture_claim": false
+    },
+    {
+      "id": "PQA-001-SOURCE-REVIEW-R1",
+      "scope": "Preliminary 19-claim annotations and sources; no verbatim trace for every internal assistant drafting operation.",
+      "new_capture_claim": false
+    },
+    {
+      "id": "PRIORWORK-20261108-R1",
+      "scope": "Seven-paper registry and notebook outputs retained; complete verbatim internal research prompt history is unavailable.",
+      "new_capture_claim": false
+    }
+  ],
+  "fake_execution": "Tests use Python offline fixtures and fake callable responses only. No provider, MCP or real institutional data are called.",
+  "scientific_validity_established": false,
+  "human_approval_recorded": false,
+  "new_live_model_or_MCP_calls": 0
+}
