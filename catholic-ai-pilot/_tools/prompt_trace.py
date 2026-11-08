@@ -215,6 +215,8 @@ def _append(run_dir: Path, record: dict) -> dict:
             "previous_sha256": previous, "recorded_at_utc": utc_now(), **record,
         }
         event["event_sha256"] = sha256_bytes(canonical(event))
+        # Validate the candidate under the same file lock before writing it.
+        verify_events(events + [event], require_closed=False)
         fh.seek(0, os.SEEK_END)
         fh.write(json.dumps(event, sort_keys=True, ensure_ascii=False, allow_nan=False) + "\n")
         fh.flush()
@@ -233,6 +235,31 @@ def verify_run(run_dir: Path, *, require_closed: bool = True) -> dict:
     report = verify_events(events, require_closed=require_closed)
     report["run_dir"] = str(Path(run_dir))
     return report
+
+
+def promotion_gate(run_dir: Path) -> dict:
+    """Block release when a confirmatory run has missing prompts or outputs."""
+    manifest = validate_manifest(run_dir)
+    report = verify_run(run_dir, require_closed=True)
+    if report["incomplete_captures"]:
+        raise CaptureError("An incomplete captured response blocks research release.")
+    if not report["unique_calls"]:
+        raise CaptureError("No tool/model calls were recorded.")
+    if report["unique_calls"] > manifest["max_attempts"]:
+        raise CaptureError("Recorded calls exceed the frozen attempt budget.")
+    return {**report, "capture_gate": "passed_for_integrity_only", "independent_validation": False}
+
+
+def _reject_secret_keys(value: Any) -> None:
+    """Coarse public-log guard. Human privacy review remains mandatory."""
+    if isinstance(value, dict):
+        for key, item in value.items():
+            if re.search(r"(^|_)(password|api_key|access_token|secret|authorization|cookie)(_|$)", str(key).lower()):
+                raise CaptureError("Possible secret-bearing field: public trace blocked.")
+            _reject_secret_keys(item)
+    elif isinstance(value, (list, tuple)):
+        for item in value:
+            _reject_secret_keys(item)
 
 
 def record_call(
@@ -277,7 +304,8 @@ def record_call(
             raise CaptureError("Unknown model/configuration data needs an explicit reason.")
     if provenance.get("transport_bytes_state") != "not_captured":
         raise CaptureError("This wrapper does not capture original HTTP transport bytes.")
-    # Validate serializability and payload before making a request.
+    # Never write known secret-bearing keys to public Git history.
+    _reject_secret_keys(visible_args)
     visible_hash = sha256_bytes(canonical(visible_args))
     prompt_hash = sha256_bytes(prompt_text.encode("utf-8")) if prompt_text is not None else None
     path = run_dir / "events.jsonl"
@@ -319,28 +347,44 @@ def record_call(
         })
         raise
     try:
+        _reject_secret_keys(result)
+    except CaptureError:
+        _append(run_dir, {
+            "event": "incomplete_capture", "run_id": manifest["run_id"],
+            "call_id": call_id, "kind": kind,
+            "visible_result": {"withheld_from_public_log": True},
+            "reason": "Response may contain secrets; secure private quarantine is required.",
+            "response_text_state": "withheld_due_to_privacy",
+        })
+        raise
+    try:
         result_hash = sha256_bytes(canonical(result))
         answer = response_text_from(result)
         if answer is not None and not isinstance(answer, str):
-            raise CaptureError("Response text extractor did not return text or None.")
-        if kind in {"model", "agent"} and answer is None:
-            _append(run_dir, {
-                "event": "incomplete_capture", "run_id": manifest["run_id"],
-                "call_id": call_id, "kind": kind, "visible_result": result,
-                "reason": "Caller-visible model answer text was unavailable.",
-                "response_text_state": "not_exposed",
-            })
-            raise CaptureError("Model output lacks a verbatim answer; preserve as incomplete.")
-    except CaptureError:
-        raise
+            raise CaptureError("Response extractor returned a non-text answer.")
     except Exception as exc:
+        # Record the caller-visible result if JSON-safe; otherwise mark it
+        # omitted explicitly. Never silently leave a request marked complete.
+        try:
+            canonical(result)
+            safe_result = result
+        except (TypeError, ValueError):
+            safe_result = {"not_serializable": True}
         _append(run_dir, {
-            "event": "error", "run_id": manifest["run_id"], "call_id": call_id,
-            "kind": kind, "error_type": type(exc).__name__,
-            "error_message_state": "not_retained_privacy", "error_text": None,
-            "error_capture_limitation": "Result was not serializable; no success or truth claim.",
+            "event": "incomplete_capture", "run_id": manifest["run_id"],
+            "call_id": call_id, "kind": kind, "visible_result": safe_result,
+            "reason": "Result serialization or answer extraction failed.",
+            "response_text_state": "not_captured",
         })
-        raise CaptureError("Result could not be captured as JSON.") from exc
+        raise CaptureError("Result could not be fully captured.") from exc
+    if kind in {"model", "agent"} and answer is None:
+        _append(run_dir, {
+            "event": "incomplete_capture", "run_id": manifest["run_id"],
+            "call_id": call_id, "kind": kind, "visible_result": result,
+            "reason": "Caller-visible model answer text was unavailable.",
+            "response_text_state": "not_exposed",
+        })
+        raise CaptureError("Model output lacks a verbatim answer; preserve as incomplete.")
     _append(run_dir, {
         "event": "success", "run_id": manifest["run_id"], "call_id": call_id,
         "kind": kind, "visible_result": result,
@@ -354,15 +398,17 @@ def record_call(
 
 def main() -> int:
     p = argparse.ArgumentParser(description="Offline preflight and trace verification; no service calls.")
-    p.add_argument("action", choices=("preflight", "verify"))
+    p.add_argument("action", choices=("preflight", "verify", "promote-check"))
     p.add_argument("run_dir", type=Path)
     p.add_argument("--allow-incomplete", action="store_true")
     args = p.parse_args()
     if args.action == "preflight":
         manifest = validate_manifest(args.run_dir)
         print(json.dumps({"run_id": manifest["run_id"], "preflight": "passed"}, indent=2))
-    else:
+    elif args.action == "verify":
         print(json.dumps(verify_run(args.run_dir, require_closed=not args.allow_incomplete), indent=2))
+    else:
+        print(json.dumps(promotion_gate(args.run_dir), indent=2))
     return 0
 
 
