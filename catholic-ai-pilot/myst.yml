@@ -60,6 +60,10 @@
       {
         "file": "13_Reviewer_Starting_Packet.ipynb",
         "title": "Qualified reviewer starting packet (unlabeled)"
+      },
+      {
+        "file": "14_Reference_Inventory.ipynb",
+        "title": "Complete returned-reference inventory"
       }
     ]
   },
