@@ -54,16 +54,16 @@
         "title": "Course and method alignment"
       },
       {
-        "file": "14_Reference_Inventory.ipynb",
-        "title": "Complete returned-reference inventory"
-      },
-      {
         "file": "12_Source_Verification_Review.ipynb",
         "title": "Provisional source-to-claim review"
       },
       {
         "file": "13_Reviewer_Starting_Packet.ipynb",
         "title": "Qualified reviewer starting packet (unlabeled)"
+      },
+      {
+        "file": "14_Reference_Inventory.ipynb",
+        "title": "Complete returned-reference inventory"
       }
     ]
   },
