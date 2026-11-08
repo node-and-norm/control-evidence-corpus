@@ -1,0 +1,194 @@
+{
+  "record_id": "CEC-CATHOLIC-PRIORWORK-20261108-R1",
+  "recorded_date": "2026-11-08",
+  "scope": "Targeted, non-systematic comparison of seven selected prior works against the next proposed Catholic institutional evidence-representation evaluation.",
+  "methods": [
+    "Search for direct Catholic-source retrieval and doctrine evaluations; faith-sensitive pastoral triage; religion and canon-law studies; religious organizational governance; citation-support assessment; human oversight-to-control documentary frameworks.",
+    "Check issuer or publisher pages and accessible abstracts or full HTML for title, evidence type, and reported method.",
+    "Translate overlaps into falsifiable discriminating tests without treating non-exhaustive search as proof of priority.",
+    "Preserve citations, review-depth and unknowns; propose no new confirmatory cases or completed expert judgments."
+  ],
+  "papers": [
+    {
+      "key": "C4",
+      "year": 2026,
+      "citation": "von Däniken, P.; Cieliebak, M.; Deriu, J. C4: A Multilingual Benchmark for Retrieval-Augmented Generation Based on the Catechism of the Catholic Church and Its Compendium. LREC 2026.",
+      "url": "https://lrec.elra.info/lrec2026-main-590",
+      "doi": "10.63317/5a8nuzcc3cq3",
+      "reviewed": "publisher_proceedings_abstract_and_metadata",
+      "empirical_scope": "Multilingual Catholic Catechism and Compendium RAG datasets with collection scripts and baseline retrieval/generation results.",
+      "overlap": "Direct precedent for Catholic grounded retrieval and citation-aligned answer evaluation.",
+      "outside_scope": "No reported comparison in its abstract of identical-evidence human reviewers applying institutional control-operation records.",
+      "implication": "Do not claim first Catholic RAG evaluation. Reuse its principle of paragraph-aligned source references, with rights and version controls."
+    },
+    {
+      "key": "Owen",
+      "year": 2026,
+      "citation": "Owen, J. Detecting doctrinal flattening in AI generated responses. AI and Ethics 6, 178 (2026).",
+      "url": "https://link.springer.com/article/10.1007/s43681-026-01051-0",
+      "doi": "10.1007/s43681-026-01051-0",
+      "reviewed": "publisher_full_html_article",
+      "empirical_scope": "576 source-derived atomic doctrinal claims from 11 Christian traditions, compared with two model outputs using structured text matching and doctrinal heuristics.",
+      "overlap": "Direct precedent for doctrinal-claim support, omission and tradition-specific theological differences.",
+      "outside_scope": "Human institutional reviewer intervention and effectiveness of documentary control records are not its primary dependent variables.",
+      "implication": "Account for omission and qualifiers, not only contradictions; distinguish automated reference labels from independently verified theology."
+    },
+    {
+      "key": "FMG",
+      "year": 2026,
+      "citation": "Chao, A. When AI Is Your Pastor: A Benchmark for Theological Triage and Pastoral Guidance in Large Language Models. FMG-Bench (2026 preprint).",
+      "url": "https://arxiv.org/abs/2608.12324",
+      "doi": "10.48550/arXiv.2608.12324",
+      "reviewed": "arxiv_full_html_preprint",
+      "empirical_scope": "120 Christian pastoral/doctrinal scenarios, 14 models and 8,792 scored responses across guided and unguided instruction conditions; measures escalation appropriateness.",
+      "overlap": "Direct precedent for pastoral redirection, authority-sensitive triage and evaluation of prompts and instructions.",
+      "outside_scope": "Proposed referrals as model text do not measure a completed human referral, acknowledged receipt or institutional remedy.",
+      "implication": "Test delivered/acknowledged human intervention only when a real workflow can be observed; do not mistake written advice for executed safeguards."
+    },
+    {
+      "key": "SanTO",
+      "year": 2025,
+      "citation": "Falletti, E.; Trovato, G. Diritto canonico e machine learning: il caso del robot SanTO. Stato, Chiese e pluralismo confessionale 11 (2025).",
+      "url": "https://riviste.unimi.it/index.php/statoechiese/en/article/view/30022",
+      "doi": "10.54103/1971-8543/30022",
+      "reviewed": "journal_article_abstract_and_metadata",
+      "empirical_scope": "Legal and canonical analysis of an AI-enabled Catholic prayer robot that may consult a local database or a large language model.",
+      "overlap": "Direct Catholic AI and canon-law authority precedent.",
+      "outside_scope": "Abstract does not describe a randomized, reviewer-outcome comparator on source-control evidence representations.",
+      "implication": "Catholic-domain and canon-law framing alone cannot establish novelty; qualified application must be reviewed."
+    },
+    {
+      "key": "Cheong",
+      "year": 2026,
+      "citation": "Cheong, P.; Liu, L.; Nord, I. et al. Artificial intelligence, religion, and society: ethical leadership and the shaping of value-based adaptive governance. AI and Ethics 6, 561 (2026).",
+      "url": "https://link.springer.com/article/10.1007/s43681-026-01357-z",
+      "doi": "10.1007/s43681-026-01357-z",
+      "reviewed": "publisher_full_html_article",
+      "empirical_scope": "Qualitative comparative cases involving 66 Christian religious leaders in the United States, Germany and Switzerland; identifies normative, collaborative and experimentative adaptive governance.",
+      "overlap": "Empirical precedent for Christian institutional AI adoption, authority and shared responsibility.",
+      "outside_scope": "Does not experimentally compare reviewer error or review time between uncertainty-aware checklist and CEC evidence record presentations.",
+      "implication": "Do not claim religious institutional AI governance has not been studied. Use institutional stakeholder and responsibility distinctions."
+    },
+    {
+      "key": "SourceCheckup",
+      "year": 2025,
+      "citation": "An automated framework for assessing how well LLMs cite relevant medical references (SourceCheckup). Nature Communications (2025).",
+      "url": "https://www.nature.com/articles/s41467-025-58551-6",
+      "doi": "10.1038/s41467-025-58551-6",
+      "reviewed": "publisher_search_abstract_plus_pubmed_abstract_and_accessible_snippet",
+      "empirical_scope": "800 medical questions and 58,000 statement-source pairs across seven models; compares source support with independent physician assessments.",
+      "overlap": "Very strong direct precedent for automated claim-to-citation support evaluation validated against qualified humans.",
+      "outside_scope": "Medical source faithfulness does not directly measure church-specific authority, real intervention and post-error propagation within a bounded institutional control opportunity.",
+      "implication": "Claim-level citation support is not novel. A reviewer-outcome comparison must show an added result beyond SourceCheckup, controlling for source completeness."
+    },
+    {
+      "key": "O2C",
+      "year": 2026,
+      "citation": "Hardy, K. From human oversight to effective control: A comparative documentary framework for high-impact AI systems. Digital Policy (online first 2026).",
+      "url": "https://www.accscience.com/journal/DP/articles/online_first/9411",
+      "doi": "10.36922/DP026290034",
+      "reviewed": "publisher_abstract_and_metadata",
+      "empirical_scope": "Eight prescriptive instruments, 19 public cases and 41 oversight/control evidence statements; six functions Observe, Detect, Interpret, Challenge and Decide, Intervene, Recover and Learn.",
+      "overlap": "Very strong conceptual and documentary precedent for the claim that nominal human oversight is not evidence of practical control.",
+      "outside_scope": "Author explicitly notes purposive/public-record and single-researcher limits and need for prospective independent validation; no documented randomized same-evidence Catholic reviewer comparison in accessible abstract.",
+      "implication": "Compare constructs and reuse appropriate terminology with attribution, then test prospective independent reviewer outcomes rather than asserting first evidence-to-control framework."
+    }
+  ],
+  "open_novelty_claim": "No first-of-kind claim established. The candidate distinctive test is a prospective, independently rated, same-evidence comparison of a strong uncertainty-aware checklist and CEC-style event/source/authority/intervention records in a Catholic institutional context.",
+  "prior_internal_result": {
+    "source": "catholic-ai-pilot/03_Citation_Test_Results.ipynb",
+    "case_count": 24,
+    "synthetic": 22,
+    "known_metadata_replays": 2,
+    "valid_identity_retained_both": 8,
+    "non_admissible_held_both": 16,
+    "compared_procedures": [
+      "simple checklist",
+      "structured gate"
+    ],
+    "result": "tied on admission decisions",
+    "meaning_review": "unreviewed",
+    "human_reviewer_advantage": "not_measured"
+  },
+  "planned_study": {
+    "status": "proposal_only_unfrozen",
+    "study_unit": "One documentable AI-assisted institutional control opportunity, identified by event, relevant source, authority boundary, human opportunity and time window.",
+    "primary_question": "Does a CEC-style evidence-to-control record reduce unsupported categorical conclusions by independently qualified reviewers compared with a strong uncertainty-aware checklist when all reviewers receive the same source packet?",
+    "design": "Two presentation arms, using exactly the same frozen source passages and event/control evidence. Randomly allocate different reviewers to each case/arm; no reviewer sees a case in both formats before their initial judgment. Balance case difficulty and expertise. Outcome adjudicators blind to arm where possible.",
+    "baseline": "A competent narrative+checklist explicitly requiring source identity, semantic support, applicability, decision authority, intervention evidence and unresolved/abstain states, with citations and the same evidence as treatment.",
+    "treatment": "A CEC-structured representation separating source assertions, claim support, institutional applicability, delegated authority, notice/opportunity, intervention, downstream effect and unresolved evidence, with traceable source IDs. No privileged facts or additional tools.",
+    "primary_candidate": "Unsupported categorical verdict count divided by all evaluable case decisions; case eligibility and adjudication definitions must be prespecified.",
+    "anti_abstention_gate": "Simultaneously measure correct determinate conclusions on independently decidable cases; abstaining on all records must not be counted as success.",
+    "secondary_candidates": [
+      "Appropriate unresolved-state retention",
+      "Correct supported conclusion retention on adjudicated determinate cases",
+      "Inter-reviewer agreement with uncertainty categories",
+      "Time per decision and record inspection effort",
+      "False claims that a referral, override or remedy reached its target",
+      "Reviewer explanation/source trace quality and disagreement documentation"
+    ],
+    "candidate_strata": [
+      "Source support: exact reference correct, mismatched or semantically insufficient",
+      "Institutional authority: document sound, but norm's applicability or speaker authority uncertain",
+      "Operational control: approval or intervention attempted, propagation/receipt/effect unobserved"
+    ],
+    "must_freeze_before_run": [
+      "Study owner approves target population, outcomes and estimator",
+      "Independent reviewer qualifications/AI exposure and consent approved",
+      "Rights-cleared new case packets independent of PQA-01 through 06 and authored 24-case development fixtures",
+      "Primary endpoint numerator and denominator, exclusions, abstentions and missingness defined",
+      "Blinding and randomization/carryover avoidance procedure set",
+      "Sample-size justification and stopping/budget rules recorded",
+      "Competent canonical and theological advice for normative reference labels",
+      "Program AI disclosure and research ethics/institutional permission assessed"
+    ],
+    "falsification_conditions": [
+      "Checklist matches CEC accuracy with less review burden",
+      "CEC induces false certainty or hides evidence gaps",
+      "Any observed benefit disappears with reviewer expertise or matched source completeness",
+      "Independent reviewer agreement is too low to establish determinate outcomes",
+      "Records cannot show receipt or effect of purported human intervention"
+    ],
+    "freeze_issue": "https://github.com/node-and-norm/control-evidence-corpus/issues/41",
+    "retained_as_development_only": [
+      "PARISH-QA-001-R1 six live answers",
+      "CIR-001 authored 24-case engineering comparison",
+      "AI-assisted 19-claim preliminary source annotations"
+    ],
+    "no_case_generation_or_execution": true
+  },
+  "conclusions": [
+    {
+      "id": "LIT-01",
+      "strength": "supported_prior_work",
+      "statement": "Catholic retrieval and doctrinal-response evaluation have direct published precedents; categorical first-in-field claims fail."
+    },
+    {
+      "id": "LIT-02",
+      "strength": "supported_prior_work",
+      "statement": "SourceCheckup includes independent clinician corroboration of claim-source support; human expert calibration is established in an adjacent high-stakes domain."
+    },
+    {
+      "id": "LIT-03",
+      "strength": "supported_prior_work",
+      "statement": "Hardy's O2C provides an explicit control-evidence framework; effective oversight distinct from named humans is already studied."
+    },
+    {
+      "id": "LIT-04",
+      "strength": "internal_engineering_result",
+      "statement": "CEC's 24-case citation engineering comparison recorded no admission advantage of a structured gate over a fair simple checklist."
+    },
+    {
+      "id": "LIT-05",
+      "strength": "prospective_hypothesis_only",
+      "statement": "Matched-evidence independent human reviewers might benefit from preserving source/authority/intervention/receipt as distinct evidence questions; efficacy is untested."
+    }
+  ],
+  "screening_limits": [
+    "Targeted selection by topic, not a systematic literature review, PRISMA search, citation network survey or comprehensive novelty determination.",
+    "Different sources reviewed at different depth; some publisher abstracts only and no independent full-PDF reading for all papers.",
+    "Published benchmarks differ in populations, tasks, denominators and rating methods; their reported metrics must not be pooled or imported as Catholic pilot performance.",
+    "SourceCheckup's physician agreement and Hardy's documentary coding do not establish the CEC intervention effect.",
+    "No independently qualified Catholic reviewers, case adjudications or consent were obtained through this desk review."
+  ]
+}
