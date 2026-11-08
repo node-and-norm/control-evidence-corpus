@@ -1,0 +1,43 @@
+{
+  "record_id": "AIU-PQA-SOURCE-REVIEW-R1",
+  "date_local": "2026-11-07",
+  "related_source_run": "PARISH-QA-001-R1",
+  "review_packet": "PQA-001-SOURCE-REVIEW-R1",
+  "assistant": "ChatGPT (OpenAI)",
+  "model_family_reported": "GPT-6",
+  "exact_model_snapshot": null,
+  "snapshot_missing_reason": "Exact provider model snapshot and generation parameters not available in a retained run record.",
+  "roles": [
+    "Read six retained responses",
+    "Extract 19 candidate propositions after seeing outputs",
+    "Inspect official Church source pages and both pages of the 2023 Dicastery circular",
+    "Draft claim-source audit and independently usable reviewer instrument",
+    "Produce notebook artifacts, automated integrity checks and repository change"
+  ],
+  "tools_used": [
+    "Connected GitHub repository actions",
+    "Public web search and document retrieval, including PDF page screenshots",
+    "Local Python for parsing retained sources",
+    "Repository software-validation workflows"
+  ],
+  "new_magisterium_chat_calls": 0,
+  "source_trace_limits": "Records hold links, source locators and analyst assessments; complete external web tool transport logs and immutable source snapshots were not archived.",
+  "bias_and_independence": "Claims and proposed classifications were produced after all six answers were visible. No independent initial expert judgment, blinded scoring, or reliable model accuracy estimate is claimed.",
+  "human_review_attestations": [],
+  "qualified_theological_review": "pending",
+  "qualified_canon_law_review": "pending",
+  "research_owner_approval_for_next_test": "pending",
+  "interpretation_limits": [
+    "Model output text is evidence of response behavior, not doctrinal correctness.",
+    "2023 circular specifically concerns governance of religious institutes.",
+    "Denzinger edition and exact passage concordance remain incomplete.",
+    "Protocol and confirmatory outcome definitions remain unfrozen."
+  ],
+  "related_artifacts": [
+    "catholic-ai-pilot/12_Source_Verification_Review.ipynb",
+    "catholic-ai-pilot/13_Reviewer_Starting_Packet.ipynb",
+    "catholic-ai-pilot/_evidence/reviews/PARISH-QA-001-R1/claim-review-round1.json"
+  ],
+  "independent_validation": false,
+  "user_authorization_converted_to_reviewer_approval": false
+}
