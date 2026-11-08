@@ -17,6 +17,10 @@ class ReferenceInventoryChecks(unittest.TestCase):
   self.assertEqual(p['source_blob_sha1'],blob)
   self.assertEqual(p['source_run'],self.data['run_id'])
   self.assertTrue(p['presentation_only'])
+  d=json.loads((BOOK/'_evidence/disclosure/reference-inventory-20261107.json').read_text())
+  self.assertEqual(d['new_magisterium_chat_calls'],0)
+  self.assertFalse(d['bibliographic_truth_verified'])
+  self.assertEqual(d['human_review_attestations'],[])
   self.assertTrue(p['no_new_service_calls'])
  def test_counts(self):
   self.assertEqual(len(self.refs),40)

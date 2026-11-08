@@ -1,0 +1,30 @@
+{
+  "record_id": "AIU-PQA-REF-INVENTORY-20261107",
+  "source_run": "PARISH-QA-001-R1",
+  "source_path": "catholic-ai-pilot/_evidence/scenarios/CB-001/PARISH-QA-001-R1/evidence.json",
+  "product_path": "catholic-ai-pilot/14_Reference_Inventory.ipynb",
+  "model": "ChatGPT GPT-6 family",
+  "exact_model_snapshot": null,
+  "snapshot_missing_reason": "Exact model build and parameters unavailable in retained local execution metadata.",
+  "roles": [
+    "Extract unchanged returned bibliography metadata",
+    "Group 40 occurrences by six cases and exact URLs",
+    "Identify two repeated URLs and blank author metadata",
+    "Prepare notebook layout, navigation and software checks"
+  ],
+  "source_content_fetches_for_inventory": 0,
+  "new_magisterium_chat_calls": 0,
+  "bibliographic_truth_verified": false,
+  "source_text_verified_in_this_task": false,
+  "underlying_original_answers_modified": false,
+  "human_review_attestations": [],
+  "independent_review_status": "pending",
+  "interpretation_limits": [
+    "38 unique URLs represent exact URL strings rather than unique verified publications.",
+    "14 blank author fields mean no author information was supplied, rather than unknown real authorship.",
+    "A returned bibliography entry may be additional reading and need not directly substantiate any statement.",
+    "No general reliability percentage or canonical approval is established."
+  ],
+  "publication_status": "development_reference_catalogue",
+  "linked_human_gate": "https://github.com/node-and-norm/control-evidence-corpus/issues/41"
+}
