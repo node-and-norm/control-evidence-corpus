@@ -1,0 +1,23 @@
+{
+  "record_id": "AIU-CATHOLIC-PRIORWORK-20261108-R1",
+  "date": "2026-11-08",
+  "responsible_program": "Node & Norm Catholic Institutional AI Risk and Control Evidence Pilot",
+  "drafting_assistant": "ChatGPT / GPT-6 model family; exact model snapshot unavailable",
+  "assistant_roles": [
+    "Select and read accessible prior-work abstracts and HTML",
+    "Extract high-level overlap and stated methodological limits",
+    "Draft prospective study design, falsifiability conditions and reading notebook",
+    "Author GitHub book navigation, source registry, software integrity tests and PR"
+  ],
+  "external_inputs": "Publisher and arXiv pages listed in CEC-CATHOLIC-PRIORWORK-20261108-R1; GitHub previous frozen research records.",
+  "source_depth": "Mixed publisher abstracts and accessible full HTML; not an exhaustive full-text review.",
+  "case_preparation": 0,
+  "new_magisterium_calls": 0,
+  "new_model_evaluation_calls": 0,
+  "study_participant_contact": 0,
+  "independent_expert_attestations": [],
+  "next_run_owner_approval": "pending issue #41",
+  "independent_novelty_verification": false,
+  "no_owner_signature_claim": true,
+  "output_claim": "Literature-screening and unexecuted study-plan proposal, not an accepted independent original finding."
+}

@@ -6,7 +6,7 @@ B=ROOT/'catholic-ai-pilot'
 API=runpy.run_path(str(ROOT/'scripts/check_catholic_pilot.py'))
 class CatholicConsolidationTests(unittest.TestCase):
  def test_complete_checkout_contract(self):
-  r=API['check']();self.assertEqual(r['notebooks'],16);self.assertEqual(r['original_master_cells_preserved'],40)
+  r=API['check']();self.assertEqual(r['notebooks'],17);self.assertEqual(r['original_master_cells_preserved'],40)
   self.assertEqual(r['exact_service_responses'],6);self.assertFalse(r['independent_research_validation'])
  def test_no_duplicate_reader_archive(self):
   self.assertFalse((ROOT/'research/extensions/catholic-institutions').exists())
@@ -41,7 +41,7 @@ class CatholicConsolidationTests(unittest.TestCase):
   self.assertEqual(hashlib.sha256((r/'engine.py').read_bytes()).hexdigest(),p['input_sha256']['engine.py'])
  def test_book_only_references_notebook_chapters(self):
   toc=json.loads((B/'myst.yml').read_text())['project']['toc']
-  self.assertEqual(len(toc),15)
+  self.assertEqual(len(toc),16)
   for row in toc:self.assertTrue((B/row['file']).exists());self.assertTrue(row['file'].endswith('.ipynb'))
  def test_retired_versions_have_a_history_pointer(self):
   r=json.loads((B/'_provenance/consolidation.json').read_text())

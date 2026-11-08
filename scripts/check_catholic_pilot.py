@@ -23,7 +23,7 @@ def check(root:Path=ROOT)->dict:
   p=(root/r['path']).resolve();assert p.is_relative_to(root.resolve())
   data=p.read_bytes();assert len(data)==r['bytes'] and sha(data)==r['sha256'],r['path']
  pages=[root/'CATHOLIC_PILOT.ipynb']+[root/r['path'] for r in manifest['chapters']]
- assert len(pages)==16 and len(set(pages))==16
+ assert len(pages)==17 and len(set(pages))==17
  links=0;source=defaultdict(list);code_count=0
  for p in pages:
   n=load(p);assert n['nbformat']==4
