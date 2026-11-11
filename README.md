@@ -1,3 +1,9 @@
+> **Research status, 11 November 2026: development infrastructure; empirical pilot pending.**
+>
+> **Held:** A record structure that preserves gaps, three authored synthetic demonstrations and separate development work. The retained infrastructure version is v0.3.0-dev; the newer Catholic pilot v0.4.1-dev is a separate development documentation update.
+>
+> **Open:** Independent human reliability, the empirical pilot and an approved empirical corpus release. There are zero independently coded empirical events; synthetic demonstrations and software checks do not establish control effectiveness.
+
 <h1>
 <picture>
   <source media="(max-width: 600px)" srcset="assets/research/v1/banner-mobile-dark.svg">
