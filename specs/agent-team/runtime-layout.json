@@ -1,0 +1,48 @@
+{
+  "spec_id": "CEC-RUNTIME-LAYOUT-001",
+  "version": "0.1.0",
+  "recorded_date": "2026-11-14",
+  "baseline_commit": "ab5140f9b80d84380186496c0d89c7f6323de5b6",
+  "baseline_tree": "9e4577f73d616347ae050574544f826fddfb0273",
+  "status": "engineering_refactor_only",
+  "research_approval": "pending_issue_41",
+  "frozen_behavior_spec": {
+    "path": "catholic-ai-pilot/_evidence/agent-team/spec.json",
+    "file_sha256": "d3c9928ce1c08846bc076779ac35a068ae5d41c2155a837a5e88ec19db080aba",
+    "role_prompts_are_authoritative_here": true,
+    "duplicate_prompt_or_spec_copy_permitted": false
+  },
+  "baseline_modules": {
+    "catholic-ai-pilot/_tools/agent_team.py": "6b42ff5a55ba8859900a17e70018e1ee95fb202623d3a5390ea8063168de7a06",
+    "catholic-ai-pilot/_tools/prompt_trace.py": "65fdfa5fb101ccc60820c9ff9666bf248ae4bdb0ea7d1cd8b80843822d75cc09"
+  },
+  "architecture": {
+    "package": "src/cec_agents",
+    "workflow": "LangGraph routing, in-memory checkpoint, pause/resume and bounded coordination",
+    "roles": "Deterministic synthetic fixtures; role names are not independent experts",
+    "state": "Runtime output contracts and state types, separate from CEC research schemas",
+    "capabilities": "Fixed permitted operations and protected output-root checks; not an OS sandbox",
+    "adapters": "Read-only local packet access only; no provider or research-service adapters",
+    "tracing": "Single implementation moved byte-for-byte; old path becomes a forwarding entry point",
+    "specification": "Runtime accepts explicit, digest-checked specification; original evidence spec remains in one location",
+    "compatibility": "Existing notebook and helper entry paths remain available through thin forwarding adapters",
+    "packaging": "Normal wheel installation must work outside the source checkout; no copying evidence into wheel",
+    "ci": "Read-only final workflows test installed distribution, exact behavior equivalence and preserved research"
+  },
+  "requirements": [
+    {"id":"AR-001","rule":"Preserve every existing evidence file, root README, root notebook and notebook URLs."},
+    {"id":"AR-002","rule":"Separate runtime responsibilities without enabling live execution, publishing or reviewer approval."},
+    {"id":"AR-003","rule":"Compare full deterministic role inputs/outputs, transitions, plan and traces against frozen baseline; ignore only documented timestamps, hash-chain values derived from timestamps and temporary absolute run path."},
+    {"id":"AR-004","rule":"Keep one authoritative prompt/spec location; fail if its file checksum changes."},
+    {"id":"AR-005","rule":"Build and install a wheel, then import and run from outside the checkout without PYTHONPATH pointing at src."},
+    {"id":"AR-006","rule":"Preserve original capture behavior and helper/CLI entry points without a second runtime implementation."},
+    {"id":"AR-007","rule":"Retain budget, privacy, authority, source-ID, synthetic-only and pause/resume regression tests."},
+    {"id":"AR-008","rule":"Prevent repository-write destinations and keep remote source adapters absent; document limitations of process-local guards."},
+    {"id":"AR-009","rule":"Update existing Chapters 17 and 09 instead of adding another reading chapter."},
+    {"id":"AR-010","rule":"Record AI contribution and real validation evidence; no independent scientific or safety certification."}
+  ],
+  "non_goals": ["No public API", "No autonomous coding agent", "No live service connection", "No new empirical experiment", "No new theological or legal conclusion", "No duplicate archive", "No durable production checkpoint or authenticated approval claim"],
+  "authorization": "The user approved the bounded architecture recommendation. This authorizes engineering maintenance, not completion of issue #41 or execution of the confirmatory study.",
+  "live_services_enabled": false,
+  "new_empirical_results": false
+}
