@@ -1,74 +1,33 @@
 name: Catholic agent team engineering
 on:
   push:
-    branches: [engineering/catholic-spec-agent-team, main]
+    branches: [main, engineering/cec-agent-package]
     paths:
-      - '.github/workflows/catholic-agent-team.yml'
-      - 'catholic-ai-pilot/_tools/agent_team.py'
-      - 'catholic-ai-pilot/_tools/agent-team-requirements.txt'
-      - 'catholic-ai-pilot/_evidence/agent-team/**'
-      - 'scripts/build_catholic_agent_team.py'
-      - 'tests/test_catholic_agent_team.py'
-  pull_request:
-    paths:
+      - 'src/cec_agents/**'
+      - 'specs/agent-team/**'
+      - 'pyproject.toml'
       - '.github/workflows/catholic-agent-team.yml'
       - 'catholic-ai-pilot/**'
+      - 'scripts/check_catholic_agent_package.py'
       - 'scripts/build_catholic_agent_team.py'
-      - 'tests/test_catholic_agent_team.py'
+      - 'tests/test_catholic_agent*.py'
+  pull_request:
+    paths:
+      - 'src/cec_agents/**'
+      - 'specs/agent-team/**'
+      - 'pyproject.toml'
+      - '.github/workflows/**'
+      - 'catholic-ai-pilot/**'
+      - 'scripts/check_catholic_agent_package.py'
+      - 'scripts/build_catholic_agent_team.py'
+      - 'tests/test_catholic_agent*.py'
 permissions:
   contents: read
 concurrency:
   group: catholic-agent-team-${{ github.ref }}
   cancel-in-progress: true
 jobs:
-  prepare:
-    if: github.event_name == 'push' && github.ref == 'refs/heads/engineering/catholic-spec-agent-team'
-    runs-on: ubuntu-24.04
-    timeout-minutes: 15
-    permissions:
-      contents: write
-    env:
-      CEC_REQUIRE_AGENT_TEAM: '1'
-      LANGSMITH_TRACING: 'false'
-      LANGCHAIN_TRACING_V2: 'false'
-    steps:
-      - uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
-      - uses: actions/setup-python@v5
-        with:
-          python-version: '3.11'
-      - name: Install isolated engineering and notebook dependencies
-        run: python -m pip install -r requirements.txt -r catholic-ai-pilot/requirements.txt -r catholic-ai-pilot/_tools/agent-team-requirements.txt
-      - name: Execute synthetic graph with network denied and generate reader
-        run: python scripts/build_catholic_agent_team.py
-      - name: Verify all preserved research records and notebook execution
-        run: |
-          python scripts/check_catholic_pilot.py --execute --output /tmp/catholic-agent-team-custody.json
-          python scripts/check_docs.py
-          python -m unittest discover -s tests -v
-      - name: Commit only reviewed reader, engineering evidence and navigation changes
-        run: |
-          git config user.name 'node-and-norm research automation'
-          git config user.email '90214617+mj3b@users.noreply.github.com'
-          git add CATHOLIC_PILOT.ipynb catholic-ai-pilot/00_START_HERE.ipynb catholic-ai-pilot/07_AI_Disclosure.ipynb catholic-ai-pilot/17_Agent_Team_and_Assurance.ipynb catholic-ai-pilot/myst.yml catholic-ai-pilot/_provenance/book-manifest.json catholic-ai-pilot/_evidence/agent-team catholic-ai-pilot/_evidence/disclosure/agent-team-20261114.json catholic-ai-pilot/_evidence/disclosure/agent-team-policy-check-20261114.json scripts/check_catholic_pilot.py tests/test_catholic_pilot_integrity.py
-          git diff --cached --quiet || git commit -m 'Record tested LangGraph fixture evidence and notebook-first assurance/disclosure guide'
-          git push origin HEAD:engineering/catholic-spec-agent-team
-      - name: Export exact checked revision for inspection
-        run: |
-          mkdir -p /tmp/catholic-agent-team-qa
-          git rev-parse HEAD > /tmp/catholic-agent-team-qa/COMMIT
-          git archive --format=zip --output=/tmp/catholic-agent-team-qa/repo.zip HEAD
-          cp /tmp/catholic-agent-team-custody.json /tmp/catholic-agent-team-qa/custody.json
-          python -m pip freeze > /tmp/catholic-agent-team-qa/environment.txt
-      - uses: actions/upload-artifact@v4
-        with:
-          name: catholic-agent-team-checked
-          path: /tmp/catholic-agent-team-qa/*
-          retention-days: 7
-          if-no-files-found: error
   verify:
-    if: github.event_name == 'pull_request' || github.ref == 'refs/heads/main'
     runs-on: ubuntu-24.04
     timeout-minutes: 15
     env:
@@ -79,20 +38,37 @@ jobs:
       - uses: actions/checkout@v4
         with:
           fetch-depth: 0
+          persist-credentials: false
       - uses: actions/setup-python@v5
         with:
           python-version: '3.11'
-      - name: Install pinned prototype dependencies
-        run: python -m pip install -r requirements.txt -r catholic-ai-pilot/requirements.txt -r catholic-ai-pilot/_tools/agent-team-requirements.txt
-      - name: Test spec-linked behavior and preserved reader/evidence contracts
+      - name: Install package and existing notebook dependencies
+        run: python -m pip install '.[agents]' -r requirements.txt -r catholic-ai-pilot/requirements.txt
+      - name: Run existing and new agent contract tests
         run: |
-          python -m unittest discover -s tests -p test_catholic_agent_team.py -v
-          python scripts/check_catholic_pilot.py --execute --output /tmp/catholic-agent-team-validation.json
+          python -m unittest discover -s tests -p 'test_catholic_agent*.py' -v
+          python scripts/check_catholic_agent_package.py --expect-installed-wheel --output "$RUNNER_TEMP/cec-package-comparison.json"
+      - name: Build a wheel without bundling research data
+        run: python -m pip wheel --no-deps --wheel-dir "$RUNNER_TEMP/cec-wheel" .
+      - name: Install and test the wheel outside the source checkout
+        run: |
+          python -m venv --system-site-packages "$RUNNER_TEMP/cec-wheel-env"
+          "$RUNNER_TEMP/cec-wheel-env/bin/python" -m pip install --no-deps --force-reinstall "$RUNNER_TEMP"/cec-wheel/*.whl
+          cd "$RUNNER_TEMP"
+          env -u PYTHONPATH "$RUNNER_TEMP/cec-wheel-env/bin/python" "$GITHUB_WORKSPACE/scripts/check_catholic_agent_package.py" --expect-installed-wheel --output "$RUNNER_TEMP/cec-package-wheel.json"
+      - name: Validate notebooks and all retained research contracts
+        run: |
+          python scripts/check_catholic_pilot.py --execute --output "$RUNNER_TEMP/cec-package-custody.json"
           python scripts/check_docs.py
           python -m unittest discover -s tests -v
-          git diff --exit-code -- CATHOLIC_PILOT.ipynb catholic-ai-pilot
+          git diff --exit-code -- README.md CATHOLIC_PILOT.ipynb catholic-ai-pilot src specs
+          python -m pip freeze > "$RUNNER_TEMP/cec-package-environment.txt"
       - uses: actions/upload-artifact@v4
+        if: always()
         with:
-          name: catholic-agent-team-validation
-          path: /tmp/catholic-agent-team-validation.json
+          name: cec-agent-package-validation
+          path: |
+            ${{ runner.temp }}/cec-package-*.json
+            ${{ runner.temp }}/cec-package-environment.txt
+          retention-days: 90
           if-no-files-found: error

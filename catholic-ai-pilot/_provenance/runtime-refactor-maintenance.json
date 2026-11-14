@@ -1,0 +1,48 @@
+{
+  "record_id": "CEC-RUNTIME-REFACTOR-MAINTENANCE-20261114",
+  "baseline_commit": "ab5140f9b80d84380186496c0d89c7f6323de5b6",
+  "scope": "Engineering maintenance only; no research-service or live-model execution",
+  "events": [
+    {
+      "phase": "local preparation",
+      "observation": "A checked prior CI snapshot was reopened. Its complete Git tree was reconstructed locally and matched current main tree 9e4577f73d616347ae050574544f826fddfb0273.",
+      "result": "exact baseline established"
+    },
+    {
+      "phase": "local dependency attempt",
+      "observation": "The local environment could not resolve its package index, so the pinned LangGraph environment could not be installed there.",
+      "result": "No local graph-performance or full-installation claim. Actual graph and installation tests executed in GitHub CI instead."
+    },
+    {
+      "phase": "local static and tracing checks",
+      "observation": "16 trace tests and six new static package tests passed. Four new runtime tests skipped locally because LangGraph was unavailable. Local custody checks preserved the root workbook, all retained evidence, and notebook links.",
+      "result": "bounded local validation only"
+    },
+    {
+      "phase": "local broad-suite diagnostic",
+      "observation": "The first uncommitted snapshot produced Git HEAD errors. After establishing a local validation-only commit, 246 tests ran with 20 graph-related skips and two failures in unrelated retained Jev floating-point reproduction checks under Python 3.13. Those files and expected results were not changed.",
+      "result": "Use the repository's pinned Python 3.11 CI for acceptance; do not portray the local broad run as passing."
+    },
+    {
+      "phase": "preparation branch intermediate commits",
+      "observation": "Ordinary validation failed while tests were present before the package extraction had run. The dedicated guarded preparation then generated and tested the package before committing it.",
+      "workflow_run": "43628024059",
+      "result": "intermediate failure retained in GitHub history"
+    },
+    {
+      "phase": "tested package extraction",
+      "workflow_run": "43628024132",
+      "generated_commit": "8d58ac8d42d7c38998ec3cd8df51274cf32a7203",
+      "result": "12 old/new behavior and boundary comparisons, all repository tests and notebook execution passed in Python 3.11. See runtime-refactor-validation.json."
+    },
+    {
+      "phase": "final architecture",
+      "observation": "One-time extraction script and write-enabled preparation workflow removed from the final checkout; retained in Git history. Final workflows are read-only and separately test a wheel installed outside the source checkout.",
+      "result": "Final-head PR validation still required before merge."
+    }
+  ],
+  "independent_scientific_validation": false,
+  "qualified_human_review_claimed": false,
+  "live_adapters_enabled": false,
+  "original_research_results_modified": false
+}

@@ -7,10 +7,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
       - uses: actions/setup-python@v5
         with:
           python-version: '3.11'
-      - run: python -m pip install -r requirements.txt
+      - run: python -m pip install . -r requirements.txt
       - run: python scripts/build_schemas.py
       - run: git diff --exit-code -- schemas
       - run: python scripts/build_examples.py
@@ -19,7 +21,6 @@ jobs:
       - run: python scripts/validate.py examples/synthetic.json
       - run: python -m unittest discover -s tests -v
       - run: python scripts/export.py examples/synthetic.json --output build/synthetic-export.json
-
       - name: Verify TAE/HIT sandbox
         working-directory: experiments/us-control-sandbox
         run: |

@@ -1,0 +1,35 @@
+{
+  "kind": "engineering_refactor_validation",
+  "baseline_commit": "ab5140f9b80d84380186496c0d89c7f6323de5b6",
+  "checks": [
+    "full-run-input-output-trace-equivalence",
+    "five-role-order-and-pause-boundary",
+    "baseline-equivalence-budget",
+    "baseline-equivalence-role-error",
+    "baseline-equivalence-packet-change",
+    "baseline-equivalence-repeated-start",
+    "forbidden-operations-rejected",
+    "repository-output-path-rejected",
+    "live-mode-rejected",
+    "human-approval-and-publication-remain-blocked",
+    "trace-implementation-identical-bytes",
+    "all-baseline-evidence-and-root-readers-unchanged"
+  ],
+  "checks_passed": 12,
+  "package_path": "/opt/hostedtoolcache/Python/3.11.18/x64/lib/python3.11/site-packages/cec_agents/__init__.py",
+  "installed_wheel_required": true,
+  "normalized_fields": [
+    "recorded_at_utc in events only",
+    "previous_sha256 and event_sha256 linked to those timestamps",
+    "trace_integrity.last_sha256",
+    "trace_integrity.run_dir"
+  ],
+  "live_model_calls": 0,
+  "research_service_calls": 0,
+  "independent_research_validation": false,
+  "original_40_master_cells_unchanged": true,
+  "validation_workflow_run": "43628024132",
+  "tested_preparation_commit": "ceeed5e10e42322640a391cceb2d8297f91581dc",
+  "all_repository_tests_passed": true,
+  "notebook_execution_passed": true
+}

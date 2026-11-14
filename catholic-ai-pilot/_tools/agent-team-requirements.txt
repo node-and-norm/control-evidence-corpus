@@ -1,3 +1,3 @@
-# Optional engineering environment; not installed by the ordinary reading notebook.
-# Exact tested top-level version. Complete resolved environment is recorded by CI.
-langgraph==1.2.22
+# Compatibility install entry. Invoke from repository root.
+# pyproject.toml is the authoritative package/dependency declaration.
+.[agents]
