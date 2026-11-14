@@ -1,0 +1,30 @@
+{
+  "kind": "engineering_fixture_validation",
+  "tests_run": 20,
+  "failures": 0,
+  "errors": 0,
+  "skipped": 0,
+  "success": true,
+  "requirement_ids": [
+    "AG-001",
+    "AG-002",
+    "AG-003",
+    "AG-004",
+    "AG-005",
+    "AG-006",
+    "AG-007",
+    "AG-008",
+    "AG-009",
+    "AG-010",
+    "AG-011",
+    "AG-012",
+    "AG-013",
+    "AG-014"
+  ],
+  "live_model_calls": 0,
+  "independent_validation": false,
+  "log": "test_budget_blocks_before_next_call (test_catholic_agent_team.AgentTeamRuntime.test_budget_blocks_before_next_call) ... ok\ntest_changed_packet_is_rejected (test_catholic_agent_team.AgentTeamRuntime.test_changed_packet_is_rejected) ... ok\ntest_exact_prompts_and_outputs (test_catholic_agent_team.AgentTeamRuntime.test_exact_prompts_and_outputs) ... ok\ntest_explorer_is_not_assurance (test_catholic_agent_team.AgentTeamRuntime.test_explorer_is_not_assurance) ... ok\ntest_failure_is_captured_without_retry (test_catholic_agent_team.AgentTeamRuntime.test_failure_is_captured_without_retry) ... ok\ntest_fixture_ack_is_not_human_approval (test_catholic_agent_team.AgentTeamRuntime.test_fixture_ack_is_not_human_approval) ... ok\ntest_forged_claim_and_approval_rejected (test_catholic_agent_team.AgentTeamRuntime.test_forged_claim_and_approval_rejected) ... ok\ntest_langsmith_cloud_disabled (test_catholic_agent_team.AgentTeamRuntime.test_langsmith_cloud_disabled) ... ok\ntest_live_mode_blocked (test_catholic_agent_team.AgentTeamRuntime.test_live_mode_blocked) ... ok\ntest_missing_disclosure_blocks_synthesis (test_catholic_agent_team.AgentTeamRuntime.test_missing_disclosure_blocks_synthesis) ... ok\ntest_offline_graph_runs_without_network (test_catholic_agent_team.AgentTeamRuntime.test_offline_graph_runs_without_network) ... ok\ntest_pause_and_resume_without_repeating_roles (test_catholic_agent_team.AgentTeamRuntime.test_pause_and_resume_without_repeating_roles) ... ok\ntest_private_and_duplicate_sources_are_rejected (test_catholic_agent_team.AgentTeamRuntime.test_private_and_duplicate_sources_are_rejected) ... ok\ntest_role_cannot_write_into_repository (test_catholic_agent_team.AgentTeamRuntime.test_role_cannot_write_into_repository) ... ok\ntest_source_and_authority_states_remain_pending (test_catholic_agent_team.AgentTeamRuntime.test_source_and_authority_states_remain_pending) ... ok\ntest_source_instructions_cannot_expand_tools (test_catholic_agent_team.AgentTeamRuntime.test_source_instructions_cannot_expand_tools) ... ok\ntest_engineering_disclosure_scope (test_catholic_agent_team.AgentTeamStatic.test_engineering_disclosure_scope) ... ok\ntest_historical_disclosure_preserved (test_catholic_agent_team.AgentTeamStatic.test_historical_disclosure_preserved) ... ok\ntest_spec_requirement_traceability (test_catholic_agent_team.AgentTeamStatic.test_spec_requirement_traceability) ... ok\ntest_workbook_has_no_network_or_secret_calls (test_catholic_agent_team.AgentTeamStatic.test_workbook_has_no_network_or_secret_calls) ... ok\n\n----------------------------------------------------------------------\nRan 20 tests in 0.275s\n\nOK\n",
+  "historical_disclosure_sha256": "552bc93cf17280aef349a0cb62d6e90cd72d56369cc05836f633084354c29074",
+  "spec_sha256": "ba711cbe1b00251e156faee068857c0e4537dfe6d69d1c4463521c4a5b47a740",
+  "input_packet_sha256": "02f5a51f74e9b55893977c30cdfb55e5fa67de6fe9e1ca9ffb262e6d87ff9060"
+}

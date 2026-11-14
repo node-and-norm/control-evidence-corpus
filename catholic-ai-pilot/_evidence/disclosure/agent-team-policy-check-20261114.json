@@ -1,0 +1,49 @@
+{
+  "record_id": "AGENT-TEAM-PUBLISHER-CHECK-20261114",
+  "checked_date": "2026-11-14",
+  "historical_table": "catholic-ai-pilot/_evidence/disclosure/historical-guidance-2026-10-27.json",
+  "historical_table_sha256": "552bc93cf17280aef349a0cb62d6e90cd72d56369cc05836f633084354c29074",
+  "historical_date_unchanged": true,
+  "selected_venue": null,
+  "venue_compliance": "pending_venue_selection_and_recheck",
+  "verification_limit": "Assistant source inspection during engineering design, not independent legal/publisher compliance certification. Complete web tool transport logs were not exported.",
+  "rows": [
+    {
+      "id": "DR-002",
+      "source": "ACM authorship policy",
+      "url": "https://www.acm.org/publications/policies/new-acm-policy-on-authorship",
+      "alternate_official_url": "https://prod-www.acm.bloomreach.cloud/publications/policies/new-acm-policy-on-authorship",
+      "access": "Canonical page returned 403; official indexed text accessed.",
+      "policy_update": "2026-05-14",
+      "application": "Substantive research uses belong in Methods; writing-only assistance is treated separately. Record design, sources, experiments, code, analysis and artifact contributions."
+    },
+    {
+      "id": "DR-003",
+      "source": "IEEE generated-content guidance",
+      "url": "https://open.ieee.org/author-guidelines-for-artificial-intelligence-ai-generated-text/",
+      "access": "Official page read.",
+      "application": "Identify AI system, affected sections and extent in acknowledgments where required; grammar/editing has separate treatment."
+    },
+    {
+      "id": "DR-004",
+      "source": "Nature Portfolio AI policy",
+      "url": "https://www.nature.com/nature-portfolio/editorial-policies/ai",
+      "access": "Direct page redirected to blocked identity service; official indexed policy text accessed.",
+      "application": "Evaluative or interpretive use needs demonstrable human oversight, verification and disclosure. Human judgment and accountability cannot be delegated; protect confidential material."
+    },
+    {
+      "id": "DR-005",
+      "source": "Jan Christopher Cwik, Disclosure is not documentation",
+      "url": "https://link.springer.com/article/10.1186/s41073-026-00245-8",
+      "published": "2026-08-15",
+      "access": "Publisher article metadata and text inspected.",
+      "application": "Methodological example for richer documentation; NOT a compulsory publisher rule or universal standard."
+    },
+    {
+      "id": "DR-011",
+      "source": "No publication venue selected",
+      "url": null,
+      "application": "Do not claim universal compliance. Review exact current venue requirements and manuscript placement before submission."
+    }
+  ]
+}
