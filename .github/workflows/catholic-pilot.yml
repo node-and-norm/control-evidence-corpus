@@ -5,6 +5,9 @@ on:
     paths:
       - 'CATHOLIC_PILOT.ipynb'
       - 'catholic-ai-pilot/**'
+      - 'src/cec_agents/**'
+      - 'specs/agent-team/**'
+      - 'pyproject.toml'
       - 'scripts/check_catholic_pilot.py'
       - 'tests/test_catholic*.py'
       - '.github/workflows/catholic-pilot.yml'
@@ -12,7 +15,9 @@ on:
     paths:
       - 'CATHOLIC_PILOT.ipynb'
       - 'catholic-ai-pilot/**'
-      - 'research/extensions/catholic-institutions/**'
+      - 'src/cec_agents/**'
+      - 'specs/agent-team/**'
+      - 'pyproject.toml'
       - 'scripts/check_catholic_pilot.py'
       - 'tests/test_catholic*.py'
       - '.github/workflows/**'
@@ -26,11 +31,12 @@ jobs:
       - uses: actions/checkout@v4
         with:
           fetch-depth: 0
+          persist-credentials: false
       - uses: actions/setup-python@v5
         with:
           python-version: '3.11'
-      - name: Install notebook and repository dependencies
-        run: python -m pip install -r requirements.txt -r catholic-ai-pilot/requirements.txt
+      - name: Install package, notebook and repository dependencies
+        run: python -m pip install . -r requirements.txt -r catholic-ai-pilot/requirements.txt
       - name: Check evidence, source custody and offline notebooks
         run: python scripts/check_catholic_pilot.py --execute --output /tmp/catholic-pilot-validation.json
       - name: Check repository links and all tests
