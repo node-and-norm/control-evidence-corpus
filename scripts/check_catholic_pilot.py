@@ -17,7 +17,14 @@ def check(root:Path=ROOT)->dict:
  assert not (root/'research/extensions/catholic-institutions').exists(),'Legacy workspace remains'
  assert not any(p.name.lower() in {'archive','_archive','editions','reading'} for p in b.rglob('*') if p.is_dir()),'Duplicate reader archive remains'
  assert not any(p.suffix.lower() in {'.md','.html','.pdf'} for p in b.rglob('*') if p.is_file()),'Non-notebook reader present'
- assert sha((root/'README.md').read_bytes())==ledger['root_readme_sha256'],'Root README changed'
+ readme=(root/'README.md').read_bytes()
+ if sha(readme)!=ledger['root_readme_sha256']:
+  # PR46, merged 2026-11-11 at f3e8066, added a bounded status note.
+  # Allow only that EXACT already-approved blob; preserve the older ledger.
+  blob=hashlib.sha1(b'blob '+str(len(readme)).encode()+b'\0'+readme).hexdigest()
+  assert blob=='0535f6bf4a6f372ce72546fdd208c4e1de37a484','Root README changed beyond approved PR46 status note'
+  original=readme[readme.index(b'<h1>\n'):]
+  assert sha(original)==ledger['root_readme_sha256'],'Original README body changed'
  assert not ledger['history_rewritten'] and not ledger['new_research_results']
  for r in ledger['retained_evidence']:
   p=(root/r['path']).resolve();assert p.is_relative_to(root.resolve())
@@ -67,9 +74,6 @@ def check(root:Path=ROOT)->dict:
  assert 'assets/workflow.svg' in '\n'.join(text(c) for c in load(b/'01_Study_and_Roadmap.ipynb')['cells'])
  for fn in ['catholic-study.yml','catholic-reader-archive.yml','catholic-protocol-notebook.yml','catholic-notebook-book.yml']:
   assert not (root/'.github/workflows'/fn).exists(),fn
- # Future confirmatory runs entering the public corpus must have the
- # approved manifest, completed trace and closed/valid attempts. This
- # does not retroactively relabel older evidence.
  policy=load(b/'_evidence/trace-policy/next-run-gate.json')
  assert policy['version']=='node-norm-visible-trace-1'
  assert policy['policy_status']=='MANDATORY_FUTURE_GATE_NOT_YET_APPROVED'
