@@ -1,0 +1,13 @@
+{
+  "record_id":"CEC-AGENT-TEAM-MAINTENANCE-20261114",
+  "kind":"engineering_history_not_research_results",
+  "first_workflow_run":43620751558,
+  "first_code_commit":"cd8696741644975b7a103c2afc94c32b0231325a",
+  "first_result":{"langgraph_synthetic_demo":"completed","new_engineering_tests":20,"new_test_failures":0,"repository_validation":"blocked_by_preexisting_root_readme_hash"},
+  "cause":"PR46 at f3e8066 added an authorized status note on November 11; the older consolidation checksum guard had not been updated. This branch did not modify README.md.",
+  "correction":"Preserve README.md exactly. Permit only Git blob 0535f6bf4a6f372ce72546fdd208c4e1de37a484 and still check its original body against the historical SHA-256. Preserve the original consolidation ledger.",
+  "limits":"The failed job's logs retain the passing test results and repository failure. Its generated dry-run transcript was not committed because the check failed; it is not presented as recovered. A later dry run is a separate engineering execution, never a repaired empirical observation.",
+  "new_live_model_calls":0,
+  "historical_research_evidence_modified":false,
+  "independent_validation":false
+}

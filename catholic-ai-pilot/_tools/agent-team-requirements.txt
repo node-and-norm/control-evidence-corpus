@@ -1,0 +1,3 @@
+# Optional engineering environment; not installed by the ordinary reading notebook.
+# Exact tested top-level version. Complete resolved environment is recorded by CI.
+langgraph==1.2.22

@@ -72,6 +72,10 @@
       {
         "file": "16_Prompt_Output_Capture_Protocol.ipynb",
         "title": "Prompt/output trace and pre-execution gate"
+      },
+      {
+        "file": "17_Agent_Team_and_Assurance.ipynb",
+        "title": "Spec-driven agent team, assurance and disclosure"
       }
     ]
   },
