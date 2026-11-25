@@ -44,15 +44,7 @@ The comparative pilot will test whether this structure improves supported recons
 
 ## Method in brief
 
-```mermaid
-flowchart LR
-  accTitle: CEC evidence reconstruction and planned review
-  accDescr: Source assertions support a bounded event and control record. The record separates action, propagation and mitigation questions. Independent ratings and adjudication remain planned requirements before an empirical release.
-  A["Sources and<br/>located assertions"] -->|supports| B["Bounded event<br/>and control record"]
-  B -->|separates| C["Action, propagation<br/>and mitigation questions"]
-  C -->|requires planned| D["Independent ratings<br/>and adjudication"]
-  D -->|gates future| E["Empirical release<br/>with retained uncertainty"]
-```
+![Source assertions support a bounded event and control record. The record separates action, propagation and mitigation questions. Independent ratings and adjudication remain planned requirements before an empirical release.](assets/research/evidence-reconstruction-method.svg)
 
 The text sequence is: locate sources, define a control opportunity, separate the three questions, obtain independent ratings and preserve disagreement through adjudication. Adjudication is a documented resolution of competing ratings. Independent review and empirical release remain future gates. [Codebook](docs/methods/CODEBOOK.md), [reliability plan](docs/methods/RELIABILITY_PLAN.md), [release requirements](research/README.md#decision-gates).
 

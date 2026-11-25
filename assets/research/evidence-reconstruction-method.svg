@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="320" height="518" viewBox="0 0 320 518"
+     role="img" aria-labelledby="title description" font-family="Arial, Helvetica, sans-serif">
+  <title id="title">CEC evidence reconstruction and planned review</title>
+  <desc id="description">Source assertions support a bounded event and control record. The record separates action, propagation and mitigation questions. Independent ratings and adjudication remain planned requirements before an empirical release.</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="8" markerHeight="8"
+            markerUnits="userSpaceOnUse" orient="auto">
+      <path d="M0 0 8 4 0 8Z" fill="#514788"/>
+    </marker>
+  </defs>
+  <rect width="320" height="518" rx="8" fill="#faf9fc"/>
+  <g>
+    <rect x="14" y="14" width="292" height="66" rx="6" fill="#eeebff" stroke="#887aca"/>
+    <text x="160" y="43" text-anchor="middle" font-size="19" font-weight="600" fill="#211e31">Sources and located</text>
+    <text x="160" y="65" text-anchor="middle" font-size="19" font-weight="600" fill="#211e31">assertions</text>
+  </g>
+  <g>
+    <path d="M38 80v38" fill="none" stroke="#514788" stroke-width="2" marker-end="url(#arrow)"/>
+    <text x="52" y="106" font-size="17" fill="#514788">supports</text>
+  </g>
+  <g>
+    <rect x="14" y="120" width="292" height="66" rx="6" fill="#eeebff" stroke="#887aca"/>
+    <text x="160" y="149" text-anchor="middle" font-size="19" font-weight="600" fill="#211e31">Bounded event and</text>
+    <text x="160" y="171" text-anchor="middle" font-size="19" font-weight="600" fill="#211e31">control record</text>
+  </g>
+  <g>
+    <path d="M38 186v38" fill="none" stroke="#514788" stroke-width="2" marker-end="url(#arrow)"/>
+    <text x="52" y="212" font-size="17" fill="#514788">separates</text>
+  </g>
+  <g>
+    <rect x="14" y="226" width="292" height="66" rx="6" fill="#eeebff" stroke="#887aca"/>
+    <text x="160" y="255" text-anchor="middle" font-size="19" font-weight="600" fill="#211e31">Action, propagation and</text>
+    <text x="160" y="277" text-anchor="middle" font-size="19" font-weight="600" fill="#211e31">mitigation questions</text>
+  </g>
+  <g>
+    <path d="M38 292v38" fill="none" stroke="#514788" stroke-width="2" marker-end="url(#arrow)"/>
+    <text x="52" y="318" font-size="17" fill="#514788">requires planned</text>
+  </g>
+  <g>
+    <rect x="14" y="332" width="292" height="66" rx="6" fill="#eeebff" stroke="#887aca"/>
+    <text x="160" y="361" text-anchor="middle" font-size="19" font-weight="600" fill="#211e31">Independent ratings</text>
+    <text x="160" y="383" text-anchor="middle" font-size="19" font-weight="600" fill="#211e31">and adjudication</text>
+  </g>
+  <g>
+    <path d="M38 398v38" fill="none" stroke="#514788" stroke-width="2" marker-end="url(#arrow)"/>
+    <text x="52" y="424" font-size="17" fill="#514788">gates future</text>
+  </g>
+  <g>
+    <rect x="14" y="438" width="292" height="66" rx="6" fill="#e4dfff" stroke="#887aca"/>
+    <text x="160" y="467" text-anchor="middle" font-size="19" font-weight="600" fill="#211e31">Empirical release with</text>
+    <text x="160" y="489" text-anchor="middle" font-size="19" font-weight="600" fill="#211e31">retained uncertainty</text>
+  </g>
+</svg>
