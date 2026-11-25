@@ -21,12 +21,16 @@ def check(root:Path=ROOT)->dict:
  if sha(readme)!=ledger['root_readme_sha256']:
   # Compare today's banner against the exact PR46 README and its original body.
   # Treat both approved image URLs as a single change, including their order.
-  catalog=b'https://raw.githubusercontent.com/node-and-norm/.github/4ee2d5fd660242d84cc6927f9ef842b1ba617056/assets/research/v2/control-evidence-corpus/'
   legacy=(b'  <source media="(max-width: 600px)" srcset="assets/research/v1/banner-mobile-dark.svg">\n'
           b'  <img src="assets/research/v1/banner-dark.svg" alt="Control Evidence Corpus" width="1000">')
-  current=(b'  <source media="(max-width: 600px)" srcset="'+catalog+b'banner-mobile.svg">\n'
-           b'  <img src="'+catalog+b'banner.svg" alt="Control Evidence Corpus" width="1000">')
-  readme=readme.replace(current,legacy,1)
+  # Match only intact desktop/mobile pairs from the two approved banner revisions.
+  revisions=(b'4ee2d5fd660242d84cc6927f9ef842b1ba617056',
+             b'13bac647d54ab62f3e6a8b500b2e5edc03e5227e')
+  for revision in revisions:
+   catalog=b'https://raw.githubusercontent.com/node-and-norm/.github/'+revision+b'/assets/research/v2/control-evidence-corpus/'
+   current=(b'  <source media="(max-width: 600px)" srcset="'+catalog+b'banner-mobile.svg">\n'
+            b'  <img src="'+catalog+b'banner.svg" alt="Control Evidence Corpus" width="1000">')
+   readme=readme.replace(current,legacy,1)
   blob=hashlib.sha1(b'blob '+str(len(readme)).encode()+b'\0'+readme).hexdigest()
   assert blob=='0535f6bf4a6f372ce72546fdd208c4e1de37a484','Root README changed beyond approved PR46 status note'
   original=readme[readme.index(b'<h1>\n'):]
